@@ -336,9 +336,11 @@ void Environment::movePlayer(int X, int Y)
 Environment::~Environment()
 {
     int i, j;
+    /*
     for (i = 0; i < gridX; i++)
     {
         delete[] Grid[i];
     }
     delete[] Grid;
+    */
 }

@@ -85,7 +85,7 @@ DynamicArray::DynamicArray()
 
 void DynamicArray::clear()
 {
-    
+    ;
 }
 DynamicArray::~DynamicArray()
 {
