@@ -24,7 +24,7 @@ DynamicArray Player::getCrafted()
     DynamicArray ret;
     int i = 0;
     int j = 0;
-    vector<Item> items = (getItems()).toVector();
+    DynamicArray items = (getItems());
     for (auto i : items)
     {
         for (auto j : items)

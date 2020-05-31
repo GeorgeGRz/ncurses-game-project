@@ -161,7 +161,7 @@ void Environment::removeFromPlayerInv(Item &item)
 {
 
     int index = 0;
-    for (auto x : playerEntity.getInventory().getInventoryItems().toVector())
+    for (auto x : playerEntity.getInventory().getInventoryItems())
     {
         if (x.getId() == item.getId())
         {
