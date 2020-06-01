@@ -1,5 +1,6 @@
 #ifndef GAMESCENE_H
 #define GAMESCENE_H
+#include <chrono>
 #include <iostream>
 using namespace std;
 
@@ -22,7 +23,7 @@ class GameScene{
         
         GameState getState(){return state;}
         
-
+        void checkHunger(chrono::minutes::rep&,chrono::_V2::system_clock::time_point &);
         void setState(GameState state){this->state = state;}
         string startupScreen();
         void Play();

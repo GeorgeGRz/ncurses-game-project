@@ -65,7 +65,7 @@ Environment::Environment()
         }
     }
 }
-vector<Item> Environment::getPlayerItems() { return playerEntity.getItems().toVector(); }
+DynamicArray<Item> Environment::getPlayerItems() { return playerEntity.getItems(); }
 int Environment::checkOccurences(Item &item)
 {
     int count = 0;
@@ -249,9 +249,10 @@ void Environment::clearAll()
 
     
 }
-DynamicArray Environment::getPlayerCraft()
+DynamicArray<Item> Environment::getPlayerCraft()
 {
     return playerEntity.getCrafted();
+    
 }
 
 void Environment::handleLoadedData(vector<Item> ldata, bool isStartup)

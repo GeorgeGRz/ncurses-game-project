@@ -6,25 +6,27 @@
 #include "../Items/OpenCoconut/OpenCoconut.h"
 #include "../DynamicArray/DynamicArray.h"
 #include "../Items/Axe/Axe.h"
-ostream &operator<<(ostream &os, Item *item)
+
+
+ostream &operator<<(ostream &os, Item item)
 {
-    os << item->getId() + ";" + item->getName() + ";" + to_string(item->getType()) + ";" + to_string(item->getIfOnFloor()) + ";" + to_string(item->getPosition().x) + ";" + to_string(item->getPosition().y);
+    os << item.getId() + ";" + item.getName() + ";" + to_string(item.getType()) + ";" + to_string(item.getIfOnFloor()) + ";" + to_string(item.getPosition().x) + ";" + to_string(item.getPosition().y);
     return os;
 }
 Player::Player()
 {
     playerName = "null";
 }
-DynamicArray Player::getItems()
+DynamicArray<Item> Player::getItems()
 {
     return playerItems.getInventoryItems();
 }
-DynamicArray Player::getCrafted()
+DynamicArray<Item> Player::getCrafted()
 {
-    DynamicArray ret;
+    DynamicArray<Item> ret;
     int i = 0;
     int j = 0;
-    DynamicArray items = (getItems());
+    DynamicArray<Item> items = (getItems());
     for (auto i : items)
     {
         for (auto j : items)
@@ -74,15 +76,16 @@ Player Player::operator=(const Player &copy)
 }
 void Player::showInventory(ostream &os)
 {
-    for (auto x : playerItems.getInventoryItems().toVector())
+    for (auto x : playerItems.getInventoryItems())
     {
-        cout << &x;
+        cout << x;
     }
 }
 void Player::removeFromInventory(int index)
 {
     this->playerItems.removeItemAt(index);
 }
+
 void Player::deallocateItem(Item &itemptr)
 {
     //this->playerItems->deallocateItem(itemptr);
@@ -93,7 +96,7 @@ Item &Player::getItemAt(int index)
     return this->playerItems.getItemAt(index);
 }
 
-DynamicArray Player::removeAfterCrafting(itemType itemCraftedType)
+DynamicArray<Item> Player::removeAfterCrafting(itemType itemCraftedType)
 {
     return playerItems.removeAfterCrafting(itemCraftedType);
 }

@@ -3,6 +3,8 @@
 #include <ncurses.h>
 #include <vector>
 #include <iostream>
+#include "../Player/Player.h"
+
 using namespace std;
 class Item;
 class Environment;
@@ -21,6 +23,7 @@ class IoClass{
         int showMenu(std::vector<string> selections);
 
         void printEnvironment(Environment& env);
+        void printPlayerStats(Player& player);
         ~IoClass();
 
         int getMaxX();

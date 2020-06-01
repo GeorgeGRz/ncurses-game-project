@@ -34,6 +34,16 @@ int IoClass::getMaxX()
     getmaxyx(stdscr, y, x);
     return x;
 }
+
+void IoClass::printPlayerStats(Player & pl)
+{
+    int Xloc = getmaxx(stdscr) - 25;
+    string info = "Hunger: ";
+    for(int i = 0; i < pl.getHunger(); i+=10){
+        info+="#";
+    }
+    mvprintw(1,Xloc,info.c_str());
+}
 int IoClass::getMaxY()
 {
     int x, y;
@@ -124,6 +134,7 @@ void IoClass::saveToFile(string filename, Environment &env)
     }
     if (file.good())
     {
+        
         for (auto item : allItems)
         {
             file << item;
@@ -139,6 +150,7 @@ bool replace(std::string &str, const std::string &from, const std::string &to)
     str.replace(start_pos, from.length(), to);
     return true;
 }
+
 int IoClass::getInput()
 {
     return getch();
@@ -150,6 +162,13 @@ void IoClass::printToCoordsAnimated(int X, int Y, string str, std::initializer_l
     for (auto x : a_args)
     {
         replace(str, "%s", x);
+        try{
+            if(stoi(x))
+                replace(str,"%d",x);
+        }
+        catch(exception & e){
+            ;
+        }
     }
 
     for (i = 0; i < str.length(); i++)
@@ -173,6 +192,7 @@ void IoClass::printEnvironment(Environment &env)
             mvprintw(i, j, s.c_str());
         }
     }
+    printPlayerStats(env.getPlayer());
     refresh();
 }
 

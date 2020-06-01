@@ -41,19 +41,30 @@ void Inventory::removeAll()
 }
 void Inventory::removeItemAt(int index)
 {
-    invItems.erase(index);
+    int i = 0;
+    for(DynamicArray<Item>::iterator it= invItems.begin(); it!= invItems.end();){
+        if(i == index){
+            it = invItems.erase(it);
+        }
+        else{
+            it++;
+        }
+        i++;
+    }
+    //invItems.erase(index);
 }
-DynamicArray Inventory::getInventoryItems(){
-    DynamicArray cpArray;
+
+DynamicArray<Item> Inventory::getInventoryItems(){
+    DynamicArray<Item> cpArray;
     cpArray = invItems;
     return cpArray;
 }
 Inventory::~Inventory(){
     ;
 }
-DynamicArray Inventory::removeAfterCrafting(itemType itemCraftedType)
+DynamicArray<Item> Inventory::removeAfterCrafting(itemType itemCraftedType)
 {
-    DynamicArray itemsRemoved;
+    DynamicArray<Item> itemsRemoved;
     
     int count = 0;
     bool rockFlag = false;
@@ -61,52 +72,52 @@ DynamicArray Inventory::removeAfterCrafting(itemType itemCraftedType)
     bool leafFlag = false;
     bool woodFlag = false;
     
-    int size = invItems.getSize();
-    int i;
-    for (i = 0; i < size ;){
-        if (itemCraftedType == axe && (invItems[i].getType() == rock && rockFlag == false))
+    int size = invItems.size();
+    int count2 = 0;
+    for (DynamicArray<Item>::iterator i = invItems.begin(); i !=invItems.end() ;){
+        if (itemCraftedType == axe && (invItems[count2].getType() == rock && rockFlag == false))
         {
-            itemsRemoved.push_back(invItems[i]);
+            itemsRemoved.push_back(invItems[count2]);
             invItems.erase(i);
             rockFlag = true;
             count++;
             
         }
-        else if (itemCraftedType == axe && (invItems[i].getType() == woodstick && woodFlag == false))
+        else if (itemCraftedType == axe && (invItems[count2].getType() == woodstick && woodFlag == false))
         {
-            itemsRemoved.push_back(invItems[i]);
+            itemsRemoved.push_back(invItems[count2]);
             invItems.erase(i);
             woodFlag = true;
             count++;
            
         }
-        else if (itemCraftedType == opencoconut && (invItems[i].getType() == coconut && cocFlag == false))
+        else if (itemCraftedType == opencoconut && (invItems[count2].getType() == coconut && cocFlag == false))
         {
-            itemsRemoved.push_back(invItems[i]);
+            itemsRemoved.push_back(invItems[count2]);
             invItems.erase(i);
             cocFlag = true;
             count++;
            
         }
-        else if (itemCraftedType == opencoconut && (invItems[i].getType() == rock && rockFlag == false))
+        else if (itemCraftedType == opencoconut && (invItems[count2].getType() == rock && rockFlag == false))
         {
-            itemsRemoved.push_back(invItems[i]);
+            itemsRemoved.push_back(invItems[count2]);
             invItems.erase(i);
             rockFlag = true;
             count++;
             
         }
-        else if (itemCraftedType == lightedtorch && (invItems[i].getType() == leafs && leafFlag == false))
+        else if (itemCraftedType == lightedtorch && (invItems[count2].getType() == leafs && leafFlag == false))
         {
-            itemsRemoved.push_back(invItems[i]);
+            itemsRemoved.push_back(invItems[count2]);
             invItems.erase(i);
             leafFlag = true;
             count++;
             
         }
-        else if (itemCraftedType == lightedtorch && (invItems[i].getType() == woodstick && woodFlag == false))
+        else if (itemCraftedType == lightedtorch && (invItems[count2].getType() == woodstick && woodFlag == false))
         {
-            itemsRemoved.push_back(invItems[i]);
+            itemsRemoved.push_back(invItems[count2]);
             invItems.erase(i);
             woodFlag = true;
             count++;
@@ -114,7 +125,7 @@ DynamicArray Inventory::removeAfterCrafting(itemType itemCraftedType)
         }
         else{
             i++;
-           
+            count2++;
         }
         if (count == 2)
             break;

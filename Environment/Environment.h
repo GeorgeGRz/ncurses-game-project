@@ -40,7 +40,7 @@ class Environment{
 
         void generateGrid(int numberOfEntities);
         vector<Item> getGroundItems(){ return groundItems;}
-        vector<Item> getPlayerItems();
+        DynamicArray<Item> getPlayerItems();
         Player & getPlayer(){return this->playerEntity;}
 
         Item & getItemAt(int X, int Y);
@@ -55,7 +55,7 @@ class Environment{
         Item & getPlayerItem(int index);
         vector<Item> getItemsNearPlayer();
 
-        DynamicArray getPlayerCraft();
+        DynamicArray<Item> getPlayerCraft();
 
         
 

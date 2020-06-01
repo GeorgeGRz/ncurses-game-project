@@ -7,7 +7,7 @@ using namespace std;
 #include "../DynamicArray/DynamicArray.h"
 class Inventory{
     private:
-        DynamicArray invItems;
+        DynamicArray<Item> invItems;
     public:
         Inventory();
         Inventory(Item *items,int itemCount);
@@ -16,17 +16,20 @@ class Inventory{
 
         void addItem(Item &item);
         
-        DynamicArray getInventoryItems();
+        DynamicArray<Item> getInventoryItems();
 
         Item & getItemAt(int index);
 
         void removeItemAt(int index);
         
+
+        size_t getSize(){return invItems.size();}
+
         Inventory& operator=( Inventory & inv);
 
         void removeAll();
 
-        DynamicArray removeAfterCrafting(itemType itemCraftedType);
+        DynamicArray<Item> removeAfterCrafting(itemType itemCraftedType);
 };
 
 

@@ -7,6 +7,7 @@
 #include "../Items/Axe/Axe.h"
 #include "../Items/OpenCoconut/OpenCoconut.h"
 #include "../Items/LightedTorch/LightedTorch.h"
+
 #include "unistd.h"
 GameScene::GameScene()
 {
@@ -51,42 +52,41 @@ void GameScene::handleInventoryMenu(int menuSelection)
     if (sel > 0)
     {
         Item itm = env->getPlayerItem(menuSelection - 1);
-        
+
         this->env->removeFromPlayerInv(itm);
-        
     }
 }
 void GameScene::handleCraftingMenu(int menuSelection)
-{   
+{
     this->setState(running);
     if (menuSelection > 0)
     {
         Item craftedItem = env->getPlayerCraft()[menuSelection - 1];
-        vector<Item> itemsRemoved;
-        
+        DynamicArray<Item> itemsRemoved;
+
         if (craftedItem.getType() == axe)
         {
-            Axe craftedAxe(craftedItem.getName(),craftedItem.getId(),craftedItem.getPosition());
+            Axe craftedAxe(craftedItem.getName(), craftedItem.getId(), craftedItem.getPosition());
             this->env->addItemToGround(craftedAxe);
             this->env->addItemToInv(craftedAxe);
-            itemsRemoved = (env->getPlayer().removeAfterCrafting(axe)).toVector();
+            itemsRemoved = (env->getPlayer().removeAfterCrafting(axe));
         }
         else if (craftedItem.getType() == opencoconut)
         {
-            OpenCoconut craftedOpenCoconut(craftedItem.getName(),craftedItem.getId(),craftedItem.getPosition());
+            OpenCoconut craftedOpenCoconut(craftedItem.getName(), craftedItem.getId(), craftedItem.getPosition());
             this->env->addItemToGround(craftedOpenCoconut);
             this->env->addItemToInv(craftedOpenCoconut);
-            itemsRemoved = (env->getPlayer().removeAfterCrafting(opencoconut)).toVector();
+            itemsRemoved = (env->getPlayer().removeAfterCrafting(opencoconut));
         }
         else if (craftedItem.getType() == lightedtorch)
         {
-            LightedTorch craftedLightedTorch(craftedItem.getName(),craftedItem.getId(),craftedItem.getPosition());
+            LightedTorch craftedLightedTorch(craftedItem.getName(), craftedItem.getId(), craftedItem.getPosition());
             this->env->addItemToGround(craftedLightedTorch);
             this->env->addItemToInv(craftedLightedTorch);
-            itemsRemoved = (env->getPlayer().removeAfterCrafting(lightedtorch)).toVector();
+            itemsRemoved = (env->getPlayer().removeAfterCrafting(lightedtorch));
         }
-        
-        vector<Item>::iterator allIt = itemsRemoved.begin();
+
+        DynamicArray<Item>::iterator allIt = itemsRemoved.begin();
         for (; allIt != itemsRemoved.end();)
         {
             this->env->removeItem(*allIt);
@@ -110,11 +110,19 @@ void GameScene::parseSelection(int c)
     }
     case 10: //if key is enter
     {
-        vector<Item> itemsNear = this->env->getItemsNearPlayer();
-        for (auto x : itemsNear)
+        if (env->getPlayer().getInventory().getSize() <= 10)
         {
-            this->env->addItemToInv(x);
+            vector<Item> itemsNear = this->env->getItemsNearPlayer();
+            for (auto x : itemsNear)
+            {
+                this->env->addItemToInv(x);
+            }
         }
+        else
+        {
+            ioManager->printToCoordsAnimated(0, 0, "Not enough space, player can hold only 10 items", {""}, 1);
+        }
+
         break;
     }
     case 105: //if key is i then we have to show player inventory
@@ -192,11 +200,21 @@ void GameScene::handleEndingMenu(int menuSelection)
         continueAfterEnd = false;
     }
 }
+void GameScene::checkHunger(chrono::minutes::rep &timePassed,chrono::_V2::system_clock::time_point& start ){
+    if(timePassed > 1){
+        int playerHunger = env->getPlayer().getHunger();
+        env->getPlayer().setHunger(playerHunger-10);
+        timePassed = 0;
+        start = chrono::high_resolution_clock::now();
+    }
+}
 void GameScene::Play()
 {
 
+    auto startTime = std::chrono::high_resolution_clock::now();
     while (1)
     {
+        auto currentTime = std::chrono::high_resolution_clock::now();
         if (endByMenu == true)
             break;
         this->setState(running);
@@ -206,12 +224,15 @@ void GameScene::Play()
         {
             clear();
             this->ioManager->printToCoordsAnimated(0, 0, "Congrats, you have finished the game, would you like to continue?", {""}, 1);
-            usleep(3000);
+            usleep(30000);
             clear();
             handleEndingMenu(this->ioManager->showMenu({"Yes", "No"}));
             if (continueAfterEnd == false)
                 break;
         }
+        auto timePassed = chrono::duration_cast<chrono::minutes>(currentTime - startTime).count();
+        checkHunger(timePassed,startTime);
+        
     }
 }
 string GameScene::startupScreen()
