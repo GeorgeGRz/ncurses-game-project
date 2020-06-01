@@ -8,6 +8,7 @@
         "vector": "cpp",
         "system_error": "cpp",
         "chrono": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "initializer_list": "cpp"
     }
 }

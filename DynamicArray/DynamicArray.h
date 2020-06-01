@@ -40,7 +40,15 @@ public:
     {
         m_data = new T[m_capacity];
     }
-    
+    inline DynamicArray(std::initializer_list<T> init)
+    {
+        size_type count = init.size();
+        m_size = 0;
+        m_capacity = count + count / 2 + 1;
+        m_data = new T[m_capacity];
+        for (const T& elem : init)        
+            m_data[m_size++] = elem;  
+    }
     inline DynamicArray<T> &operator=(const DynamicArray<T> &origin)
     {
         DynamicArray<T> cp(origin);

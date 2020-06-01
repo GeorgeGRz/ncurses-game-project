@@ -53,7 +53,44 @@ void Inventory::removeItemAt(int index)
     }
     //invItems.erase(index);
 }
-
+DynamicArray<int> Inventory::itemTypeCount(){
+    DynamicArray<int> dArray;
+    dArray.push_back(0);//lighter
+    dArray.push_back(0);//woodStick
+    dArray.push_back(0);//Leafs
+    dArray.push_back(0);//rock
+    dArray.push_back(0);//coconut
+    dArray.push_back(0);//axe
+    dArray.push_back(0);//openCoconut
+    dArray.push_back(0);//lightedTorch
+    for(auto x :invItems){
+        if(x.getType() == lighter){
+            dArray[0]++;
+        }
+        else if(x.getType() == woodstick){
+            dArray[1]++;
+        }
+        else if(x.getType() == leafs){
+            dArray[2]++;
+        }
+        else if(x.getType() == rock){
+            dArray[3]++;
+        }
+        else if(x.getType() == coconut){
+            dArray[4]++;
+        }
+        else if(x.getType() == axe){
+            dArray[5]++;
+        }
+        else if(x.getType() == opencoconut){
+            dArray[6]++;
+        }
+        else if(x.getType() == lightedtorch){
+            dArray[7]++;
+        }
+    }
+    return dArray;
+}
 DynamicArray<Item> Inventory::getInventoryItems(){
     DynamicArray<Item> cpArray;
     cpArray = invItems;

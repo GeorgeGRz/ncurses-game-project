@@ -45,14 +45,29 @@ void GameScene::handleMainMenu(int menuSelection)
     }
     this->setState(running);
 }
+
+bool uparxounDipla(DynamicArray<int> items)
+{
+    for (auto x : items)
+    {
+        if (x > 1)
+            return true;
+    }
+    return false;
+}
 void GameScene::handleInventoryMenu(int menuSelection)
 {
     this->setState(running);
     int sel = menuSelection;
     if (sel > 0)
     {
-        Item itm = env->getPlayerItem(menuSelection - 1);
-
+        Item itm;
+        if (uparxounDipla(env->getPlayer().getInventory().itemTypeCount()))
+        {
+            itm = env->getPlayerItem(menuSelection);
+        }
+        else
+            itm = env->getPlayerItem(menuSelection - 1);
         this->env->removeFromPlayerInv(itm);
     }
 }
@@ -95,7 +110,11 @@ void GameScene::handleCraftingMenu(int menuSelection)
         this->isOver = true;
     }
 }
-
+DynamicArray<bool> setupFlags()
+{
+    DynamicArray<bool> test({false, false, false, false, false, false, false, false});
+    return test;
+}
 void GameScene::parseSelection(int c)
 {
     switch (c)
@@ -131,9 +150,59 @@ void GameScene::parseSelection(int c)
         this->setState(waiting);
         vector<string> items;
         items.push_back("Back to game");
+        DynamicArray<int> itemCount = env->getPlayer().getInventory().itemTypeCount();
+        DynamicArray<bool> flags = setupFlags();
         for (auto x : env->getPlayer().getItems())
         {
-            items.push_back(x.getName() + " ID " + x.getId());
+            string print;
+            if (x.getType() == lighter && flags[0] == false)
+            {
+                print = x.getName() + " x" + to_string(itemCount[0]);
+                flags[0] = true;
+                items.push_back(print);
+            }
+            else if (x.getType() == woodstick && flags[1] == false)
+            {
+                print = x.getName() + " x" + to_string(itemCount[1]);
+                flags[1] = true;
+                items.push_back(print);
+            }
+            else if (x.getType() == leafs && flags[2] == false)
+            {
+                print = x.getName() + " x" + to_string(itemCount[2]);
+                flags[2] = true;
+                items.push_back(print);
+            }
+            else if (x.getType() == rock && flags[3] == false)
+            {
+                print = x.getName() + " x" + to_string(itemCount[3]);
+                flags[3] = true;
+                items.push_back(print);
+            }
+            else if (x.getType() == coconut && flags[4] == false)
+            {
+                print = x.getName() + " x" + to_string(itemCount[4]);
+                flags[4] = true;
+                items.push_back(print);
+            }
+            else if (x.getType() == axe && flags[5] == false)
+            {
+                print = x.getName() + " x" + to_string(itemCount[5]);
+                flags[5] = true;
+                items.push_back(print);
+            }
+            else if (x.getType() == opencoconut && flags[6] == false)
+            {
+                print = x.getName() + " x" + to_string(itemCount[6]);
+                flags[6] = true;
+                items.push_back(print);
+            }
+            else if (x.getType() == lightedtorch && flags[7] == false)
+            {
+                print = x.getName() + " x" + to_string(itemCount[7]);
+                flags[7] = true;
+                items.push_back(print);
+            }
         }
         handleInventoryMenu(this->ioManager->showMenu(items));
         break;
@@ -200,10 +269,12 @@ void GameScene::handleEndingMenu(int menuSelection)
         continueAfterEnd = false;
     }
 }
-void GameScene::checkHunger(chrono::minutes::rep &timePassed,chrono::_V2::system_clock::time_point& start ){
-    if(timePassed > 1){
+void GameScene::checkHunger(chrono::minutes::rep &timePassed, chrono::_V2::system_clock::time_point &start)
+{
+    if (timePassed > 1)
+    {
         int playerHunger = env->getPlayer().getHunger();
-        env->getPlayer().setHunger(playerHunger-10);
+        env->getPlayer().setHunger(playerHunger - 10);
         timePassed = 0;
         start = chrono::high_resolution_clock::now();
     }
@@ -214,6 +285,7 @@ void GameScene::Play()
     auto startTime = std::chrono::high_resolution_clock::now();
     while (1)
     {
+        if(env->getPlayer().getHunger() == 0) break;
         auto currentTime = std::chrono::high_resolution_clock::now();
         if (endByMenu == true)
             break;
@@ -231,8 +303,7 @@ void GameScene::Play()
                 break;
         }
         auto timePassed = chrono::duration_cast<chrono::minutes>(currentTime - startTime).count();
-        checkHunger(timePassed,startTime);
-        
+        checkHunger(timePassed, startTime);
     }
 }
 string GameScene::startupScreen()

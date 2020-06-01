@@ -22,6 +22,7 @@ class Inventory{
 
         void removeItemAt(int index);
         
+        DynamicArray<int> itemTypeCount();
 
         size_t getSize(){return invItems.size();}
 
