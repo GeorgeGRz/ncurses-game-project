@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['coconut_1',['Coconut',['../class_coconut.html',1,'']]],
-  ['csvrow_2',['CSVRow',['../class_c_s_v_row.html',1,'']]]
+  ['begin_1',['begin',['../class_dynamic_array.html#a761016488e84552be18b6dca9b10bdc0',1,'DynamicArray']]]
 ];

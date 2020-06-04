@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hut_7',['Hut',['../class_hut.html',1,'']]]
+  ['gamescene_12',['GameScene',['../class_game_scene.html',1,'']]]
 ];

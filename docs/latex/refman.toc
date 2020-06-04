@@ -1,0 +1,36 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Axe Class Reference}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Coconut Class Reference}{5}{section.3.2}%
+\contentsline {section}{\numberline {3.3}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}V\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Row Class Reference}{5}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Dynamic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Array$<$ T $>$ Class Template Reference}{6}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{7}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Member Typedef Documentation}{7}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}iterator}{7}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}reference}{7}{subsubsection.3.4.2.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.3}size\_type}{7}{subsubsection.3.4.2.3}%
+\contentsline {subsection}{\numberline {3.4.3}Constructor \& Destructor Documentation}{7}{subsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}DynamicArray()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{7}{subsubsection.3.4.3.1}%
+\contentsline {subsubsection}{\numberline {3.4.3.2}DynamicArray()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{7}{subsubsection.3.4.3.2}%
+\contentsline {subsection}{\numberline {3.4.4}Member Function Documentation}{8}{subsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.4.1}swap()}{8}{subsubsection.3.4.4.1}%
+\contentsline {section}{\numberline {3.5}Environment Class Reference}{8}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene Class Reference}{9}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Hut Class Reference}{9}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Inventory Class Reference}{10}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Io\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Class Class Reference}{10}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Item Class Reference}{10}{section.3.10}%
+\contentsline {section}{\numberline {3.11}Dynamic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Array$<$ T $>$\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::iterator Class Reference}{11}{section.3.11}%
+\contentsline {section}{\numberline {3.12}Leafs Class Reference}{11}{section.3.12}%
+\contentsline {section}{\numberline {3.13}Lighted\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Torch Class Reference}{12}{section.3.13}%
+\contentsline {section}{\numberline {3.14}Lighter Class Reference}{12}{section.3.14}%
+\contentsline {section}{\numberline {3.15}Open\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Coconut Class Reference}{12}{section.3.15}%
+\contentsline {section}{\numberline {3.16}Person Class Reference}{13}{section.3.16}%
+\contentsline {section}{\numberline {3.17}Player Class Reference}{13}{section.3.17}%
+\contentsline {section}{\numberline {3.18}Rock Class Reference}{13}{section.3.18}%
+\contentsline {section}{\numberline {3.19}Vector2D$<$ T $>$ Class Template Reference}{14}{section.3.19}%
+\contentsline {section}{\numberline {3.20}Wood\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stick Class Reference}{15}{section.3.20}%
