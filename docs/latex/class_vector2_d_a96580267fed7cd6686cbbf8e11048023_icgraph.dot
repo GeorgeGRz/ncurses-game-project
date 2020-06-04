@@ -1,0 +1,18 @@
+digraph "Vector2D::Vector2D"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Vector2D::Vector2D",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Vector2D\< int \>::operator*",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vector2_d.html#a1fa8b6e179d84731a2d60fda152d9967",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Vector2D\< int \>::operator+",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vector2_d.html#af0ab559c5c6bfe4e25db73f7f97c0d78",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Vector2D\< int \>::operator-",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vector2_d.html#a50fa409917f2dc06aeb3fa2e0d78fcf6",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Vector2D\< int \>::operator/",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vector2_d.html#aa2227856b57d5e730e34ada1b62bd65e",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Vector2D\< int \>::ortho",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vector2_d.html#a3ae7dc4b3c3986d6b2f572ae129a1671",tooltip=" "];
+}

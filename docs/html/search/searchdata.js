@@ -16,9 +16,9 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Classes",
-  2: "Functions",
-  3: "Typedefs"
+  0: "Όλα",
+  1: "Κλάσεις",
+  2: "Συναρτήσεις",
+  3: "Ορισμοί Τύπων"
 };
 

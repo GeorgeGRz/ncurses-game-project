@@ -1,0 +1,89 @@
+.TH "Environment" 3 "Παρ 05 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Environment
+.SH SYNOPSIS
+.br
+.PP
+.SS "Δημόσιες Μέθοδοι"
+
+.in +1c
+.ti -1c
+.RI "\fBEnvironment\fP (const \fBEnvironment\fP &env)"
+.br
+.ti -1c
+.RI "\fBEnvironment\fP (\fBPlayer\fP &player, int X, int Y)"
+.br
+.ti -1c
+.RI "char ** \fBgetGrid\fP ()"
+.br
+.ti -1c
+.RI "void \fBmovePlayer\fP (int x, int y)"
+.br
+.ti -1c
+.RI "void \fBaddItemToInv\fP (\fBItem\fP &itemPtr)"
+.br
+.ti -1c
+.RI "void \fBaddItemToGround\fP (\fBItem\fP &item)"
+.br
+.ti -1c
+.RI "void \fBaddItemToGround\fP (vector< \fBItem\fP > items)"
+.br
+.ti -1c
+.RI "void \fBremoveFromPlayerInv\fP (\fBItem\fP &itemptr)"
+.br
+.ti -1c
+.RI "void \fBremoveItem\fP (\fBItem\fP &itemptr)"
+.br
+.ti -1c
+.RI "void \fBclearAll\fP ()"
+.br
+.ti -1c
+.RI "void \fBgenerateGrid\fP (int numberOfEntities)"
+.br
+.ti -1c
+.RI "vector< \fBItem\fP > \fBgetGroundItems\fP ()"
+.br
+.ti -1c
+.RI "\fBDynamicArray\fP< \fBItem\fP > \fBgetPlayerItems\fP ()"
+.br
+.ti -1c
+.RI "\fBPlayer\fP & \fBgetPlayer\fP ()"
+.br
+.ti -1c
+.RI "\fBItem\fP & \fBgetItemAt\fP (int X, int Y)"
+.br
+.ti -1c
+.RI "void \fBhandleLoadedData\fP (vector< \fBItem\fP > ldata, bool isStartup)"
+.br
+.ti -1c
+.RI "int \fBgetX\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetY\fP ()"
+.br
+.ti -1c
+.RI "int \fBcheckOccurences\fP (\fBItem\fP &item)"
+.br
+.ti -1c
+.RI "\fBItem\fP & \fBgetPlayerItem\fP (int index)"
+.br
+.ti -1c
+.RI "vector< \fBItem\fP > \fBgetItemsNearPlayer\fP ()"
+.br
+.ti -1c
+.RI "\fBDynamicArray\fP< \fBItem\fP > \fBgetPlayerCraft\fP ()"
+.br
+.in -1c
+.SS "Στατικά Δημόσια Χαρακτηριστικά"
+
+.in +1c
+.ti -1c
+.RI "static int \fBlastID\fP = 0"
+.br
+.in -1c
+
+.SH "Συγραφέας"
+.PP 
+Δημιουργήθηκε αυτόματα από το Doxygen για My Project από τον πηγαίο κώδικα\&.

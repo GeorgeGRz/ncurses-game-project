@@ -1,7 +1,7 @@
 var hierarchy =
 [
     [ "CSVRow", "class_c_s_v_row.html", null ],
-    [ "DynamicArray< T >", "class_dynamic_array.html", null ],
+    [ "DynamicArray", "class_dynamic_array.html", null ],
     [ "DynamicArray< Item >", "class_dynamic_array.html", null ],
     [ "Environment", "class_environment.html", null ],
     [ "GameScene", "class_game_scene.html", null ],
@@ -18,7 +18,6 @@ var hierarchy =
       [ "Rock", "class_rock.html", null ],
       [ "WoodStick", "class_wood_stick.html", null ]
     ] ],
-    [ "DynamicArray< T >::iterator", "class_dynamic_array_1_1iterator.html", null ],
     [ "Person", "class_person.html", null ],
     [ "Player", "class_player.html", null ],
     [ "Vector2D< T >", "class_vector2_d.html", null ],

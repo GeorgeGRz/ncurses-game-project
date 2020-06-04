@@ -1,0 +1,20 @@
+digraph "Player::removeAfterCrafting"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Player::removeAfterCrafting",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Inventory::removeAfterCrafting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_inventory.html#aa6ce5529708fd37337b6c79609bdf5ab",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DynamicArray::begin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dynamic_array.html#a761016488e84552be18b6dca9b10bdc0",tooltip="Επιστρέφει iterator του πρώτου αντικειμένου"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="DynamicArray::end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dynamic_array.html#ab9c7e22b95deeefb2a0da8aff9f92138",tooltip="Επιστρέφει iterator του τελευταίου αντικειμένου"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="DynamicArray::erase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dynamic_array.html#aca42cb2f05ad3c088dfb20f5a6a11b41",tooltip="Διαγράφω ένα συγκεκριμένο αντικείμενο χρησιμοποιόντας iterator(T*)"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="DynamicArray::push_back",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dynamic_array.html#ac27ad259e9e39b494daa9487cfc02b5e",tooltip="Προσθέτει ένα αντικείμενο στο τέλος του πίνακα"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="DynamicArray::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dynamic_array.html#a17459ad0855d07a85b92b3e3ba5f2bae",tooltip="Getter μεγέθους(πραγματικού)"];
+}

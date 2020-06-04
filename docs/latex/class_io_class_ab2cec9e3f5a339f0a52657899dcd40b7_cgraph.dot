@@ -1,0 +1,20 @@
+digraph "IoClass::printEnvironment"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="IoClass::printEnvironment",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Environment::getGrid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_environment.html#ae37ea769221fe7a7632b3743d2e2b1aa",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Environment::getPlayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_environment.html#aa665421b69a38a3b1cd3b6165892cc54",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Environment::getX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_environment.html#add0c73a73170d8b10a3e2b9d1c7ac6bf",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Environment::getY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_environment.html#ac0df331b01c3e5bcbfee71456672da4c",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="IoClass::printPlayerStats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_io_class.html#a24a6d28531a99d823cce209ff6076455",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Player::getHunger",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_player.html#a2b7fa529cc5aa7eba4c93d55952a8364",tooltip=" "];
+}

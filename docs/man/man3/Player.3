@@ -1,0 +1,76 @@
+.TH "Player" 3 "Παρ 05 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Player
+.SH SYNOPSIS
+.br
+.PP
+.SS "Δημόσιες Μέθοδοι"
+
+.in +1c
+.ti -1c
+.RI "\fBPlayer\fP (\fBVector2D\fP< int > position, \fBInventory\fP inv, string name='P')"
+.br
+.ti -1c
+.RI "\fBPlayer\fP (const \fBPlayer\fP &copy)"
+.br
+.ti -1c
+.RI "int \fBgetHunger\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetHunger\fP (int h)"
+.br
+.ti -1c
+.RI "void \fBaddToInventory\fP (\fBItem\fP &item)"
+.br
+.ti -1c
+.RI "void \fBdeallocateItem\fP (\fBItem\fP &item)"
+.br
+.ti -1c
+.RI "void \fBshowInventory\fP (ostream &stream)"
+.br
+.ti -1c
+.RI "string \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "const \fBVector2D\fP< int > & \fBgetPosition\fP ()"
+.br
+.ti -1c
+.RI "\fBInventory\fP & \fBgetInventory\fP ()"
+.br
+.ti -1c
+.RI "\fBItem\fP & \fBgetItemAt\fP (int index)"
+.br
+.ti -1c
+.RI "void \fBsetName\fP (string newName)"
+.br
+.ti -1c
+.RI "\fBDynamicArray\fP< \fBItem\fP > \fBgetItems\fP ()"
+.br
+.ti -1c
+.RI "void \fBmoveToCoordinates\fP (int X, int Y)"
+.br
+.ti -1c
+.RI "void \fBmoveToCoordinates\fP (\fBVector2D\fP< int > newPosition)"
+.br
+.ti -1c
+.RI "void \fBremoveFromInventory\fP (int index)"
+.br
+.ti -1c
+.RI "\fBPlayer\fP \fBoperator=\fP (const \fBPlayer\fP &copy)"
+.br
+.ti -1c
+.RI "\fBDynamicArray\fP< \fBItem\fP > \fBgetCrafted\fP ()"
+.br
+.ti -1c
+.RI "void \fBremoveAllFromPlayer\fP ()"
+.br
+.ti -1c
+.RI "\fBDynamicArray\fP< \fBItem\fP > \fBremoveAfterCrafting\fP (itemType itemCraftedType)"
+.br
+.in -1c
+
+.SH "Συγραφέας"
+.PP 
+Δημιουργήθηκε αυτόματα από το Doxygen για My Project από τον πηγαίο κώδικα\&.

@@ -23,18 +23,18 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "My Project", "index.html", [
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Typedefs", "functions_type.html", null ]
+    [ "Κλάσεις", "annotated.html", [
+      [ "Λίστα Κλάσεων", "annotated.html", "annotated_dup" ],
+      [ "Συμπαγές Ευρετήριο", "classes.html", null ],
+      [ "Ιεραρχία Κλάσεων", "hierarchy.html", "hierarchy" ],
+      [ "Μέλη Κλάσεων", "functions.html", [
+        [ "Όλα", "functions.html", null ],
+        [ "Συναρτήσεις", "functions_func.html", null ],
+        [ "Ορισμοί Τύπων", "functions_type.html", null ]
       ] ]
     ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+    [ "Αρχεία", "files.html", [
+      [ "Λίστα Αρχείων", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
@@ -42,8 +42,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_axe_8h_source.html",
-"class_wood_stick.html#ad42cc190d8bf9945ff31ce713e427bf4"
+"functions_func.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'Κάντε κλικ για να απενεργοποιήσετε το συγχρονισμό του παραθύρου';
+var SYNCOFFMSG = 'Κάντε κλικ για να ενεργοποιήσετε το συγχρονισμό του παραθύρου';

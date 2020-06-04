@@ -1,0 +1,46 @@
+\hypertarget{_io_class_8cpp}{}\doxysection{Τεκμηρίωση Αρχείου I\+O/\+Io\+Class.cpp}
+\label{_io_class_8cpp}\index{IO/IoClass.cpp@{IO/IoClass.cpp}}
+{\ttfamily \#include \char`\"{}Io\+Class.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Dynamic\+Array/\+Dynamic\+Array.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Environment/\+Environment.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+C\+S\+V\+Row/\+C\+S\+V\+Row.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Items/\+Coconut/\+Coconut.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Items/\+Leafs/\+Leafs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Items/\+Rock/\+Rock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Items/\+Lighter/\+Lighter.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$menu.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Items/\+Wood\+Stick/\+Wood\+Stick.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$regex$>$}\newline
+Διάγραμμα εξάρτησης αρχείου συμπερίληψης για το Io\+Class.\+cpp\+:
+% FIG 0
+\doxysubsection*{Συναρτήσεις}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{_io_class_8cpp_ac2c0b2d1ccc5f44ad4a24f6411cc1d34}{operator$>$$>$}} (std\+::istream \&str, \mbox{\hyperlink{class_c_s_v_row}{C\+S\+V\+Row}} \&data)
+\item 
+fstream \& \mbox{\hyperlink{_io_class_8cpp_a47b8bee5da2097e57c33f33548ca84d6}{operator$<$$<$}} (fstream \&fs, \mbox{\hyperlink{class_item}{Item}} \&item)
+\item 
+bool \mbox{\hyperlink{_io_class_8cpp_a0159b96c217d65d379016f6aa2c4dd57}{replace}} (std\+::string \&str, const std\+::string \&from, const std\+::string \&to)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Τεκμηρίωση Συναρτήσεων}
+\mbox{\Hypertarget{_io_class_8cpp_a47b8bee5da2097e57c33f33548ca84d6}\label{_io_class_8cpp_a47b8bee5da2097e57c33f33548ca84d6}} 
+\index{IoClass.cpp@{IoClass.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!IoClass.cpp@{IoClass.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily fstream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{fstream \&}]{fs,  }\item[{\mbox{\hyperlink{class_item}{Item}} \&}]{item }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_io_class_8cpp_ac2c0b2d1ccc5f44ad4a24f6411cc1d34}\label{_io_class_8cpp_ac2c0b2d1ccc5f44ad4a24f6411cc1d34}} 
+\index{IoClass.cpp@{IoClass.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!IoClass.cpp@{IoClass.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{str,  }\item[{\mbox{\hyperlink{class_c_s_v_row}{C\+S\+V\+Row}} \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_io_class_8cpp_a0159b96c217d65d379016f6aa2c4dd57}\label{_io_class_8cpp_a0159b96c217d65d379016f6aa2c4dd57}} 
+\index{IoClass.cpp@{IoClass.cpp}!replace@{replace}}
+\index{replace@{replace}!IoClass.cpp@{IoClass.cpp}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily bool replace (\begin{DoxyParamCaption}\item[{std\+::string \&}]{str,  }\item[{const std\+::string \&}]{from,  }\item[{const std\+::string \&}]{to }\end{DoxyParamCaption})}
+

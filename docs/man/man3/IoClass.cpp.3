@@ -1,0 +1,57 @@
+.TH "IO/IoClass.cpp" 3 "Παρ 05 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IO/IoClass.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'IoClass\&.h'\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+\fC#include '\&.\&./DynamicArray/DynamicArray\&.h'\fP
+.br
+\fC#include '\&.\&./Environment/Environment\&.h'\fP
+.br
+\fC#include '\&.\&./CSVRow/CSVRow\&.h'\fP
+.br
+\fC#include '\&.\&./Items/Coconut/Coconut\&.h'\fP
+.br
+\fC#include '\&.\&./Items/Leafs/Leafs\&.h'\fP
+.br
+\fC#include '\&.\&./Items/Rock/Rock\&.h'\fP
+.br
+\fC#include '\&.\&./Items/Lighter/Lighter\&.h'\fP
+.br
+\fC#include <menu\&.h>\fP
+.br
+\fC#include '\&.\&./Items/WoodStick/WoodStick\&.h'\fP
+.br
+\fC#include <regex>\fP
+.br
+
+.SS "Συναρτήσεις"
+
+.in +1c
+.ti -1c
+.RI "std::istream & \fBoperator>>\fP (std::istream &str, \fBCSVRow\fP &data)"
+.br
+.ti -1c
+.RI "fstream & \fBoperator<<\fP (fstream &fs, \fBItem\fP &item)"
+.br
+.ti -1c
+.RI "bool \fBreplace\fP (std::string &str, const std::string &from, const std::string &to)"
+.br
+.in -1c
+.SH "Τεκμηρίωση Συναρτήσεων"
+.PP 
+.SS "fstream& operator<< (fstream & fs, \fBItem\fP & item)"
+
+.SS "std::istream& operator>> (std::istream & str, \fBCSVRow\fP & data)"
+
+.SS "bool replace (std::string & str, const std::string & from, const std::string & to)"
+
+.SH "Συγραφέας"
+.PP 
+Δημιουργήθηκε αυτόματα από το Doxygen για My Project από τον πηγαίο κώδικα\&.

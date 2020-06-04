@@ -1,0 +1,10 @@
+digraph "Inventory" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_a70a5b24ae6fb2afe5978945d07cbb76 [shape=box, label="Inventory", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a70a5b24ae6fb2afe5978945d07cbb76.html"];
+  dir_7d02ce0627a9d08bc7415ddf5065332d [shape=box label="Items" fillcolor="white" style="filled" color="red" URL="dir_7d02ce0627a9d08bc7415ddf5065332d.html"];
+  dir_726245ab4726156a04bb3a1060a0b6ae [shape=box label="DynamicArray" URL="dir_726245ab4726156a04bb3a1060a0b6ae.html"];
+  dir_a70a5b24ae6fb2afe5978945d07cbb76->dir_7d02ce0627a9d08bc7415ddf5065332d [headlabel="1", labeldistance=1.5 headhref="dir_000004_000006.html"];
+  dir_a70a5b24ae6fb2afe5978945d07cbb76->dir_726245ab4726156a04bb3a1060a0b6ae [headlabel="1", labeldistance=1.5 headhref="dir_000004_000001.html"];
+}

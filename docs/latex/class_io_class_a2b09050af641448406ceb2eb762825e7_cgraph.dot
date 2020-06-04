@@ -1,0 +1,16 @@
+digraph "IoClass::saveToFile"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="IoClass::saveToFile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Environment::getGroundItems",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_environment.html#adc4ab047d880eb2257e66b3f99c315d7",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Environment::getPlayerItems",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_environment.html#accd1588494919199bed9da5f2321f22d",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Player::getItems",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_player.html#ae207571d3c270f6dac946c52f550c9af",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Inventory::getInventoryItems",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_inventory.html#a0d4e150fd403e9f618b06445ca4425a0",tooltip=" "];
+}

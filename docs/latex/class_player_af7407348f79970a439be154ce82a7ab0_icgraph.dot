@@ -1,0 +1,21 @@
+digraph "Player::removeAllFromPlayer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Player::removeAllFromPlayer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Environment::clearAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_environment.html#acd909b9646e0c3dcd318a948815cf4f0",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Environment::handleLoadedData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_environment.html#a4ed53e4da49a37c0892bcab4635d19fa",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="GameScene::GameScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_scene.html#ac53cc300c8896048c0e21c67e49681b9",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="GameScene::handleMainMenu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_scene.html#a7304e7385032c9ed63b3727bea9a11f2",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="GameScene::parseSelection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_scene.html#aa78f7f563f8faa2e7e77de0f89cce05a",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="GameScene::Play",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_scene.html#aa686e382acd281b9880377323fb283ac",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

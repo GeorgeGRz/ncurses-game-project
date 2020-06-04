@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['size_74',['size',['../class_dynamic_array.html#a17459ad0855d07a85b92b3e3ba5f2bae',1,'DynamicArray']]],
-  ['swap_75',['swap',['../class_dynamic_array.html#a20d15ae1c2eacc521ddf9fe8383518da',1,'DynamicArray']]]
+  ['size_73',['size',['../class_dynamic_array.html#a64a7fd8f2d202c520c396d630a2f7b73',1,'DynamicArray']]],
+  ['swap_74',['swap',['../class_dynamic_array.html#a0e446f09df1a745343ee85cc6e7cbb63',1,'DynamicArray']]]
 ];

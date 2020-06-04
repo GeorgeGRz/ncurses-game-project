@@ -1,0 +1,14 @@
+digraph "Vector2D::length"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Vector2D::length",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Vector2D\< int \>::dist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vector2_d.html#a3489000c7cb9bffc73db6d1c988d2449",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Vector2D\< int \>::normalize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vector2_d.html#a669d380ef88e049314dff1e9fd5cfaa6",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Vector2D\< int \>::truncate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vector2_d.html#a5917ea010ef63501520c5716e6c90ce5",tooltip=" "];
+}

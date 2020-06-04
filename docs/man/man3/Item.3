@@ -1,0 +1,48 @@
+.TH "Item" 3 "Παρ 05 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Item
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Κληρονομείται από τις \fBAxe\fP, \fBCoconut\fP, \fBHut\fP, \fBLeafs\fP, \fBLightedTorch\fP, \fBLighter\fP, \fBOpenCoconut\fP, \fBRock\fP, και \fBWoodStick\fP\&.
+.SS "Δημόσιες Μέθοδοι"
+
+.in +1c
+.ti -1c
+.RI "\fBItem\fP (string name, string id, \fBVector2D\fP< int > position, bool isOnFloor=true)"
+.br
+.ti -1c
+.RI "\fBItem\fP (const \fBItem\fP &copy)"
+.br
+.ti -1c
+.RI "string \fBgetName\fP () const"
+.br
+.ti -1c
+.RI "string \fBgetId\fP () const"
+.br
+.ti -1c
+.RI "bool \fBgetIfOnFloor\fP () const"
+.br
+.ti -1c
+.RI "itemType \fBgetType\fP () const"
+.br
+.ti -1c
+.RI "\fBVector2D\fP< int > \fBgetPosition\fP () const"
+.br
+.ti -1c
+.RI "void \fBsetType\fP (itemType type)"
+.br
+.ti -1c
+.RI "void \fBsetisOnFloor\fP (bool value)"
+.br
+.ti -1c
+.RI "\fBItem\fP \fBoperator+\fP (\fBItem\fP &item)"
+.br
+.in -1c
+
+.SH "Συγραφέας"
+.PP 
+Δημιουργήθηκε αυτόματα από το Doxygen για My Project από τον πηγαίο κώδικα\&.

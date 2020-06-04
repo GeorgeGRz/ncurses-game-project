@@ -1,0 +1,15 @@
+digraph "Items/OpenCoconut" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_7d02ce0627a9d08bc7415ddf5065332d {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Items" fontname="Helvetica", fontsize="10", URL="dir_7d02ce0627a9d08bc7415ddf5065332d.html"]
+  dir_0cb6899a78290db278e77bf038356e91 [shape=box, label="OpenCoconut", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0cb6899a78290db278e77bf038356e91.html"];
+  }
+  dir_ab2875aa51063794301457259c77ae2f [shape=box label="Vector2D" URL="dir_ab2875aa51063794301457259c77ae2f.html"];
+  dir_59a3773fb886f53e651afc58787e32cb [shape=box label="Item" URL="dir_59a3773fb886f53e651afc58787e32cb.html"];
+  dir_0cb6899a78290db278e77bf038356e91->dir_ab2875aa51063794301457259c77ae2f [headlabel="1", labeldistance=1.5 headhref="dir_000014_000018.html"];
+  dir_0cb6899a78290db278e77bf038356e91->dir_59a3773fb886f53e651afc58787e32cb [headlabel="1", labeldistance=1.5 headhref="dir_000014_000010.html"];
+  dir_59a3773fb886f53e651afc58787e32cb->dir_ab2875aa51063794301457259c77ae2f [headlabel="1", labeldistance=1.5 headhref="dir_000010_000018.html"];
+  dir_59a3773fb886f53e651afc58787e32cb->dir_0cb6899a78290db278e77bf038356e91 [headlabel="1", labeldistance=1.5 headhref="dir_000010_000014.html"];
+}
