@@ -139,7 +139,8 @@ void GameScene::parseSelection(int c)
         }
         else
         {
-            ioManager->printToCoordsAnimated(0, 0, "Not enough space, player can hold only 10 items", {""}, 1);
+            ioManager->printToCoordsAnimated(1, 1, "Not enough space, player can hold only 10 items", {""}, 1);
+            refresh();
         }
 
         break;

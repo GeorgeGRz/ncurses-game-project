@@ -1,0 +1,25 @@
+\hypertarget{class_axe}{}\doxysection{Axe Class Reference}
+\label{class_axe}\index{Axe@{Axe}}
+
+
+Inheritance diagram for Axe\+:
+% FIG 0
+
+
+Collaboration diagram for Axe\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_axe_a6fd485f3b82f0e42497c5ed2f8f27f7b}\label{class_axe_a6fd485f3b82f0e42497c5ed2f8f27f7b}} 
+{\bfseries Axe} (string name, string id, \mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$pos, bool is\+On\+Floor=true)
+\item 
+\mbox{\Hypertarget{class_axe_abad08f5e90d6422576bd735a06519dc9}\label{class_axe_abad08f5e90d6422576bd735a06519dc9}} 
+{\bfseries Axe} (const \mbox{\hyperlink{class_axe}{Axe}} \&copy)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Items/\+Axe/Axe.\+h\item 
+Items/\+Axe/Axe.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,140 @@
+\hypertarget{class_dynamic_array}{}\doxysection{Dynamic\+Array$<$ T $>$ Class Template Reference}
+\label{class_dynamic_array}\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_dynamic_array_1_1iterator}{iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a33ca22351219293343ca4a77c8c5b6b3}\label{class_dynamic_array_a33ca22351219293343ca4a77c8c5b6b3}} 
+using {\bfseries size\+\_\+type} = size\+\_\+t
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}\label{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}} 
+using {\bfseries iterator} = T $\ast$
+\item 
+\mbox{\Hypertarget{class_dynamic_array_ade89863afa96812ffb29170c86c7f600}\label{class_dynamic_array_ade89863afa96812ffb29170c86c7f600}} 
+using {\bfseries reference} = T \&
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a20d15ae1c2eacc521ddf9fe8383518da}\label{class_dynamic_array_a20d15ae1c2eacc521ddf9fe8383518da}} 
+void {\bfseries swap} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&rhs)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_afe29de47101ad29d9709af52abbcf115}\label{class_dynamic_array_afe29de47101ad29d9709af52abbcf115}} 
+{\bfseries Dynamic\+Array} (std\+::initializer\+\_\+list$<$ T $>$ init)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a1ff8d144b58c18b3bdbed10147d4d516}\label{class_dynamic_array_a1ff8d144b58c18b3bdbed10147d4d516}} 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&origin)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_ad09c4168ff0564632075049136b4e4a8}\label{class_dynamic_array_ad09c4168ff0564632075049136b4e4a8}} 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \& {\bfseries operator=} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&\&origin)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_aebb70bbf2c1da409dc0f4915b509ce64}\label{class_dynamic_array_aebb70bbf2c1da409dc0f4915b509ce64}} 
+{\bfseries Dynamic\+Array} (const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&origin)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_aaeae200f3f029d90d2c00d94951d25cc}\label{class_dynamic_array_aaeae200f3f029d90d2c00d94951d25cc}} 
+void {\bfseries clear} () noexcept
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a8f74805ce6914c50651eda566feaf33b}\label{class_dynamic_array_a8f74805ce6914c50651eda566feaf33b}} 
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::reference {\bfseries emplace\+\_\+back} (Args \&\&... args)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_ac27ad259e9e39b494daa9487cfc02b5e}\label{class_dynamic_array_ac27ad259e9e39b494daa9487cfc02b5e}} 
+void {\bfseries push\+\_\+back} (const T \&val)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_aca42cb2f05ad3c088dfb20f5a6a11b41}\label{class_dynamic_array_aca42cb2f05ad3c088dfb20f5a6a11b41}} 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_1_1iterator}{iterator}} {\bfseries erase} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_1_1iterator}{iterator}} iter)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_ab030948aa222cd4c97737fc384ab660f}\label{class_dynamic_array_ab030948aa222cd4c97737fc384ab660f}} 
+void {\bfseries reallocate} ()
+\item 
+\mbox{\Hypertarget{class_dynamic_array_ac47a92b5054d4770ab60d5d7fff0e0a4}\label{class_dynamic_array_ac47a92b5054d4770ab60d5d7fff0e0a4}} 
+void {\bfseries move\+\_\+storage} (T $\ast$dest, T $\ast$from, size\+\_\+type n)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a761016488e84552be18b6dca9b10bdc0}\label{class_dynamic_array_a761016488e84552be18b6dca9b10bdc0}} 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_1_1iterator}{iterator}} {\bfseries begin} () noexcept
+\item 
+\mbox{\Hypertarget{class_dynamic_array_ab9c7e22b95deeefb2a0da8aff9f92138}\label{class_dynamic_array_ab9c7e22b95deeefb2a0da8aff9f92138}} 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_1_1iterator}{iterator}} {\bfseries end} () const noexcept
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a17459ad0855d07a85b92b3e3ba5f2bae}\label{class_dynamic_array_a17459ad0855d07a85b92b3e3ba5f2bae}} 
+size\+\_\+t {\bfseries size} ()
+\item 
+\mbox{\Hypertarget{class_dynamic_array_aafc6e762480105b6d472ad0baeac0f13}\label{class_dynamic_array_aafc6e762480105b6d472ad0baeac0f13}} 
+size\+\_\+t {\bfseries capacity} ()
+\item 
+\mbox{\Hypertarget{class_dynamic_array_af735752ed0d211f2903da2cdd2ee5e02}\label{class_dynamic_array_af735752ed0d211f2903da2cdd2ee5e02}} 
+T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t N)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a9c665637c4bcc46a16ed692bad345918}\label{class_dynamic_array_a9c665637c4bcc46a16ed692bad345918}} 
+T {\bfseries pop\+\_\+back} ()
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a58e06d2f77d521bc2878dd54b77582b6}\label{class_dynamic_array_a58e06d2f77d521bc2878dd54b77582b6}} 
+void {\bfseries insert} (const T \&datum, size\+\_\+t N)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a97a033e505303449a1881472431bcd90}\label{class_dynamic_array_a97a033e505303449a1881472431bcd90}} 
+void {\bfseries remove} (size\+\_\+t N)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a98681e95be3cbe76e3935284cf79c12a}\label{class_dynamic_array_a98681e95be3cbe76e3935284cf79c12a}} 
+void {\bfseries push\+\_\+back} (\mbox{\hyperlink{class_item}{Item}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a8183bd4e0b4c69984681395f198c311c}\label{class_dynamic_array_a8183bd4e0b4c69984681395f198c311c}} 
+void {\bfseries push\+\_\+back} (\mbox{\hyperlink{class_item}{Item}} \&)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_ab22b74aaab1d8e1751ad3d26763e7af4}\label{class_dynamic_array_ab22b74aaab1d8e1751ad3d26763e7af4}} 
+void {\bfseries erase} (int index)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_aeb2f83019e9958356e105c22fd85c748}\label{class_dynamic_array_aeb2f83019e9958356e105c22fd85c748}} 
+void {\bfseries erase} (\mbox{\hyperlink{class_item}{Item}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_ad8e0f961ed8c99b2101708f3b6b549ce}\label{class_dynamic_array_ad8e0f961ed8c99b2101708f3b6b549ce}} 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} \& {\bfseries operator=} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} \&copy)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a1265e263c91cd15797cf8187ef45350e}\label{class_dynamic_array_a1265e263c91cd15797cf8187ef45350e}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a67f171e6390e0281524228d134d23734}\label{class_dynamic_array_a67f171e6390e0281524228d134d23734}} 
+\mbox{\hyperlink{class_item}{Item}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int)
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a89da72c71a7fa21846881ce4a3053e3b}\label{class_dynamic_array_a89da72c71a7fa21846881ce4a3053e3b}} 
+vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries to\+Vector} ()
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a7fbbb4b3a7b90a427e4b39c2b9c7a2f8}\label{class_dynamic_array_a7fbbb4b3a7b90a427e4b39c2b9c7a2f8}} 
+int {\bfseries get\+Size} ()
+\item 
+\mbox{\Hypertarget{class_dynamic_array_aa9b10bcaa6378cba8ad5be0ed5276bcc}\label{class_dynamic_array_aa9b10bcaa6378cba8ad5be0ed5276bcc}} 
+\mbox{\hyperlink{class_dynamic_array_1_1iterator}{Dynamic\+Array\+::iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{class_dynamic_array_a93678ad6ff1f7d1371aa4cf0c11faaba}\label{class_dynamic_array_a93678ad6ff1f7d1371aa4cf0c11faaba}} 
+\mbox{\hyperlink{class_dynamic_array_1_1iterator}{Dynamic\+Array\+::iterator}} {\bfseries end} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dynamic_array_a2ce4470c93300b9c0a3a21fc44bc55d6}{swap}} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&lhs, \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&rhs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_dynamic_array_a2ce4470c93300b9c0a3a21fc44bc55d6}\label{class_dynamic_array_a2ce4470c93300b9c0a3a21fc44bc55d6}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!swap@{swap}}
+\index{swap@{swap}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{swap}{swap}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{lhs,  }\item[{\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & \\
+\hline
+{\em rhs} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dynamic\+Array/Dynamic\+Array.\+h\item 
+Dynamic\+Array\+\_\+legacy/Dynamic\+Array.\+cpp\end{DoxyCompactItemize}

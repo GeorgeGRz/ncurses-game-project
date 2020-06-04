@@ -1,13 +1,4 @@
-/*  
- * Template κλάση δυναμικού πίνακα με Iterators
- * Έχει χρησιμοποιηθεί το keyword inline στις μικρές μεθόδους για λόγους performance κυρίως
- * Για την υλοποίηση του δυναμικού πίνακα συμβουλεύθηκα το βιβλίο του Stroustroup στο αντίστοιχο σημείο για το πώς δουλεύει ενα διάνυσμα(vector)
- * 
- * 
- * 
- * 
- * 
- */
+
 #ifndef DYNAMICARRAY_H
 #define DYNAMICARRAY_H
 #include <stdexcept>
@@ -18,14 +9,19 @@ template <typename T>
 class DynamicArray
 {
 private:
-    T *m_data; //Ο ίδιος ο δείκτης των δεδομένων
+    T *m_data;              //Ο ίδιος ο δείκτης των δεδομένων
     size_t m_capacity = 10; //Μεταβλητή που χρησιμοποιείται για να δεσμεύουμε παραπάνω δεδομένα απο τα πραγματικά του δυναμικου πίνακα
-    size_t m_size = 0; //Μεταβλητή που κρατάει το πραγματικό μέγεθος του πίνακα
+    size_t m_size = 0;      //Μεταβλητή που κρατάει το πραγματικό μέγεθος του πίνακα
 public:
     using size_type = size_t;
     using iterator = T *;
     using reference = T &;
-
+    /**
+     * @brief 
+     * 
+     * @param lhs 
+     * @param rhs 
+     */
     friend void swap(DynamicArray<T> &lhs, DynamicArray<T> &rhs)
     {
         lhs.swap(rhs);
@@ -46,8 +42,8 @@ public:
         m_size = 0;
         m_capacity = count + count / 2 + 1;
         m_data = new T[m_capacity];
-        for (const T& elem : init)        
-            m_data[m_size++] = elem;  
+        for (const T &elem : init)
+            m_data[m_size++] = elem;
     }
     inline DynamicArray<T> &operator=(const DynamicArray<T> &origin)
     {
@@ -68,7 +64,7 @@ public:
         for (size_t i = 0; i < m_size; i++)
             m_data[i] = origin.m_data[i];
     }
-    
+
     inline void clear() noexcept
     {
 

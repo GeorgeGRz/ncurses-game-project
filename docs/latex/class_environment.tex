@@ -1,0 +1,83 @@
+\hypertarget{class_environment}{}\doxysection{Environment Class Reference}
+\label{class_environment}\index{Environment@{Environment}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_environment_a98117750fb7003d9def6a5d546630ce5}\label{class_environment_a98117750fb7003d9def6a5d546630ce5}} 
+{\bfseries Environment} (const \mbox{\hyperlink{class_environment}{Environment}} \&env)
+\item 
+\mbox{\Hypertarget{class_environment_a50308e9c5318325dcb45275f964bea29}\label{class_environment_a50308e9c5318325dcb45275f964bea29}} 
+{\bfseries Environment} (\mbox{\hyperlink{class_player}{Player}} \&player, int X, int Y)
+\item 
+\mbox{\Hypertarget{class_environment_ae37ea769221fe7a7632b3743d2e2b1aa}\label{class_environment_ae37ea769221fe7a7632b3743d2e2b1aa}} 
+char $\ast$$\ast$ {\bfseries get\+Grid} ()
+\item 
+\mbox{\Hypertarget{class_environment_a0745879e14db9668b68b7d7e96f30596}\label{class_environment_a0745879e14db9668b68b7d7e96f30596}} 
+void {\bfseries move\+Player} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_environment_a7144234b4528140d4b0b5ae7f8ff7238}\label{class_environment_a7144234b4528140d4b0b5ae7f8ff7238}} 
+void {\bfseries add\+Item\+To\+Inv} (\mbox{\hyperlink{class_item}{Item}} \&item\+Ptr)
+\item 
+\mbox{\Hypertarget{class_environment_ae5a8d2dbaba3c8a875b9f1ede40c46a0}\label{class_environment_ae5a8d2dbaba3c8a875b9f1ede40c46a0}} 
+void {\bfseries add\+Item\+To\+Ground} (\mbox{\hyperlink{class_item}{Item}} \&item)
+\item 
+\mbox{\Hypertarget{class_environment_a62812792569a238b6e7724cfe3cd6bce}\label{class_environment_a62812792569a238b6e7724cfe3cd6bce}} 
+void {\bfseries add\+Item\+To\+Ground} (vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ items)
+\item 
+\mbox{\Hypertarget{class_environment_a4bddebddcfafc4402b6c641d2ede5b56}\label{class_environment_a4bddebddcfafc4402b6c641d2ede5b56}} 
+void {\bfseries remove\+From\+Player\+Inv} (\mbox{\hyperlink{class_item}{Item}} \&itemptr)
+\item 
+\mbox{\Hypertarget{class_environment_aeed169b562e4a175f18d2e13b33b3d47}\label{class_environment_aeed169b562e4a175f18d2e13b33b3d47}} 
+void {\bfseries remove\+Item} (\mbox{\hyperlink{class_item}{Item}} \&itemptr)
+\item 
+\mbox{\Hypertarget{class_environment_acd909b9646e0c3dcd318a948815cf4f0}\label{class_environment_acd909b9646e0c3dcd318a948815cf4f0}} 
+void {\bfseries clear\+All} ()
+\item 
+\mbox{\Hypertarget{class_environment_a089a7fe6ac67eedb5787a45af1533925}\label{class_environment_a089a7fe6ac67eedb5787a45af1533925}} 
+void {\bfseries generate\+Grid} (int number\+Of\+Entities)
+\item 
+\mbox{\Hypertarget{class_environment_adc4ab047d880eb2257e66b3f99c315d7}\label{class_environment_adc4ab047d880eb2257e66b3f99c315d7}} 
+vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Ground\+Items} ()
+\item 
+\mbox{\Hypertarget{class_environment_accd1588494919199bed9da5f2321f22d}\label{class_environment_accd1588494919199bed9da5f2321f22d}} 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Player\+Items} ()
+\item 
+\mbox{\Hypertarget{class_environment_aa665421b69a38a3b1cd3b6165892cc54}\label{class_environment_aa665421b69a38a3b1cd3b6165892cc54}} 
+\mbox{\hyperlink{class_player}{Player}} \& {\bfseries get\+Player} ()
+\item 
+\mbox{\Hypertarget{class_environment_a5e556dcdc632433508a21826dcff73fe}\label{class_environment_a5e556dcdc632433508a21826dcff73fe}} 
+\mbox{\hyperlink{class_item}{Item}} \& {\bfseries get\+Item\+At} (int X, int Y)
+\item 
+\mbox{\Hypertarget{class_environment_a4ed53e4da49a37c0892bcab4635d19fa}\label{class_environment_a4ed53e4da49a37c0892bcab4635d19fa}} 
+void {\bfseries handle\+Loaded\+Data} (vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ ldata, bool is\+Startup)
+\item 
+\mbox{\Hypertarget{class_environment_add0c73a73170d8b10a3e2b9d1c7ac6bf}\label{class_environment_add0c73a73170d8b10a3e2b9d1c7ac6bf}} 
+int {\bfseries getX} ()
+\item 
+\mbox{\Hypertarget{class_environment_ac0df331b01c3e5bcbfee71456672da4c}\label{class_environment_ac0df331b01c3e5bcbfee71456672da4c}} 
+int {\bfseries getY} ()
+\item 
+\mbox{\Hypertarget{class_environment_a11937400e66ee015615f059879b7811a}\label{class_environment_a11937400e66ee015615f059879b7811a}} 
+int {\bfseries check\+Occurences} (\mbox{\hyperlink{class_item}{Item}} \&item)
+\item 
+\mbox{\Hypertarget{class_environment_ab889252af300443c998c3efb5c3b6dfe}\label{class_environment_ab889252af300443c998c3efb5c3b6dfe}} 
+\mbox{\hyperlink{class_item}{Item}} \& {\bfseries get\+Player\+Item} (int index)
+\item 
+\mbox{\Hypertarget{class_environment_a0e7e6949dbe9cbfbb37e765a66eaab91}\label{class_environment_a0e7e6949dbe9cbfbb37e765a66eaab91}} 
+vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Items\+Near\+Player} ()
+\item 
+\mbox{\Hypertarget{class_environment_a6168154d14c05fc42ce3f14c6e0532ff}\label{class_environment_a6168154d14c05fc42ce3f14c6e0532ff}} 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Player\+Craft} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_environment_a897dd3035c7fbc07510c596ffed84cd5}\label{class_environment_a897dd3035c7fbc07510c596ffed84cd5}} 
+static int {\bfseries last\+ID} = 0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Environment/Environment.\+h\item 
+Environment/Environment.\+cpp\end{DoxyCompactItemize}

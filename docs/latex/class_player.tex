@@ -1,0 +1,71 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_a9d12d4dbf1ecd5c98659e6030e1b8f2d}\label{class_player_a9d12d4dbf1ecd5c98659e6030e1b8f2d}} 
+{\bfseries Player} (\mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$ position, \mbox{\hyperlink{class_inventory}{Inventory}} inv, string name=\char`\"{}P\char`\"{})
+\item 
+\mbox{\Hypertarget{class_player_a0401f08b388f3fbcbf6eb4f4d2e8fb60}\label{class_player_a0401f08b388f3fbcbf6eb4f4d2e8fb60}} 
+{\bfseries Player} (const \mbox{\hyperlink{class_player}{Player}} \&copy)
+\item 
+\mbox{\Hypertarget{class_player_a2b7fa529cc5aa7eba4c93d55952a8364}\label{class_player_a2b7fa529cc5aa7eba4c93d55952a8364}} 
+int {\bfseries get\+Hunger} ()
+\item 
+\mbox{\Hypertarget{class_player_a79f73957d11e666ee48d9f4cc02bc5ad}\label{class_player_a79f73957d11e666ee48d9f4cc02bc5ad}} 
+void {\bfseries set\+Hunger} (int h)
+\item 
+\mbox{\Hypertarget{class_player_a5d0016f7fa5e0a9813a4b666efa87e9d}\label{class_player_a5d0016f7fa5e0a9813a4b666efa87e9d}} 
+void {\bfseries add\+To\+Inventory} (\mbox{\hyperlink{class_item}{Item}} \&item)
+\item 
+\mbox{\Hypertarget{class_player_af2b9b4868adad25f8f177789947d6123}\label{class_player_af2b9b4868adad25f8f177789947d6123}} 
+void {\bfseries deallocate\+Item} (\mbox{\hyperlink{class_item}{Item}} \&item)
+\item 
+\mbox{\Hypertarget{class_player_a02ce1c4efec524ed951a68ffd9dbcdb2}\label{class_player_a02ce1c4efec524ed951a68ffd9dbcdb2}} 
+void {\bfseries show\+Inventory} (ostream \&stream)
+\item 
+\mbox{\Hypertarget{class_player_af9a6045fa96f736664c4eab4caa5e8e5}\label{class_player_af9a6045fa96f736664c4eab4caa5e8e5}} 
+string {\bfseries get\+Name} ()
+\item 
+\mbox{\Hypertarget{class_player_ad3df5733204d1ef02c311d64b9a885f6}\label{class_player_ad3df5733204d1ef02c311d64b9a885f6}} 
+const \mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$ \& {\bfseries get\+Position} ()
+\item 
+\mbox{\Hypertarget{class_player_a3b173335c345cf000fb0e3859905ef9d}\label{class_player_a3b173335c345cf000fb0e3859905ef9d}} 
+\mbox{\hyperlink{class_inventory}{Inventory}} \& {\bfseries get\+Inventory} ()
+\item 
+\mbox{\Hypertarget{class_player_ac0c5a8a0d46f3d07349d391db3b5a376}\label{class_player_ac0c5a8a0d46f3d07349d391db3b5a376}} 
+\mbox{\hyperlink{class_item}{Item}} \& {\bfseries get\+Item\+At} (int index)
+\item 
+\mbox{\Hypertarget{class_player_a05df581ac0f73a10b6163ca8c03eff7b}\label{class_player_a05df581ac0f73a10b6163ca8c03eff7b}} 
+void {\bfseries set\+Name} (string new\+Name)
+\item 
+\mbox{\Hypertarget{class_player_ae207571d3c270f6dac946c52f550c9af}\label{class_player_ae207571d3c270f6dac946c52f550c9af}} 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Items} ()
+\item 
+\mbox{\Hypertarget{class_player_a5b9dc680dbccb85f547ca661f4186684}\label{class_player_a5b9dc680dbccb85f547ca661f4186684}} 
+void {\bfseries move\+To\+Coordinates} (int X, int Y)
+\item 
+\mbox{\Hypertarget{class_player_a8c73aafa8ed38b4169aede1fb1824e8b}\label{class_player_a8c73aafa8ed38b4169aede1fb1824e8b}} 
+void {\bfseries move\+To\+Coordinates} (\mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$ new\+Position)
+\item 
+\mbox{\Hypertarget{class_player_a679159353f050d299474d92cc3b68284}\label{class_player_a679159353f050d299474d92cc3b68284}} 
+void {\bfseries remove\+From\+Inventory} (int index)
+\item 
+\mbox{\Hypertarget{class_player_a79335831f4876b17298287e8308cf9d1}\label{class_player_a79335831f4876b17298287e8308cf9d1}} 
+\mbox{\hyperlink{class_player}{Player}} {\bfseries operator=} (const \mbox{\hyperlink{class_player}{Player}} \&copy)
+\item 
+\mbox{\Hypertarget{class_player_a7782e55f9695f4cc64cd7a9d7ceb9ad5}\label{class_player_a7782e55f9695f4cc64cd7a9d7ceb9ad5}} 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Crafted} ()
+\item 
+\mbox{\Hypertarget{class_player_af7407348f79970a439be154ce82a7ab0}\label{class_player_af7407348f79970a439be154ce82a7ab0}} 
+void {\bfseries remove\+All\+From\+Player} ()
+\item 
+\mbox{\Hypertarget{class_player_a84630cc68f9e49f4091ea50091177ee2}\label{class_player_a84630cc68f9e49f4091ea50091177ee2}} 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries remove\+After\+Crafting} (item\+Type item\+Crafted\+Type)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Player/Player.\+h\item 
+Player/Player.\+cpp\end{DoxyCompactItemize}
