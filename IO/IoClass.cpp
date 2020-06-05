@@ -51,15 +51,15 @@ int IoClass::getMaxY()
     return y;
 }
 
-vector<Item> IoClass::loadFromFile(string filename)
+vector<Item> IoClass::loadFromFile(string filename,int & id)
 {
+    id = 0;
     std::ifstream file(filename);
     vector<Item> items;
     CSVRow row;
     while (file >> row)
     {
-        int test = getmaxx(stdscr);
-        int test2 = getmaxy(stdscr);
+        
         if (Vector2D<int>(stoi(row[4]), stoi(row[5])).x >= getmaxy(stdscr) - 1 || Vector2D<int>(stoi(row[4]), stoi(row[5])).y >= getmaxx(stdscr))
             continue;
         bool floor = false;
@@ -96,6 +96,7 @@ vector<Item> IoClass::loadFromFile(string filename)
             WoodStick woodStick(row[1], row[0], Vector2D<int>(stoi(row[4]), stoi(row[5])), floor);
             items.push_back(woodStick);
         }
+        id++;
     }
     return items;
 }

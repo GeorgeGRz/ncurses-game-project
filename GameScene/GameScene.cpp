@@ -15,9 +15,11 @@ GameScene::GameScene()
     this->ioManager = new IoClass();
     string playerName = startupScreen();
     Player player(Vector2D<int>(2, 2), Inventory(), playerName);
-    this->env = new Environment(player, ioManager->getMaxY(), ioManager->getMaxX());
+    int id;
+    vector<Item> initDat = this->ioManager->loadFromFile("data/init.csv",id);
+    this->env = new Environment(player, ioManager->getMaxY(), ioManager->getMaxX(),id);
     this->setState(loading);
-    vector<Item> initDat = this->ioManager->loadFromFile("data/init.csv");
+    
     this->env->handleLoadedData(initDat, true);
     env->generateGrid(9);
     Play();
@@ -30,13 +32,14 @@ GameScene::~GameScene()
 
 void GameScene::handleMainMenu(int menuSelection)
 {
+    int id;
     if (menuSelection == 3)
     {
         endByMenu = true;
     }
     else if (menuSelection == 1)
     {
-        vector<Item> lDat = this->ioManager->loadFromFile("data/appData.csv");
+        vector<Item> lDat = this->ioManager->loadFromFile("data/appData.csv",id);
         this->env->handleLoadedData(lDat, false);
     }
     else if (menuSelection == 2)
@@ -104,7 +107,7 @@ void GameScene::handleCraftingMenu(int menuSelection)
         DynamicArray<Item>::iterator allIt = itemsRemoved.begin();
         for (; allIt != itemsRemoved.end();)
         {
-            this->env->removeItem(*allIt);
+            this->env->removeItemFromGround(*allIt);
             allIt++;
         }
         this->isOver = true;

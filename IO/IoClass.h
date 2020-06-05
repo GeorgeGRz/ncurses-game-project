@@ -13,7 +13,7 @@ class IoClass{
 
     public:
         IoClass();
-        vector<Item> loadFromFile(string fileName);
+        vector<Item> loadFromFile(string fileName,int & id);
         void saveToFile(string fileName,Environment & env);
 
         string readString();

@@ -12,6 +12,7 @@
         "initializer_list": "cpp",
         "array": "cpp",
         "string_view": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "iosfwd": "cpp"
     }
 }
