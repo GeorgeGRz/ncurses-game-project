@@ -313,6 +313,7 @@ void Environment::removeItemFromGround(Item &itemptr)
     vector<Item>::iterator groundIt = groundItems.begin();
     for (; groundIt != groundItems.end();)
     {
+        //Εάν το ID του αντικειμενου που θελουμε να αφαιρέσουμε ισουται με το ID του groundIt τότε το αφαιρούμε
         if ((*groundIt).getId() == itemptr.getId())
         {
             groundIt = groundItems.erase(groundIt);
@@ -325,10 +326,14 @@ void Environment::removeItemFromGround(Item &itemptr)
 }
 void Environment::movePlayer(int X, int Y)
 {
+    
     int maxX,maxY;
     getmaxyx(stdscr,maxY,maxX);
     if ((Grid[X][Y] == ' ' || Grid[X][Y] == '\0') && X < maxY - 1 && Y < maxX -1 && X > 0 && Y > 0)
     {
+        //εαν στις συντεταγμενες που θελει να μεταφερθεί ο χρήστης υπάρχει κενός χαρακτήρας και οχι χαρακτήρας \0 αλλα επισης
+        //εαν οι νεες συντεταγμενες ειναι μικρότερες των ορίων τότε αλλάζει η θέση του χρήστη και αντικαθισταται ο χαρακτηρας του
+        //πλεγματος που βρισκοταν σε αυτες τις συντεταγμένες με τον 1ο χαρακτήρα του ονόματος του χρήστη.
         Grid[playerEntity.getPosition().x][playerEntity.getPosition().y] = ' ';
         playerEntity.moveToCoordinates(X, Y);
         Grid[playerEntity.getPosition().x][playerEntity.getPosition().y] = playerEntity.getName()[0];
