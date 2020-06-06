@@ -30,6 +30,7 @@ var NAVTREE =
       [ "Μέλη Κλάσεων", "functions.html", [
         [ "Όλα", "functions.html", null ],
         [ "Συναρτήσεις", "functions_func.html", null ],
+        [ "Μεταβλητές", "functions_vars.html", null ],
         [ "Ορισμοί Τύπων", "functions_type.html", null ]
       ] ]
     ] ],
@@ -41,8 +42,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_axe_8h_source.html",
-"functions_func.html"
+"_axe_8h_source.html"
 ];
 
 var SYNCONMSG = 'Κάντε κλικ για να απενεργοποιήσετε το συγχρονισμό του παραθύρου';

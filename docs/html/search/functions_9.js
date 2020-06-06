@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7edynamicarray_75',['~DynamicArray',['../class_dynamic_array.html#aebf8ac62282dc5c9e2800c1f13ab68ec',1,'DynamicArray']]]
+  ['normalize_118',['normalize',['../class_vector2_d.html#a669d380ef88e049314dff1e9fd5cfaa6',1,'Vector2D']]]
 ];

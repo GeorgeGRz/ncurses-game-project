@@ -1,4 +1,4 @@
-.TH "CSVRow" 3 "Παρ 05 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "CSVRow" 3 "Σαβ 06 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -12,22 +12,56 @@ CSVRow
 .ti -1c
 .RI "std::string const  & \fBoperator[]\fP (std::size_t index) const"
 .br
+.RI "Επιστρέφει string που βρίσκεται στο συγκεκριμένο index\&. "
 .ti -1c
 .RI "std::size_t \fBsize\fP () const"
 .br
+.RI "Επιστρέφει το μέγεθος του vector που περιέχει τις γραμμές "
 .ti -1c
 .RI "void \fBreadNextRow\fP (std::istream &str)"
 .br
-.ti -1c
-.RI "std::string const  & \fBoperator[]\fP (std::size_t index) const"
-.br
-.ti -1c
-.RI "std::size_t \fBsize\fP () const"
-.br
-.ti -1c
-.RI "void \fBreadNextRow\fP (std::istream &str)"
-.br
+.RI "Διαβάζει την επόμενη γραμμή απο istream str\&. "
 .in -1c
+.SH "Τεκμηρίωση Συναρτήσεων Μελών"
+.PP 
+.SS "std::string const& CSVRow::operator[] (std::size_t index) const\fC [inline]\fP"
+
+.PP
+Επιστρέφει string που βρίσκεται στο συγκεκριμένο index\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIindex\fP Η θέση του string 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+std::string const& 
+.RE
+.PP
+
+.SS "void CSVRow::readNextRow (std::istream & str)\fC [inline]\fP"
+
+.PP
+Διαβάζει την επόμενη γραμμή απο istream str\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIstr\fP Το input stream απο το οποίο θα διαβάσει 
+.RE
+.PP
+
+.SS "std::size_t CSVRow::size () const\fC [inline]\fP"
+
+.PP
+Επιστρέφει το μέγεθος του vector που περιέχει τις γραμμές 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+std::size_t 
+.RE
+.PP
+
 
 .SH "Συγραφέας"
 .PP 

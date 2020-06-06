@@ -2,13 +2,11 @@ var class_environment =
 [
     [ "Environment", "class_environment.html#a8b427c4448d8b7536666837521b9e83d", null ],
     [ "Environment", "class_environment.html#a98117750fb7003d9def6a5d546630ce5", null ],
-    [ "Environment", "class_environment.html#a50308e9c5318325dcb45275f964bea29", null ],
+    [ "Environment", "class_environment.html#aa6c494796abe3b71ed251a22d941c4b3", null ],
     [ "~Environment", "class_environment.html#a8e294735187880dd3d59be10c425b29d", null ],
     [ "addItemToGround", "class_environment.html#ae5a8d2dbaba3c8a875b9f1ede40c46a0", null ],
     [ "addItemToGround", "class_environment.html#a62812792569a238b6e7724cfe3cd6bce", null ],
     [ "addItemToInv", "class_environment.html#a7144234b4528140d4b0b5ae7f8ff7238", null ],
-    [ "checkOccurences", "class_environment.html#a11937400e66ee015615f059879b7811a", null ],
-    [ "clearAll", "class_environment.html#acd909b9646e0c3dcd318a948815cf4f0", null ],
     [ "generateGrid", "class_environment.html#a089a7fe6ac67eedb5787a45af1533925", null ],
     [ "getGrid", "class_environment.html#ae37ea769221fe7a7632b3743d2e2b1aa", null ],
     [ "getGroundItems", "class_environment.html#adc4ab047d880eb2257e66b3f99c315d7", null ],
@@ -23,5 +21,5 @@ var class_environment =
     [ "handleLoadedData", "class_environment.html#a4ed53e4da49a37c0892bcab4635d19fa", null ],
     [ "movePlayer", "class_environment.html#a0745879e14db9668b68b7d7e96f30596", null ],
     [ "removeFromPlayerInv", "class_environment.html#a4bddebddcfafc4402b6c641d2ede5b56", null ],
-    [ "removeItem", "class_environment.html#aeed169b562e4a175f18d2e13b33b3d47", null ]
+    [ "removeItemFromGround", "class_environment.html#a66cc5a65cddf7d9f9b29f8ce540bd5bf", null ]
 ];

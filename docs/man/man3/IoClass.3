@@ -1,45 +1,215 @@
-.TH "IoClass" 3 "Παρ 05 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "IoClass" 3 "Σαβ 06 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-IoClass
+IoClass \- Κλάση διαχείρησης εισοδου-εξόδου καθώς και διαχείρησης οθόνης\&.  
+
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fC#include <IoClass\&.h>\fP
 .SS "Δημόσιες Μέθοδοι"
 
 .in +1c
 .ti -1c
-.RI "vector< \fBItem\fP > \fBloadFromFile\fP (string fileName)"
+.RI "vector< \fBItem\fP > \fBloadFromFile\fP (string fileName, int &id)"
 .br
+.RI "Διαβάζει το αρχείο και στη συνέχεια φορτώνει τα αντικείμενα σε vector\&. "
 .ti -1c
 .RI "void \fBsaveToFile\fP (string fileName, \fBEnvironment\fP &env)"
 .br
+.RI "Αντίστοιχα αποθηκεύει τα αντικείμενα που υπάρχουν στο env 
+.br
+ Γενικά η γραμμογράφηση του αρχείου είναι ώς εξής: 
+.br
+ \fB<itemId>;<itemName>;<itemTypeId>;<itemOnFloor>;<itemXpos>;<itemYpos>\fP "
 .ti -1c
 .RI "string \fBreadString\fP ()"
 .br
+.RI "Διαβάζει string απο το πληκτρολόγιο "
 .ti -1c
 .RI "void \fBprintToCoordsAnimated\fP (int x, int y, string stringToPrint, std::initializer_list< string > a_args, int speed)"
 .br
+.RI "Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα "
 .ti -1c
 .RI "int \fBshowMenu\fP (std::vector< string > selections)"
 .br
+.RI "Δέχεται vector με string και εμφανίζει τα περιεχόμενα με μορφή μενού "
 .ti -1c
 .RI "void \fBprintEnvironment\fP (\fBEnvironment\fP &env)"
 .br
+.RI "Εμφανίζει το περιβάλλον(αντικείμενα, παίκτη κλπ) "
 .ti -1c
 .RI "void \fBprintPlayerStats\fP (\fBPlayer\fP &player)"
 .br
+.RI "Εμφάνιση στατιστικών του παίκτη(Επίπεδο πείνας) "
+.ti -1c
+.RI "\fB~IoClass\fP ()"
+.br
+.RI "Destroy the Io Class object\&. "
 .ti -1c
 .RI "int \fBgetMaxX\fP ()"
 .br
+.RI "Getter για το μέγιστο Χ της οθονης "
 .ti -1c
 .RI "int \fBgetMaxY\fP ()"
 .br
+.RI "Getter για το μέγιστο Υ της οθονης "
 .ti -1c
 .RI "int \fBgetInput\fP ()"
 .br
+.RI "Διαβάζει ένανα χαρακτήρα απο το πληκτρολόγιο και τον επιστεφει "
 .in -1c
+.SH "Λεπτομερής Περιγραφή"
+.PP 
+Κλάση διαχείρησης εισοδου-εξόδου καθώς και διαχείρησης οθόνης\&. 
+
+
+.SH "Τεκμηρίωση Constructor & Destructor"
+.PP 
+.SS "IoClass::~IoClass ()"
+
+.PP
+Destroy the Io Class object\&. Destroy the Io Class:: Io Class object\&.
+.SH "Τεκμηρίωση Συναρτήσεων Μελών"
+.PP 
+.SS "int IoClass::getInput ()"
+
+.PP
+Διαβάζει ένανα χαρακτήρα απο το πληκτρολόγιο και τον επιστεφει 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+int Χαρακτήρας που διαβάστηκε 
+.RE
+.PP
+
+.SS "int IoClass::getMaxX ()"
+
+.PP
+Getter για το μέγιστο Χ της οθονης 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+int μέγιστο Χ της οθονης 
+.RE
+.PP
+
+.SS "int IoClass::getMaxY ()"
+
+.PP
+Getter για το μέγιστο Υ της οθονης 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+int μέγιστο Υ της οθονης 
+.RE
+.PP
+
+.SS "vector< \fBItem\fP > IoClass::loadFromFile (string fileName, int & id)"
+
+.PP
+Διαβάζει το αρχείο και στη συνέχεια φορτώνει τα αντικείμενα σε vector\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIfileName\fP Το ονομα του αρχείου οπου θα προσπελάσει 
+.br
+\fIid\fP Αναφορά σε ακέραιο αριθμό,χρησιμοποιείται για να υπολογίσει το τελευταίο id 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+vector<Item> Container οπου περιέχει τα αντικείμενα που διαβάστηκαν 
+.RE
+.PP
+
+.SS "void IoClass::printEnvironment (\fBEnvironment\fP & env)"
+
+.PP
+Εμφανίζει το περιβάλλον(αντικείμενα, παίκτη κλπ) 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIenv\fP 
+.RE
+.PP
+
+.SS "void IoClass::printPlayerStats (\fBPlayer\fP & player)"
+
+.PP
+Εμφάνιση στατιστικών του παίκτη(Επίπεδο πείνας) 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIplayer\fP Αναφορά σε αντικείμενο \fBPlayer\fP 
+.RE
+.PP
+
+.SS "void IoClass::printToCoordsAnimated (int x, int y, string stringToPrint, std::initializer_list< string > a_args, int speed)"
+
+.PP
+Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIx\fP Η συντεταγμένη Χ 
+.br
+\fIy\fP Η συντενταγμένη Y 
+.br
+\fIstringToPrint\fP Το αλφαριθμητικό που θα εμφανιστεί 
+.br
+\fIa_args\fP Χρησιμοποιείται για να εμφανίζονται δυναμικά περιεχόμενα μεταβλητών(πχ οπως η printf εχει το s και το d) Οι μονες που υποστηρίζονται είναι οι s και d\&. 
+.br
+\fIspeed\fP Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων\&. 
+.RE
+.PP
+
+.SS "string IoClass::readString ()"
+
+.PP
+Διαβάζει string απο το πληκτρολόγιο 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+string Το string που διαβάστηκε 
+.RE
+.PP
+
+.SS "void IoClass::saveToFile (string fileName, \fBEnvironment\fP & env)"
+
+.PP
+Αντίστοιχα αποθηκεύει τα αντικείμενα που υπάρχουν στο env 
+.br
+ Γενικά η γραμμογράφηση του αρχείου είναι ώς εξής: 
+.br
+ \fB<itemId>;<itemName>;<itemTypeId>;<itemOnFloor>;<itemXpos>;<itemYpos>\fP itemId itemName itemTypeId itemOnFloor item x position item y position  Το ID του αντικειμένου Το όνομα του αντικειμένου Το ID του τύπου του αντικειμένου Flag για το εαν βρισκεται στο πατωμα Θέση Χ Θέση Υ  
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIfileName\fP Το ονομα του αρχείου οπου θα προσπελάσει 
+.br
+\fIenv\fP Αναφορά σε μεταβλητή τύπου \fBEnvironment\fP 
+.RE
+.PP
+
+.SS "int IoClass::showMenu (std::vector< string > selections)"
+
+.PP
+Δέχεται vector με string και εμφανίζει τα περιεχόμενα με μορφή μενού 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIselections\fP 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+int Το index της επιλογής που έγινε, 0 για την 1η επιλογή, 1 για την 2η επιλογή, 2 για την 3η κλπ\&.\&. 
+.RE
+.PP
+
 
 .SH "Συγραφέας"
 .PP 

@@ -5,7 +5,7 @@ var class_io_class =
     [ "getInput", "class_io_class.html#a8cada06c1633e0731bd455b1ecda5a61", null ],
     [ "getMaxX", "class_io_class.html#a72b63cce8040e3f38cf88d78de54669f", null ],
     [ "getMaxY", "class_io_class.html#a9f8dc0ea79dfff69865b8e622a2725d0", null ],
-    [ "loadFromFile", "class_io_class.html#a18ee40f4d6fd048057a4e7609b7a3f7e", null ],
+    [ "loadFromFile", "class_io_class.html#ac148370091cc66e4a35ae36e337f3fda", null ],
     [ "printEnvironment", "class_io_class.html#ab2cec9e3f5a339f0a52657899dcd40b7", null ],
     [ "printPlayerStats", "class_io_class.html#a24a6d28531a99d823cce209ff6076455", null ],
     [ "printToCoordsAnimated", "class_io_class.html#a069576134fab6e543348937e75d46351", null ],

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['emplace_5fback_64',['emplace_back',['../class_dynamic_array.html#adbe9d3cfddc6f8a1bb54310696cd62fc',1,'DynamicArray']]],
-  ['end_65',['end',['../class_dynamic_array.html#abd8da073d90610c455d471747480c63c',1,'DynamicArray']]],
-  ['erase_66',['erase',['../class_dynamic_array.html#ac6c3fea20c6eaefb0064a6f0a49388ac',1,'DynamicArray']]]
+  ['dynamicarray_101',['DynamicArray',['../class_dynamic_array.html#a9ebbb7fde029b42a39531376607dbe6c',1,'DynamicArray::DynamicArray() noexcept'],['../class_dynamic_array.html#aa4e3a93125adaf0118db644534205e38',1,'DynamicArray::DynamicArray(std::initializer_list&lt; T &gt; init)'],['../class_dynamic_array.html#a989f3b698b01fc39d61e5f7327e6ada5',1,'DynamicArray::DynamicArray(const DynamicArray&lt; T &gt; &amp;origin)'],['../class_dynamic_array.html#aca80a4f116e874a1c6c380be17b1c745',1,'DynamicArray::DynamicArray(DynamicArray&lt; T &gt; &amp;&amp;origin)']]]
 ];

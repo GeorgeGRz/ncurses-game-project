@@ -6,6 +6,7 @@ var class_dynamic_array =
     [ "DynamicArray", "class_dynamic_array.html#a9ebbb7fde029b42a39531376607dbe6c", null ],
     [ "DynamicArray", "class_dynamic_array.html#aa4e3a93125adaf0118db644534205e38", null ],
     [ "DynamicArray", "class_dynamic_array.html#a989f3b698b01fc39d61e5f7327e6ada5", null ],
+    [ "DynamicArray", "class_dynamic_array.html#aca80a4f116e874a1c6c380be17b1c745", null ],
     [ "~DynamicArray", "class_dynamic_array.html#aebf8ac62282dc5c9e2800c1f13ab68ec", null ],
     [ "begin", "class_dynamic_array.html#ac9ecf92d1dc3dbb280dcf195e0eae9d0", null ],
     [ "capacity", "class_dynamic_array.html#afb3a33152c98baec590d13884707fb4e", null ],

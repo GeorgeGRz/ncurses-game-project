@@ -3,39 +3,28 @@
 \doxysubsection*{Δημόσιες Μέθοδοι}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_environment_a98117750fb7003d9def6a5d546630ce5}\label{class_environment_a98117750fb7003d9def6a5d546630ce5}} 
-{\bfseries Environment} (const \mbox{\hyperlink{class_environment}{Environment}} \&env)
-\item 
-\mbox{\Hypertarget{class_environment_a50308e9c5318325dcb45275f964bea29}\label{class_environment_a50308e9c5318325dcb45275f964bea29}} 
-{\bfseries Environment} (\mbox{\hyperlink{class_player}{Player}} \&player, int X, int Y)
-\item 
-\mbox{\Hypertarget{class_environment_ae37ea769221fe7a7632b3743d2e2b1aa}\label{class_environment_ae37ea769221fe7a7632b3743d2e2b1aa}} 
-char $\ast$$\ast$ {\bfseries get\+Grid} ()
-\item 
-\mbox{\Hypertarget{class_environment_a0745879e14db9668b68b7d7e96f30596}\label{class_environment_a0745879e14db9668b68b7d7e96f30596}} 
-void {\bfseries move\+Player} (int x, int y)
-\item 
-\mbox{\Hypertarget{class_environment_a7144234b4528140d4b0b5ae7f8ff7238}\label{class_environment_a7144234b4528140d4b0b5ae7f8ff7238}} 
-void {\bfseries add\+Item\+To\+Inv} (\mbox{\hyperlink{class_item}{Item}} \&item\+Ptr)
-\item 
-\mbox{\Hypertarget{class_environment_ae5a8d2dbaba3c8a875b9f1ede40c46a0}\label{class_environment_ae5a8d2dbaba3c8a875b9f1ede40c46a0}} 
-void {\bfseries add\+Item\+To\+Ground} (\mbox{\hyperlink{class_item}{Item}} \&item)
-\item 
-\mbox{\Hypertarget{class_environment_a62812792569a238b6e7724cfe3cd6bce}\label{class_environment_a62812792569a238b6e7724cfe3cd6bce}} 
-void {\bfseries add\+Item\+To\+Ground} (vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ items)
-\item 
-\mbox{\Hypertarget{class_environment_a4bddebddcfafc4402b6c641d2ede5b56}\label{class_environment_a4bddebddcfafc4402b6c641d2ede5b56}} 
-void {\bfseries remove\+From\+Player\+Inv} (\mbox{\hyperlink{class_item}{Item}} \&itemptr)
-\item 
-\mbox{\Hypertarget{class_environment_aeed169b562e4a175f18d2e13b33b3d47}\label{class_environment_aeed169b562e4a175f18d2e13b33b3d47}} 
-void {\bfseries remove\+Item} (\mbox{\hyperlink{class_item}{Item}} \&itemptr)
-\item 
-\mbox{\Hypertarget{class_environment_acd909b9646e0c3dcd318a948815cf4f0}\label{class_environment_acd909b9646e0c3dcd318a948815cf4f0}} 
-void {\bfseries clear\+All} ()
-\item 
-\mbox{\Hypertarget{class_environment_a089a7fe6ac67eedb5787a45af1533925}\label{class_environment_a089a7fe6ac67eedb5787a45af1533925}} 
-void {\bfseries generate\+Grid} (int number\+Of\+Entities)
-\item 
+\mbox{\hyperlink{class_environment_a8b427c4448d8b7536666837521b9e83d}{Environment}} ()
+\begin{DoxyCompactList}\small\item\em Δημιουργεί ένα αντικείμενο \mbox{\hyperlink{class_environment}{Environment}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_environment_a98117750fb7003d9def6a5d546630ce5}{Environment}} (const \mbox{\hyperlink{class_environment}{Environment}} \&env)
+\begin{DoxyCompactList}\small\item\em Δημιουργεί ένα αντικείμενο \mbox{\hyperlink{class_environment}{Environment}} με την χρήση ενός άλλου αντικειμένου \mbox{\hyperlink{class_environment}{Environment}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_environment_aa6c494796abe3b71ed251a22d941c4b3}{Environment}} (\mbox{\hyperlink{class_player}{Player}} \&player, int X, int Y, int lastid)
+\begin{DoxyCompactList}\small\item\em Δημιουργεί ένα αντικείμενο \mbox{\hyperlink{class_environment}{Environment}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_environment_a8e294735187880dd3d59be10c425b29d}{$\sim$\+Environment}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_environment_a0745879e14db9668b68b7d7e96f30596}{move\+Player}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Μετακινεί τον παίκτη στις συγκεκριμένες συντεταγμένες \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_environment_a7144234b4528140d4b0b5ae7f8ff7238}{add\+Item\+To\+Inv}} (\mbox{\hyperlink{class_item}{Item}} \&item\+Ptr)
+\begin{DoxyCompactList}\small\item\em Προσθέτει το αντικείμενο στον πίνακα με τα αντικείμενα του χρήστη. Σημαντική σημείωση \+: Το αφαιρεί απο το πάτωμα πρωτού το μετακινήσει. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_environment_ae5a8d2dbaba3c8a875b9f1ede40c46a0}{add\+Item\+To\+Ground}} (\mbox{\hyperlink{class_item}{Item}} \&item)
+\begin{DoxyCompactList}\small\item\em Προσθέτει το αντικείμενο στον πίνακα με τα αντικείμενα που βρίσκονται στο πάτωμα \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_environment_a62812792569a238b6e7724cfe3cd6bce}{add\+Item\+To\+Ground}} (vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ items)
+\begin{DoxyCompactList}\small\item\em Προσθέτει τα αντικείμενα που βρίσκονται στον vector στον πίνακα με τα αντικείμενα του πατώματος \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_environment_a4bddebddcfafc4402b6c641d2ede5b56}{remove\+From\+Player\+Inv}} (\mbox{\hyperlink{class_item}{Item}} \&itemptr)
+\begin{DoxyCompactList}\small\item\em Διαγράφει το αντικείμενο απο τον πίνακα με τα αντικείμενα του χρήστη. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_environment_a66cc5a65cddf7d9f9b29f8ce540bd5bf}{remove\+Item\+From\+Ground}} (\mbox{\hyperlink{class_item}{Item}} \&itemptr)
+\begin{DoxyCompactList}\small\item\em Διαγράφει το αντικείμενο απο τον πίνακα με τα αντικείμενα που βρίσκονται στο πάτωμα \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_environment_a089a7fe6ac67eedb5787a45af1533925}{generate\+Grid}} (int number\+Of\+Entities)
+\begin{DoxyCompactList}\small\item\em Δημιουργεί τυχαία αντικείμενα πλήθους ίσου με την παράμετρο number\+Of\+Entities. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_environment_adc4ab047d880eb2257e66b3f99c315d7}\label{class_environment_adc4ab047d880eb2257e66b3f99c315d7}} 
 vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Ground\+Items} ()
 \item 
@@ -48,8 +37,8 @@ vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Ground\+Items}
 \mbox{\Hypertarget{class_environment_a5e556dcdc632433508a21826dcff73fe}\label{class_environment_a5e556dcdc632433508a21826dcff73fe}} 
 \mbox{\hyperlink{class_item}{Item}} \& {\bfseries get\+Item\+At} (int X, int Y)
 \item 
-\mbox{\Hypertarget{class_environment_a4ed53e4da49a37c0892bcab4635d19fa}\label{class_environment_a4ed53e4da49a37c0892bcab4635d19fa}} 
-void {\bfseries handle\+Loaded\+Data} (vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ ldata, bool is\+Startup)
+\mbox{\Hypertarget{class_environment_ae37ea769221fe7a7632b3743d2e2b1aa}\label{class_environment_ae37ea769221fe7a7632b3743d2e2b1aa}} 
+char $\ast$$\ast$ {\bfseries get\+Grid} ()
 \item 
 \mbox{\Hypertarget{class_environment_add0c73a73170d8b10a3e2b9d1c7ac6bf}\label{class_environment_add0c73a73170d8b10a3e2b9d1c7ac6bf}} 
 int {\bfseries getX} ()
@@ -57,25 +46,260 @@ int {\bfseries getX} ()
 \mbox{\Hypertarget{class_environment_ac0df331b01c3e5bcbfee71456672da4c}\label{class_environment_ac0df331b01c3e5bcbfee71456672da4c}} 
 int {\bfseries getY} ()
 \item 
-\mbox{\Hypertarget{class_environment_a11937400e66ee015615f059879b7811a}\label{class_environment_a11937400e66ee015615f059879b7811a}} 
-int {\bfseries check\+Occurences} (\mbox{\hyperlink{class_item}{Item}} \&item)
-\item 
-\mbox{\Hypertarget{class_environment_ab889252af300443c998c3efb5c3b6dfe}\label{class_environment_ab889252af300443c998c3efb5c3b6dfe}} 
-\mbox{\hyperlink{class_item}{Item}} \& {\bfseries get\+Player\+Item} (int index)
-\item 
-\mbox{\Hypertarget{class_environment_a0e7e6949dbe9cbfbb37e765a66eaab91}\label{class_environment_a0e7e6949dbe9cbfbb37e765a66eaab91}} 
-vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Items\+Near\+Player} ()
-\item 
-\mbox{\Hypertarget{class_environment_a6168154d14c05fc42ce3f14c6e0532ff}\label{class_environment_a6168154d14c05fc42ce3f14c6e0532ff}} 
-\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Player\+Craft} ()
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_item}{Item}} \& \mbox{\hyperlink{class_environment_ab889252af300443c998c3efb5c3b6dfe}{get\+Player\+Item}} (int index)
+\begin{DoxyCompactList}\small\item\em Επιστρέφει αναφορά σε αντικείμενο που βρίσκεται σε συγκεκριμένο index. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ \mbox{\hyperlink{class_environment_a0e7e6949dbe9cbfbb37e765a66eaab91}{get\+Items\+Near\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Επιστρέφει vector με τα αντικείμενα που βρίσκονται 1 θέση πανω/κατω/δεξια/αριστερα και διαγώνια απο τον χρήστη \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ \mbox{\hyperlink{class_environment_a6168154d14c05fc42ce3f14c6e0532ff}{get\+Player\+Craft}} ()
+\begin{DoxyCompactList}\small\item\em Επιστρέφει δυναμικο πίνακα που περιέχει αντικείμενα που μπορεί να δημιουργήσει ο χρήστης \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_environment_a4ed53e4da49a37c0892bcab4635d19fa}{handle\+Loaded\+Data}} (vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ ldata, bool is\+Startup)
+\begin{DoxyCompactList}\small\item\em Μέθοδος που διαχειρίζεται τα δεδομένα που φορτώθηκαν απο αρχείο \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Στατικά Δημόσια Χαρακτηριστικά}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_environment_a897dd3035c7fbc07510c596ffed84cd5}\label{class_environment_a897dd3035c7fbc07510c596ffed84cd5}} 
-static int {\bfseries last\+ID} = 0
+static int \mbox{\hyperlink{class_environment_a897dd3035c7fbc07510c596ffed84cd5}{last\+ID}} = 0
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Τεκμηρίωση Constructor \& Destructor}
+\mbox{\Hypertarget{class_environment_a8b427c4448d8b7536666837521b9e83d}\label{class_environment_a8b427c4448d8b7536666837521b9e83d}} 
+\index{Environment@{Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{Environment()}{Environment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Environment\+::\+Environment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Δημιουργεί ένα αντικείμενο \mbox{\hyperlink{class_environment}{Environment}}. 
+
+\mbox{\Hypertarget{class_environment_a98117750fb7003d9def6a5d546630ce5}\label{class_environment_a98117750fb7003d9def6a5d546630ce5}} 
+\index{Environment@{Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{Environment()}{Environment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Environment\+::\+Environment (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_environment}{Environment}} \&}]{env }\end{DoxyParamCaption})}
+
+
+
+Δημιουργεί ένα αντικείμενο \mbox{\hyperlink{class_environment}{Environment}} με την χρήση ενός άλλου αντικειμένου \mbox{\hyperlink{class_environment}{Environment}}. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em env} & Το αντικείμενο που θα χρησιμοποιηθεί στον copy constructor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_environment_aa6c494796abe3b71ed251a22d941c4b3}\label{class_environment_aa6c494796abe3b71ed251a22d941c4b3}} 
+\index{Environment@{Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{Environment()}{Environment()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Environment\+::\+Environment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player,  }\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{lastid }\end{DoxyParamCaption})}
+
+
+
+Δημιουργεί ένα αντικείμενο \mbox{\hyperlink{class_environment}{Environment}}. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em player} & Αναφορά σε αντικείμενο τύπου player \\
+\hline
+{\em X} & Το μήκος του Grid \\
+\hline
+{\em Y} & Το πλάτος του Grid \\
+\hline
+{\em lastid} & Το ID τελευταιου αντικειμένου \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_environment_a8e294735187880dd3d59be10c425b29d}\label{class_environment_a8e294735187880dd3d59be10c425b29d}} 
+\index{Environment@{Environment}!````~Environment@{$\sim$Environment}}
+\index{````~Environment@{$\sim$Environment}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{$\sim$Environment()}{~Environment()}}
+{\footnotesize\ttfamily Environment\+::$\sim$\+Environment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Τεκμηρίωση Συναρτήσεων Μελών}
+\mbox{\Hypertarget{class_environment_ae5a8d2dbaba3c8a875b9f1ede40c46a0}\label{class_environment_ae5a8d2dbaba3c8a875b9f1ede40c46a0}} 
+\index{Environment@{Environment}!addItemToGround@{addItemToGround}}
+\index{addItemToGround@{addItemToGround}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{addItemToGround()}{addItemToGround()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Environment\+::add\+Item\+To\+Ground (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item}{Item}} \&}]{item }\end{DoxyParamCaption})}
+
+
+
+Προσθέτει το αντικείμενο στον πίνακα με τα αντικείμενα που βρίσκονται στο πάτωμα 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em item} & Αναφορά στο αντικείμενο \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_environment_a62812792569a238b6e7724cfe3cd6bce}\label{class_environment_a62812792569a238b6e7724cfe3cd6bce}} 
+\index{Environment@{Environment}!addItemToGround@{addItemToGround}}
+\index{addItemToGround@{addItemToGround}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{addItemToGround()}{addItemToGround()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Environment\+::add\+Item\+To\+Ground (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$}]{items }\end{DoxyParamCaption})}
+
+
+
+Προσθέτει τα αντικείμενα που βρίσκονται στον vector στον πίνακα με τα αντικείμενα του πατώματος 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em item} & Αναφορά στο αντικείμενο \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_environment_a7144234b4528140d4b0b5ae7f8ff7238}\label{class_environment_a7144234b4528140d4b0b5ae7f8ff7238}} 
+\index{Environment@{Environment}!addItemToInv@{addItemToInv}}
+\index{addItemToInv@{addItemToInv}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{addItemToInv()}{addItemToInv()}}
+{\footnotesize\ttfamily void Environment\+::add\+Item\+To\+Inv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item}{Item}} \&}]{item\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Προσθέτει το αντικείμενο στον πίνακα με τα αντικείμενα του χρήστη. Σημαντική σημείωση \+: Το αφαιρεί απο το πάτωμα πρωτού το μετακινήσει. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em item\+Ptr} & Αναφορά στο αντικείμενο \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_environment_a089a7fe6ac67eedb5787a45af1533925}\label{class_environment_a089a7fe6ac67eedb5787a45af1533925}} 
+\index{Environment@{Environment}!generateGrid@{generateGrid}}
+\index{generateGrid@{generateGrid}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{generateGrid()}{generateGrid()}}
+{\footnotesize\ttfamily void Environment\+::generate\+Grid (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Entities }\end{DoxyParamCaption})}
+
+
+
+Δημιουργεί τυχαία αντικείμενα πλήθους ίσου με την παράμετρο number\+Of\+Entities. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em number\+Of\+Entities} & Το πλήθος των τυχαίων αντικειμένων που επιθυμεί ο χρήστης να δημιουργήσει \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_environment_a0e7e6949dbe9cbfbb37e765a66eaab91}\label{class_environment_a0e7e6949dbe9cbfbb37e765a66eaab91}} 
+\index{Environment@{Environment}!getItemsNearPlayer@{getItemsNearPlayer}}
+\index{getItemsNearPlayer@{getItemsNearPlayer}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{getItemsNearPlayer()}{getItemsNearPlayer()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ Environment\+::get\+Items\+Near\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Επιστρέφει vector με τα αντικείμενα που βρίσκονται 1 θέση πανω/κατω/δεξια/αριστερα και διαγώνια απο τον χρήστη 
+
+\begin{DoxyReturn}{Επιστρέφει}
+vector$<$\+Item$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_environment_a6168154d14c05fc42ce3f14c6e0532ff}\label{class_environment_a6168154d14c05fc42ce3f14c6e0532ff}} 
+\index{Environment@{Environment}!getPlayerCraft@{getPlayerCraft}}
+\index{getPlayerCraft@{getPlayerCraft}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{getPlayerCraft()}{getPlayerCraft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ Environment\+::get\+Player\+Craft (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Επιστρέφει δυναμικο πίνακα που περιέχει αντικείμενα που μπορεί να δημιουργήσει ο χρήστης 
+
+\begin{DoxyReturn}{Επιστρέφει}
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array$<$\+Item$>$}} Δυναμικός πίνακας που έχει το περιεχόμενο 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_environment_ab889252af300443c998c3efb5c3b6dfe}\label{class_environment_ab889252af300443c998c3efb5c3b6dfe}} 
+\index{Environment@{Environment}!getPlayerItem@{getPlayerItem}}
+\index{getPlayerItem@{getPlayerItem}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{getPlayerItem()}{getPlayerItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_item}{Item}} \& Environment\+::get\+Player\+Item (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Επιστρέφει αναφορά σε αντικείμενο που βρίσκεται σε συγκεκριμένο index. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em index} & Το index του αντικειμένου στον πίνακα αντικειμένων. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Επιστρέφει}
+\mbox{\hyperlink{class_item}{Item}}\& Αναφορα στο αντικείμενο. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_environment_a4ed53e4da49a37c0892bcab4635d19fa}\label{class_environment_a4ed53e4da49a37c0892bcab4635d19fa}} 
+\index{Environment@{Environment}!handleLoadedData@{handleLoadedData}}
+\index{handleLoadedData@{handleLoadedData}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{handleLoadedData()}{handleLoadedData()}}
+{\footnotesize\ttfamily void Environment\+::handle\+Loaded\+Data (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$}]{ldata,  }\item[{bool}]{is\+Startup }\end{DoxyParamCaption})}
+
+
+
+Μέθοδος που διαχειρίζεται τα δεδομένα που φορτώθηκαν απο αρχείο 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em ldata} & vector που περιέχει τα δεδομένα που διαβάστηκαν \\
+\hline
+{\em is\+Startup} & Flag που είναι 1 εαν πρόκειται για startup αλλιώς 0. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_environment_a0745879e14db9668b68b7d7e96f30596}\label{class_environment_a0745879e14db9668b68b7d7e96f30596}} 
+\index{Environment@{Environment}!movePlayer@{movePlayer}}
+\index{movePlayer@{movePlayer}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{movePlayer()}{movePlayer()}}
+{\footnotesize\ttfamily void Environment\+::move\+Player (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Μετακινεί τον παίκτη στις συγκεκριμένες συντεταγμένες 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_environment_a4bddebddcfafc4402b6c641d2ede5b56}\label{class_environment_a4bddebddcfafc4402b6c641d2ede5b56}} 
+\index{Environment@{Environment}!removeFromPlayerInv@{removeFromPlayerInv}}
+\index{removeFromPlayerInv@{removeFromPlayerInv}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{removeFromPlayerInv()}{removeFromPlayerInv()}}
+{\footnotesize\ttfamily void Environment\+::remove\+From\+Player\+Inv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item}{Item}} \&}]{itemptr }\end{DoxyParamCaption})}
+
+
+
+Διαγράφει το αντικείμενο απο τον πίνακα με τα αντικείμενα του χρήστη. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em itemptr} & Το αντικείμενο που θέλουμε να διαγραφεί. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_environment_a66cc5a65cddf7d9f9b29f8ce540bd5bf}\label{class_environment_a66cc5a65cddf7d9f9b29f8ce540bd5bf}} 
+\index{Environment@{Environment}!removeItemFromGround@{removeItemFromGround}}
+\index{removeItemFromGround@{removeItemFromGround}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{removeItemFromGround()}{removeItemFromGround()}}
+{\footnotesize\ttfamily void Environment\+::remove\+Item\+From\+Ground (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item}{Item}} \&}]{itemptr }\end{DoxyParamCaption})}
+
+
+
+Διαγράφει το αντικείμενο απο τον πίνακα με τα αντικείμενα που βρίσκονται στο πάτωμα 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em itemptr} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Τεκμηρίωση Δεδομένων Μελών}
+\mbox{\Hypertarget{class_environment_a897dd3035c7fbc07510c596ffed84cd5}\label{class_environment_a897dd3035c7fbc07510c596ffed84cd5}} 
+\index{Environment@{Environment}!lastID@{lastID}}
+\index{lastID@{lastID}!Environment@{Environment}}
+\doxysubsubsection{\texorpdfstring{lastID}{lastID}}
+{\footnotesize\ttfamily int Environment\+::last\+ID = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Χρησιμοποιείται για την \char`\"{}διευθυνσιοδότηση\char`\"{} των αντικειμένων ώστε να μην υπάρχουν αντικείμενα με το ίδιο ID ~\newline
+ 
 
 Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία\+:\begin{DoxyCompactItemize}
 \item 

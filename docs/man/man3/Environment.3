@@ -1,4 +1,4 @@
-.TH "Environment" 3 "Παρ 05 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "Environment" 3 "Σαβ 06 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -10,38 +10,49 @@ Environment
 
 .in +1c
 .ti -1c
+.RI "\fBEnvironment\fP ()"
+.br
+.RI "Δημιουργεί ένα αντικείμενο \fBEnvironment\fP\&. "
+.ti -1c
 .RI "\fBEnvironment\fP (const \fBEnvironment\fP &env)"
 .br
+.RI "Δημιουργεί ένα αντικείμενο \fBEnvironment\fP με την χρήση ενός άλλου αντικειμένου \fBEnvironment\fP\&. "
 .ti -1c
-.RI "\fBEnvironment\fP (\fBPlayer\fP &player, int X, int Y)"
+.RI "\fBEnvironment\fP (\fBPlayer\fP &player, int X, int Y, int lastid)"
 .br
+.RI "Δημιουργεί ένα αντικείμενο \fBEnvironment\fP\&. "
 .ti -1c
-.RI "char ** \fBgetGrid\fP ()"
+.RI "\fB~Environment\fP ()"
 .br
+.RI "Destructor\&. "
 .ti -1c
 .RI "void \fBmovePlayer\fP (int x, int y)"
 .br
+.RI "Μετακινεί τον παίκτη στις συγκεκριμένες συντεταγμένες "
 .ti -1c
 .RI "void \fBaddItemToInv\fP (\fBItem\fP &itemPtr)"
 .br
+.RI "Προσθέτει το αντικείμενο στον πίνακα με τα αντικείμενα του χρήστη\&. Σημαντική σημείωση : Το αφαιρεί απο το πάτωμα πρωτού το μετακινήσει\&. "
 .ti -1c
 .RI "void \fBaddItemToGround\fP (\fBItem\fP &item)"
 .br
+.RI "Προσθέτει το αντικείμενο στον πίνακα με τα αντικείμενα που βρίσκονται στο πάτωμα "
 .ti -1c
 .RI "void \fBaddItemToGround\fP (vector< \fBItem\fP > items)"
 .br
+.RI "Προσθέτει τα αντικείμενα που βρίσκονται στον vector στον πίνακα με τα αντικείμενα του πατώματος "
 .ti -1c
 .RI "void \fBremoveFromPlayerInv\fP (\fBItem\fP &itemptr)"
 .br
+.RI "Διαγράφει το αντικείμενο απο τον πίνακα με τα αντικείμενα του χρήστη\&. "
 .ti -1c
-.RI "void \fBremoveItem\fP (\fBItem\fP &itemptr)"
+.RI "void \fBremoveItemFromGround\fP (\fBItem\fP &itemptr)"
 .br
-.ti -1c
-.RI "void \fBclearAll\fP ()"
-.br
+.RI "Διαγράφει το αντικείμενο απο τον πίνακα με τα αντικείμενα που βρίσκονται στο πάτωμα "
 .ti -1c
 .RI "void \fBgenerateGrid\fP (int numberOfEntities)"
 .br
+.RI "Δημιουργεί τυχαία αντικείμενα πλήθους ίσου με την παράμετρο numberOfEntities\&. "
 .ti -1c
 .RI "vector< \fBItem\fP > \fBgetGroundItems\fP ()"
 .br
@@ -55,7 +66,7 @@ Environment
 .RI "\fBItem\fP & \fBgetItemAt\fP (int X, int Y)"
 .br
 .ti -1c
-.RI "void \fBhandleLoadedData\fP (vector< \fBItem\fP > ldata, bool isStartup)"
+.RI "char ** \fBgetGrid\fP ()"
 .br
 .ti -1c
 .RI "int \fBgetX\fP ()"
@@ -64,17 +75,21 @@ Environment
 .RI "int \fBgetY\fP ()"
 .br
 .ti -1c
-.RI "int \fBcheckOccurences\fP (\fBItem\fP &item)"
-.br
-.ti -1c
 .RI "\fBItem\fP & \fBgetPlayerItem\fP (int index)"
 .br
+.RI "Επιστρέφει αναφορά σε αντικείμενο που βρίσκεται σε συγκεκριμένο index\&. "
 .ti -1c
 .RI "vector< \fBItem\fP > \fBgetItemsNearPlayer\fP ()"
 .br
+.RI "Επιστρέφει vector με τα αντικείμενα που βρίσκονται 1 θέση πανω/κατω/δεξια/αριστερα και διαγώνια απο τον χρήστη "
 .ti -1c
 .RI "\fBDynamicArray\fP< \fBItem\fP > \fBgetPlayerCraft\fP ()"
 .br
+.RI "Επιστρέφει δυναμικο πίνακα που περιέχει αντικείμενα που μπορεί να δημιουργήσει ο χρήστης "
+.ti -1c
+.RI "void \fBhandleLoadedData\fP (vector< \fBItem\fP > ldata, bool isStartup)"
+.br
+.RI "Μέθοδος που διαχειρίζεται τα δεδομένα που φορτώθηκαν απο αρχείο "
 .in -1c
 .SS "Στατικά Δημόσια Χαρακτηριστικά"
 
@@ -83,6 +98,182 @@ Environment
 .RI "static int \fBlastID\fP = 0"
 .br
 .in -1c
+.SH "Τεκμηρίωση Constructor & Destructor"
+.PP 
+.SS "Environment::Environment ()"
+
+.PP
+Δημιουργεί ένα αντικείμενο \fBEnvironment\fP\&. 
+.SS "Environment::Environment (const \fBEnvironment\fP & env)"
+
+.PP
+Δημιουργεί ένα αντικείμενο \fBEnvironment\fP με την χρήση ενός άλλου αντικειμένου \fBEnvironment\fP\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIenv\fP Το αντικείμενο που θα χρησιμοποιηθεί στον copy constructor 
+.RE
+.PP
+
+.SS "Environment::Environment (\fBPlayer\fP & player, int X, int Y, int lastid)"
+
+.PP
+Δημιουργεί ένα αντικείμενο \fBEnvironment\fP\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIplayer\fP Αναφορά σε αντικείμενο τύπου player 
+.br
+\fIX\fP Το μήκος του Grid 
+.br
+\fIY\fP Το πλάτος του Grid 
+.br
+\fIlastid\fP Το ID τελευταιου αντικειμένου 
+.RE
+.PP
+
+.SS "Environment::~Environment ()"
+
+.PP
+Destructor\&. 
+.SH "Τεκμηρίωση Συναρτήσεων Μελών"
+.PP 
+.SS "void Environment::addItemToGround (\fBItem\fP & item)"
+
+.PP
+Προσθέτει το αντικείμενο στον πίνακα με τα αντικείμενα που βρίσκονται στο πάτωμα 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIitem\fP Αναφορά στο αντικείμενο 
+.RE
+.PP
+
+.SS "void Environment::addItemToGround (vector< \fBItem\fP > items)"
+
+.PP
+Προσθέτει τα αντικείμενα που βρίσκονται στον vector στον πίνακα με τα αντικείμενα του πατώματος 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIitem\fP Αναφορά στο αντικείμενο 
+.RE
+.PP
+
+.SS "void Environment::addItemToInv (\fBItem\fP & itemPtr)"
+
+.PP
+Προσθέτει το αντικείμενο στον πίνακα με τα αντικείμενα του χρήστη\&. Σημαντική σημείωση : Το αφαιρεί απο το πάτωμα πρωτού το μετακινήσει\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIitemPtr\fP Αναφορά στο αντικείμενο 
+.RE
+.PP
+
+.SS "void Environment::generateGrid (int numberOfEntities)"
+
+.PP
+Δημιουργεί τυχαία αντικείμενα πλήθους ίσου με την παράμετρο numberOfEntities\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fInumberOfEntities\fP Το πλήθος των τυχαίων αντικειμένων που επιθυμεί ο χρήστης να δημιουργήσει 
+.RE
+.PP
+
+.SS "vector< \fBItem\fP > Environment::getItemsNearPlayer ()"
+
+.PP
+Επιστρέφει vector με τα αντικείμενα που βρίσκονται 1 θέση πανω/κατω/δεξια/αριστερα και διαγώνια απο τον χρήστη 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+vector<Item> 
+.RE
+.PP
+
+.SS "\fBDynamicArray\fP< \fBItem\fP > Environment::getPlayerCraft ()"
+
+.PP
+Επιστρέφει δυναμικο πίνακα που περιέχει αντικείμενα που μπορεί να δημιουργήσει ο χρήστης 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBDynamicArray<Item>\fP Δυναμικός πίνακας που έχει το περιεχόμενο 
+.RE
+.PP
+
+.SS "\fBItem\fP & Environment::getPlayerItem (int index)"
+
+.PP
+Επιστρέφει αναφορά σε αντικείμενο που βρίσκεται σε συγκεκριμένο index\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIindex\fP Το index του αντικειμένου στον πίνακα αντικειμένων\&. 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBItem\fP& Αναφορα στο αντικείμενο\&. 
+.RE
+.PP
+
+.SS "void Environment::handleLoadedData (vector< \fBItem\fP > ldata, bool isStartup)"
+
+.PP
+Μέθοδος που διαχειρίζεται τα δεδομένα που φορτώθηκαν απο αρχείο 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIldata\fP vector που περιέχει τα δεδομένα που διαβάστηκαν 
+.br
+\fIisStartup\fP Flag που είναι 1 εαν πρόκειται για startup αλλιώς 0\&. 
+.RE
+.PP
+
+.SS "void Environment::movePlayer (int x, int y)"
+
+.PP
+Μετακινεί τον παίκτη στις συγκεκριμένες συντεταγμένες 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIx\fP 
+.br
+\fIy\fP 
+.RE
+.PP
+
+.SS "void Environment::removeFromPlayerInv (\fBItem\fP & itemptr)"
+
+.PP
+Διαγράφει το αντικείμενο απο τον πίνακα με τα αντικείμενα του χρήστη\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIitemptr\fP Το αντικείμενο που θέλουμε να διαγραφεί\&. 
+.RE
+.PP
+
+.SS "void Environment::removeItemFromGround (\fBItem\fP & itemptr)"
+
+.PP
+Διαγράφει το αντικείμενο απο τον πίνακα με τα αντικείμενα που βρίσκονται στο πάτωμα 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIitemptr\fP 
+.RE
+.PP
+
+.SH "Τεκμηρίωση Δεδομένων Μελών"
+.PP 
+.SS "int Environment::lastID = 0\fC [static]\fP"
+Χρησιμοποιείται για την 'διευθυνσιοδότηση' των αντικειμένων ώστε να μην υπάρχουν αντικείμενα με το ίδιο ID 
+.br
+ 
 
 .SH "Συγραφέας"
 .PP 

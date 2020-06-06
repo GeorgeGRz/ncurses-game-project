@@ -22,6 +22,8 @@ void \mbox{\hyperlink{class_dynamic_array_a0e446f09df1a745343ee85cc6e7cbb63}{swa
 \begin{DoxyCompactList}\small\item\em Υπερφόρτωση του τελεστή =. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_dynamic_array_a989f3b698b01fc39d61e5f7327e6ada5}{Dynamic\+Array}} (const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&origin)
 \begin{DoxyCompactList}\small\item\em Δημιουργία ενός νέου αντικειμένου \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} χρησιμοποιόντας copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dynamic_array_aca80a4f116e874a1c6c380be17b1c745}{Dynamic\+Array}} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&\&origin)
+\begin{DoxyCompactList}\small\item\em Δημιουργία ενός νέου αντικειμένου \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} χρησιμοποιόντας copy constructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_dynamic_array_a0bcf07ad6f67ce592844a68d1e02f3a2}{clear}} () noexcept
 \begin{DoxyCompactList}\small\item\em Χρησιμοποιείται για να αδειάσει ο δυναμικός πίνακας.\+Δεν είναι ο destructor. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_af2914321feedc6c0fe444cb0a8c92e7f}{reference}} \mbox{\hyperlink{class_dynamic_array_adbe9d3cfddc6f8a1bb54310696cd62fc}{emplace\+\_\+back}} (Args \&\&... args)
@@ -81,7 +83,7 @@ void {\bfseries swap} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$
 \mbox{\Hypertarget{class_dynamic_array_a9ebbb7fde029b42a39531376607dbe6c}\label{class_dynamic_array_a9ebbb7fde029b42a39531376607dbe6c}} 
 \index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
 \index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
-\doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily Dynamic\+Array\+::\+Dynamic\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
 
@@ -91,7 +93,7 @@ void {\bfseries swap} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$
 \mbox{\Hypertarget{class_dynamic_array_aa4e3a93125adaf0118db644534205e38}\label{class_dynamic_array_aa4e3a93125adaf0118db644534205e38}} 
 \index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
 \index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
-\doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily Dynamic\+Array\+::\+Dynamic\+Array (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ T $>$}]{init }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -106,7 +108,7 @@ void {\bfseries swap} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$
 \mbox{\Hypertarget{class_dynamic_array_a989f3b698b01fc39d61e5f7327e6ada5}\label{class_dynamic_array_a989f3b698b01fc39d61e5f7327e6ada5}} 
 \index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
 \index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
-\doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily Dynamic\+Array\+::\+Dynamic\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -115,7 +117,22 @@ void {\bfseries swap} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$
 
 
 \begin{DoxyParams}{Παράμετροι}
-{\em origin} & Το αντικείμενο απο το οποίο θα αντιγραφούν τα δεδομένα \\
+{\em origin} & Reference στο αντικείμενο απο το οποίο θα αντιγραφούν τα δεδομένα \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dynamic_array_aca80a4f116e874a1c6c380be17b1c745}\label{class_dynamic_array_aca80a4f116e874a1c6c380be17b1c745}} 
+\index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
+\index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
+\doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Dynamic\+Array\+::\+Dynamic\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&\&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Δημιουργία ενός νέου αντικειμένου \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} χρησιμοποιόντας copy constructor. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em origin} & Rvalue reference στο αντικείμενο απο το οποίο θα αντιγραφούν τα δεδομένα \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_dynamic_array_aebf8ac62282dc5c9e2800c1f13ab68ec}\label{class_dynamic_array_aebf8ac62282dc5c9e2800c1f13ab68ec}} 

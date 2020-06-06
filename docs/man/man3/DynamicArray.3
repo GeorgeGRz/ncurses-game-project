@@ -1,4 +1,4 @@
-.TH "DynamicArray" 3 "Παρ 05 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "DynamicArray" 3 "Σαβ 06 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -40,6 +40,10 @@ DynamicArray
 .RI "Υπερφόρτωση του τελεστή =\&. "
 .ti -1c
 .RI "\fBDynamicArray\fP (const \fBDynamicArray\fP< T > &origin)"
+.br
+.RI "Δημιουργία ενός νέου αντικειμένου \fBDynamicArray\fP χρησιμοποιόντας copy constructor\&. "
+.ti -1c
+.RI "\fBDynamicArray\fP (\fBDynamicArray\fP< T > &&origin)"
 .br
 .RI "Δημιουργία ενός νέου αντικειμένου \fBDynamicArray\fP χρησιμοποιόντας copy constructor\&. "
 .ti -1c
@@ -134,7 +138,18 @@ DynamicArray
 .PP
 \fBΠαράμετροι\fP
 .RS 4
-\fIorigin\fP Το αντικείμενο απο το οποίο θα αντιγραφούν τα δεδομένα 
+\fIorigin\fP Reference στο αντικείμενο απο το οποίο θα αντιγραφούν τα δεδομένα 
+.RE
+.PP
+
+.SS "DynamicArray::DynamicArray (\fBDynamicArray\fP< T > && origin)\fC [inline]\fP"
+
+.PP
+Δημιουργία ενός νέου αντικειμένου \fBDynamicArray\fP χρησιμοποιόντας copy constructor\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIorigin\fP Rvalue reference στο αντικείμενο απο το οποίο θα αντιγραφούν τα δεδομένα 
 .RE
 .PP
 

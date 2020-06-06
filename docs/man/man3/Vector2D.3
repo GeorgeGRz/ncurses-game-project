@@ -1,90 +1,97 @@
-.TH "Vector2D< T >" 3 "Παρ 05 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "Vector2D< T >" 3 "Σαβ 06 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Vector2D< T >
+Vector2D< T > \- Κλάση για διάνυσμα δυσδιάστατου χώρου που είχα σχεδιάσει στο παρελθόν στα πλαίσια εξάσκησης για τα templates\&.  
+
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fC#include <Vector2D\&.h>\fP
 .SS "Δημόσιες Μέθοδοι"
 
 .in +1c
 .ti -1c
+.RI "\fBVector2D\fP ()"
+.br
+.RI "Default Constructor αρχικοποιεί το Χ και Y σε 0,0\&. "
+.ti -1c
 .RI "\fBVector2D\fP (T x, T y)"
 .br
+.RI "Constructor που αρχικοποιεί τα Χ και Y με συγκεκριμένες τιμές "
 .ti -1c
 .RI "\fBVector2D\fP (const \fBVector2D\fP &v)"
 .br
+.RI "Copy Constructor\&. "
 .ti -1c
 .RI "\fBVector2D\fP & \fBoperator=\fP (const \fBVector2D\fP &v)"
 .br
+.RI "Υπερφόρτωση τελεστή =\&. "
 .ti -1c
 .RI "\fBVector2D\fP \fBoperator+\fP (\fBVector2D\fP &v)"
 .br
+.RI "Υπερφόρτωση τελεστή + ώστε να προσθέτει τα χ και τα y των δύο αντικειμένων και επιστρέφει ενα καινούργιο που περιέχει αυτές τις τιμές "
 .ti -1c
 .RI "\fBVector2D\fP \fBoperator\-\fP (\fBVector2D\fP &v)"
 .br
+.RI "Υπερφόρτωση τελεστή - αντιστοιχη του + ωστε να αφαιρεί "
 .ti -1c
 .RI "\fBVector2D\fP & \fBoperator+=\fP (\fBVector2D\fP &v)"
 .br
+.RI "Υπερφόρτωση τελεστή +=\&. "
 .ti -1c
 .RI "\fBVector2D\fP & \fBoperator\-=\fP (\fBVector2D\fP &v)"
 .br
+.RI "Υπερφόρτωση τελεστή -=\&. "
 .ti -1c
 .RI "\fBVector2D\fP \fBoperator+\fP (double s)"
 .br
+.RI "Υπερφόρτωση τελεστη + με δεξί μέλος εναν αριθμό double\&. "
 .ti -1c
 .RI "\fBVector2D\fP \fBoperator\-\fP (double s)"
 .br
+.RI "Υπερφόρτωση τελεστη - με δεξί μέλος εναν αριθμό double\&. "
 .ti -1c
 .RI "\fBVector2D\fP \fBoperator*\fP (double s)"
 .br
+.RI "Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double\&. "
 .ti -1c
 .RI "\fBVector2D\fP \fBoperator/\fP (double s)"
 .br
+.RI "Υπερφόρτωση τελεστη / με δεξί μέλος εναν αριθμό double\&. "
 .ti -1c
 .RI "\fBVector2D\fP & \fBoperator+=\fP (double s)"
 .br
+.RI "Υπερφόρτωση τελεστη += με δεξί μέλος εναν αριθμό double\&. "
 .ti -1c
 .RI "\fBVector2D\fP & \fBoperator\-=\fP (double s)"
 .br
+.RI "Υπερφόρτωση τελεστη -= με δεξί μέλος εναν αριθμό double\&. "
 .ti -1c
 .RI "\fBVector2D\fP & \fBoperator*=\fP (double s)"
 .br
+.RI "Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double\&. "
 .ti -1c
 .RI "\fBVector2D\fP & \fBoperator/=\fP (double s)"
 .br
+.RI "Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double\&. "
 .ti -1c
 .RI "void \fBset\fP (T x, T y)"
 .br
+.RI "Setter και των δυο παραμετρων "
 .ti -1c
 .RI "void \fBrotate\fP (double deg)"
 .br
+.RI "Χρησιμοποιείται για περιστροφή του διανύσματος κατα συγκεκριμένες μοίρες Ο υπολογισμός των Χ και Y γίνεται με βάση γνωστό θεώρημα\&. "
 .ti -1c
 .RI "\fBVector2D\fP & \fBnormalize\fP ()"
 .br
-.ti -1c
-.RI "float \fBdist\fP (\fBVector2D\fP v) const"
-.br
+.RI "Μεθοδος κανονικοποίησης διανύσματος Για να κανονικοποιηθεί ενα διάνυσμα διαρείται το διάνυσμα με το μέτρο του\&.Έτσι προκύπτει ένα μοναδιαίο διάνυσμα\&.Δηλαδή δημιουργείται ενα διάνυσμα με μήκος ίσο με 1\&. "
 .ti -1c
 .RI "float \fBlength\fP () const"
 .br
-.ti -1c
-.RI "void \fBtruncate\fP (double length)"
-.br
-.ti -1c
-.RI "\fBVector2D\fP \fBortho\fP () const"
-.br
-.in -1c
-.SS "Στατικές Δημόσιες Μέθοδοι"
-
-.in +1c
-.ti -1c
-.RI "static float \fBdot\fP (\fBVector2D\fP v1, \fBVector2D\fP v2)"
-.br
-.ti -1c
-.RI "static float \fBcross\fP (\fBVector2D\fP v1, \fBVector2D\fP v2)"
-.br
+.RI "Επιστρέφει το μέτρο του διανύσματος "
 .in -1c
 .SS "Δημόσια Χαρακτηριστικά"
 
@@ -96,6 +103,301 @@ Vector2D< T >
 .RI "T \fBy\fP"
 .br
 .in -1c
+.SH "Λεπτομερής Περιγραφή"
+.PP 
+
+.SS "template<class T>
+.br
+class Vector2D< T >"
+Κλάση για διάνυσμα δυσδιάστατου χώρου που είχα σχεδιάσει στο παρελθόν στα πλαίσια εξάσκησης για τα templates\&. 
+
+
+.SH "Τεκμηρίωση Constructor & Destructor"
+.PP 
+.SS "template<class T > \fBVector2D\fP< T >::\fBVector2D\fP ()\fC [inline]\fP"
+
+.PP
+Default Constructor αρχικοποιεί το Χ και Y σε 0,0\&. 
+.SS "template<class T > \fBVector2D\fP< T >::\fBVector2D\fP (T x, T y)\fC [inline]\fP"
+
+.PP
+Constructor που αρχικοποιεί τα Χ και Y με συγκεκριμένες τιμές 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIx\fP 
+.br
+\fIy\fP 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP< T >::\fBVector2D\fP (const \fBVector2D\fP< T > & v)\fC [inline]\fP"
+
+.PP
+Copy Constructor\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIv\fP 
+.RE
+.PP
+
+.SH "Τεκμηρίωση Συναρτήσεων Μελών"
+.PP 
+.SS "template<class T > float \fBVector2D\fP< T >::length () const\fC [inline]\fP"
+
+.PP
+Επιστρέφει το μέτρο του διανύσματος 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+float Το μέτρο του διανύσματος 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP& \fBVector2D\fP< T >::normalize ()\fC [inline]\fP"
+
+.PP
+Μεθοδος κανονικοποίησης διανύσματος Για να κανονικοποιηθεί ενα διάνυσμα διαρείται το διάνυσμα με το μέτρο του\&.Έτσι προκύπτει ένα μοναδιαίο διάνυσμα\&.Δηλαδή δημιουργείται ενα διάνυσμα με μήκος ίσο με 1\&. 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP& Το διάνυσμα κανονικοποιημένο 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP \fBVector2D\fP< T >::operator* (double s)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIs\fP Ο αριθμος που θα πολλαπλασιαστεί με τα Χ και Y 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP Αντικείμενο με τις νέες τιμές 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP& \fBVector2D\fP< T >::operator*= (double s)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIs\fP Ο αριθμος που θα πολλαπλασιαστεί με τα Χ και Y 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP Αντικείμενο με τις νέες τιμές 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP \fBVector2D\fP< T >::operator+ (double s)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστη + με δεξί μέλος εναν αριθμό double\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIs\fP Ο αριθμος που θα προστεθεί στα Χ και Y 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP Αντικείμενο με τις νέες τιμές 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP \fBVector2D\fP< T >::operator+ (\fBVector2D\fP< T > & v)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστή + ώστε να προσθέτει τα χ και τα y των δύο αντικειμένων και επιστρέφει ενα καινούργιο που περιέχει αυτές τις τιμές 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIv\fP 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP& \fBVector2D\fP< T >::operator+= (double s)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστη += με δεξί μέλος εναν αριθμό double\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIs\fP Ο αριθμος που θα προστεθεί στα Χ και Y 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP& 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP& \fBVector2D\fP< T >::operator+= (\fBVector2D\fP< T > & v)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστή +=\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIv\fP 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP& 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP \fBVector2D\fP< T >::operator\- (double s)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστη - με δεξί μέλος εναν αριθμό double\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIs\fP Ο αριθμος που θα αφαιρεθεί απο τα Χ και Y 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP Αντικείμενο με τις νέες τιμές 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP \fBVector2D\fP< T >::operator\- (\fBVector2D\fP< T > & v)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστή - αντιστοιχη του + ωστε να αφαιρεί 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIv\fP 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP& \fBVector2D\fP< T >::operator\-= (double s)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστη -= με δεξί μέλος εναν αριθμό double\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIs\fP Ο αριθμος που θα αφαιρεθεί απο τα Χ και Y 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP& 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP& \fBVector2D\fP< T >::operator\-= (\fBVector2D\fP< T > & v)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστή -=\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIv\fP 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP& 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP \fBVector2D\fP< T >::operator/ (double s)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστη / με δεξί μέλος εναν αριθμό double\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIs\fP Ο αριθμος που θα διαιρεθεί απο τα Χ και Y 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP Αντικείμενο με τις νέες τιμές 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP& \fBVector2D\fP< T >::operator/= (double s)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIs\fP Ο αριθμος που θα διαιρεθεί απο τα Χ και Y 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP Αντικείμενο με τις νέες τιμές 
+.RE
+.PP
+
+.SS "template<class T > \fBVector2D\fP& \fBVector2D\fP< T >::operator= (const \fBVector2D\fP< T > & v)\fC [inline]\fP"
+
+.PP
+Υπερφόρτωση τελεστή =\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIv\fP Το διάνυσμα απο το οποίο θα αντιγραφούν τα δεδομένα 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBVector2D\fP& 
+.RE
+.PP
+
+.SS "template<class T > void \fBVector2D\fP< T >::rotate (double deg)\fC [inline]\fP"
+
+.PP
+Χρησιμοποιείται για περιστροφή του διανύσματος κατα συγκεκριμένες μοίρες Ο υπολογισμός των Χ και Y γίνεται με βάση γνωστό θεώρημα\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIdeg\fP Μοίρες 
+.RE
+.PP
+
+.SS "template<class T > void \fBVector2D\fP< T >::set (T x, T y)\fC [inline]\fP"
+
+.PP
+Setter και των δυο παραμετρων 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIx\fP 
+.br
+\fIy\fP 
+.RE
+.PP
+
 
 .SH "Συγραφέας"
 .PP 

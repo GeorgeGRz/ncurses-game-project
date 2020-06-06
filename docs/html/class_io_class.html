@@ -90,40 +90,374 @@ $(document).ready(function(){initNavTree('class_io_class.html',''); initResizabl
 <div class="title">Τεκμηρίωση Κλάσης IoClass</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Κλάση διαχείρησης εισοδου-εξόδου καθώς και διαχείρησης οθόνης.  
+ <a href="class_io_class.html#details">Περισσότερα...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_io_class_8h_source.html">IoClass.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Δημόσιες Μέθοδοι</h2></td></tr>
-<tr class="memitem:a18ee40f4d6fd048057a4e7609b7a3f7e"><td class="memItemLeft" align="right" valign="top"><a id="a18ee40f4d6fd048057a4e7609b7a3f7e"></a>
-vector&lt; <a class="el" href="class_item.html">Item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>loadFromFile</b> (string fileName)</td></tr>
-<tr class="separator:a18ee40f4d6fd048057a4e7609b7a3f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b09050af641448406ceb2eb762825e7"><td class="memItemLeft" align="right" valign="top"><a id="a2b09050af641448406ceb2eb762825e7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>saveToFile</b> (string fileName, <a class="el" href="class_environment.html">Environment</a> &amp;env)</td></tr>
+<tr class="memitem:ac148370091cc66e4a35ae36e337f3fda"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_item.html">Item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#ac148370091cc66e4a35ae36e337f3fda">loadFromFile</a> (string fileName, int &amp;id)</td></tr>
+<tr class="memdesc:ac148370091cc66e4a35ae36e337f3fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Διαβάζει το αρχείο και στη συνέχεια φορτώνει τα αντικείμενα σε vector.  <a href="class_io_class.html#ac148370091cc66e4a35ae36e337f3fda">Περισσότερα...</a><br /></td></tr>
+<tr class="separator:ac148370091cc66e4a35ae36e337f3fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b09050af641448406ceb2eb762825e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#a2b09050af641448406ceb2eb762825e7">saveToFile</a> (string fileName, <a class="el" href="class_environment.html">Environment</a> &amp;env)</td></tr>
+<tr class="memdesc:a2b09050af641448406ceb2eb762825e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Αντίστοιχα αποθηκεύει τα αντικείμενα που υπάρχουν στο env <br  />
+ Γενικά η γραμμογράφηση του αρχείου είναι ώς εξής: <br  />
+ <b>&lt;itemId&gt;;&lt;itemName&gt;;&lt;itemTypeId&gt;;&lt;itemOnFloor&gt;;&lt;itemXpos&gt;;&lt;itemYpos&gt;</b>  <a href="class_io_class.html#a2b09050af641448406ceb2eb762825e7">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a2b09050af641448406ceb2eb762825e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ab3d9376d924bf839839c43ffec8960"><td class="memItemLeft" align="right" valign="top"><a id="a2ab3d9376d924bf839839c43ffec8960"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>readString</b> ()</td></tr>
+<tr class="memitem:a2ab3d9376d924bf839839c43ffec8960"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#a2ab3d9376d924bf839839c43ffec8960">readString</a> ()</td></tr>
+<tr class="memdesc:a2ab3d9376d924bf839839c43ffec8960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Διαβάζει string απο το πληκτρολόγιο  <a href="class_io_class.html#a2ab3d9376d924bf839839c43ffec8960">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a2ab3d9376d924bf839839c43ffec8960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a069576134fab6e543348937e75d46351"><td class="memItemLeft" align="right" valign="top"><a id="a069576134fab6e543348937e75d46351"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printToCoordsAnimated</b> (int x, int y, string stringToPrint, std::initializer_list&lt; string &gt; a_args, int speed)</td></tr>
+<tr class="memitem:a069576134fab6e543348937e75d46351"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#a069576134fab6e543348937e75d46351">printToCoordsAnimated</a> (int x, int y, string stringToPrint, std::initializer_list&lt; string &gt; a_args, int speed)</td></tr>
+<tr class="memdesc:a069576134fab6e543348937e75d46351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα  <a href="class_io_class.html#a069576134fab6e543348937e75d46351">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a069576134fab6e543348937e75d46351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84c2d259964eb42dbba00a60ddcb67ad"><td class="memItemLeft" align="right" valign="top"><a id="a84c2d259964eb42dbba00a60ddcb67ad"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>showMenu</b> (std::vector&lt; string &gt; selections)</td></tr>
+<tr class="memitem:a84c2d259964eb42dbba00a60ddcb67ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#a84c2d259964eb42dbba00a60ddcb67ad">showMenu</a> (std::vector&lt; string &gt; selections)</td></tr>
+<tr class="memdesc:a84c2d259964eb42dbba00a60ddcb67ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Δέχεται vector με string και εμφανίζει τα περιεχόμενα με μορφή μενού  <a href="class_io_class.html#a84c2d259964eb42dbba00a60ddcb67ad">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a84c2d259964eb42dbba00a60ddcb67ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2cec9e3f5a339f0a52657899dcd40b7"><td class="memItemLeft" align="right" valign="top"><a id="ab2cec9e3f5a339f0a52657899dcd40b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printEnvironment</b> (<a class="el" href="class_environment.html">Environment</a> &amp;env)</td></tr>
+<tr class="memitem:ab2cec9e3f5a339f0a52657899dcd40b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#ab2cec9e3f5a339f0a52657899dcd40b7">printEnvironment</a> (<a class="el" href="class_environment.html">Environment</a> &amp;env)</td></tr>
+<tr class="memdesc:ab2cec9e3f5a339f0a52657899dcd40b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Εμφανίζει το περιβάλλον(αντικείμενα, παίκτη κλπ)  <a href="class_io_class.html#ab2cec9e3f5a339f0a52657899dcd40b7">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:ab2cec9e3f5a339f0a52657899dcd40b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24a6d28531a99d823cce209ff6076455"><td class="memItemLeft" align="right" valign="top"><a id="a24a6d28531a99d823cce209ff6076455"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printPlayerStats</b> (<a class="el" href="class_player.html">Player</a> &amp;player)</td></tr>
+<tr class="memitem:a24a6d28531a99d823cce209ff6076455"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#a24a6d28531a99d823cce209ff6076455">printPlayerStats</a> (<a class="el" href="class_player.html">Player</a> &amp;player)</td></tr>
+<tr class="memdesc:a24a6d28531a99d823cce209ff6076455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Εμφάνιση στατιστικών του παίκτη(Επίπεδο πείνας)  <a href="class_io_class.html#a24a6d28531a99d823cce209ff6076455">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a24a6d28531a99d823cce209ff6076455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72b63cce8040e3f38cf88d78de54669f"><td class="memItemLeft" align="right" valign="top"><a id="a72b63cce8040e3f38cf88d78de54669f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxX</b> ()</td></tr>
+<tr class="memitem:ad6f7f479bad8d762ec87378d14f58bde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#ad6f7f479bad8d762ec87378d14f58bde">~IoClass</a> ()</td></tr>
+<tr class="memdesc:ad6f7f479bad8d762ec87378d14f58bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the Io Class object.  <a href="class_io_class.html#ad6f7f479bad8d762ec87378d14f58bde">Περισσότερα...</a><br /></td></tr>
+<tr class="separator:ad6f7f479bad8d762ec87378d14f58bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b63cce8040e3f38cf88d78de54669f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#a72b63cce8040e3f38cf88d78de54669f">getMaxX</a> ()</td></tr>
+<tr class="memdesc:a72b63cce8040e3f38cf88d78de54669f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter για το μέγιστο Χ της οθονης  <a href="class_io_class.html#a72b63cce8040e3f38cf88d78de54669f">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a72b63cce8040e3f38cf88d78de54669f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f8dc0ea79dfff69865b8e622a2725d0"><td class="memItemLeft" align="right" valign="top"><a id="a9f8dc0ea79dfff69865b8e622a2725d0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxY</b> ()</td></tr>
+<tr class="memitem:a9f8dc0ea79dfff69865b8e622a2725d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#a9f8dc0ea79dfff69865b8e622a2725d0">getMaxY</a> ()</td></tr>
+<tr class="memdesc:a9f8dc0ea79dfff69865b8e622a2725d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter για το μέγιστο Υ της οθονης  <a href="class_io_class.html#a9f8dc0ea79dfff69865b8e622a2725d0">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a9f8dc0ea79dfff69865b8e622a2725d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cada06c1633e0731bd455b1ecda5a61"><td class="memItemLeft" align="right" valign="top"><a id="a8cada06c1633e0731bd455b1ecda5a61"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getInput</b> ()</td></tr>
+<tr class="memitem:a8cada06c1633e0731bd455b1ecda5a61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#a8cada06c1633e0731bd455b1ecda5a61">getInput</a> ()</td></tr>
+<tr class="memdesc:a8cada06c1633e0731bd455b1ecda5a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Διαβάζει ένανα χαρακτήρα απο το πληκτρολόγιο και τον επιστεφει  <a href="class_io_class.html#a8cada06c1633e0731bd455b1ecda5a61">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a8cada06c1633e0731bd455b1ecda5a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Λεπτομερής Περιγραφή</h2>
+<div class="textblock"><p>Κλάση διαχείρησης εισοδου-εξόδου καθώς και διαχείρησης οθόνης. </p>
+</div><h2 class="groupheader">Τεκμηρίωση Constructor &amp; Destructor</h2>
+<a id="ad6f7f479bad8d762ec87378d14f58bde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6f7f479bad8d762ec87378d14f58bde">&#9670;&nbsp;</a></span>~IoClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IoClass::~IoClass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the Io Class object. </p>
+<p>Destroy the Io Class:: Io Class object.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Τεκμηρίωση Συναρτήσεων Μελών</h2>
+<a id="a8cada06c1633e0731bd455b1ecda5a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cada06c1633e0731bd455b1ecda5a61">&#9670;&nbsp;</a></span>getInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IoClass::getInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Διαβάζει ένανα χαρακτήρα απο το πληκτρολόγιο και τον επιστεφει </p>
+<dl class="section return"><dt>Επιστρέφει</dt><dd>int Χαρακτήρας που διαβάστηκε </dd></dl>
+
+</div>
+</div>
+<a id="a72b63cce8040e3f38cf88d78de54669f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72b63cce8040e3f38cf88d78de54669f">&#9670;&nbsp;</a></span>getMaxX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IoClass::getMaxX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter για το μέγιστο Χ της οθονης </p>
+<dl class="section return"><dt>Επιστρέφει</dt><dd>int μέγιστο Χ της οθονης </dd></dl>
+
+</div>
+</div>
+<a id="a9f8dc0ea79dfff69865b8e622a2725d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8dc0ea79dfff69865b8e622a2725d0">&#9670;&nbsp;</a></span>getMaxY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IoClass::getMaxY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter για το μέγιστο Υ της οθονης </p>
+<dl class="section return"><dt>Επιστρέφει</dt><dd>int μέγιστο Υ της οθονης </dd></dl>
+
+</div>
+</div>
+<a id="ac148370091cc66e4a35ae36e337f3fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac148370091cc66e4a35ae36e337f3fda">&#9670;&nbsp;</a></span>loadFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="class_item.html">Item</a> &gt; IoClass::loadFromFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Διαβάζει το αρχείο και στη συνέχεια φορτώνει τα αντικείμενα σε vector. </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>Το ονομα του αρχείου οπου θα προσπελάσει </td></tr>
+    <tr><td class="paramname">id</td><td>Αναφορά σε ακέραιο αριθμό,χρησιμοποιείται για να υπολογίσει το τελευταίο id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Επιστρέφει</dt><dd>vector&lt;Item&gt; Container οπου περιέχει τα αντικείμενα που διαβάστηκαν </dd></dl>
+
+</div>
+</div>
+<a id="ab2cec9e3f5a339f0a52657899dcd40b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2cec9e3f5a339f0a52657899dcd40b7">&#9670;&nbsp;</a></span>printEnvironment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IoClass::printEnvironment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_environment.html">Environment</a> &amp;&#160;</td>
+          <td class="paramname"><em>env</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Εμφανίζει το περιβάλλον(αντικείμενα, παίκτη κλπ) </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24a6d28531a99d823cce209ff6076455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a6d28531a99d823cce209ff6076455">&#9670;&nbsp;</a></span>printPlayerStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IoClass::printPlayerStats </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a> &amp;&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Εμφάνιση στατιστικών του παίκτη(Επίπεδο πείνας) </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>Αναφορά σε αντικείμενο <a class="el" href="class_player.html">Player</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a069576134fab6e543348937e75d46351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a069576134fab6e543348937e75d46351">&#9670;&nbsp;</a></span>printToCoordsAnimated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IoClass::printToCoordsAnimated </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>stringToPrint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::initializer_list&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>a_args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>speed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Η συντεταγμένη Χ </td></tr>
+    <tr><td class="paramname">y</td><td>Η συντενταγμένη Y </td></tr>
+    <tr><td class="paramname">stringToPrint</td><td>Το αλφαριθμητικό που θα εμφανιστεί </td></tr>
+    <tr><td class="paramname">a_args</td><td>Χρησιμοποιείται για να εμφανίζονται δυναμικά περιεχόμενα μεταβλητών(πχ οπως η printf εχει το s και το d) Οι μονες που υποστηρίζονται είναι οι s και d. </td></tr>
+    <tr><td class="paramname">speed</td><td>Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2ab3d9376d924bf839839c43ffec8960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ab3d9376d924bf839839c43ffec8960">&#9670;&nbsp;</a></span>readString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IoClass::readString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Διαβάζει string απο το πληκτρολόγιο </p>
+<dl class="section return"><dt>Επιστρέφει</dt><dd>string Το string που διαβάστηκε </dd></dl>
+
+</div>
+</div>
+<a id="a2b09050af641448406ceb2eb762825e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b09050af641448406ceb2eb762825e7">&#9670;&nbsp;</a></span>saveToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IoClass::saveToFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_environment.html">Environment</a> &amp;&#160;</td>
+          <td class="paramname"><em>env</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Αντίστοιχα αποθηκεύει τα αντικείμενα που υπάρχουν στο env <br  />
+ Γενικά η γραμμογράφηση του αρχείου είναι ώς εξής: <br  />
+ <b>&lt;itemId&gt;;&lt;itemName&gt;;&lt;itemTypeId&gt;;&lt;itemOnFloor&gt;;&lt;itemXpos&gt;;&lt;itemYpos&gt;</b> </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">itemId </th><th class="markdownTableHeadNone">itemName </th><th class="markdownTableHeadNone">itemTypeId </th><th class="markdownTableHeadNone">itemOnFloor </th><th class="markdownTableHeadNone">item x position </th><th class="markdownTableHeadNone">item y position  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Το ID του αντικειμένου </td><td class="markdownTableBodyNone">Το όνομα του αντικειμένου </td><td class="markdownTableBodyNone">Το ID του τύπου του αντικειμένου </td><td class="markdownTableBodyNone">Flag για το εαν βρισκεται στο πατωμα </td><td class="markdownTableBodyNone">Θέση Χ </td><td class="markdownTableBodyNone">Θέση Υ  </td></tr>
+</table>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>Το ονομα του αρχείου οπου θα προσπελάσει </td></tr>
+    <tr><td class="paramname">env</td><td>Αναφορά σε μεταβλητή τύπου <a class="el" href="class_environment.html">Environment</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a84c2d259964eb42dbba00a60ddcb67ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c2d259964eb42dbba00a60ddcb67ad">&#9670;&nbsp;</a></span>showMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IoClass::showMenu </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>selections</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Δέχεται vector με string και εμφανίζει τα περιεχόμενα με μορφή μενού </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">selections</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Επιστρέφει</dt><dd>int Το index της επιλογής που έγινε, 0 για την 1η επιλογή, 1 για την 2η επιλογή, 2 για την 3η κλπ.. </dd></dl>
+
+</div>
+</div>
 <hr/>Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:<ul>
 <li>IO/<a class="el" href="_io_class_8h_source.html">IoClass.h</a></li>
 <li>IO/IoClass.cpp</li>

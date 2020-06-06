@@ -1,38 +1,238 @@
 \hypertarget{class_io_class}{}\doxysection{Τεκμηρίωση Κλάσης Io\+Class}
 \label{class_io_class}\index{IoClass@{IoClass}}
+
+
+Κλάση διαχείρησης εισοδου-\/εξόδου καθώς και διαχείρησης οθόνης.  
+
+
+
+
+{\ttfamily \#include $<$Io\+Class.\+h$>$}
+
 \doxysubsection*{Δημόσιες Μέθοδοι}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_io_class_a18ee40f4d6fd048057a4e7609b7a3f7e}\label{class_io_class_a18ee40f4d6fd048057a4e7609b7a3f7e}} 
-vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries load\+From\+File} (string file\+Name)
-\item 
-\mbox{\Hypertarget{class_io_class_a2b09050af641448406ceb2eb762825e7}\label{class_io_class_a2b09050af641448406ceb2eb762825e7}} 
-void {\bfseries save\+To\+File} (string file\+Name, \mbox{\hyperlink{class_environment}{Environment}} \&env)
-\item 
-\mbox{\Hypertarget{class_io_class_a2ab3d9376d924bf839839c43ffec8960}\label{class_io_class_a2ab3d9376d924bf839839c43ffec8960}} 
-string {\bfseries read\+String} ()
-\item 
-\mbox{\Hypertarget{class_io_class_a069576134fab6e543348937e75d46351}\label{class_io_class_a069576134fab6e543348937e75d46351}} 
-void {\bfseries print\+To\+Coords\+Animated} (int x, int y, string string\+To\+Print, std\+::initializer\+\_\+list$<$ string $>$ a\+\_\+args, int speed)
-\item 
-\mbox{\Hypertarget{class_io_class_a84c2d259964eb42dbba00a60ddcb67ad}\label{class_io_class_a84c2d259964eb42dbba00a60ddcb67ad}} 
-int {\bfseries show\+Menu} (std\+::vector$<$ string $>$ selections)
-\item 
-\mbox{\Hypertarget{class_io_class_ab2cec9e3f5a339f0a52657899dcd40b7}\label{class_io_class_ab2cec9e3f5a339f0a52657899dcd40b7}} 
-void {\bfseries print\+Environment} (\mbox{\hyperlink{class_environment}{Environment}} \&env)
-\item 
-\mbox{\Hypertarget{class_io_class_a24a6d28531a99d823cce209ff6076455}\label{class_io_class_a24a6d28531a99d823cce209ff6076455}} 
-void {\bfseries print\+Player\+Stats} (\mbox{\hyperlink{class_player}{Player}} \&player)
-\item 
-\mbox{\Hypertarget{class_io_class_a72b63cce8040e3f38cf88d78de54669f}\label{class_io_class_a72b63cce8040e3f38cf88d78de54669f}} 
-int {\bfseries get\+MaxX} ()
-\item 
-\mbox{\Hypertarget{class_io_class_a9f8dc0ea79dfff69865b8e622a2725d0}\label{class_io_class_a9f8dc0ea79dfff69865b8e622a2725d0}} 
-int {\bfseries get\+MaxY} ()
-\item 
+vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ \mbox{\hyperlink{class_io_class_ac148370091cc66e4a35ae36e337f3fda}{load\+From\+File}} (string file\+Name, int \&id)
+\begin{DoxyCompactList}\small\item\em Διαβάζει το αρχείο και στη συνέχεια φορτώνει τα αντικείμενα σε vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_io_class_a2b09050af641448406ceb2eb762825e7}{save\+To\+File}} (string file\+Name, \mbox{\hyperlink{class_environment}{Environment}} \&env)
+\begin{DoxyCompactList}\small\item\em Αντίστοιχα αποθηκεύει τα αντικείμενα που υπάρχουν στο env ~\newline
+ Γενικά η γραμμογράφηση του αρχείου είναι ώς εξής\+: ~\newline
+ {\bfseries{$<$item\+Id$>$;$<$item\+Name$>$;$<$item\+Type\+Id$>$;$<$item\+On\+Floor$>$;$<$item\+Xpos$>$;$<$item\+Ypos$>$}} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_io_class_a2ab3d9376d924bf839839c43ffec8960}{read\+String}} ()
+\begin{DoxyCompactList}\small\item\em Διαβάζει string απο το πληκτρολόγιο \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_io_class_a069576134fab6e543348937e75d46351}{print\+To\+Coords\+Animated}} (int x, int y, string string\+To\+Print, std\+::initializer\+\_\+list$<$ string $>$ a\+\_\+args, int speed)
+\begin{DoxyCompactList}\small\item\em Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_io_class_a84c2d259964eb42dbba00a60ddcb67ad}{show\+Menu}} (std\+::vector$<$ string $>$ selections)
+\begin{DoxyCompactList}\small\item\em Δέχεται vector με string και εμφανίζει τα περιεχόμενα με μορφή μενού \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_io_class_ab2cec9e3f5a339f0a52657899dcd40b7}{print\+Environment}} (\mbox{\hyperlink{class_environment}{Environment}} \&env)
+\begin{DoxyCompactList}\small\item\em Εμφανίζει το περιβάλλον(αντικείμενα, παίκτη κλπ) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_io_class_a24a6d28531a99d823cce209ff6076455}{print\+Player\+Stats}} (\mbox{\hyperlink{class_player}{Player}} \&player)
+\begin{DoxyCompactList}\small\item\em Εμφάνιση στατιστικών του παίκτη(Επίπεδο πείνας) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_io_class_ad6f7f479bad8d762ec87378d14f58bde}{$\sim$\+Io\+Class}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Io Class object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_io_class_a72b63cce8040e3f38cf88d78de54669f}{get\+MaxX}} ()
+\begin{DoxyCompactList}\small\item\em Getter για το μέγιστο Χ της οθονης \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_io_class_a9f8dc0ea79dfff69865b8e622a2725d0}{get\+MaxY}} ()
+\begin{DoxyCompactList}\small\item\em Getter για το μέγιστο Υ της οθονης \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_io_class_a8cada06c1633e0731bd455b1ecda5a61}{get\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Διαβάζει ένανα χαρακτήρα απο το πληκτρολόγιο και τον επιστεφει \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Λεπτομερής Περιγραφή}
+Κλάση διαχείρησης εισοδου-\/εξόδου καθώς και διαχείρησης οθόνης. 
+
+
+
+\doxysubsection{Τεκμηρίωση Constructor \& Destructor}
+\mbox{\Hypertarget{class_io_class_ad6f7f479bad8d762ec87378d14f58bde}\label{class_io_class_ad6f7f479bad8d762ec87378d14f58bde}} 
+\index{IoClass@{IoClass}!````~IoClass@{$\sim$IoClass}}
+\index{````~IoClass@{$\sim$IoClass}!IoClass@{IoClass}}
+\doxysubsubsection{\texorpdfstring{$\sim$IoClass()}{~IoClass()}}
+{\footnotesize\ttfamily Io\+Class\+::$\sim$\+Io\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the Io Class object. 
+
+Destroy the Io Class\+:\+: Io Class object.
+
+\doxysubsection{Τεκμηρίωση Συναρτήσεων Μελών}
 \mbox{\Hypertarget{class_io_class_a8cada06c1633e0731bd455b1ecda5a61}\label{class_io_class_a8cada06c1633e0731bd455b1ecda5a61}} 
-int {\bfseries get\+Input} ()
-\end{DoxyCompactItemize}
+\index{IoClass@{IoClass}!getInput@{getInput}}
+\index{getInput@{getInput}!IoClass@{IoClass}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily int Io\+Class\+::get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Διαβάζει ένανα χαρακτήρα απο το πληκτρολόγιο και τον επιστεφει 
+
+\begin{DoxyReturn}{Επιστρέφει}
+int Χαρακτήρας που διαβάστηκε 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_io_class_a72b63cce8040e3f38cf88d78de54669f}\label{class_io_class_a72b63cce8040e3f38cf88d78de54669f}} 
+\index{IoClass@{IoClass}!getMaxX@{getMaxX}}
+\index{getMaxX@{getMaxX}!IoClass@{IoClass}}
+\doxysubsubsection{\texorpdfstring{getMaxX()}{getMaxX()}}
+{\footnotesize\ttfamily int Io\+Class\+::get\+MaxX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter για το μέγιστο Χ της οθονης 
+
+\begin{DoxyReturn}{Επιστρέφει}
+int μέγιστο Χ της οθονης 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_io_class_a9f8dc0ea79dfff69865b8e622a2725d0}\label{class_io_class_a9f8dc0ea79dfff69865b8e622a2725d0}} 
+\index{IoClass@{IoClass}!getMaxY@{getMaxY}}
+\index{getMaxY@{getMaxY}!IoClass@{IoClass}}
+\doxysubsubsection{\texorpdfstring{getMaxY()}{getMaxY()}}
+{\footnotesize\ttfamily int Io\+Class\+::get\+MaxY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter για το μέγιστο Υ της οθονης 
+
+\begin{DoxyReturn}{Επιστρέφει}
+int μέγιστο Υ της οθονης 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_io_class_ac148370091cc66e4a35ae36e337f3fda}\label{class_io_class_ac148370091cc66e4a35ae36e337f3fda}} 
+\index{IoClass@{IoClass}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!IoClass@{IoClass}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ Io\+Class\+::load\+From\+File (\begin{DoxyParamCaption}\item[{string}]{file\+Name,  }\item[{int \&}]{id }\end{DoxyParamCaption})}
+
+
+
+Διαβάζει το αρχείο και στη συνέχεια φορτώνει τα αντικείμενα σε vector. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em file\+Name} & Το ονομα του αρχείου οπου θα προσπελάσει \\
+\hline
+{\em id} & Αναφορά σε ακέραιο αριθμό,χρησιμοποιείται για να υπολογίσει το τελευταίο id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Επιστρέφει}
+vector$<$\+Item$>$ Container οπου περιέχει τα αντικείμενα που διαβάστηκαν 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_io_class_ab2cec9e3f5a339f0a52657899dcd40b7}\label{class_io_class_ab2cec9e3f5a339f0a52657899dcd40b7}} 
+\index{IoClass@{IoClass}!printEnvironment@{printEnvironment}}
+\index{printEnvironment@{printEnvironment}!IoClass@{IoClass}}
+\doxysubsubsection{\texorpdfstring{printEnvironment()}{printEnvironment()}}
+{\footnotesize\ttfamily void Io\+Class\+::print\+Environment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_environment}{Environment}} \&}]{env }\end{DoxyParamCaption})}
+
+
+
+Εμφανίζει το περιβάλλον(αντικείμενα, παίκτη κλπ) 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em env} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_io_class_a24a6d28531a99d823cce209ff6076455}\label{class_io_class_a24a6d28531a99d823cce209ff6076455}} 
+\index{IoClass@{IoClass}!printPlayerStats@{printPlayerStats}}
+\index{printPlayerStats@{printPlayerStats}!IoClass@{IoClass}}
+\doxysubsubsection{\texorpdfstring{printPlayerStats()}{printPlayerStats()}}
+{\footnotesize\ttfamily void Io\+Class\+::print\+Player\+Stats (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player }\end{DoxyParamCaption})}
+
+
+
+Εμφάνιση στατιστικών του παίκτη(Επίπεδο πείνας) 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em player} & Αναφορά σε αντικείμενο \mbox{\hyperlink{class_player}{Player}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_io_class_a069576134fab6e543348937e75d46351}\label{class_io_class_a069576134fab6e543348937e75d46351}} 
+\index{IoClass@{IoClass}!printToCoordsAnimated@{printToCoordsAnimated}}
+\index{printToCoordsAnimated@{printToCoordsAnimated}!IoClass@{IoClass}}
+\doxysubsubsection{\texorpdfstring{printToCoordsAnimated()}{printToCoordsAnimated()}}
+{\footnotesize\ttfamily void Io\+Class\+::print\+To\+Coords\+Animated (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{string}]{string\+To\+Print,  }\item[{std\+::initializer\+\_\+list$<$ string $>$}]{a\+\_\+args,  }\item[{int}]{speed }\end{DoxyParamCaption})}
+
+
+
+Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em x} & Η συντεταγμένη Χ \\
+\hline
+{\em y} & Η συντενταγμένη Y \\
+\hline
+{\em string\+To\+Print} & Το αλφαριθμητικό που θα εμφανιστεί \\
+\hline
+{\em a\+\_\+args} & Χρησιμοποιείται για να εμφανίζονται δυναμικά περιεχόμενα μεταβλητών(πχ οπως η printf εχει το s και το d) Οι μονες που υποστηρίζονται είναι οι s και d. \\
+\hline
+{\em speed} & Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_io_class_a2ab3d9376d924bf839839c43ffec8960}\label{class_io_class_a2ab3d9376d924bf839839c43ffec8960}} 
+\index{IoClass@{IoClass}!readString@{readString}}
+\index{readString@{readString}!IoClass@{IoClass}}
+\doxysubsubsection{\texorpdfstring{readString()}{readString()}}
+{\footnotesize\ttfamily string Io\+Class\+::read\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Διαβάζει string απο το πληκτρολόγιο 
+
+\begin{DoxyReturn}{Επιστρέφει}
+string Το string που διαβάστηκε 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_io_class_a2b09050af641448406ceb2eb762825e7}\label{class_io_class_a2b09050af641448406ceb2eb762825e7}} 
+\index{IoClass@{IoClass}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!IoClass@{IoClass}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily void Io\+Class\+::save\+To\+File (\begin{DoxyParamCaption}\item[{string}]{file\+Name,  }\item[{\mbox{\hyperlink{class_environment}{Environment}} \&}]{env }\end{DoxyParamCaption})}
+
+
+
+Αντίστοιχα αποθηκεύει τα αντικείμενα που υπάρχουν στο env ~\newline
+ Γενικά η γραμμογράφηση του αρχείου είναι ώς εξής\+: ~\newline
+ {\bfseries{$<$item\+Id$>$;$<$item\+Name$>$;$<$item\+Type\+Id$>$;$<$item\+On\+Floor$>$;$<$item\+Xpos$>$;$<$item\+Ypos$>$}} 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item\+Id }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item\+Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item\+Type\+Id }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item\+On\+Floor }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item x position }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item y position  }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item\+Id }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item\+Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item\+Type\+Id }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item\+On\+Floor }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item x position }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ item y position  }\\\cline{1-6}
+\endhead
+Το ID του αντικειμένου &Το όνομα του αντικειμένου &Το ID του τύπου του αντικειμένου &Flag για το εαν βρισκεται στο πατωμα &Θέση Χ &Θέση Υ  \\\cline{1-6}
+\end{longtabu}
+
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em file\+Name} & Το ονομα του αρχείου οπου θα προσπελάσει \\
+\hline
+{\em env} & Αναφορά σε μεταβλητή τύπου \mbox{\hyperlink{class_environment}{Environment}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_io_class_a84c2d259964eb42dbba00a60ddcb67ad}\label{class_io_class_a84c2d259964eb42dbba00a60ddcb67ad}} 
+\index{IoClass@{IoClass}!showMenu@{showMenu}}
+\index{showMenu@{showMenu}!IoClass@{IoClass}}
+\doxysubsubsection{\texorpdfstring{showMenu()}{showMenu()}}
+{\footnotesize\ttfamily int Io\+Class\+::show\+Menu (\begin{DoxyParamCaption}\item[{std\+::vector$<$ string $>$}]{selections }\end{DoxyParamCaption})}
+
+
+
+Δέχεται vector με string και εμφανίζει τα περιεχόμενα με μορφή μενού 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em selections} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Επιστρέφει}
+int Το index της επιλογής που έγινε, 0 για την 1η επιλογή, 1 για την 2η επιλογή, 2 για την 3η κλπ.. 
+\end{DoxyReturn}
 
 
 Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία\+:\begin{DoxyCompactItemize}

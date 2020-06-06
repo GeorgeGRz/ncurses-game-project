@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7edynamicarray_38',['~DynamicArray',['../class_dynamic_array.html#aebf8ac62282dc5c9e2800c1f13ab68ec',1,'DynamicArray']]]
+  ['woodstick_71',['WoodStick',['../class_wood_stick.html',1,'']]]
 ];

@@ -3,27 +3,63 @@
 \doxysubsection*{Δημόσιες Μέθοδοι}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_c_s_v_row_afbb254efcab69c49c3439e5a618808ba}\label{class_c_s_v_row_afbb254efcab69c49c3439e5a618808ba}} 
-std\+::string const  \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (std\+::size\+\_\+t index) const
-\item 
-\mbox{\Hypertarget{class_c_s_v_row_ad9f7deadc010d09dd0e61602e5db3daa}\label{class_c_s_v_row_ad9f7deadc010d09dd0e61602e5db3daa}} 
-std\+::size\+\_\+t {\bfseries size} () const
-\item 
-\mbox{\Hypertarget{class_c_s_v_row_a14b9ac6d9ffb01a7b05ea903cfd04eeb}\label{class_c_s_v_row_a14b9ac6d9ffb01a7b05ea903cfd04eeb}} 
-void {\bfseries read\+Next\+Row} (std\+::istream \&str)
-\item 
-\mbox{\Hypertarget{class_c_s_v_row_afbb254efcab69c49c3439e5a618808ba}\label{class_c_s_v_row_afbb254efcab69c49c3439e5a618808ba}} 
-std\+::string const  \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (std\+::size\+\_\+t index) const
-\item 
-\mbox{\Hypertarget{class_c_s_v_row_ad9f7deadc010d09dd0e61602e5db3daa}\label{class_c_s_v_row_ad9f7deadc010d09dd0e61602e5db3daa}} 
-std\+::size\+\_\+t {\bfseries size} () const
-\item 
-\mbox{\Hypertarget{class_c_s_v_row_a14b9ac6d9ffb01a7b05ea903cfd04eeb}\label{class_c_s_v_row_a14b9ac6d9ffb01a7b05ea903cfd04eeb}} 
-void {\bfseries read\+Next\+Row} (std\+::istream \&str)
-\end{DoxyCompactItemize}
+std\+::string const  \& \mbox{\hyperlink{class_c_s_v_row_afbb254efcab69c49c3439e5a618808ba}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t index) const
+\begin{DoxyCompactList}\small\item\em Επιστρέφει string που βρίσκεται στο συγκεκριμένο index. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_c_s_v_row_ad9f7deadc010d09dd0e61602e5db3daa}{size}} () const
+\begin{DoxyCompactList}\small\item\em Επιστρέφει το μέγεθος του vector που περιέχει τις γραμμές \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_s_v_row_a14b9ac6d9ffb01a7b05ea903cfd04eeb}{read\+Next\+Row}} (std\+::istream \&str)
+\begin{DoxyCompactList}\small\item\em Διαβάζει την επόμενη γραμμή απο istream str. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία\+:\begin{DoxyCompactItemize}
+\doxysubsection{Τεκμηρίωση Συναρτήσεων Μελών}
+\mbox{\Hypertarget{class_c_s_v_row_afbb254efcab69c49c3439e5a618808ba}\label{class_c_s_v_row_afbb254efcab69c49c3439e5a618808ba}} 
+\index{CSVRow@{CSVRow}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!CSVRow@{CSVRow}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily std\+::string const\& C\+S\+V\+Row\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Επιστρέφει string που βρίσκεται στο συγκεκριμένο index. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em index} & Η θέση του string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Επιστρέφει}
+std\+::string const\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_s_v_row_a14b9ac6d9ffb01a7b05ea903cfd04eeb}\label{class_c_s_v_row_a14b9ac6d9ffb01a7b05ea903cfd04eeb}} 
+\index{CSVRow@{CSVRow}!readNextRow@{readNextRow}}
+\index{readNextRow@{readNextRow}!CSVRow@{CSVRow}}
+\doxysubsubsection{\texorpdfstring{readNextRow()}{readNextRow()}}
+{\footnotesize\ttfamily void C\+S\+V\+Row\+::read\+Next\+Row (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Διαβάζει την επόμενη γραμμή απο istream str. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em str} & Το input stream απο το οποίο θα διαβάσει \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_s_v_row_ad9f7deadc010d09dd0e61602e5db3daa}\label{class_c_s_v_row_ad9f7deadc010d09dd0e61602e5db3daa}} 
+\index{CSVRow@{CSVRow}!size@{size}}
+\index{size@{size}!CSVRow@{CSVRow}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t C\+S\+V\+Row\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Επιστρέφει το μέγεθος του vector που περιέχει τις γραμμές 
+
+\begin{DoxyReturn}{Επιστρέφει}
+std\+::size\+\_\+t 
+\end{DoxyReturn}
+
+
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από το ακόλουθο αρχείο\+:\begin{DoxyCompactItemize}
 \item 
-C\+S\+V\+Row/C\+S\+V\+Row.\+h\item 
-I\+O/csv\+\_\+parser.\+cpp\end{DoxyCompactItemize}
+C\+S\+V\+Row/C\+S\+V\+Row.\+h\end{DoxyCompactItemize}
