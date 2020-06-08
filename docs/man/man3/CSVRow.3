@@ -1,11 +1,14 @@
-.TH "CSVRow" 3 "Σαβ 06 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "CSVRow" 3 "Δευ 08 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-CSVRow
+CSVRow \- Κλάση \fBCSVRow\fP χρησιμοποιείται για την προσπέλαση και ανάγνωση δεδομένων απο csv αρχεία  
+
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fC#include <CSVRow\&.h>\fP
 .SS "Δημόσιες Μέθοδοι"
 
 .in +1c
@@ -22,6 +25,11 @@ CSVRow
 .br
 .RI "Διαβάζει την επόμενη γραμμή απο istream str\&. "
 .in -1c
+.SH "Λεπτομερής Περιγραφή"
+.PP 
+Κλάση \fBCSVRow\fP χρησιμοποιείται για την προσπέλαση και ανάγνωση δεδομένων απο csv αρχεία 
+
+
 .SH "Τεκμηρίωση Συναρτήσεων Μελών"
 .PP 
 .SS "std::string const& CSVRow::operator[] (std::size_t index) const\fC [inline]\fP"

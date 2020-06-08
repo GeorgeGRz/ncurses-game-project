@@ -1,68 +1,290 @@
 \hypertarget{class_player}{}\doxysection{Τεκμηρίωση Κλάσης Player}
 \label{class_player}\index{Player@{Player}}
+
+
+Κλάση για τον παίκτη του παιχνιδιού  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
 \doxysubsection*{Δημόσιες Μέθοδοι}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_player_a9d12d4dbf1ecd5c98659e6030e1b8f2d}\label{class_player_a9d12d4dbf1ecd5c98659e6030e1b8f2d}} 
-{\bfseries Player} (\mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$ position, \mbox{\hyperlink{class_inventory}{Inventory}} inv, string name=\char`\"{}P\char`\"{})
-\item 
+\mbox{\hyperlink{class_player_a9d12d4dbf1ecd5c98659e6030e1b8f2d}{Player}} (\mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$ position, \mbox{\hyperlink{class_inventory}{Inventory}} inv, string name=\char`\"{}P\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor της κλάσης \mbox{\hyperlink{class_player}{Player}}. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_player_a0401f08b388f3fbcbf6eb4f4d2e8fb60}\label{class_player_a0401f08b388f3fbcbf6eb4f4d2e8fb60}} 
 {\bfseries Player} (const \mbox{\hyperlink{class_player}{Player}} \&copy)
-\item 
-\mbox{\Hypertarget{class_player_a2b7fa529cc5aa7eba4c93d55952a8364}\label{class_player_a2b7fa529cc5aa7eba4c93d55952a8364}} 
-int {\bfseries get\+Hunger} ()
 \item 
 \mbox{\Hypertarget{class_player_a79f73957d11e666ee48d9f4cc02bc5ad}\label{class_player_a79f73957d11e666ee48d9f4cc02bc5ad}} 
 void {\bfseries set\+Hunger} (int h)
 \item 
-\mbox{\Hypertarget{class_player_a5d0016f7fa5e0a9813a4b666efa87e9d}\label{class_player_a5d0016f7fa5e0a9813a4b666efa87e9d}} 
-void {\bfseries add\+To\+Inventory} (\mbox{\hyperlink{class_item}{Item}} \&item)
-\item 
-\mbox{\Hypertarget{class_player_af2b9b4868adad25f8f177789947d6123}\label{class_player_af2b9b4868adad25f8f177789947d6123}} 
-void {\bfseries deallocate\+Item} (\mbox{\hyperlink{class_item}{Item}} \&item)
-\item 
-\mbox{\Hypertarget{class_player_a02ce1c4efec524ed951a68ffd9dbcdb2}\label{class_player_a02ce1c4efec524ed951a68ffd9dbcdb2}} 
-void {\bfseries show\+Inventory} (ostream \&stream)
-\item 
-\mbox{\Hypertarget{class_player_af9a6045fa96f736664c4eab4caa5e8e5}\label{class_player_af9a6045fa96f736664c4eab4caa5e8e5}} 
-string {\bfseries get\+Name} ()
-\item 
-\mbox{\Hypertarget{class_player_ad3df5733204d1ef02c311d64b9a885f6}\label{class_player_ad3df5733204d1ef02c311d64b9a885f6}} 
-const \mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$ \& {\bfseries get\+Position} ()
-\item 
-\mbox{\Hypertarget{class_player_a3b173335c345cf000fb0e3859905ef9d}\label{class_player_a3b173335c345cf000fb0e3859905ef9d}} 
-\mbox{\hyperlink{class_inventory}{Inventory}} \& {\bfseries get\+Inventory} ()
-\item 
-\mbox{\Hypertarget{class_player_ac0c5a8a0d46f3d07349d391db3b5a376}\label{class_player_ac0c5a8a0d46f3d07349d391db3b5a376}} 
-\mbox{\hyperlink{class_item}{Item}} \& {\bfseries get\+Item\+At} (int index)
-\item 
+void \mbox{\hyperlink{class_player_a5d0016f7fa5e0a9813a4b666efa87e9d}{add\+To\+Inventory}} (\mbox{\hyperlink{class_item}{Item}} \&item)
+\begin{DoxyCompactList}\small\item\em Προσθέτει αντικείμενο στον σάκο του χρήστη \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a02ce1c4efec524ed951a68ffd9dbcdb2}{show\+Inventory}} (ostream \&stream)
+\begin{DoxyCompactList}\small\item\em Εμφανίζει σε o/p stream τα αντικείμενα του χρήστη \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_a2b7fa529cc5aa7eba4c93d55952a8364}{get\+Hunger}} ()
+\begin{DoxyCompactList}\small\item\em Επιστρέφει το επίπεδο τροφής του παίκτη \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_player_af9a6045fa96f736664c4eab4caa5e8e5}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter για το ονομα του χρήστη \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$ \& \mbox{\hyperlink{class_player_ad3df5733204d1ef02c311d64b9a885f6}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Getter για την θέση του χρήστη \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inventory}{Inventory}} \& \mbox{\hyperlink{class_player_a3b173335c345cf000fb0e3859905ef9d}{get\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Getter για τον σάκο με τα αντικείμενα του χρήστη \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item}{Item}} \& \mbox{\hyperlink{class_player_ac0c5a8a0d46f3d07349d391db3b5a376}{get\+Item\+At}} (int index)
+\begin{DoxyCompactList}\small\item\em Επιστρέφει αντικείμενο σε συγκεκριμένη θέση \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_player_a05df581ac0f73a10b6163ca8c03eff7b}\label{class_player_a05df581ac0f73a10b6163ca8c03eff7b}} 
 void {\bfseries set\+Name} (string new\+Name)
 \item 
-\mbox{\Hypertarget{class_player_ae207571d3c270f6dac946c52f550c9af}\label{class_player_ae207571d3c270f6dac946c52f550c9af}} 
-\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Items} ()
-\item 
-\mbox{\Hypertarget{class_player_a5b9dc680dbccb85f547ca661f4186684}\label{class_player_a5b9dc680dbccb85f547ca661f4186684}} 
-void {\bfseries move\+To\+Coordinates} (int X, int Y)
-\item 
-\mbox{\Hypertarget{class_player_a8c73aafa8ed38b4169aede1fb1824e8b}\label{class_player_a8c73aafa8ed38b4169aede1fb1824e8b}} 
-void {\bfseries move\+To\+Coordinates} (\mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$ new\+Position)
-\item 
-\mbox{\Hypertarget{class_player_a679159353f050d299474d92cc3b68284}\label{class_player_a679159353f050d299474d92cc3b68284}} 
-void {\bfseries remove\+From\+Inventory} (int index)
-\item 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ \mbox{\hyperlink{class_player_ae207571d3c270f6dac946c52f550c9af}{get\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Επιστρέφει δυναμικό πίνακα που περιέχει τα αντικείμενα του χρήστη \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a5b9dc680dbccb85f547ca661f4186684}{move\+To\+Coordinates}} (int X, int Y)
+\begin{DoxyCompactList}\small\item\em Μετακινεί τον χρήστη στις συντεταγμένες (Χ,Υ) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a8c73aafa8ed38b4169aede1fb1824e8b}{move\+To\+Coordinates}} (\mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$ new\+Position)
+\begin{DoxyCompactList}\small\item\em Αντίστοιχη με την \mbox{\hyperlink{class_player_a5b9dc680dbccb85f547ca661f4186684}{move\+To\+Coordinates(int X, int Y)}} μονο που χρησιμοποιεί \mbox{\hyperlink{class_vector2_d}{Vector2\+D$<$int$>$}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a679159353f050d299474d92cc3b68284}{remove\+From\+Inventory}} (int index)
+\begin{DoxyCompactList}\small\item\em Αφαιρεί αντικείμενο σε συγκεκριμένη θέση \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_player_a79335831f4876b17298287e8308cf9d1}\label{class_player_a79335831f4876b17298287e8308cf9d1}} 
 \mbox{\hyperlink{class_player}{Player}} {\bfseries operator=} (const \mbox{\hyperlink{class_player}{Player}} \&copy)
 \item 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ \mbox{\hyperlink{class_player_a7782e55f9695f4cc64cd7a9d7ceb9ad5}{get\+Crafted}} ()
+\begin{DoxyCompactList}\small\item\em Επιστρέφει δυναμικό πίνακα που περιέχει τα αντικείμενα που μπορεί ο χρήστης να κατασκευάσει \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_af7407348f79970a439be154ce82a7ab0}{remove\+All\+From\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Καταστρεφει όλα τα αντικείμενα που βρίσκονται στον \char`\"{}σακο\char`\"{} του χρήστη \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ \mbox{\hyperlink{class_player_a84630cc68f9e49f4091ea50091177ee2}{remove\+After\+Crafting}} (item\+Type item\+Crafted\+Type)
+\begin{DoxyCompactList}\small\item\em Αφαιρεί τα αντικείμενα που χρησιμοποίησε ο χρήστης για να δημιουργήσει ένα νέο αντικείμενο και επιστρέφει δυναμικό πίνακα που τα περιέχει. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Λεπτομερής Περιγραφή}
+Κλάση για τον παίκτη του παιχνιδιού 
+
+
+
+\doxysubsection{Τεκμηρίωση Constructor \& Destructor}
+\mbox{\Hypertarget{class_player_a9d12d4dbf1ecd5c98659e6030e1b8f2d}\label{class_player_a9d12d4dbf1ecd5c98659e6030e1b8f2d}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$}]{position,  }\item[{\mbox{\hyperlink{class_inventory}{Inventory}}}]{inv,  }\item[{string}]{name = {\ttfamily \char`\"{}P\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructor της κλάσης \mbox{\hyperlink{class_player}{Player}}. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em position} & \mbox{\hyperlink{class_vector2_d}{Vector2D}} που χρησιμοποιείται για την αρχική θέση του χρήστη \\
+\hline
+{\em inv} & Αντικέιμενο \mbox{\hyperlink{class_inventory}{Inventory}} που αρχικοποιεί τον σάκο του παίκτη \\
+\hline
+{\em name} & Το όνομα του παίκτη \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Τεκμηρίωση Συναρτήσεων Μελών}
+\mbox{\Hypertarget{class_player_a5d0016f7fa5e0a9813a4b666efa87e9d}\label{class_player_a5d0016f7fa5e0a9813a4b666efa87e9d}} 
+\index{Player@{Player}!addToInventory@{addToInventory}}
+\index{addToInventory@{addToInventory}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addToInventory()}{addToInventory()}}
+{\footnotesize\ttfamily void Player\+::add\+To\+Inventory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item}{Item}} \&}]{item }\end{DoxyParamCaption})}
+
+
+
+Προσθέτει αντικείμενο στον σάκο του χρήστη 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em item} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_player_a7782e55f9695f4cc64cd7a9d7ceb9ad5}\label{class_player_a7782e55f9695f4cc64cd7a9d7ceb9ad5}} 
-\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries get\+Crafted} ()
-\item 
-\mbox{\Hypertarget{class_player_af7407348f79970a439be154ce82a7ab0}\label{class_player_af7407348f79970a439be154ce82a7ab0}} 
-void {\bfseries remove\+All\+From\+Player} ()
-\item 
+\index{Player@{Player}!getCrafted@{getCrafted}}
+\index{getCrafted@{getCrafted}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getCrafted()}{getCrafted()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ Player\+::get\+Crafted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Επιστρέφει δυναμικό πίνακα που περιέχει τα αντικείμενα που μπορεί ο χρήστης να κατασκευάσει 
+
+\begin{DoxyReturn}{Επιστρέφει}
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array$<$\+Item$>$}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a2b7fa529cc5aa7eba4c93d55952a8364}\label{class_player_a2b7fa529cc5aa7eba4c93d55952a8364}} 
+\index{Player@{Player}!getHunger@{getHunger}}
+\index{getHunger@{getHunger}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHunger()}{getHunger()}}
+{\footnotesize\ttfamily int Player\+::get\+Hunger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Επιστρέφει το επίπεδο τροφής του παίκτη 
+
+\begin{DoxyReturn}{Επιστρέφει}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a3b173335c345cf000fb0e3859905ef9d}\label{class_player_a3b173335c345cf000fb0e3859905ef9d}} 
+\index{Player@{Player}!getInventory@{getInventory}}
+\index{getInventory@{getInventory}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getInventory()}{getInventory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_inventory}{Inventory}}\& Player\+::get\+Inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter για τον σάκο με τα αντικείμενα του χρήστη 
+
+\begin{DoxyReturn}{Επιστρέφει}
+\mbox{\hyperlink{class_inventory}{Inventory}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_ac0c5a8a0d46f3d07349d391db3b5a376}\label{class_player_ac0c5a8a0d46f3d07349d391db3b5a376}} 
+\index{Player@{Player}!getItemAt@{getItemAt}}
+\index{getItemAt@{getItemAt}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getItemAt()}{getItemAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_item}{Item}} \& Player\+::get\+Item\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Επιστρέφει αντικείμενο σε συγκεκριμένη θέση 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em index} & Η θέση του αντικειμένου \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Επιστρέφει}
+\mbox{\hyperlink{class_item}{Item}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_ae207571d3c270f6dac946c52f550c9af}\label{class_player_ae207571d3c270f6dac946c52f550c9af}} 
+\index{Player@{Player}!getItems@{getItems}}
+\index{getItems@{getItems}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getItems()}{getItems()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ Player\+::get\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Επιστρέφει δυναμικό πίνακα που περιέχει τα αντικείμενα του χρήστη 
+
+\begin{DoxyReturn}{Επιστρέφει}
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array$<$\+Item$>$}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_af9a6045fa96f736664c4eab4caa5e8e5}\label{class_player_af9a6045fa96f736664c4eab4caa5e8e5}} 
+\index{Player@{Player}!getName@{getName}}
+\index{getName@{getName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Player\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter για το ονομα του χρήστη 
+
+\begin{DoxyReturn}{Επιστρέφει}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_ad3df5733204d1ef02c311d64b9a885f6}\label{class_player_ad3df5733204d1ef02c311d64b9a885f6}} 
+\index{Player@{Player}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$int$>$\& Player\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter για την θέση του χρήστη 
+
+\begin{DoxyReturn}{Επιστρέφει}
+const \mbox{\hyperlink{class_vector2_d}{Vector2\+D$<$int$>$}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a5b9dc680dbccb85f547ca661f4186684}\label{class_player_a5b9dc680dbccb85f547ca661f4186684}} 
+\index{Player@{Player}!moveToCoordinates@{moveToCoordinates}}
+\index{moveToCoordinates@{moveToCoordinates}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{moveToCoordinates()}{moveToCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Player\+::move\+To\+Coordinates (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y }\end{DoxyParamCaption})}
+
+
+
+Μετακινεί τον χρήστη στις συντεταγμένες (Χ,Υ) 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em X} & \\
+\hline
+{\em Y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a8c73aafa8ed38b4169aede1fb1824e8b}\label{class_player_a8c73aafa8ed38b4169aede1fb1824e8b}} 
+\index{Player@{Player}!moveToCoordinates@{moveToCoordinates}}
+\index{moveToCoordinates@{moveToCoordinates}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{moveToCoordinates()}{moveToCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Player\+::move\+To\+Coordinates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2_d}{Vector2D}}$<$ int $>$}]{new\+Position }\end{DoxyParamCaption})}
+
+
+
+Αντίστοιχη με την \mbox{\hyperlink{class_player_a5b9dc680dbccb85f547ca661f4186684}{move\+To\+Coordinates(int X, int Y)}} μονο που χρησιμοποιεί \mbox{\hyperlink{class_vector2_d}{Vector2\+D$<$int$>$}} 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em new\+Position} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_player_a84630cc68f9e49f4091ea50091177ee2}\label{class_player_a84630cc68f9e49f4091ea50091177ee2}} 
-\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ {\bfseries remove\+After\+Crafting} (item\+Type item\+Crafted\+Type)
-\end{DoxyCompactItemize}
+\index{Player@{Player}!removeAfterCrafting@{removeAfterCrafting}}
+\index{removeAfterCrafting@{removeAfterCrafting}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeAfterCrafting()}{removeAfterCrafting()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ \mbox{\hyperlink{class_item}{Item}} $>$ Player\+::remove\+After\+Crafting (\begin{DoxyParamCaption}\item[{item\+Type}]{item\+Crafted\+Type }\end{DoxyParamCaption})}
+
+
+
+Αφαιρεί τα αντικείμενα που χρησιμοποίησε ο χρήστης για να δημιουργήσει ένα νέο αντικείμενο και επιστρέφει δυναμικό πίνακα που τα περιέχει. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em item\+Crafted\+Type} & Τύπος αντικειμένου που δημιουργήθηκε \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Επιστρέφει}
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array$<$\+Item$>$}} Δυναμικός πίνακας που περιέχει τα αντικείμενα που χρησιμοποίησε/κατέστρεψε ο χρήστης 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_af7407348f79970a439be154ce82a7ab0}\label{class_player_af7407348f79970a439be154ce82a7ab0}} 
+\index{Player@{Player}!removeAllFromPlayer@{removeAllFromPlayer}}
+\index{removeAllFromPlayer@{removeAllFromPlayer}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeAllFromPlayer()}{removeAllFromPlayer()}}
+{\footnotesize\ttfamily void Player\+::remove\+All\+From\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Καταστρεφει όλα τα αντικείμενα που βρίσκονται στον \char`\"{}σακο\char`\"{} του χρήστη 
+
+\mbox{\Hypertarget{class_player_a679159353f050d299474d92cc3b68284}\label{class_player_a679159353f050d299474d92cc3b68284}} 
+\index{Player@{Player}!removeFromInventory@{removeFromInventory}}
+\index{removeFromInventory@{removeFromInventory}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeFromInventory()}{removeFromInventory()}}
+{\footnotesize\ttfamily void Player\+::remove\+From\+Inventory (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Αφαιρεί αντικείμενο σε συγκεκριμένη θέση 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a02ce1c4efec524ed951a68ffd9dbcdb2}\label{class_player_a02ce1c4efec524ed951a68ffd9dbcdb2}} 
+\index{Player@{Player}!showInventory@{showInventory}}
+\index{showInventory@{showInventory}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{showInventory()}{showInventory()}}
+{\footnotesize\ttfamily void Player\+::show\+Inventory (\begin{DoxyParamCaption}\item[{ostream \&}]{stream }\end{DoxyParamCaption})}
+
+
+
+Εμφανίζει σε o/p stream τα αντικείμενα του χρήστη 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em stream} & \\
+\hline
+\end{DoxyParams}
 
 
 Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία\+:\begin{DoxyCompactItemize}

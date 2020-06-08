@@ -1,7 +1,10 @@
 #ifndef Lighter_H
 #define Lighter_H
 #include "../Item/Item.h"
-
+/**
+ * @brief Κλάση αντικειμένου Lighter <br>
+ * Χρησιμοποιείται για τα συμβολίσει αναπτήρα.
+ */
 class Lighter : public Item{
     private:
 

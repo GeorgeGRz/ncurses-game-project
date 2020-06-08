@@ -2,6 +2,10 @@
 #define Coconut_H
 #include "../Item/Item.h"
 
+/**
+ * @brief Κλάση αντικειμένου Coconut <br>
+ * Χρησιμοποιείται για τα συμβολίσει Καρύδα
+ */
 class Coconut : public Item{
     private:
 

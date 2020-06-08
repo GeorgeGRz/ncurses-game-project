@@ -4,5 +4,5 @@ digraph "Γραφική Αναπαράσταση Της Ιεραρχίας Τω�
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="DynamicArray\< Item \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dynamic_array.html",tooltip=" "];
+  Node0 [label="DynamicArray\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dynamic_array.html",tooltip="Κλάση δυναμικόυ πίνακα που χρησιμοποιεί templates.Για την υλοποίηση συμβουλεύθηκα το βιβλίο του Strou..."];
 }

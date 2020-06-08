@@ -33,6 +33,7 @@ Item Item::operator+(Item &item)
 {
     if (this->getType() == woodstick && item.getType() == leafs)
     {
+        //Εάν ο τύπος του αντικειμένου 
         return  LightedTorch("lightedTorch", "l1", this->getPosition(), false);
     }
     else if (this->getType() == rock && item.getType() == coconut)

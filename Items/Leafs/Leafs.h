@@ -2,6 +2,10 @@
 #define Leafs_H
 #include "../Item/Item.h"
 
+/**
+ * @brief Κλάση αντικειμένου Leafs <br>
+ * Χρησιμοποιείται για τα συμβολίσει Φύλλο
+ */
 class Leafs : public Item{
     private:
 

@@ -9,7 +9,10 @@ using namespace std;
 class Item;
 class Player;
 
-
+/**
+ * @brief Κλάση περιβάλλοντος παιχνιδιού.
+ * 
+ */
 class Environment{
     private:
         vector<Item> groundItems; /*!< Τα αντικείμενα που βρίσκονται στο πάτωμα */

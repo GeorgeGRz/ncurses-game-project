@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['person_52',['Person',['../class_person.html',1,'']]],
-  ['player_53',['Player',['../class_player.html',1,'']]],
-  ['pop_5fback_54',['pop_back',['../class_dynamic_array.html#aac160925b1815a76cb6f8f6ac28065c0',1,'DynamicArray']]],
-  ['printenvironment_55',['printEnvironment',['../class_io_class.html#ab2cec9e3f5a339f0a52657899dcd40b7',1,'IoClass']]],
-  ['printplayerstats_56',['printPlayerStats',['../class_io_class.html#a24a6d28531a99d823cce209ff6076455',1,'IoClass']]],
-  ['printtocoordsanimated_57',['printToCoordsAnimated',['../class_io_class.html#a069576134fab6e543348937e75d46351',1,'IoClass']]],
-  ['push_5fback_58',['push_back',['../class_dynamic_array.html#a949ce797624c382439dfaed833055d2e',1,'DynamicArray']]]
+  ['player_60',['Player',['../class_player.html',1,'Player'],['../class_player.html#a9d12d4dbf1ecd5c98659e6030e1b8f2d',1,'Player::Player()']]],
+  ['pop_5fback_61',['pop_back',['../class_dynamic_array.html#a9c665637c4bcc46a16ed692bad345918',1,'DynamicArray']]],
+  ['printenvironment_62',['printEnvironment',['../class_io_class.html#ab2cec9e3f5a339f0a52657899dcd40b7',1,'IoClass']]],
+  ['printplayerstats_63',['printPlayerStats',['../class_io_class.html#a24a6d28531a99d823cce209ff6076455',1,'IoClass']]],
+  ['printtocoordsanimated_64',['printToCoordsAnimated',['../class_io_class.html#a069576134fab6e543348937e75d46351',1,'IoClass']]],
+  ['push_5fback_65',['push_back',['../class_dynamic_array.html#ac27ad259e9e39b494daa9487cfc02b5e',1,'DynamicArray']]]
 ];

@@ -2,6 +2,15 @@
 \label{class_item}\index{Item@{Item}}
 
 
+Κλάση που χρησιμοποιείται για το κάθε αντικείμενο του παιχνιδιού.  
+
+
+
+
+{\ttfamily \#include $<$Item.\+h$>$}
+
+
+
 Διάγραμμα κληρονομικότητας για την Item\+:
 % FIG 0
 \doxysubsection*{Δημόσιες Μέθοδοι}
@@ -34,9 +43,54 @@ void {\bfseries set\+Type} (item\+Type type)
 \mbox{\Hypertarget{class_item_a4c920999074b712fb08a9f315488bad9}\label{class_item_a4c920999074b712fb08a9f315488bad9}} 
 void {\bfseries setis\+On\+Floor} (bool value)
 \item 
+\mbox{\hyperlink{class_item}{Item}} \mbox{\hyperlink{class_item_a8b998e0dcda688bd6c1cbdd86c5003eb}{operator+}} (\mbox{\hyperlink{class_item}{Item}} \&item)
+\begin{DoxyCompactList}\small\item\em Χρησιμοποιείται για τον συνδιασμό/crafting δύο αντικειμένων σε ενα τρίτο αντικέιμενο(παράγωγο των άλλων 2) ~\newline
+ Σημείωση\+: Εάν αποτύχει τότε επιστρέφεται ένα αντικείμενο \mbox{\hyperlink{class_axe}{Axe}} με id = null ~\newline
+ Ένας πίνακας που τα συνοψίζει είναι ο εξής\+: ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Λεπτομερής Περιγραφή}
+Κλάση που χρησιμοποιείται για το κάθε αντικείμενο του παιχνιδιού. 
+
+
+
+\doxysubsection{Τεκμηρίωση Συναρτήσεων Μελών}
 \mbox{\Hypertarget{class_item_a8b998e0dcda688bd6c1cbdd86c5003eb}\label{class_item_a8b998e0dcda688bd6c1cbdd86c5003eb}} 
-\mbox{\hyperlink{class_item}{Item}} {\bfseries operator+} (\mbox{\hyperlink{class_item}{Item}} \&item)
-\end{DoxyCompactItemize}
+\index{Item@{Item}!operator+@{operator+}}
+\index{operator+@{operator+}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_item}{Item}} Item\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item}{Item}} \&}]{item }\end{DoxyParamCaption})}
+
+
+
+Χρησιμοποιείται για τον συνδιασμό/crafting δύο αντικειμένων σε ενα τρίτο αντικέιμενο(παράγωγο των άλλων 2) ~\newline
+ Σημείωση\+: Εάν αποτύχει τότε επιστρέφεται ένα αντικείμενο \mbox{\hyperlink{class_axe}{Axe}} με id = null ~\newline
+ Ένας πίνακας που τα συνοψίζει είναι ο εξής\+: ~\newline
+ 
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ \mbox{\hyperlink{class_item}{Item}} A }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ \mbox{\hyperlink{class_item}{Item}} B }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ A + B  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ \mbox{\hyperlink{class_item}{Item}} A }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ \mbox{\hyperlink{class_item}{Item}} B }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ A + B  }\\\cline{1-3}
+\endhead
+\mbox{\hyperlink{class_wood_stick}{Wood\+Stick}} &\mbox{\hyperlink{class_leafs}{Leafs}} &\mbox{\hyperlink{class_lighted_torch}{Lighted\+Torch}}  \\\cline{1-3}
+\mbox{\hyperlink{class_rock}{Rock}} &\mbox{\hyperlink{class_coconut}{Coconut}} &\mbox{\hyperlink{class_open_coconut}{Open\+Coconut}}  \\\cline{1-3}
+\mbox{\hyperlink{class_wood_stick}{Wood\+Stick}} &\mbox{\hyperlink{class_rock}{Rock}} &\mbox{\hyperlink{class_axe}{Axe}}  \\\cline{1-3}
+\end{longtabu}
+
+\begin{DoxyParams}{Παράμετροι}
+{\em item} & Το αντικείμενο στο δεξί μέλος \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Επιστρέφει}
+\mbox{\hyperlink{class_item}{Item}} Το παράγωγο αντικείμενο που δημιουργήθηκε 
+\end{DoxyReturn}
 
 
 Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία\+:\begin{DoxyCompactItemize}

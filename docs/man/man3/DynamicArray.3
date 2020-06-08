@@ -1,11 +1,14 @@
-.TH "DynamicArray" 3 "Σαβ 06 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "DynamicArray< T >" 3 "Δευ 08 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-DynamicArray
+DynamicArray< T > \- Κλάση δυναμικόυ πίνακα που χρησιμοποιεί templates\&.Για την υλοποίηση συμβουλεύθηκα το βιβλίο του Stroustroup 'Προγραμματισμός με τη C++'\&.  
+
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fC#include <DynamicArray\&.h>\fP
 .SS "Δημόσιοι Τυποι"
 
 .in +1c
@@ -106,21 +109,30 @@ DynamicArray
 .RI "void \fBswap\fP (\fBDynamicArray\fP< T > &lhs, \fBDynamicArray\fP< T > &rhs)"
 .br
 .in -1c
+.SH "Λεπτομερής Περιγραφή"
+.PP 
+
+.SS "template<typename T>
+.br
+class DynamicArray< T >"
+Κλάση δυναμικόυ πίνακα που χρησιμοποιεί templates\&.Για την υλοποίηση συμβουλεύθηκα το βιβλίο του Stroustroup 'Προγραμματισμός με τη C++'\&. 
+
+Μια πολύ βασική υλοποίηση δυναμικού πίνακα που έχει αρκετές ομοιότητες με το διάνυσμα της STL\&. 
 .SH "Τεκμηρίωση Μελών Ορισμών Τύπων"
 .PP 
-.SS "using \fBDynamicArray::iterator\fP =  T *"
+.SS "template<typename T > using \fBDynamicArray\fP< T >::\fBiterator\fP =  T *"
 Χρησιμοποιείται σαν ψευδώνυμο για το T* 
-.SS "using \fBDynamicArray::reference\fP =  T &"
+.SS "template<typename T > using \fBDynamicArray\fP< T >::\fBreference\fP =  T &"
 Χρησιμοποιείται σαν ψευδώνυμο για το reference 
-.SS "using \fBDynamicArray::size_type\fP =  size_t"
+.SS "template<typename T > using \fBDynamicArray\fP< T >::\fBsize_type\fP =  size_t"
 Χρησιμοποιείται σαν ψευδώνυμο για το size_t 
 .SH "Τεκμηρίωση Constructor & Destructor"
 .PP 
-.SS "DynamicArray::DynamicArray ()\fC [inline]\fP, \fC [noexcept]\fP"
+.SS "template<typename T > \fBDynamicArray\fP< T >::\fBDynamicArray\fP ()\fC [inline]\fP, \fC [noexcept]\fP"
 
 .PP
 Δημιουργία ενός νέου αντικειμένου DynamicArray\&.Εάν κληθεί αυτός ο constructor τότε δεσμεύω χώρο χρησιμοποιόντας το m_capacity\&. Δηλαδή δεσμεύει χώρο ακόμα και εάν ο δυναμικός πίνακας είναι κενός\&. 
-.SS "DynamicArray::DynamicArray (std::initializer_list< T > init)\fC [inline]\fP"
+.SS "template<typename T > \fBDynamicArray\fP< T >::\fBDynamicArray\fP (std::initializer_list< T > init)\fC [inline]\fP"
 
 .PP
 Δημιουργία ενός νέου αντικειμένου DynamicArray\&.Παίρνει ώς όρισμα ένα initializer_list και αυτό για να γίνεται initialize dynamicVector<int> a({1,3,2});\&. 
@@ -131,7 +143,7 @@ DynamicArray
 .RE
 .PP
 
-.SS "DynamicArray::DynamicArray (const \fBDynamicArray\fP< T > & origin)\fC [inline]\fP"
+.SS "template<typename T > \fBDynamicArray\fP< T >::\fBDynamicArray\fP (const \fBDynamicArray\fP< T > & origin)\fC [inline]\fP"
 
 .PP
 Δημιουργία ενός νέου αντικειμένου \fBDynamicArray\fP χρησιμοποιόντας copy constructor\&. 
@@ -142,7 +154,7 @@ DynamicArray
 .RE
 .PP
 
-.SS "DynamicArray::DynamicArray (\fBDynamicArray\fP< T > && origin)\fC [inline]\fP"
+.SS "template<typename T > \fBDynamicArray\fP< T >::\fBDynamicArray\fP (\fBDynamicArray\fP< T > && origin)\fC [inline]\fP"
 
 .PP
 Δημιουργία ενός νέου αντικειμένου \fBDynamicArray\fP χρησιμοποιόντας copy constructor\&. 
@@ -153,13 +165,13 @@ DynamicArray
 .RE
 .PP
 
-.SS "DynamicArray::~DynamicArray ()\fC [inline]\fP"
+.SS "template<typename T > \fBDynamicArray\fP< T >::~\fBDynamicArray\fP ()\fC [inline]\fP"
 
 .PP
 destructor 
 .SH "Τεκμηρίωση Συναρτήσεων Μελών"
 .PP 
-.SS "\fBDynamicArray\fP<T>::\fBiterator\fP DynamicArray::begin ()\fC [inline]\fP, \fC [noexcept]\fP"
+.SS "template<typename T > \fBDynamicArray\fP<T>::\fBiterator\fP \fBDynamicArray\fP< T >::begin ()\fC [inline]\fP, \fC [noexcept]\fP"
 
 .PP
 Επιστρέφει iterator του πρώτου αντικειμένου 
@@ -170,7 +182,7 @@ destructor
 .RE
 .PP
 
-.SS "size_t DynamicArray::capacity ()\fC [inline]\fP"
+.SS "template<typename T > size_t \fBDynamicArray\fP< T >::capacity ()\fC [inline]\fP"
 
 .PP
 Getter μεγέθους(extra) 
@@ -181,11 +193,11 @@ size_t Το extra μέγεθος\&.
 .RE
 .PP
 
-.SS "void DynamicArray::clear ()\fC [inline]\fP, \fC [noexcept]\fP"
+.SS "template<typename T > void \fBDynamicArray\fP< T >::clear ()\fC [inline]\fP, \fC [noexcept]\fP"
 
 .PP
 Χρησιμοποιείται για να αδειάσει ο δυναμικός πίνακας\&.Δεν είναι ο destructor\&. 
-.SS "template<typename\&.\&.\&. Args> \fBDynamicArray\fP<T>::\fBreference\fP DynamicArray::emplace_back (Args &&\&.\&.\&. args)\fC [inline]\fP"
+.SS "template<typename T > template<typename\&.\&.\&. Args> \fBDynamicArray\fP<T>::\fBreference\fP \fBDynamicArray\fP< T >::emplace_back (Args &&\&.\&.\&. args)\fC [inline]\fP"
 
 .PP
 Χρησιμοποιείται απο την push_back κυρίως για να προσθέτει αντικείμενα στο τέλος του πίνακα\&. 
@@ -206,7 +218,7 @@ size_t Το extra μέγεθος\&.
 .RE
 .PP
 
-.SS "\fBDynamicArray\fP<T>::\fBiterator\fP DynamicArray::end () const\fC [inline]\fP, \fC [noexcept]\fP"
+.SS "template<typename T > \fBDynamicArray\fP<T>::\fBiterator\fP \fBDynamicArray\fP< T >::end () const\fC [inline]\fP, \fC [noexcept]\fP"
 
 .PP
 Επιστρέφει iterator του τελευταίου αντικειμένου 
@@ -217,7 +229,7 @@ size_t Το extra μέγεθος\&.
 .RE
 .PP
 
-.SS "\fBDynamicArray\fP<T>::\fBiterator\fP DynamicArray::erase (\fBDynamicArray\fP< T >::\fBiterator\fP iter)\fC [inline]\fP"
+.SS "template<typename T > \fBDynamicArray\fP<T>::\fBiterator\fP \fBDynamicArray\fP< T >::erase (\fBDynamicArray\fP< T >::\fBiterator\fP iter)\fC [inline]\fP"
 
 .PP
 Διαγράφω ένα συγκεκριμένο αντικείμενο χρησιμοποιόντας iterator(T*) 
@@ -233,7 +245,7 @@ size_t Το extra μέγεθος\&.
 .RE
 .PP
 
-.SS "void DynamicArray::move_storage (T * dest, T * from, \fBsize_type\fP n)\fC [inline]\fP"
+.SS "template<typename T > void \fBDynamicArray\fP< T >::move_storage (T * dest, T * from, \fBsize_type\fP n)\fC [inline]\fP"
 
 .PP
 Χρησιμοποιείται για να 'μεταφέρει' δεδομένα χρησιμοποιόντας την move\&. 
@@ -248,7 +260,7 @@ size_t Το extra μέγεθος\&.
 .RE
 .PP
 
-.SS "\fBDynamicArray\fP<T>& DynamicArray::operator= (const \fBDynamicArray\fP< T > & origin)\fC [inline]\fP"
+.SS "template<typename T > \fBDynamicArray\fP<T>& \fBDynamicArray\fP< T >::operator= (const \fBDynamicArray\fP< T > & origin)\fC [inline]\fP"
 
 .PP
 Υπερφόρτωση του τελεστή =\&. 
@@ -264,7 +276,7 @@ DynamicArray<T>&
 .RE
 .PP
 
-.SS "T& DynamicArray::operator[] (size_t N)\fC [inline]\fP"
+.SS "template<typename T > T& \fBDynamicArray\fP< T >::operator[] (size_t N)\fC [inline]\fP"
 
 .PP
 Υπερφόρτωση του τελεστή []\&. 
@@ -280,7 +292,7 @@ T& Το αντικείμενο που βρίσκεται στο συγκεκρι
 .RE
 .PP
 
-.SS "T DynamicArray::pop_back ()\fC [inline]\fP"
+.SS "template<typename T > T \fBDynamicArray\fP< T >::pop_back ()\fC [inline]\fP"
 
 .PP
 Αντίστοιχη της pop_back του STL Vector\&. 
@@ -291,7 +303,7 @@ T Το αντικείμενο που έγινε pop
 .RE
 .PP
 
-.SS "void DynamicArray::push_back (const T & val)\fC [inline]\fP"
+.SS "template<typename T > void \fBDynamicArray\fP< T >::push_back (const T & val)\fC [inline]\fP"
 
 .PP
 Προσθέτει ένα αντικείμενο στο τέλος του πίνακα 
@@ -302,11 +314,11 @@ T Το αντικείμενο που έγινε pop
 .RE
 .PP
 
-.SS "void DynamicArray::reallocate ()\fC [inline]\fP"
+.SS "template<typename T > void \fBDynamicArray\fP< T >::reallocate ()\fC [inline]\fP"
 
 .PP
 Χρησιμοποιείται απο την ίδια την κλάση για να δεσμεύσει περισσότερο χώρο\&. 
-.SS "size_t DynamicArray::size ()\fC [inline]\fP"
+.SS "template<typename T > size_t \fBDynamicArray\fP< T >::size ()\fC [inline]\fP"
 
 .PP
 Getter μεγέθους(πραγματικού) 
@@ -317,7 +329,7 @@ size_t Το πραγματικό μέγεθος
 .RE
 .PP
 
-.SS "void DynamicArray::swap (\fBDynamicArray\fP< T > & rhs)\fC [inline]\fP"
+.SS "template<typename T > void \fBDynamicArray\fP< T >::swap (\fBDynamicArray\fP< T > & rhs)\fC [inline]\fP"
 
 .PP
 Χρησιμοποείται για να κάνει swap τα δεδομένα του αντικειμένου που το καλεί με τα δεδομένα της παραμέτρου\&. 

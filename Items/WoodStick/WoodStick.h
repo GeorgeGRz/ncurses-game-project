@@ -3,6 +3,12 @@
 #include "../Item/Item.h"
 #include "../Rock/Rock.h"
 #include "../Axe/Axe.h"
+
+
+/**
+ * @brief Κλάση αντικειμένου WoodStick <br>
+ * Χρησιμοποιείται για τα συμβολίσει ξύλο.
+ */
 class WoodStick : public Item{
     private:
 

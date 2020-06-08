@@ -1,22 +1,23 @@
-.TH "Player" 3 "Σαβ 06 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "Player" 3 "Δευ 08 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Player
+Player \- Κλάση για τον παίκτη του παιχνιδιού  
+
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fC#include <Player\&.h>\fP
 .SS "Δημόσιες Μέθοδοι"
 
 .in +1c
 .ti -1c
 .RI "\fBPlayer\fP (\fBVector2D\fP< int > position, \fBInventory\fP inv, string name='P')"
 .br
+.RI "Constructor της κλάσης \fBPlayer\fP\&. "
 .ti -1c
 .RI "\fBPlayer\fP (const \fBPlayer\fP &copy)"
-.br
-.ti -1c
-.RI "int \fBgetHunger\fP ()"
 .br
 .ti -1c
 .RI "void \fBsetHunger\fP (int h)"
@@ -24,52 +25,249 @@ Player
 .ti -1c
 .RI "void \fBaddToInventory\fP (\fBItem\fP &item)"
 .br
-.ti -1c
-.RI "void \fBdeallocateItem\fP (\fBItem\fP &item)"
-.br
+.RI "Προσθέτει αντικείμενο στον σάκο του χρήστη "
 .ti -1c
 .RI "void \fBshowInventory\fP (ostream &stream)"
 .br
+.RI "Εμφανίζει σε o/p stream τα αντικείμενα του χρήστη "
+.ti -1c
+.RI "int \fBgetHunger\fP ()"
+.br
+.RI "Επιστρέφει το επίπεδο τροφής του παίκτη "
 .ti -1c
 .RI "string \fBgetName\fP ()"
 .br
+.RI "Getter για το ονομα του χρήστη "
 .ti -1c
 .RI "const \fBVector2D\fP< int > & \fBgetPosition\fP ()"
 .br
+.RI "Getter για την θέση του χρήστη "
 .ti -1c
 .RI "\fBInventory\fP & \fBgetInventory\fP ()"
 .br
+.RI "Getter για τον σάκο με τα αντικείμενα του χρήστη "
 .ti -1c
 .RI "\fBItem\fP & \fBgetItemAt\fP (int index)"
 .br
+.RI "Επιστρέφει αντικείμενο σε συγκεκριμένη θέση "
 .ti -1c
 .RI "void \fBsetName\fP (string newName)"
 .br
 .ti -1c
 .RI "\fBDynamicArray\fP< \fBItem\fP > \fBgetItems\fP ()"
 .br
+.RI "Επιστρέφει δυναμικό πίνακα που περιέχει τα αντικείμενα του χρήστη "
 .ti -1c
 .RI "void \fBmoveToCoordinates\fP (int X, int Y)"
 .br
+.RI "Μετακινεί τον χρήστη στις συντεταγμένες (Χ,Υ) "
 .ti -1c
 .RI "void \fBmoveToCoordinates\fP (\fBVector2D\fP< int > newPosition)"
 .br
+.RI "Αντίστοιχη με την \fBmoveToCoordinates(int X, int Y)\fP μονο που χρησιμοποιεί \fBVector2D<int>\fP "
 .ti -1c
 .RI "void \fBremoveFromInventory\fP (int index)"
 .br
+.RI "Αφαιρεί αντικείμενο σε συγκεκριμένη θέση "
 .ti -1c
 .RI "\fBPlayer\fP \fBoperator=\fP (const \fBPlayer\fP &copy)"
 .br
 .ti -1c
 .RI "\fBDynamicArray\fP< \fBItem\fP > \fBgetCrafted\fP ()"
 .br
+.RI "Επιστρέφει δυναμικό πίνακα που περιέχει τα αντικείμενα που μπορεί ο χρήστης να κατασκευάσει "
 .ti -1c
 .RI "void \fBremoveAllFromPlayer\fP ()"
 .br
+.RI "Καταστρεφει όλα τα αντικείμενα που βρίσκονται στον 'σακο' του χρήστη "
 .ti -1c
 .RI "\fBDynamicArray\fP< \fBItem\fP > \fBremoveAfterCrafting\fP (itemType itemCraftedType)"
 .br
+.RI "Αφαιρεί τα αντικείμενα που χρησιμοποίησε ο χρήστης για να δημιουργήσει ένα νέο αντικείμενο και επιστρέφει δυναμικό πίνακα που τα περιέχει\&. "
 .in -1c
+.SH "Λεπτομερής Περιγραφή"
+.PP 
+Κλάση για τον παίκτη του παιχνιδιού 
+
+
+.SH "Τεκμηρίωση Constructor & Destructor"
+.PP 
+.SS "Player::Player (\fBVector2D\fP< int > position, \fBInventory\fP inv, string name = \fC'P'\fP)"
+
+.PP
+Constructor της κλάσης \fBPlayer\fP\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIposition\fP \fBVector2D\fP που χρησιμοποιείται για την αρχική θέση του χρήστη 
+.br
+\fIinv\fP Αντικέιμενο \fBInventory\fP που αρχικοποιεί τον σάκο του παίκτη 
+.br
+\fIname\fP Το όνομα του παίκτη 
+.RE
+.PP
+
+.SH "Τεκμηρίωση Συναρτήσεων Μελών"
+.PP 
+.SS "void Player::addToInventory (\fBItem\fP & item)"
+
+.PP
+Προσθέτει αντικείμενο στον σάκο του χρήστη 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIitem\fP 
+.RE
+.PP
+
+.SS "\fBDynamicArray\fP< \fBItem\fP > Player::getCrafted ()"
+
+.PP
+Επιστρέφει δυναμικό πίνακα που περιέχει τα αντικείμενα που μπορεί ο χρήστης να κατασκευάσει 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBDynamicArray<Item>\fP 
+.RE
+.PP
+
+.SS "int Player::getHunger ()\fC [inline]\fP"
+
+.PP
+Επιστρέφει το επίπεδο τροφής του παίκτη 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SS "\fBInventory\fP& Player::getInventory ()\fC [inline]\fP"
+
+.PP
+Getter για τον σάκο με τα αντικείμενα του χρήστη 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBInventory\fP& 
+.RE
+.PP
+
+.SS "\fBItem\fP & Player::getItemAt (int index)"
+
+.PP
+Επιστρέφει αντικείμενο σε συγκεκριμένη θέση 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIindex\fP Η θέση του αντικειμένου 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBItem\fP& 
+.RE
+.PP
+
+.SS "\fBDynamicArray\fP< \fBItem\fP > Player::getItems ()"
+
+.PP
+Επιστρέφει δυναμικό πίνακα που περιέχει τα αντικείμενα του χρήστη 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBDynamicArray<Item>\fP 
+.RE
+.PP
+
+.SS "string Player::getName ()\fC [inline]\fP"
+
+.PP
+Getter για το ονομα του χρήστη 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+string 
+.RE
+.PP
+
+.SS "const \fBVector2D\fP<int>& Player::getPosition ()\fC [inline]\fP"
+
+.PP
+Getter για την θέση του χρήστη 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+const \fBVector2D<int>\fP& 
+.RE
+.PP
+
+.SS "void Player::moveToCoordinates (int X, int Y)"
+
+.PP
+Μετακινεί τον χρήστη στις συντεταγμένες (Χ,Υ) 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIX\fP 
+.br
+\fIY\fP 
+.RE
+.PP
+
+.SS "void Player::moveToCoordinates (\fBVector2D\fP< int > newPosition)"
+
+.PP
+Αντίστοιχη με την \fBmoveToCoordinates(int X, int Y)\fP μονο που χρησιμοποιεί \fBVector2D<int>\fP 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fInewPosition\fP 
+.RE
+.PP
+
+.SS "\fBDynamicArray\fP< \fBItem\fP > Player::removeAfterCrafting (itemType itemCraftedType)"
+
+.PP
+Αφαιρεί τα αντικείμενα που χρησιμοποίησε ο χρήστης για να δημιουργήσει ένα νέο αντικείμενο και επιστρέφει δυναμικό πίνακα που τα περιέχει\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIitemCraftedType\fP Τύπος αντικειμένου που δημιουργήθηκε 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBDynamicArray<Item>\fP Δυναμικός πίνακας που περιέχει τα αντικείμενα που χρησιμοποίησε/κατέστρεψε ο χρήστης 
+.RE
+.PP
+
+.SS "void Player::removeAllFromPlayer ()"
+
+.PP
+Καταστρεφει όλα τα αντικείμενα που βρίσκονται στον 'σακο' του χρήστη 
+.SS "void Player::removeFromInventory (int index)"
+
+.PP
+Αφαιρεί αντικείμενο σε συγκεκριμένη θέση 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIindex\fP 
+.RE
+.PP
+
+.SS "void Player::showInventory (ostream & stream)"
+
+.PP
+Εμφανίζει σε o/p stream τα αντικείμενα του χρήστη 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIstream\fP 
+.RE
+.PP
+
 
 .SH "Συγραφέας"
 .PP 

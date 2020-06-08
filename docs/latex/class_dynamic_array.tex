@@ -1,54 +1,63 @@
-\hypertarget{class_dynamic_array}{}\doxysection{Τεκμηρίωση Κλάσης Dynamic\+Array}
-\label{class_dynamic_array}\index{DynamicArray@{DynamicArray}}
+\hypertarget{class_dynamic_array}{}\doxysection{Τεκμηρίωση Προτύπου Κλάσης Dynamic\+Array$<$ T $>$}
+\label{class_dynamic_array}\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
+
+
+Κλάση δυναμικόυ πίνακα που χρησιμοποιεί templates.\+Για την υλοποίηση συμβουλεύθηκα το βιβλίο του Stroustroup \char`\"{}Προγραμματισμός με τη C++\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$Dynamic\+Array.\+h$>$}
+
 \doxysubsection*{Δημόσιοι Τυποι}
 \begin{DoxyCompactItemize}
 \item 
-using \mbox{\hyperlink{class_dynamic_array_a36ad444f30ed42d8d24e7e6b71910c34}{size\+\_\+type}} = size\+\_\+t
+using \mbox{\hyperlink{class_dynamic_array_a33ca22351219293343ca4a77c8c5b6b3}{size\+\_\+type}} = size\+\_\+t
 \item 
-using \mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{iterator}} = T $\ast$
+using \mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{iterator}} = T $\ast$
 \item 
-using \mbox{\hyperlink{class_dynamic_array_af2914321feedc6c0fe444cb0a8c92e7f}{reference}} = T \&
+using \mbox{\hyperlink{class_dynamic_array_ade89863afa96812ffb29170c86c7f600}{reference}} = T \&
 \end{DoxyCompactItemize}
 \doxysubsection*{Δημόσιες Μέθοδοι}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_dynamic_array_a0e446f09df1a745343ee85cc6e7cbb63}{swap}} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&rhs)
+void \mbox{\hyperlink{class_dynamic_array_a20d15ae1c2eacc521ddf9fe8383518da}{swap}} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&rhs)
 \begin{DoxyCompactList}\small\item\em Χρησιμοποείται για να κάνει swap τα δεδομένα του αντικειμένου που το καλεί με τα δεδομένα της παραμέτρου. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_dynamic_array_a9ebbb7fde029b42a39531376607dbe6c}{Dynamic\+Array}} () noexcept
+\mbox{\hyperlink{class_dynamic_array_ad9db9185bc2238a69cd35fb4d7d86349}{Dynamic\+Array}} () noexcept
 \begin{DoxyCompactList}\small\item\em Δημιουργία ενός νέου αντικειμένου Dynamic\+Array.\+Εάν κληθεί αυτός ο constructor τότε δεσμεύω χώρο χρησιμοποιόντας το m\+\_\+capacity. Δηλαδή δεσμεύει χώρο ακόμα και εάν ο δυναμικός πίνακας είναι κενός. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_dynamic_array_aa4e3a93125adaf0118db644534205e38}{Dynamic\+Array}} (std\+::initializer\+\_\+list$<$ T $>$ init)
+\mbox{\hyperlink{class_dynamic_array_afe29de47101ad29d9709af52abbcf115}{Dynamic\+Array}} (std\+::initializer\+\_\+list$<$ T $>$ init)
 \begin{DoxyCompactList}\small\item\em Δημιουργία ενός νέου αντικειμένου Dynamic\+Array.\+Παίρνει ώς όρισμα ένα initializer\+\_\+list και αυτό για να γίνεται initialize dynamic\+Vector$<$int$>$ a(\{1,3,2\});. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \& \mbox{\hyperlink{class_dynamic_array_a82f9faabe08e734603a0c9c2adaffda1}{operator=}} (const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&origin)
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \& \mbox{\hyperlink{class_dynamic_array_a1ff8d144b58c18b3bdbed10147d4d516}{operator=}} (const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&origin)
 \begin{DoxyCompactList}\small\item\em Υπερφόρτωση του τελεστή =. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_dynamic_array_a989f3b698b01fc39d61e5f7327e6ada5}{Dynamic\+Array}} (const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&origin)
+\mbox{\hyperlink{class_dynamic_array_aebb70bbf2c1da409dc0f4915b509ce64}{Dynamic\+Array}} (const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&origin)
 \begin{DoxyCompactList}\small\item\em Δημιουργία ενός νέου αντικειμένου \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} χρησιμοποιόντας copy constructor. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_dynamic_array_aca80a4f116e874a1c6c380be17b1c745}{Dynamic\+Array}} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&\&origin)
+\mbox{\hyperlink{class_dynamic_array_afb3795fd350e74dffd54deedc5456146}{Dynamic\+Array}} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&\&origin)
 \begin{DoxyCompactList}\small\item\em Δημιουργία ενός νέου αντικειμένου \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} χρησιμοποιόντας copy constructor. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_dynamic_array_a0bcf07ad6f67ce592844a68d1e02f3a2}{clear}} () noexcept
+void \mbox{\hyperlink{class_dynamic_array_aaeae200f3f029d90d2c00d94951d25cc}{clear}} () noexcept
 \begin{DoxyCompactList}\small\item\em Χρησιμοποιείται για να αδειάσει ο δυναμικός πίνακας.\+Δεν είναι ο destructor. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_af2914321feedc6c0fe444cb0a8c92e7f}{reference}} \mbox{\hyperlink{class_dynamic_array_adbe9d3cfddc6f8a1bb54310696cd62fc}{emplace\+\_\+back}} (Args \&\&... args)
+{\footnotesize template$<$typename... Args$>$ }\\\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_ade89863afa96812ffb29170c86c7f600}{reference}} \mbox{\hyperlink{class_dynamic_array_a8f74805ce6914c50651eda566feaf33b}{emplace\+\_\+back}} (Args \&\&... args)
 \begin{DoxyCompactList}\small\item\em Χρησιμοποιείται απο την push\+\_\+back κυρίως για να προσθέτει αντικείμενα στο τέλος του πίνακα. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_dynamic_array_a949ce797624c382439dfaed833055d2e}{push\+\_\+back}} (const T \&val)
+void \mbox{\hyperlink{class_dynamic_array_ac27ad259e9e39b494daa9487cfc02b5e}{push\+\_\+back}} (const T \&val)
 \begin{DoxyCompactList}\small\item\em Προσθέτει ένα αντικείμενο στο τέλος του πίνακα \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{iterator}} \mbox{\hyperlink{class_dynamic_array_ac6c3fea20c6eaefb0064a6f0a49388ac}{erase}} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{iterator}} iter)
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{iterator}} \mbox{\hyperlink{class_dynamic_array_aca42cb2f05ad3c088dfb20f5a6a11b41}{erase}} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{iterator}} iter)
 \begin{DoxyCompactList}\small\item\em Διαγράφω ένα συγκεκριμένο αντικείμενο χρησιμοποιόντας iterator(\+T$\ast$) \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_dynamic_array_ace517847b44099287d5a5310e580d164}{reallocate}} ()
+void \mbox{\hyperlink{class_dynamic_array_ab030948aa222cd4c97737fc384ab660f}{reallocate}} ()
 \begin{DoxyCompactList}\small\item\em Χρησιμοποιείται απο την ίδια την κλάση για να δεσμεύσει περισσότερο χώρο. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_dynamic_array_ad547667d5f5b2c707ca82d1c9b8a67e1}{move\+\_\+storage}} (T $\ast$dest, T $\ast$from, \mbox{\hyperlink{class_dynamic_array_a36ad444f30ed42d8d24e7e6b71910c34}{size\+\_\+type}} n)
+void \mbox{\hyperlink{class_dynamic_array_ac47a92b5054d4770ab60d5d7fff0e0a4}{move\+\_\+storage}} (T $\ast$dest, T $\ast$from, \mbox{\hyperlink{class_dynamic_array_a33ca22351219293343ca4a77c8c5b6b3}{size\+\_\+type}} n)
 \begin{DoxyCompactList}\small\item\em Χρησιμοποιείται για να \char`\"{}μεταφέρει\char`\"{} δεδομένα χρησιμοποιόντας την move. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{iterator}} \mbox{\hyperlink{class_dynamic_array_ac9ecf92d1dc3dbb280dcf195e0eae9d0}{begin}} () noexcept
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{iterator}} \mbox{\hyperlink{class_dynamic_array_a761016488e84552be18b6dca9b10bdc0}{begin}} () noexcept
 \begin{DoxyCompactList}\small\item\em Επιστρέφει iterator του πρώτου αντικειμένου \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{iterator}} \mbox{\hyperlink{class_dynamic_array_abd8da073d90610c455d471747480c63c}{end}} () const noexcept
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{iterator}} \mbox{\hyperlink{class_dynamic_array_ab9c7e22b95deeefb2a0da8aff9f92138}{end}} () const noexcept
 \begin{DoxyCompactList}\small\item\em Επιστρέφει iterator του τελευταίου αντικειμένου \end{DoxyCompactList}\item 
-size\+\_\+t \mbox{\hyperlink{class_dynamic_array_a64a7fd8f2d202c520c396d630a2f7b73}{size}} ()
+size\+\_\+t \mbox{\hyperlink{class_dynamic_array_a17459ad0855d07a85b92b3e3ba5f2bae}{size}} ()
 \begin{DoxyCompactList}\small\item\em Getter μεγέθους(πραγματικού) \end{DoxyCompactList}\item 
-size\+\_\+t \mbox{\hyperlink{class_dynamic_array_afb3a33152c98baec590d13884707fb4e}{capacity}} ()
+size\+\_\+t \mbox{\hyperlink{class_dynamic_array_aafc6e762480105b6d472ad0baeac0f13}{capacity}} ()
 \begin{DoxyCompactList}\small\item\em Getter μεγέθους(extra) \end{DoxyCompactList}\item 
-T \& \mbox{\hyperlink{class_dynamic_array_a86a9beb561dd66030da816e5e87bcc1b}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t N)
+T \& \mbox{\hyperlink{class_dynamic_array_af735752ed0d211f2903da2cdd2ee5e02}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t N)
 \begin{DoxyCompactList}\small\item\em Υπερφόρτωση του τελεστή \mbox{[}\mbox{]}. \end{DoxyCompactList}\item 
-T \mbox{\hyperlink{class_dynamic_array_aac160925b1815a76cb6f8f6ac28065c0}{pop\+\_\+back}} ()
+T \mbox{\hyperlink{class_dynamic_array_a9c665637c4bcc46a16ed692bad345918}{pop\+\_\+back}} ()
 \begin{DoxyCompactList}\small\item\em Αντίστοιχη της pop\+\_\+back του S\+TL Vector. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_dynamic_array_aebf8ac62282dc5c9e2800c1f13ab68ec}{$\sim$\+Dynamic\+Array}} ()
+\mbox{\hyperlink{class_dynamic_array_ab004399d442ebd2a9698cbc8da0b48f2}{$\sim$\+Dynamic\+Array}} ()
 \begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Φίλοι}
 \begin{DoxyCompactItemize}
@@ -58,43 +67,56 @@ void {\bfseries swap} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Λεπτομερής Περιγραφή}
+\subsubsection*{template$<$typename T$>$\newline
+class Dynamic\+Array$<$ T $>$}
+
+Κλάση δυναμικόυ πίνακα που χρησιμοποιεί templates.\+Για την υλοποίηση συμβουλεύθηκα το βιβλίο του Stroustroup \char`\"{}Προγραμματισμός με τη C++\char`\"{}. 
+
+Μια πολύ βασική υλοποίηση δυναμικού πίνακα που έχει αρκετές ομοιότητες με το διάνυσμα της S\+TL. 
+
 \doxysubsection{Τεκμηρίωση Μελών Ορισμών Τύπων}
-\mbox{\Hypertarget{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}\label{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}} 
-\index{DynamicArray@{DynamicArray}!iterator@{iterator}}
-\index{iterator@{iterator}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}\label{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!iterator@{iterator}}
+\index{iterator@{iterator}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{iterator}{iterator}}
-{\footnotesize\ttfamily using \mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{Dynamic\+Array\+::iterator}} =  T $\ast$}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{iterator}} =  T $\ast$}
 
-Χρησιμοποιείται σαν ψευδώνυμο για το T$\ast$ \mbox{\Hypertarget{class_dynamic_array_af2914321feedc6c0fe444cb0a8c92e7f}\label{class_dynamic_array_af2914321feedc6c0fe444cb0a8c92e7f}} 
-\index{DynamicArray@{DynamicArray}!reference@{reference}}
-\index{reference@{reference}!DynamicArray@{DynamicArray}}
+Χρησιμοποιείται σαν ψευδώνυμο για το T$\ast$ \mbox{\Hypertarget{class_dynamic_array_ade89863afa96812ffb29170c86c7f600}\label{class_dynamic_array_ade89863afa96812ffb29170c86c7f600}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!reference@{reference}}
+\index{reference@{reference}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{reference}{reference}}
-{\footnotesize\ttfamily using \mbox{\hyperlink{class_dynamic_array_af2914321feedc6c0fe444cb0a8c92e7f}{Dynamic\+Array\+::reference}} =  T \&}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_ade89863afa96812ffb29170c86c7f600}{reference}} =  T \&}
 
-Χρησιμοποιείται σαν ψευδώνυμο για το reference \mbox{\Hypertarget{class_dynamic_array_a36ad444f30ed42d8d24e7e6b71910c34}\label{class_dynamic_array_a36ad444f30ed42d8d24e7e6b71910c34}} 
-\index{DynamicArray@{DynamicArray}!size\_type@{size\_type}}
-\index{size\_type@{size\_type}!DynamicArray@{DynamicArray}}
+Χρησιμοποιείται σαν ψευδώνυμο για το reference \mbox{\Hypertarget{class_dynamic_array_a33ca22351219293343ca4a77c8c5b6b3}\label{class_dynamic_array_a33ca22351219293343ca4a77c8c5b6b3}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
-{\footnotesize\ttfamily using \mbox{\hyperlink{class_dynamic_array_a36ad444f30ed42d8d24e7e6b71910c34}{Dynamic\+Array\+::size\+\_\+type}} =  size\+\_\+t}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_a33ca22351219293343ca4a77c8c5b6b3}{size\+\_\+type}} =  size\+\_\+t}
 
 Χρησιμοποιείται σαν ψευδώνυμο για το size\+\_\+t 
 
 \doxysubsection{Τεκμηρίωση Constructor \& Destructor}
-\mbox{\Hypertarget{class_dynamic_array_a9ebbb7fde029b42a39531376607dbe6c}\label{class_dynamic_array_a9ebbb7fde029b42a39531376607dbe6c}} 
-\index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
-\index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_ad9db9185bc2238a69cd35fb4d7d86349}\label{class_dynamic_array_ad9db9185bc2238a69cd35fb4d7d86349}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}}
+\index{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily Dynamic\+Array\+::\+Dynamic\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
 
 
 Δημιουργία ενός νέου αντικειμένου Dynamic\+Array.\+Εάν κληθεί αυτός ο constructor τότε δεσμεύω χώρο χρησιμοποιόντας το m\+\_\+capacity. Δηλαδή δεσμεύει χώρο ακόμα και εάν ο δυναμικός πίνακας είναι κενός. 
 
-\mbox{\Hypertarget{class_dynamic_array_aa4e3a93125adaf0118db644534205e38}\label{class_dynamic_array_aa4e3a93125adaf0118db644534205e38}} 
-\index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
-\index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_afe29de47101ad29d9709af52abbcf115}\label{class_dynamic_array_afe29de47101ad29d9709af52abbcf115}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}}
+\index{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily Dynamic\+Array\+::\+Dynamic\+Array (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ T $>$}]{init }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ T $>$}]{init }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -105,11 +127,12 @@ void {\bfseries swap} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$
 {\em init} & Η initializer\+\_\+list με την οποία θα γίνει η αρχικοποίηση \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_dynamic_array_a989f3b698b01fc39d61e5f7327e6ada5}\label{class_dynamic_array_a989f3b698b01fc39d61e5f7327e6ada5}} 
-\index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
-\index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_aebb70bbf2c1da409dc0f4915b509ce64}\label{class_dynamic_array_aebb70bbf2c1da409dc0f4915b509ce64}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}}
+\index{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily Dynamic\+Array\+::\+Dynamic\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -120,11 +143,12 @@ void {\bfseries swap} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$
 {\em origin} & Reference στο αντικείμενο απο το οποίο θα αντιγραφούν τα δεδομένα \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_dynamic_array_aca80a4f116e874a1c6c380be17b1c745}\label{class_dynamic_array_aca80a4f116e874a1c6c380be17b1c745}} 
-\index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
-\index{DynamicArray@{DynamicArray}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_afb3795fd350e74dffd54deedc5456146}\label{class_dynamic_array_afb3795fd350e74dffd54deedc5456146}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}}
+\index{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{DynamicArray()}{DynamicArray()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily Dynamic\+Array\+::\+Dynamic\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&\&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&\&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -135,11 +159,12 @@ void {\bfseries swap} (\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$
 {\em origin} & Rvalue reference στο αντικείμενο απο το οποίο θα αντιγραφούν τα δεδομένα \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_dynamic_array_aebf8ac62282dc5c9e2800c1f13ab68ec}\label{class_dynamic_array_aebf8ac62282dc5c9e2800c1f13ab68ec}} 
-\index{DynamicArray@{DynamicArray}!````~DynamicArray@{$\sim$DynamicArray}}
-\index{````~DynamicArray@{$\sim$DynamicArray}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_ab004399d442ebd2a9698cbc8da0b48f2}\label{class_dynamic_array_ab004399d442ebd2a9698cbc8da0b48f2}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!````~DynamicArray@{$\sim$DynamicArray}}
+\index{````~DynamicArray@{$\sim$DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{$\sim$DynamicArray()}{~DynamicArray()}}
-{\footnotesize\ttfamily Dynamic\+Array\+::$\sim$\+Dynamic\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -148,24 +173,26 @@ destructor
 
 
 \doxysubsection{Τεκμηρίωση Συναρτήσεων Μελών}
-\mbox{\Hypertarget{class_dynamic_array_ac9ecf92d1dc3dbb280dcf195e0eae9d0}\label{class_dynamic_array_ac9ecf92d1dc3dbb280dcf195e0eae9d0}} 
-\index{DynamicArray@{DynamicArray}!begin@{begin}}
-\index{begin@{begin}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_a761016488e84552be18b6dca9b10bdc0}\label{class_dynamic_array_a761016488e84552be18b6dca9b10bdc0}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{begin()}{begin()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$T$>$\+::\mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{iterator}} Dynamic\+Array\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$T$>$\+::\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{iterator}} \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
 
 
 Επιστρέφει iterator του πρώτου αντικειμένου 
 
 \begin{DoxyReturn}{Επιστρέφει}
-\mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{Dynamic\+Array$<$\+T$>$\+::iterator}} iterator που δείχνει στο πρώτο αντικείμενο 
+\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{Dynamic\+Array$<$\+T$>$\+::iterator}} iterator που δείχνει στο πρώτο αντικείμενο 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_dynamic_array_afb3a33152c98baec590d13884707fb4e}\label{class_dynamic_array_afb3a33152c98baec590d13884707fb4e}} 
-\index{DynamicArray@{DynamicArray}!capacity@{capacity}}
-\index{capacity@{capacity}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_aafc6e762480105b6d472ad0baeac0f13}\label{class_dynamic_array_aafc6e762480105b6d472ad0baeac0f13}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!capacity@{capacity}}
+\index{capacity@{capacity}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{capacity()}{capacity()}}
-{\footnotesize\ttfamily size\+\_\+t Dynamic\+Array\+::capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -174,22 +201,24 @@ Getter μεγέθους(extra)
 \begin{DoxyReturn}{Επιστρέφει}
 size\+\_\+t Το extra μέγεθος. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_dynamic_array_a0bcf07ad6f67ce592844a68d1e02f3a2}\label{class_dynamic_array_a0bcf07ad6f67ce592844a68d1e02f3a2}} 
-\index{DynamicArray@{DynamicArray}!clear@{clear}}
-\index{clear@{clear}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_aaeae200f3f029d90d2c00d94951d25cc}\label{class_dynamic_array_aaeae200f3f029d90d2c00d94951d25cc}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{clear()}{clear()}}
-{\footnotesize\ttfamily void Dynamic\+Array\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
 
 
 Χρησιμοποιείται για να αδειάσει ο δυναμικός πίνακας.\+Δεν είναι ο destructor. 
 
-\mbox{\Hypertarget{class_dynamic_array_adbe9d3cfddc6f8a1bb54310696cd62fc}\label{class_dynamic_array_adbe9d3cfddc6f8a1bb54310696cd62fc}} 
-\index{DynamicArray@{DynamicArray}!emplace\_back@{emplace\_back}}
-\index{emplace\_back@{emplace\_back}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_a8f74805ce6914c50651eda566feaf33b}\label{class_dynamic_array_a8f74805ce6914c50651eda566feaf33b}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!emplace\_back@{emplace\_back}}
+\index{emplace\_back@{emplace\_back}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{emplace\_back()}{emplace\_back()}}
-{\footnotesize\ttfamily template$<$typename... Args$>$ \\
-\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$T$>$\+::\mbox{\hyperlink{class_dynamic_array_af2914321feedc6c0fe444cb0a8c92e7f}{reference}} Dynamic\+Array\+::emplace\+\_\+back (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename... Args$>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$T$>$\+::\mbox{\hyperlink{class_dynamic_array_ade89863afa96812ffb29170c86c7f600}{reference}} \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::emplace\+\_\+back (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -206,26 +235,28 @@ size\+\_\+t Το extra μέγεθος.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Επιστρέφει}
-\mbox{\hyperlink{class_dynamic_array_af2914321feedc6c0fe444cb0a8c92e7f}{Dynamic\+Array$<$\+T$>$\+::reference}} Επιστρέφει αναφορά στον πίνακα 
+\mbox{\hyperlink{class_dynamic_array_ade89863afa96812ffb29170c86c7f600}{Dynamic\+Array$<$\+T$>$\+::reference}} Επιστρέφει αναφορά στον πίνακα 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_dynamic_array_abd8da073d90610c455d471747480c63c}\label{class_dynamic_array_abd8da073d90610c455d471747480c63c}} 
-\index{DynamicArray@{DynamicArray}!end@{end}}
-\index{end@{end}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_ab9c7e22b95deeefb2a0da8aff9f92138}\label{class_dynamic_array_ab9c7e22b95deeefb2a0da8aff9f92138}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!end@{end}}
+\index{end@{end}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{end()}{end()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$T$>$\+::\mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{iterator}} Dynamic\+Array\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$T$>$\+::\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{iterator}} \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
 
 
 Επιστρέφει iterator του τελευταίου αντικειμένου 
 
 \begin{DoxyReturn}{Επιστρέφει}
-\mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{Dynamic\+Array$<$\+T$>$\+::iterator}} iterator που δείχνει στο τελευταίο αντικείμενο 
+\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{Dynamic\+Array$<$\+T$>$\+::iterator}} iterator που δείχνει στο τελευταίο αντικείμενο 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_dynamic_array_ac6c3fea20c6eaefb0064a6f0a49388ac}\label{class_dynamic_array_ac6c3fea20c6eaefb0064a6f0a49388ac}} 
-\index{DynamicArray@{DynamicArray}!erase@{erase}}
-\index{erase@{erase}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_aca42cb2f05ad3c088dfb20f5a6a11b41}\label{class_dynamic_array_aca42cb2f05ad3c088dfb20f5a6a11b41}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!erase@{erase}}
+\index{erase@{erase}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{erase()}{erase()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$T$>$\+::\mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{iterator}} Dynamic\+Array\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{iterator}}}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$T$>$\+::\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{iterator}} \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{iterator}}}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -237,13 +268,14 @@ size\+\_\+t Το extra μέγεθος.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Επιστρέφει}
-\mbox{\hyperlink{class_dynamic_array_abb8c62e5a1a0113a37f35ffa80ceb7a6}{Dynamic\+Array$<$\+T$>$\+::iterator}} Επιστρέφει iterator όπως ακριβώς γίνεται και στον vector της S\+TL 
+\mbox{\hyperlink{class_dynamic_array_a5a41c61244c36b56d373d36cda199ae9}{Dynamic\+Array$<$\+T$>$\+::iterator}} Επιστρέφει iterator όπως ακριβώς γίνεται και στον vector της S\+TL 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_dynamic_array_ad547667d5f5b2c707ca82d1c9b8a67e1}\label{class_dynamic_array_ad547667d5f5b2c707ca82d1c9b8a67e1}} 
-\index{DynamicArray@{DynamicArray}!move\_storage@{move\_storage}}
-\index{move\_storage@{move\_storage}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_ac47a92b5054d4770ab60d5d7fff0e0a4}\label{class_dynamic_array_ac47a92b5054d4770ab60d5d7fff0e0a4}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!move\_storage@{move\_storage}}
+\index{move\_storage@{move\_storage}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{move\_storage()}{move\_storage()}}
-{\footnotesize\ttfamily void Dynamic\+Array\+::move\+\_\+storage (\begin{DoxyParamCaption}\item[{T $\ast$}]{dest,  }\item[{T $\ast$}]{from,  }\item[{\mbox{\hyperlink{class_dynamic_array_a36ad444f30ed42d8d24e7e6b71910c34}{size\+\_\+type}}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::move\+\_\+storage (\begin{DoxyParamCaption}\item[{T $\ast$}]{dest,  }\item[{T $\ast$}]{from,  }\item[{\mbox{\hyperlink{class_dynamic_array_a33ca22351219293343ca4a77c8c5b6b3}{size\+\_\+type}}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -258,11 +290,12 @@ size\+\_\+t Το extra μέγεθος.
 {\em n} & Πλήθος/Μέγεθος \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_dynamic_array_a82f9faabe08e734603a0c9c2adaffda1}\label{class_dynamic_array_a82f9faabe08e734603a0c9c2adaffda1}} 
-\index{DynamicArray@{DynamicArray}!operator=@{operator=}}
-\index{operator=@{operator=}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_a1ff8d144b58c18b3bdbed10147d4d516}\label{class_dynamic_array_a1ff8d144b58c18b3bdbed10147d4d516}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$T$>$\& Dynamic\+Array\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$T$>$\& \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -276,11 +309,12 @@ size\+\_\+t Το extra μέγεθος.
 \begin{DoxyReturn}{Επιστρέφει}
 Dynamic\+Array$<$\+T$>$\& 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_dynamic_array_a86a9beb561dd66030da816e5e87bcc1b}\label{class_dynamic_array_a86a9beb561dd66030da816e5e87bcc1b}} 
-\index{DynamicArray@{DynamicArray}!operator\mbox{[}\mbox{]}@{operator[]}}
-\index{operator\mbox{[}\mbox{]}@{operator[]}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_af735752ed0d211f2903da2cdd2ee5e02}\label{class_dynamic_array_af735752ed0d211f2903da2cdd2ee5e02}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
-{\footnotesize\ttfamily T\& Dynamic\+Array\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -294,11 +328,12 @@ Dynamic\+Array$<$\+T$>$\&
 \begin{DoxyReturn}{Επιστρέφει}
 T\& Το αντικείμενο που βρίσκεται στο συγκεκριμένο index 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_dynamic_array_aac160925b1815a76cb6f8f6ac28065c0}\label{class_dynamic_array_aac160925b1815a76cb6f8f6ac28065c0}} 
-\index{DynamicArray@{DynamicArray}!pop\_back@{pop\_back}}
-\index{pop\_back@{pop\_back}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_a9c665637c4bcc46a16ed692bad345918}\label{class_dynamic_array_a9c665637c4bcc46a16ed692bad345918}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
-{\footnotesize\ttfamily T Dynamic\+Array\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -307,11 +342,12 @@ T\& Το αντικείμενο που βρίσκεται στο συγκεκρ�
 \begin{DoxyReturn}{Επιστρέφει}
 T Το αντικείμενο που έγινε pop 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_dynamic_array_a949ce797624c382439dfaed833055d2e}\label{class_dynamic_array_a949ce797624c382439dfaed833055d2e}} 
-\index{DynamicArray@{DynamicArray}!push\_back@{push\_back}}
-\index{push\_back@{push\_back}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_ac27ad259e9e39b494daa9487cfc02b5e}\label{class_dynamic_array_ac27ad259e9e39b494daa9487cfc02b5e}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
-{\footnotesize\ttfamily void Dynamic\+Array\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -322,21 +358,23 @@ T Το αντικείμενο που έγινε pop
 {\em val} & Το αντικείμενο που θέλουμε να προστεθεί. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_dynamic_array_ace517847b44099287d5a5310e580d164}\label{class_dynamic_array_ace517847b44099287d5a5310e580d164}} 
-\index{DynamicArray@{DynamicArray}!reallocate@{reallocate}}
-\index{reallocate@{reallocate}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_ab030948aa222cd4c97737fc384ab660f}\label{class_dynamic_array_ab030948aa222cd4c97737fc384ab660f}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!reallocate@{reallocate}}
+\index{reallocate@{reallocate}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{reallocate()}{reallocate()}}
-{\footnotesize\ttfamily void Dynamic\+Array\+::reallocate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::reallocate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Χρησιμοποιείται απο την ίδια την κλάση για να δεσμεύσει περισσότερο χώρο. 
 
-\mbox{\Hypertarget{class_dynamic_array_a64a7fd8f2d202c520c396d630a2f7b73}\label{class_dynamic_array_a64a7fd8f2d202c520c396d630a2f7b73}} 
-\index{DynamicArray@{DynamicArray}!size@{size}}
-\index{size@{size}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_a17459ad0855d07a85b92b3e3ba5f2bae}\label{class_dynamic_array_a17459ad0855d07a85b92b3e3ba5f2bae}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!size@{size}}
+\index{size@{size}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{size()}{size()}}
-{\footnotesize\ttfamily size\+\_\+t Dynamic\+Array\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -345,11 +383,12 @@ Getter μεγέθους(πραγματικού)
 \begin{DoxyReturn}{Επιστρέφει}
 size\+\_\+t Το πραγματικό μέγεθος 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_dynamic_array_a0e446f09df1a745343ee85cc6e7cbb63}\label{class_dynamic_array_a0e446f09df1a745343ee85cc6e7cbb63}} 
-\index{DynamicArray@{DynamicArray}!swap@{swap}}
-\index{swap@{swap}!DynamicArray@{DynamicArray}}
+\mbox{\Hypertarget{class_dynamic_array_a20d15ae1c2eacc521ddf9fe8383518da}\label{class_dynamic_array_a20d15ae1c2eacc521ddf9fe8383518da}} 
+\index{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!swap@{swap}}
+\index{swap@{swap}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{swap()}{swap()}}
-{\footnotesize\ttfamily void Dynamic\+Array\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 

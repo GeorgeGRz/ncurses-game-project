@@ -14,7 +14,6 @@ var annotated_dup =
     [ "LightedTorch", "class_lighted_torch.html", "class_lighted_torch" ],
     [ "Lighter", "class_lighter.html", "class_lighter" ],
     [ "OpenCoconut", "class_open_coconut.html", "class_open_coconut" ],
-    [ "Person", "class_person.html", "class_person" ],
     [ "Player", "class_player.html", "class_player" ],
     [ "Rock", "class_rock.html", "class_rock" ],
     [ "Vector2D", "class_vector2_d.html", "class_vector2_d" ],

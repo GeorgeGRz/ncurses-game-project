@@ -1,638 +1,309 @@
 \begin{theindex}
 
-  \item {$\sim$Axe}
-    \subitem {Axe}, 8
-  \item {$\sim$Coconut}
-    \subitem {Coconut}, 9
   \item {$\sim$DynamicArray}
-    \subitem {DynamicArray$<$ T $>$}, 13
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{10}
   \item {$\sim$Environment}
-    \subitem {Environment}, 19
-  \item {$\sim$GameScene}
-    \subitem {GameScene}, 23
-  \item {$\sim$Hut}
-    \subitem {Hut}, 26
-  \item {$\sim$Inventory}
-    \subitem {Inventory}, 27
+    \subitem {Environment}, \hyperpage{18}
   \item {$\sim$IoClass}
-    \subitem {IoClass}, 29
-  \item {$\sim$Item}
-    \subitem {Item}, 32
-  \item {$\sim$Leafs}
-    \subitem {Leafs}, 34
-  \item {$\sim$LightedTorch}
-    \subitem {LightedTorch}, 35
-  \item {$\sim$Lighter}
-    \subitem {Lighter}, 36
-  \item {$\sim$OpenCoconut}
-    \subitem {OpenCoconut}, 37
-  \item {$\sim$Player}
-    \subitem {Player}, 40
-  \item {$\sim$Rock}
-    \subitem {Rock}, 43
-  \item {$\sim$WoodStick}
-    \subitem {WoodStick}, 50
+    \subitem {IoClass}, \hyperpage{26}
 
   \indexspace
 
   \item {addItem}
-    \subitem {Inventory}, 27
+    \subitem {Inventory}, \hyperpage{23}
   \item {addItemToGround}
-    \subitem {Environment}, 19
+    \subitem {Environment}, \hyperpage{18}
   \item {addItemToInv}
-    \subitem {Environment}, 19
+    \subitem {Environment}, \hyperpage{19}
   \item {addToInventory}
-    \subitem {Player}, 40
-  \item {Axe}, 7
-    \subitem {$\sim$Axe}, 8
-    \subitem {Axe}, 7
-  \item {axe}
-    \subitem {Item.h}, 60
+    \subitem {Player}, \hyperpage{35}
+  \item {Axe}, \hyperpage{5}
 
   \indexspace
 
   \item {begin}
-    \subitem {DynamicArray$<$ T $>$}, 13
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{10}
 
   \indexspace
 
   \item {capacity}
-    \subitem {DynamicArray$<$ T $>$}, 13
-  \item {checkHunger}
-    \subitem {GameScene}, 24
-  \item {checkOccurences}
-    \subitem {Environment}, 20
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{11}
   \item {clear}
-    \subitem {DynamicArray$<$ T $>$}, 14
-  \item {clearAll}
-    \subitem {Environment}, 20
-  \item {Coconut}, 8
-    \subitem {$\sim$Coconut}, 9
-    \subitem {Coconut}, 8
-  \item {coconut}
-    \subitem {Item.h}, 60
-  \item {cross}
-    \subitem {Vector2D$<$ T $>$}, 45
-  \item {csv\_parser.cpp}
-    \subitem {main}, 57
-    \subitem {operator$>$$>$}, 57
-  \item {CSVRow}, 9
-    \subitem {operator[]}, 9
-    \subitem {readNextRow}, 9, 10
-    \subitem {size}, 10
-  \item {CSVRow/CSVRow.cpp}, 51
-  \item {CSVRow/CSVRow.h}, 51
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{11}
+  \item {Coconut}, \hyperpage{5}
+  \item {CSVRow}, \hyperpage{6}
+    \subitem {operator[]}, \hyperpage{6}
+    \subitem {readNextRow}, \hyperpage{6}
+    \subitem {size}, \hyperpage{7}
 
   \indexspace
 
-  \item {deallocateItem}
-    \subitem {Player}, 40
-  \item {dist}
-    \subitem {Vector2D$<$ T $>$}, 45
-  \item {dot}
-    \subitem {Vector2D$<$ T $>$}, 45
   \item {DynamicArray}
-    \subitem {DynamicArray$<$ T $>$}, 12, 13
-  \item {DynamicArray$<$ T $>$}, 10
-    \subitem {$\sim$DynamicArray}, 13
-    \subitem {begin}, 13
-    \subitem {capacity}, 13
-    \subitem {clear}, 14
-    \subitem {DynamicArray}, 12, 13
-    \subitem {emplace\_back}, 14
-    \subitem {end}, 14
-    \subitem {erase}, 15
-    \subitem {iterator}, 12
-    \subitem {move\_storage}, 15
-    \subitem {operator=}, 15
-    \subitem {operator[]}, 16
-    \subitem {pop\_back}, 16
-    \subitem {push\_back}, 16
-    \subitem {reallocate}, 17
-    \subitem {reference}, 12
-    \subitem {size}, 17
-    \subitem {size\_type}, 12
-    \subitem {swap}, 17
-  \item {DynamicArray/DynamicArray.cpp}, 51
-  \item {DynamicArray/DynamicArray.h}, 51
-  \item {DynamicArray/main.cpp}, 52
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{9, 10}
+  \item {DynamicArray$<$ T $>$}, \hyperpage{7}
+    \subitem {$\sim$DynamicArray}, \hyperpage{10}
+    \subitem {begin}, \hyperpage{10}
+    \subitem {capacity}, \hyperpage{11}
+    \subitem {clear}, \hyperpage{11}
+    \subitem {DynamicArray}, \hyperpage{9, 10}
+    \subitem {emplace\_back}, \hyperpage{11}
+    \subitem {end}, \hyperpage{12}
+    \subitem {erase}, \hyperpage{12}
+    \subitem {iterator}, \hyperpage{8}
+    \subitem {move\_storage}, \hyperpage{12}
+    \subitem {operator=}, \hyperpage{14}
+    \subitem {operator[]}, \hyperpage{14}
+    \subitem {pop\_back}, \hyperpage{14}
+    \subitem {push\_back}, \hyperpage{15}
+    \subitem {reallocate}, \hyperpage{15}
+    \subitem {reference}, \hyperpage{9}
+    \subitem {size}, \hyperpage{15}
+    \subitem {size\_type}, \hyperpage{9}
+    \subitem {swap}, \hyperpage{15}
 
   \indexspace
 
   \item {emplace\_back}
-    \subitem {DynamicArray$<$ T $>$}, 14
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{11}
   \item {end}
-    \subitem {DynamicArray$<$ T $>$}, 14
-  \item {EnumOfIndex}
-    \subitem {Environment.cpp}, 53
-  \item {Environment}, 18
-    \subitem {$\sim$Environment}, 19
-    \subitem {addItemToGround}, 19
-    \subitem {addItemToInv}, 19
-    \subitem {checkOccurences}, 20
-    \subitem {clearAll}, 20
-    \subitem {Environment}, 18, 19
-    \subitem {generateGrid}, 20
-    \subitem {getGrid}, 20
-    \subitem {getGroundItems}, 20
-    \subitem {getItemAt}, 20
-    \subitem {getItemsNearPlayer}, 20
-    \subitem {getPlayer}, 21
-    \subitem {getPlayerCraft}, 21
-    \subitem {getPlayerItem}, 21
-    \subitem {getPlayerItems}, 21
-    \subitem {getX}, 21
-    \subitem {getY}, 21
-    \subitem {handleLoadedData}, 21
-    \subitem {lastID}, 22
-    \subitem {movePlayer}, 22
-    \subitem {removeFromPlayerInv}, 22
-    \subitem {removeItem}, 22
-  \item {Environment.cpp}
-    \subitem {EnumOfIndex}, 53
-    \subitem {generateRandomNumber}, 54
-    \subitem {genRandomItemType}, 54
-    \subitem {getIndexInWord}, 54
-    \subitem {getStringAt}, 54
-  \item {Environment/Environment.cpp}, 53
-  \item {Environment/Environment.h}, 54
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{12}
+  \item {Environment}, \hyperpage{16}
+    \subitem {$\sim$Environment}, \hyperpage{18}
+    \subitem {addItemToGround}, \hyperpage{18}
+    \subitem {addItemToInv}, \hyperpage{19}
+    \subitem {Environment}, \hyperpage{17, 18}
+    \subitem {generateGrid}, \hyperpage{19}
+    \subitem {getItemsNearPlayer}, \hyperpage{19}
+    \subitem {getPlayerCraft}, \hyperpage{20}
+    \subitem {getPlayerItem}, \hyperpage{20}
+    \subitem {handleLoadedData}, \hyperpage{20}
+    \subitem {lastID}, \hyperpage{21}
+    \subitem {movePlayer}, \hyperpage{21}
+    \subitem {removeFromPlayerInv}, \hyperpage{21}
+    \subitem {removeItemFromGround}, \hyperpage{21}
   \item {erase}
-    \subitem {DynamicArray$<$ T $>$}, 15
-  \item {exiting}
-    \subitem {GameScene.h}, 56
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{12}
 
   \indexspace
 
-  \item {GameScene}, 22
-    \subitem {$\sim$GameScene}, 23
-    \subitem {checkHunger}, 24
-    \subitem {GameScene}, 23
-    \subitem {getState}, 24
-    \subitem {handleCraftingMenu}, 24
-    \subitem {handleEndingMenu}, 24
-    \subitem {handleInventoryMenu}, 24
-    \subitem {handleMainMenu}, 24
-    \subitem {parseSelection}, 24
-    \subitem {Play}, 25
-    \subitem {setState}, 25
-    \subitem {startupScreen}, 25
-  \item {GameScene.cpp}
-    \subitem {setupFlags}, 55
-    \subitem {uparxounDipla}, 55
-  \item {GameScene.h}
-    \subitem {exiting}, 56
-    \subitem {GameState}, 56
-    \subitem {initializing}, 56
-    \subitem {loading}, 56
-    \subitem {running}, 56
-    \subitem {saving}, 56
-    \subitem {waiting}, 56
-  \item {GameScene/GameScene.cpp}, 55
-  \item {GameScene/GameScene.h}, 55
-  \item {GameState}
-    \subitem {GameScene.h}, 56
+  \item {GameScene}, \hyperpage{22}
   \item {generateGrid}
-    \subitem {Environment}, 20
-  \item {generateRandomNumber}
-    \subitem {Environment.cpp}, 54
-  \item {genRandomItemType}
-    \subitem {Environment.cpp}, 54
+    \subitem {Environment}, \hyperpage{19}
   \item {getCrafted}
-    \subitem {Player}, 40
-  \item {getGrid}
-    \subitem {Environment}, 20
-  \item {getGroundItems}
-    \subitem {Environment}, 20
+    \subitem {Player}, \hyperpage{35}
   \item {getHunger}
-    \subitem {Player}, 40
-  \item {getId}
-    \subitem {Item}, 32
-  \item {getIfOnFloor}
-    \subitem {Item}, 32
-  \item {getIndexInWord}
-    \subitem {Environment.cpp}, 54
+    \subitem {Player}, \hyperpage{35}
   \item {getInput}
-    \subitem {IoClass}, 29
+    \subitem {IoClass}, \hyperpage{26}
   \item {getInventory}
-    \subitem {Player}, 40
+    \subitem {Player}, \hyperpage{35}
   \item {getInventoryItems}
-    \subitem {Inventory}, 27
+    \subitem {Inventory}, \hyperpage{24}
   \item {getItemAt}
-    \subitem {Environment}, 20
-    \subitem {Inventory}, 27
-    \subitem {Player}, 40
+    \subitem {Inventory}, \hyperpage{24}
+    \subitem {Player}, \hyperpage{36}
   \item {getItems}
-    \subitem {Player}, 41
+    \subitem {Player}, \hyperpage{36}
   \item {getItemsNearPlayer}
-    \subitem {Environment}, 20
+    \subitem {Environment}, \hyperpage{19}
   \item {getMaxX}
-    \subitem {IoClass}, 29
+    \subitem {IoClass}, \hyperpage{27}
   \item {getMaxY}
-    \subitem {IoClass}, 30
+    \subitem {IoClass}, \hyperpage{27}
   \item {getName}
-    \subitem {Item}, 32
-    \subitem {Player}, 41
-  \item {getPlayer}
-    \subitem {Environment}, 21
+    \subitem {Player}, \hyperpage{36}
   \item {getPlayerCraft}
-    \subitem {Environment}, 21
+    \subitem {Environment}, \hyperpage{20}
   \item {getPlayerItem}
-    \subitem {Environment}, 21
-  \item {getPlayerItems}
-    \subitem {Environment}, 21
+    \subitem {Environment}, \hyperpage{20}
   \item {getPosition}
-    \subitem {Item}, 32
-    \subitem {Player}, 41
-  \item {getSize}
-    \subitem {Inventory}, 28
-  \item {getState}
-    \subitem {GameScene}, 24
-  \item {getString}
-    \subitem {Person}, 38
-  \item {getStringAt}
-    \subitem {Environment.cpp}, 54
-  \item {getSurname}
-    \subitem {Person}, 38
-  \item {getType}
-    \subitem {Item}, 33
-  \item {getX}
-    \subitem {Environment}, 21
-  \item {getY}
-    \subitem {Environment}, 21
+    \subitem {Player}, \hyperpage{36}
 
   \indexspace
 
-  \item {handleCraftingMenu}
-    \subitem {GameScene}, 24
-  \item {handleEndingMenu}
-    \subitem {GameScene}, 24
-  \item {handleInventoryMenu}
-    \subitem {GameScene}, 24
   \item {handleLoadedData}
-    \subitem {Environment}, 21
-  \item {handleMainMenu}
-    \subitem {GameScene}, 24
-  \item {Hut}, 25
-    \subitem {$\sim$Hut}, 26
-    \subitem {Hut}, 25, 26
-  \item {hut}
-    \subitem {Item.h}, 60
+    \subitem {Environment}, \hyperpage{20}
+  \item {Hut}, \hyperpage{22}
 
   \indexspace
 
-  \item {initializing}
-    \subitem {GameScene.h}, 56
-  \item {Inventory}, 26
-    \subitem {$\sim$Inventory}, 27
-    \subitem {addItem}, 27
-    \subitem {getInventoryItems}, 27
-    \subitem {getItemAt}, 27
-    \subitem {getSize}, 28
-    \subitem {Inventory}, 27
-    \subitem {itemTypeCount}, 28
-    \subitem {operator=}, 28
-    \subitem {removeAfterCrafting}, 28
-    \subitem {removeAll}, 28
-    \subitem {removeItemAt}, 28
-  \item {Inventory/Inventory.cpp}, 56
-  \item {Inventory/Inventory.h}, 56
-  \item {IO/csv\_parser.cpp}, 57
-  \item {IO/IoClass.cpp}, 57
-  \item {IO/IoClass.h}, 58
-  \item {IoClass}, 29
-    \subitem {$\sim$IoClass}, 29
-    \subitem {getInput}, 29
-    \subitem {getMaxX}, 29
-    \subitem {getMaxY}, 30
-    \subitem {IoClass}, 29
-    \subitem {loadFromFile}, 30
-    \subitem {printEnvironment}, 30
-    \subitem {printPlayerStats}, 30
-    \subitem {printToCoordsAnimated}, 30
-    \subitem {readString}, 30
-    \subitem {saveToFile}, 30
-    \subitem {showMenu}, 31
-  \item {IoClass.cpp}
-    \subitem {operator$<$$<$}, 58
-    \subitem {operator$>$$>$}, 58
-    \subitem {replace}, 58
-  \item {Item}, 31
-    \subitem {$\sim$Item}, 32
-    \subitem {getId}, 32
-    \subitem {getIfOnFloor}, 32
-    \subitem {getName}, 32
-    \subitem {getPosition}, 32
-    \subitem {getType}, 33
-    \subitem {Item}, 31, 32
-    \subitem {operator+}, 33
-    \subitem {setisOnFloor}, 33
-    \subitem {setType}, 33
-  \item {Item.h}
-    \subitem {axe}, 60
-    \subitem {coconut}, 60
-    \subitem {hut}, 60
-    \subitem {itemType}, 60
-    \subitem {leafs}, 60
-    \subitem {lightedtorch}, 60
-    \subitem {lighter}, 60
-    \subitem {opencoconut}, 60
-    \subitem {rock}, 60
-    \subitem {woodstick}, 60
-  \item {Items/Axe/Axe.cpp}, 59
-  \item {Items/Axe/Axe.h}, 59
-  \item {Items/Coconut/Coconut.cpp}, 59
-  \item {Items/Coconut/Coconut.h}, 59
-  \item {Items/Hut/Hut.cpp}, 59
-  \item {Items/Hut/Hut.h}, 59
-  \item {Items/Item/Item.cpp}, 60
-  \item {Items/Item/Item.h}, 60
-  \item {Items/Leafs/Leafs.cpp}, 61
-  \item {Items/Leafs/Leafs.h}, 61
-  \item {Items/LightedTorch/LightedTorch.cpp}, 61
-  \item {Items/LightedTorch/LightedTorch.h}, 61
-  \item {Items/Lighter/Lighter.cpp}, 61
-  \item {Items/Lighter/Lighter.h}, 61
-  \item {Items/OpenCoconut/OpenCoconut.cpp}, 62
-  \item {Items/OpenCoconut/OpenCoconut.h}, 62
-  \item {Items/Rock/Rock.cpp}, 62
-  \item {Items/Rock/Rock.h}, 62
-  \item {Items/WoodStick/WoodStick.cpp}, 62
-  \item {Items/WoodStick/WoodStick.h}, 63
-  \item {itemType}
-    \subitem {Item.h}, 60
+  \item {Inventory}, \hyperpage{23}
+    \subitem {addItem}, \hyperpage{23}
+    \subitem {getInventoryItems}, \hyperpage{24}
+    \subitem {getItemAt}, \hyperpage{24}
+    \subitem {itemTypeCount}, \hyperpage{24}
+    \subitem {removeAfterCrafting}, \hyperpage{24}
+    \subitem {removeAll}, \hyperpage{25}
+    \subitem {removeItemAt}, \hyperpage{25}
+  \item {IoClass}, \hyperpage{25}
+    \subitem {$\sim$IoClass}, \hyperpage{26}
+    \subitem {getInput}, \hyperpage{26}
+    \subitem {getMaxX}, \hyperpage{27}
+    \subitem {getMaxY}, \hyperpage{27}
+    \subitem {loadFromFile}, \hyperpage{27}
+    \subitem {printEnvironment}, \hyperpage{28}
+    \subitem {printPlayerStats}, \hyperpage{28}
+    \subitem {printToCoordsAnimated}, \hyperpage{28}
+    \subitem {readString}, \hyperpage{29}
+    \subitem {saveToFile}, \hyperpage{29}
+    \subitem {showMenu}, \hyperpage{29}
+  \item {Item}, \hyperpage{30}
+    \subitem {operator+}, \hyperpage{31}
   \item {itemTypeCount}
-    \subitem {Inventory}, 28
+    \subitem {Inventory}, \hyperpage{24}
   \item {iterator}
-    \subitem {DynamicArray$<$ T $>$}, 12
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{8}
 
   \indexspace
 
   \item {lastID}
-    \subitem {Environment}, 22
-  \item {Leafs}, 33
-    \subitem {$\sim$Leafs}, 34
-    \subitem {Leafs}, 34
-  \item {leafs}
-    \subitem {Item.h}, 60
+    \subitem {Environment}, \hyperpage{21}
+  \item {Leafs}, \hyperpage{31}
   \item {length}
-    \subitem {Vector2D$<$ T $>$}, 45
-  \item {LightedTorch}, 35
-    \subitem {$\sim$LightedTorch}, 35
-    \subitem {LightedTorch}, 35
-  \item {lightedtorch}
-    \subitem {Item.h}, 60
-  \item {Lighter}, 36
-    \subitem {$\sim$Lighter}, 36
-    \subitem {Lighter}, 36
-  \item {lighter}
-    \subitem {Item.h}, 60
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{41}
+  \item {LightedTorch}, \hyperpage{32}
+  \item {Lighter}, \hyperpage{32}
   \item {loadFromFile}
-    \subitem {IoClass}, 30
-  \item {loading}
-    \subitem {GameScene.h}, 56
+    \subitem {IoClass}, \hyperpage{27}
 
   \indexspace
 
-  \item {main}
-    \subitem {csv\_parser.cpp}, 57
-    \subitem {main.cpp}, 52, 53
-  \item {main.cpp}, 52
-    \subitem {main}, 52, 53
-    \subitem {operator$<$$<$}, 53
   \item {move\_storage}
-    \subitem {DynamicArray$<$ T $>$}, 15
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{12}
   \item {movePlayer}
-    \subitem {Environment}, 22
+    \subitem {Environment}, \hyperpage{21}
   \item {moveToCoordinates}
-    \subitem {Player}, 41
+    \subitem {Player}, \hyperpage{37}
 
   \indexspace
 
   \item {normalize}
-    \subitem {Vector2D$<$ T $>$}, 46
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{42}
 
   \indexspace
 
-  \item {OpenCoconut}, 37
-    \subitem {$\sim$OpenCoconut}, 37
-    \subitem {OpenCoconut}, 37
-  \item {opencoconut}
-    \subitem {Item.h}, 60
-  \item {operator$<$$<$}
-    \subitem {IoClass.cpp}, 58
-    \subitem {main.cpp}, 53
-    \subitem {Player.cpp}, 63
-  \item {operator$>$$>$}
-    \subitem {csv\_parser.cpp}, 57
-    \subitem {IoClass.cpp}, 58
+  \item {OpenCoconut}, \hyperpage{33}
   \item {operator$\ast$}
-    \subitem {Vector2D$<$ T $>$}, 46
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{42}
   \item {operator$\ast$=}
-    \subitem {Vector2D$<$ T $>$}, 46
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{42}
   \item {operator+}
-    \subitem {Item}, 33
-    \subitem {Vector2D$<$ T $>$}, 46
+    \subitem {Item}, \hyperpage{31}
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{43}
   \item {operator+=}
-    \subitem {Vector2D$<$ T $>$}, 46, 47
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{43, 44}
   \item {operator-\/}
-    \subitem {Vector2D$<$ T $>$}, 47
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{44, 45}
   \item {operator-\/=}
-    \subitem {Vector2D$<$ T $>$}, 47
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{45}
   \item {operator/}
-    \subitem {Vector2D$<$ T $>$}, 47
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{46}
   \item {operator/=}
-    \subitem {Vector2D$<$ T $>$}, 48
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{46}
   \item {operator=}
-    \subitem {DynamicArray$<$ T $>$}, 15
-    \subitem {Inventory}, 28
-    \subitem {Player}, 41
-    \subitem {Vector2D$<$ T $>$}, 48
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{14}
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{46}
   \item {operator[]}
-    \subitem {CSVRow}, 9
-    \subitem {DynamicArray$<$ T $>$}, 16
-  \item {ortho}
-    \subitem {Vector2D$<$ T $>$}, 48
+    \subitem {CSVRow}, \hyperpage{6}
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{14}
 
   \indexspace
 
-  \item {parseSelection}
-    \subitem {GameScene}, 24
-  \item {Person}, 38
-    \subitem {getString}, 38
-    \subitem {getSurname}, 38
-    \subitem {Person}, 38
-  \item {Play}
-    \subitem {GameScene}, 25
-  \item {Player}, 39
-    \subitem {$\sim$Player}, 40
-    \subitem {addToInventory}, 40
-    \subitem {deallocateItem}, 40
-    \subitem {getCrafted}, 40
-    \subitem {getHunger}, 40
-    \subitem {getInventory}, 40
-    \subitem {getItemAt}, 40
-    \subitem {getItems}, 41
-    \subitem {getName}, 41
-    \subitem {getPosition}, 41
-    \subitem {moveToCoordinates}, 41
-    \subitem {operator=}, 41
-    \subitem {Player}, 39
-    \subitem {removeAfterCrafting}, 41
-    \subitem {removeAllFromPlayer}, 42
-    \subitem {removeFromInventory}, 42
-    \subitem {setHunger}, 42
-    \subitem {setName}, 42
-    \subitem {showInventory}, 42
-  \item {Player.cpp}
-    \subitem {operator$<$$<$}, 63
-  \item {Player/Player.cpp}, 63
-  \item {Player/Player.h}, 63
+  \item {Player}, \hyperpage{33}
+    \subitem {addToInventory}, \hyperpage{35}
+    \subitem {getCrafted}, \hyperpage{35}
+    \subitem {getHunger}, \hyperpage{35}
+    \subitem {getInventory}, \hyperpage{35}
+    \subitem {getItemAt}, \hyperpage{36}
+    \subitem {getItems}, \hyperpage{36}
+    \subitem {getName}, \hyperpage{36}
+    \subitem {getPosition}, \hyperpage{36}
+    \subitem {moveToCoordinates}, \hyperpage{37}
+    \subitem {Player}, \hyperpage{34}
+    \subitem {removeAfterCrafting}, \hyperpage{37}
+    \subitem {removeAllFromPlayer}, \hyperpage{38}
+    \subitem {removeFromInventory}, \hyperpage{38}
+    \subitem {showInventory}, \hyperpage{38}
   \item {pop\_back}
-    \subitem {DynamicArray$<$ T $>$}, 16
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{14}
   \item {printEnvironment}
-    \subitem {IoClass}, 30
+    \subitem {IoClass}, \hyperpage{28}
   \item {printPlayerStats}
-    \subitem {IoClass}, 30
+    \subitem {IoClass}, \hyperpage{28}
   \item {printToCoordsAnimated}
-    \subitem {IoClass}, 30
+    \subitem {IoClass}, \hyperpage{28}
   \item {push\_back}
-    \subitem {DynamicArray$<$ T $>$}, 16
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{15}
 
   \indexspace
 
   \item {readNextRow}
-    \subitem {CSVRow}, 9, 10
+    \subitem {CSVRow}, \hyperpage{6}
   \item {readString}
-    \subitem {IoClass}, 30
+    \subitem {IoClass}, \hyperpage{29}
   \item {reallocate}
-    \subitem {DynamicArray$<$ T $>$}, 17
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{15}
   \item {reference}
-    \subitem {DynamicArray$<$ T $>$}, 12
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{9}
   \item {removeAfterCrafting}
-    \subitem {Inventory}, 28
-    \subitem {Player}, 41
+    \subitem {Inventory}, \hyperpage{24}
+    \subitem {Player}, \hyperpage{37}
   \item {removeAll}
-    \subitem {Inventory}, 28
+    \subitem {Inventory}, \hyperpage{25}
   \item {removeAllFromPlayer}
-    \subitem {Player}, 42
+    \subitem {Player}, \hyperpage{38}
   \item {removeFromInventory}
-    \subitem {Player}, 42
+    \subitem {Player}, \hyperpage{38}
   \item {removeFromPlayerInv}
-    \subitem {Environment}, 22
-  \item {removeItem}
-    \subitem {Environment}, 22
+    \subitem {Environment}, \hyperpage{21}
   \item {removeItemAt}
-    \subitem {Inventory}, 28
-  \item {replace}
-    \subitem {IoClass.cpp}, 58
-  \item {Rock}, 43
-    \subitem {$\sim$Rock}, 43
-    \subitem {Rock}, 43
-  \item {rock}
-    \subitem {Item.h}, 60
+    \subitem {Inventory}, \hyperpage{25}
+  \item {removeItemFromGround}
+    \subitem {Environment}, \hyperpage{21}
+  \item {Rock}, \hyperpage{39}
   \item {rotate}
-    \subitem {Vector2D$<$ T $>$}, 48
-  \item {running}
-    \subitem {GameScene.h}, 56
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{47}
 
   \indexspace
 
   \item {saveToFile}
-    \subitem {IoClass}, 30
-  \item {saving}
-    \subitem {GameScene.h}, 56
+    \subitem {IoClass}, \hyperpage{29}
   \item {set}
-    \subitem {Vector2D$<$ T $>$}, 48
-  \item {setHunger}
-    \subitem {Player}, 42
-  \item {setisOnFloor}
-    \subitem {Item}, 33
-  \item {setName}
-    \subitem {Player}, 42
-  \item {setState}
-    \subitem {GameScene}, 25
-  \item {setType}
-    \subitem {Item}, 33
-  \item {setupFlags}
-    \subitem {GameScene.cpp}, 55
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{47}
   \item {showInventory}
-    \subitem {Player}, 42
+    \subitem {Player}, \hyperpage{38}
   \item {showMenu}
-    \subitem {IoClass}, 31
+    \subitem {IoClass}, \hyperpage{29}
   \item {size}
-    \subitem {CSVRow}, 10
-    \subitem {DynamicArray$<$ T $>$}, 17
+    \subitem {CSVRow}, \hyperpage{7}
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{15}
   \item {size\_type}
-    \subitem {DynamicArray$<$ T $>$}, 12
-  \item {startupScreen}
-    \subitem {GameScene}, 25
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{9}
   \item {swap}
-    \subitem {DynamicArray$<$ T $>$}, 17
-
-  \indexspace
-
-  \item {truncate}
-    \subitem {Vector2D$<$ T $>$}, 48
-
-  \indexspace
-
-  \item {uparxounDipla}
-    \subitem {GameScene.cpp}, 55
+    \subitem {DynamicArray$<$ T $>$}, \hyperpage{15}
 
   \indexspace
 
   \item {Vector2D}
-    \subitem {Vector2D$<$ T $>$}, 44, 45
-  \item {Vector2D$<$ T $>$}, 44
-    \subitem {cross}, 45
-    \subitem {dist}, 45
-    \subitem {dot}, 45
-    \subitem {length}, 45
-    \subitem {normalize}, 46
-    \subitem {operator$\ast$}, 46
-    \subitem {operator$\ast$=}, 46
-    \subitem {operator+}, 46
-    \subitem {operator+=}, 46, 47
-    \subitem {operator-\/}, 47
-    \subitem {operator-\/=}, 47
-    \subitem {operator/}, 47
-    \subitem {operator/=}, 48
-    \subitem {operator=}, 48
-    \subitem {ortho}, 48
-    \subitem {rotate}, 48
-    \subitem {set}, 48
-    \subitem {truncate}, 48
-    \subitem {Vector2D}, 44, 45
-    \subitem {x}, 49
-    \subitem {y}, 49
-  \item {Vector2D.h}
-    \subitem {Vector2Dd}, 64
-    \subitem {Vector2Di}, 64
-  \item {Vector2D/Vector2D.cpp}, 64
-  \item {Vector2D/Vector2D.h}, 64
-  \item {Vector2Dd}
-    \subitem {Vector2D.h}, 64
-  \item {Vector2Di}
-    \subitem {Vector2D.h}, 64
+    \subitem {Vector2D$<$ T $>$}, \hyperpage{40, 41}
+  \item {Vector2D$<$ T $>$}, \hyperpage{39}
+    \subitem {length}, \hyperpage{41}
+    \subitem {normalize}, \hyperpage{42}
+    \subitem {operator$\ast$}, \hyperpage{42}
+    \subitem {operator$\ast$=}, \hyperpage{42}
+    \subitem {operator+}, \hyperpage{43}
+    \subitem {operator+=}, \hyperpage{43, 44}
+    \subitem {operator-\/}, \hyperpage{44, 45}
+    \subitem {operator-\/=}, \hyperpage{45}
+    \subitem {operator/}, \hyperpage{46}
+    \subitem {operator/=}, \hyperpage{46}
+    \subitem {operator=}, \hyperpage{46}
+    \subitem {rotate}, \hyperpage{47}
+    \subitem {set}, \hyperpage{47}
+    \subitem {Vector2D}, \hyperpage{40, 41}
 
   \indexspace
 
-  \item {waiting}
-    \subitem {GameScene.h}, 56
-  \item {WoodStick}, 49
-    \subitem {$\sim$WoodStick}, 50
-    \subitem {WoodStick}, 49, 50
-  \item {woodstick}
-    \subitem {Item.h}, 60
-
-  \indexspace
-
-  \item {x}
-    \subitem {Vector2D$<$ T $>$}, 49
-
-  \indexspace
-
-  \item {y}
-    \subitem {Vector2D$<$ T $>$}, 49
+  \item {WoodStick}, \hyperpage{48}
 
 \end{theindex}

@@ -2,6 +2,10 @@
 #define OpenCoconut_H
 #include "../Item/Item.h"
 
+/**
+ * @brief Κλάση αντικειμένου OpenCoconut <br>
+ * Χρησιμοποιείται για τα συμβολίσει ανοικτή καρύδα.
+ */
 class OpenCoconut : public Item{
     private:
 

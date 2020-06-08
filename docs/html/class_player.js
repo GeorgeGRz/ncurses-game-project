@@ -5,7 +5,6 @@ var class_player =
     [ "Player", "class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8", null ],
     [ "~Player", "class_player.html#a749d2c00e1fe0f5c2746f7505a58c062", null ],
     [ "addToInventory", "class_player.html#a5d0016f7fa5e0a9813a4b666efa87e9d", null ],
-    [ "deallocateItem", "class_player.html#af2b9b4868adad25f8f177789947d6123", null ],
     [ "getCrafted", "class_player.html#a7782e55f9695f4cc64cd7a9d7ceb9ad5", null ],
     [ "getHunger", "class_player.html#a2b7fa529cc5aa7eba4c93d55952a8364", null ],
     [ "getInventory", "class_player.html#a3b173335c345cf000fb0e3859905ef9d", null ],

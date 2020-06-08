@@ -1,514 +1,208 @@
-\indexentry{Axe@{Axe}}{7}
-\indexentry{Axe@{Axe}!Axe@{Axe}}{7}
-\indexentry{Axe@{Axe}!Axe@{Axe}}{7}
-\indexentry{Axe@{Axe}!Axe@{Axe}}{7}
-\indexentry{Axe@{Axe}!Axe@{Axe}}{7}
-\indexentry{Axe@{Axe}!Axe@{Axe}}{7}
-\indexentry{Axe@{Axe}!Axe@{Axe}}{7}
-\indexentry{Axe@{Axe}!````~Axe@{$\sim$Axe}}{8}
-\indexentry{````~Axe@{$\sim$Axe}!Axe@{Axe}}{8}
-\indexentry{Coconut@{Coconut}}{8}
-\indexentry{Coconut@{Coconut}!Coconut@{Coconut}}{8}
-\indexentry{Coconut@{Coconut}!Coconut@{Coconut}}{8}
-\indexentry{Coconut@{Coconut}!Coconut@{Coconut}}{8}
-\indexentry{Coconut@{Coconut}!Coconut@{Coconut}}{8}
-\indexentry{Coconut@{Coconut}!Coconut@{Coconut}}{8}
-\indexentry{Coconut@{Coconut}!Coconut@{Coconut}}{8}
-\indexentry{Coconut@{Coconut}!````~Coconut@{$\sim$Coconut}}{9}
-\indexentry{````~Coconut@{$\sim$Coconut}!Coconut@{Coconut}}{9}
-\indexentry{CSVRow@{CSVRow}}{9}
-\indexentry{CSVRow@{CSVRow}!operator[]@{operator[]}}{9}
-\indexentry{operator[]@{operator[]}!CSVRow@{CSVRow}}{9}
-\indexentry{CSVRow@{CSVRow}!operator[]@{operator[]}}{9}
-\indexentry{operator[]@{operator[]}!CSVRow@{CSVRow}}{9}
-\indexentry{CSVRow@{CSVRow}!readNextRow@{readNextRow}}{9}
-\indexentry{readNextRow@{readNextRow}!CSVRow@{CSVRow}}{9}
-\indexentry{CSVRow@{CSVRow}!readNextRow@{readNextRow}}{10}
-\indexentry{readNextRow@{readNextRow}!CSVRow@{CSVRow}}{10}
-\indexentry{CSVRow@{CSVRow}!size@{size}}{10}
-\indexentry{size@{size}!CSVRow@{CSVRow}}{10}
-\indexentry{CSVRow@{CSVRow}!size@{size}}{10}
-\indexentry{size@{size}!CSVRow@{CSVRow}}{10}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{10}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!iterator@{iterator}}{12}
-\indexentry{iterator@{iterator}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{12}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!reference@{reference}}{12}
-\indexentry{reference@{reference}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{12}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!size\_type@{size\_type}}{12}
-\indexentry{size\_type@{size\_type}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{12}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}}{12}
-\indexentry{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{12}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}}{12}
-\indexentry{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{12}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}}{13}
-\indexentry{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{13}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!````~DynamicArray@{$\sim$DynamicArray}}{13}
-\indexentry{````~DynamicArray@{$\sim$DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{13}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!begin@{begin}}{13}
-\indexentry{begin@{begin}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{13}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!capacity@{capacity}}{13}
-\indexentry{capacity@{capacity}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{13}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!clear@{clear}}{14}
-\indexentry{clear@{clear}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{14}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!emplace\_back@{emplace\_back}}{14}
-\indexentry{emplace\_back@{emplace\_back}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{14}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!end@{end}}{14}
-\indexentry{end@{end}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{14}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!erase@{erase}}{15}
-\indexentry{erase@{erase}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{15}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!move\_storage@{move\_storage}}{15}
-\indexentry{move\_storage@{move\_storage}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{15}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!operator=@{operator=}}{15}
-\indexentry{operator=@{operator=}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{15}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!operator[]@{operator[]}}{16}
-\indexentry{operator[]@{operator[]}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{16}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!pop\_back@{pop\_back}}{16}
-\indexentry{pop\_back@{pop\_back}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{16}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!push\_back@{push\_back}}{16}
-\indexentry{push\_back@{push\_back}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{16}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!reallocate@{reallocate}}{17}
-\indexentry{reallocate@{reallocate}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{17}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!size@{size}}{17}
-\indexentry{size@{size}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{17}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!swap@{swap}}{17}
-\indexentry{swap@{swap}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{17}
-\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!swap@{swap}}{17}
-\indexentry{swap@{swap}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}}{17}
-\indexentry{Environment@{Environment}}{18}
-\indexentry{Environment@{Environment}!Environment@{Environment}}{18}
-\indexentry{Environment@{Environment}!Environment@{Environment}}{18}
-\indexentry{Environment@{Environment}!Environment@{Environment}}{19}
-\indexentry{Environment@{Environment}!Environment@{Environment}}{19}
-\indexentry{Environment@{Environment}!Environment@{Environment}}{19}
-\indexentry{Environment@{Environment}!Environment@{Environment}}{19}
-\indexentry{Environment@{Environment}!````~Environment@{$\sim$Environment}}{19}
-\indexentry{````~Environment@{$\sim$Environment}!Environment@{Environment}}{19}
-\indexentry{Environment@{Environment}!addItemToGround@{addItemToGround}}{19}
-\indexentry{addItemToGround@{addItemToGround}!Environment@{Environment}}{19}
-\indexentry{Environment@{Environment}!addItemToGround@{addItemToGround}}{19}
-\indexentry{addItemToGround@{addItemToGround}!Environment@{Environment}}{19}
-\indexentry{Environment@{Environment}!addItemToInv@{addItemToInv}}{19}
-\indexentry{addItemToInv@{addItemToInv}!Environment@{Environment}}{19}
-\indexentry{Environment@{Environment}!checkOccurences@{checkOccurences}}{20}
-\indexentry{checkOccurences@{checkOccurences}!Environment@{Environment}}{20}
-\indexentry{Environment@{Environment}!clearAll@{clearAll}}{20}
-\indexentry{clearAll@{clearAll}!Environment@{Environment}}{20}
-\indexentry{Environment@{Environment}!generateGrid@{generateGrid}}{20}
-\indexentry{generateGrid@{generateGrid}!Environment@{Environment}}{20}
-\indexentry{Environment@{Environment}!getGrid@{getGrid}}{20}
-\indexentry{getGrid@{getGrid}!Environment@{Environment}}{20}
-\indexentry{Environment@{Environment}!getGroundItems@{getGroundItems}}{20}
-\indexentry{getGroundItems@{getGroundItems}!Environment@{Environment}}{20}
-\indexentry{Environment@{Environment}!getItemAt@{getItemAt}}{20}
-\indexentry{getItemAt@{getItemAt}!Environment@{Environment}}{20}
-\indexentry{Environment@{Environment}!getItemsNearPlayer@{getItemsNearPlayer}}{20}
-\indexentry{getItemsNearPlayer@{getItemsNearPlayer}!Environment@{Environment}}{20}
-\indexentry{Environment@{Environment}!getPlayer@{getPlayer}}{21}
-\indexentry{getPlayer@{getPlayer}!Environment@{Environment}}{21}
-\indexentry{Environment@{Environment}!getPlayerCraft@{getPlayerCraft}}{21}
-\indexentry{getPlayerCraft@{getPlayerCraft}!Environment@{Environment}}{21}
-\indexentry{Environment@{Environment}!getPlayerItem@{getPlayerItem}}{21}
-\indexentry{getPlayerItem@{getPlayerItem}!Environment@{Environment}}{21}
-\indexentry{Environment@{Environment}!getPlayerItems@{getPlayerItems}}{21}
-\indexentry{getPlayerItems@{getPlayerItems}!Environment@{Environment}}{21}
-\indexentry{Environment@{Environment}!getX@{getX}}{21}
-\indexentry{getX@{getX}!Environment@{Environment}}{21}
-\indexentry{Environment@{Environment}!getY@{getY}}{21}
-\indexentry{getY@{getY}!Environment@{Environment}}{21}
-\indexentry{Environment@{Environment}!handleLoadedData@{handleLoadedData}}{21}
-\indexentry{handleLoadedData@{handleLoadedData}!Environment@{Environment}}{21}
-\indexentry{Environment@{Environment}!movePlayer@{movePlayer}}{22}
-\indexentry{movePlayer@{movePlayer}!Environment@{Environment}}{22}
-\indexentry{Environment@{Environment}!removeFromPlayerInv@{removeFromPlayerInv}}{22}
-\indexentry{removeFromPlayerInv@{removeFromPlayerInv}!Environment@{Environment}}{22}
-\indexentry{Environment@{Environment}!removeItem@{removeItem}}{22}
-\indexentry{removeItem@{removeItem}!Environment@{Environment}}{22}
-\indexentry{Environment@{Environment}!lastID@{lastID}}{22}
-\indexentry{lastID@{lastID}!Environment@{Environment}}{22}
-\indexentry{GameScene@{GameScene}}{22}
-\indexentry{GameScene@{GameScene}!GameScene@{GameScene}}{23}
-\indexentry{GameScene@{GameScene}!GameScene@{GameScene}}{23}
-\indexentry{GameScene@{GameScene}!GameScene@{GameScene}}{23}
-\indexentry{GameScene@{GameScene}!GameScene@{GameScene}}{23}
-\indexentry{GameScene@{GameScene}!GameScene@{GameScene}}{23}
-\indexentry{GameScene@{GameScene}!GameScene@{GameScene}}{23}
-\indexentry{GameScene@{GameScene}!````~GameScene@{$\sim$GameScene}}{23}
-\indexentry{````~GameScene@{$\sim$GameScene}!GameScene@{GameScene}}{23}
-\indexentry{GameScene@{GameScene}!checkHunger@{checkHunger}}{24}
-\indexentry{checkHunger@{checkHunger}!GameScene@{GameScene}}{24}
-\indexentry{GameScene@{GameScene}!getState@{getState}}{24}
-\indexentry{getState@{getState}!GameScene@{GameScene}}{24}
-\indexentry{GameScene@{GameScene}!handleCraftingMenu@{handleCraftingMenu}}{24}
-\indexentry{handleCraftingMenu@{handleCraftingMenu}!GameScene@{GameScene}}{24}
-\indexentry{GameScene@{GameScene}!handleEndingMenu@{handleEndingMenu}}{24}
-\indexentry{handleEndingMenu@{handleEndingMenu}!GameScene@{GameScene}}{24}
-\indexentry{GameScene@{GameScene}!handleInventoryMenu@{handleInventoryMenu}}{24}
-\indexentry{handleInventoryMenu@{handleInventoryMenu}!GameScene@{GameScene}}{24}
-\indexentry{GameScene@{GameScene}!handleMainMenu@{handleMainMenu}}{24}
-\indexentry{handleMainMenu@{handleMainMenu}!GameScene@{GameScene}}{24}
-\indexentry{GameScene@{GameScene}!parseSelection@{parseSelection}}{24}
-\indexentry{parseSelection@{parseSelection}!GameScene@{GameScene}}{24}
-\indexentry{GameScene@{GameScene}!Play@{Play}}{25}
-\indexentry{Play@{Play}!GameScene@{GameScene}}{25}
-\indexentry{GameScene@{GameScene}!setState@{setState}}{25}
-\indexentry{setState@{setState}!GameScene@{GameScene}}{25}
-\indexentry{GameScene@{GameScene}!startupScreen@{startupScreen}}{25}
-\indexentry{startupScreen@{startupScreen}!GameScene@{GameScene}}{25}
-\indexentry{Hut@{Hut}}{25}
-\indexentry{Hut@{Hut}!Hut@{Hut}}{25}
-\indexentry{Hut@{Hut}!Hut@{Hut}}{25}
-\indexentry{Hut@{Hut}!Hut@{Hut}}{26}
-\indexentry{Hut@{Hut}!Hut@{Hut}}{26}
-\indexentry{Hut@{Hut}!Hut@{Hut}}{26}
-\indexentry{Hut@{Hut}!Hut@{Hut}}{26}
-\indexentry{Hut@{Hut}!````~Hut@{$\sim$Hut}}{26}
-\indexentry{````~Hut@{$\sim$Hut}!Hut@{Hut}}{26}
-\indexentry{Inventory@{Inventory}}{26}
-\indexentry{Inventory@{Inventory}!Inventory@{Inventory}}{27}
-\indexentry{Inventory@{Inventory}!Inventory@{Inventory}}{27}
-\indexentry{Inventory@{Inventory}!Inventory@{Inventory}}{27}
-\indexentry{Inventory@{Inventory}!Inventory@{Inventory}}{27}
-\indexentry{Inventory@{Inventory}!Inventory@{Inventory}}{27}
-\indexentry{Inventory@{Inventory}!Inventory@{Inventory}}{27}
-\indexentry{Inventory@{Inventory}!````~Inventory@{$\sim$Inventory}}{27}
-\indexentry{````~Inventory@{$\sim$Inventory}!Inventory@{Inventory}}{27}
-\indexentry{Inventory@{Inventory}!addItem@{addItem}}{27}
-\indexentry{addItem@{addItem}!Inventory@{Inventory}}{27}
-\indexentry{Inventory@{Inventory}!getInventoryItems@{getInventoryItems}}{27}
-\indexentry{getInventoryItems@{getInventoryItems}!Inventory@{Inventory}}{27}
-\indexentry{Inventory@{Inventory}!getItemAt@{getItemAt}}{27}
-\indexentry{getItemAt@{getItemAt}!Inventory@{Inventory}}{27}
-\indexentry{Inventory@{Inventory}!getSize@{getSize}}{28}
-\indexentry{getSize@{getSize}!Inventory@{Inventory}}{28}
-\indexentry{Inventory@{Inventory}!itemTypeCount@{itemTypeCount}}{28}
-\indexentry{itemTypeCount@{itemTypeCount}!Inventory@{Inventory}}{28}
-\indexentry{Inventory@{Inventory}!operator=@{operator=}}{28}
-\indexentry{operator=@{operator=}!Inventory@{Inventory}}{28}
-\indexentry{Inventory@{Inventory}!removeAfterCrafting@{removeAfterCrafting}}{28}
-\indexentry{removeAfterCrafting@{removeAfterCrafting}!Inventory@{Inventory}}{28}
-\indexentry{Inventory@{Inventory}!removeAll@{removeAll}}{28}
-\indexentry{removeAll@{removeAll}!Inventory@{Inventory}}{28}
-\indexentry{Inventory@{Inventory}!removeItemAt@{removeItemAt}}{28}
-\indexentry{removeItemAt@{removeItemAt}!Inventory@{Inventory}}{28}
-\indexentry{IoClass@{IoClass}}{29}
-\indexentry{IoClass@{IoClass}!IoClass@{IoClass}}{29}
-\indexentry{IoClass@{IoClass}!IoClass@{IoClass}}{29}
-\indexentry{IoClass@{IoClass}!````~IoClass@{$\sim$IoClass}}{29}
-\indexentry{````~IoClass@{$\sim$IoClass}!IoClass@{IoClass}}{29}
-\indexentry{IoClass@{IoClass}!getInput@{getInput}}{29}
-\indexentry{getInput@{getInput}!IoClass@{IoClass}}{29}
-\indexentry{IoClass@{IoClass}!getMaxX@{getMaxX}}{29}
-\indexentry{getMaxX@{getMaxX}!IoClass@{IoClass}}{29}
-\indexentry{IoClass@{IoClass}!getMaxY@{getMaxY}}{30}
-\indexentry{getMaxY@{getMaxY}!IoClass@{IoClass}}{30}
-\indexentry{IoClass@{IoClass}!loadFromFile@{loadFromFile}}{30}
-\indexentry{loadFromFile@{loadFromFile}!IoClass@{IoClass}}{30}
-\indexentry{IoClass@{IoClass}!printEnvironment@{printEnvironment}}{30}
-\indexentry{printEnvironment@{printEnvironment}!IoClass@{IoClass}}{30}
-\indexentry{IoClass@{IoClass}!printPlayerStats@{printPlayerStats}}{30}
-\indexentry{printPlayerStats@{printPlayerStats}!IoClass@{IoClass}}{30}
-\indexentry{IoClass@{IoClass}!printToCoordsAnimated@{printToCoordsAnimated}}{30}
-\indexentry{printToCoordsAnimated@{printToCoordsAnimated}!IoClass@{IoClass}}{30}
-\indexentry{IoClass@{IoClass}!readString@{readString}}{30}
-\indexentry{readString@{readString}!IoClass@{IoClass}}{30}
-\indexentry{IoClass@{IoClass}!saveToFile@{saveToFile}}{30}
-\indexentry{saveToFile@{saveToFile}!IoClass@{IoClass}}{30}
-\indexentry{IoClass@{IoClass}!showMenu@{showMenu}}{31}
-\indexentry{showMenu@{showMenu}!IoClass@{IoClass}}{31}
-\indexentry{Item@{Item}}{31}
-\indexentry{Item@{Item}!Item@{Item}}{31}
-\indexentry{Item@{Item}!Item@{Item}}{31}
-\indexentry{Item@{Item}!Item@{Item}}{31}
-\indexentry{Item@{Item}!Item@{Item}}{31}
-\indexentry{Item@{Item}!Item@{Item}}{32}
-\indexentry{Item@{Item}!Item@{Item}}{32}
-\indexentry{Item@{Item}!````~Item@{$\sim$Item}}{32}
-\indexentry{````~Item@{$\sim$Item}!Item@{Item}}{32}
-\indexentry{Item@{Item}!getId@{getId}}{32}
-\indexentry{getId@{getId}!Item@{Item}}{32}
-\indexentry{Item@{Item}!getIfOnFloor@{getIfOnFloor}}{32}
-\indexentry{getIfOnFloor@{getIfOnFloor}!Item@{Item}}{32}
-\indexentry{Item@{Item}!getName@{getName}}{32}
-\indexentry{getName@{getName}!Item@{Item}}{32}
-\indexentry{Item@{Item}!getPosition@{getPosition}}{32}
-\indexentry{getPosition@{getPosition}!Item@{Item}}{32}
-\indexentry{Item@{Item}!getType@{getType}}{33}
-\indexentry{getType@{getType}!Item@{Item}}{33}
-\indexentry{Item@{Item}!operator+@{operator+}}{33}
-\indexentry{operator+@{operator+}!Item@{Item}}{33}
-\indexentry{Item@{Item}!setisOnFloor@{setisOnFloor}}{33}
-\indexentry{setisOnFloor@{setisOnFloor}!Item@{Item}}{33}
-\indexentry{Item@{Item}!setType@{setType}}{33}
-\indexentry{setType@{setType}!Item@{Item}}{33}
-\indexentry{Leafs@{Leafs}}{33}
-\indexentry{Leafs@{Leafs}!Leafs@{Leafs}}{34}
-\indexentry{Leafs@{Leafs}!Leafs@{Leafs}}{34}
-\indexentry{Leafs@{Leafs}!Leafs@{Leafs}}{34}
-\indexentry{Leafs@{Leafs}!Leafs@{Leafs}}{34}
-\indexentry{Leafs@{Leafs}!Leafs@{Leafs}}{34}
-\indexentry{Leafs@{Leafs}!Leafs@{Leafs}}{34}
-\indexentry{Leafs@{Leafs}!````~Leafs@{$\sim$Leafs}}{34}
-\indexentry{````~Leafs@{$\sim$Leafs}!Leafs@{Leafs}}{34}
-\indexentry{LightedTorch@{LightedTorch}}{35}
-\indexentry{LightedTorch@{LightedTorch}!LightedTorch@{LightedTorch}}{35}
-\indexentry{LightedTorch@{LightedTorch}!LightedTorch@{LightedTorch}}{35}
-\indexentry{LightedTorch@{LightedTorch}!LightedTorch@{LightedTorch}}{35}
-\indexentry{LightedTorch@{LightedTorch}!LightedTorch@{LightedTorch}}{35}
-\indexentry{LightedTorch@{LightedTorch}!LightedTorch@{LightedTorch}}{35}
-\indexentry{LightedTorch@{LightedTorch}!LightedTorch@{LightedTorch}}{35}
-\indexentry{LightedTorch@{LightedTorch}!````~LightedTorch@{$\sim$LightedTorch}}{35}
-\indexentry{````~LightedTorch@{$\sim$LightedTorch}!LightedTorch@{LightedTorch}}{35}
-\indexentry{Lighter@{Lighter}}{36}
-\indexentry{Lighter@{Lighter}!Lighter@{Lighter}}{36}
-\indexentry{Lighter@{Lighter}!Lighter@{Lighter}}{36}
-\indexentry{Lighter@{Lighter}!Lighter@{Lighter}}{36}
-\indexentry{Lighter@{Lighter}!Lighter@{Lighter}}{36}
-\indexentry{Lighter@{Lighter}!Lighter@{Lighter}}{36}
-\indexentry{Lighter@{Lighter}!Lighter@{Lighter}}{36}
-\indexentry{Lighter@{Lighter}!````~Lighter@{$\sim$Lighter}}{36}
-\indexentry{````~Lighter@{$\sim$Lighter}!Lighter@{Lighter}}{36}
-\indexentry{OpenCoconut@{OpenCoconut}}{37}
-\indexentry{OpenCoconut@{OpenCoconut}!OpenCoconut@{OpenCoconut}}{37}
-\indexentry{OpenCoconut@{OpenCoconut}!OpenCoconut@{OpenCoconut}}{37}
-\indexentry{OpenCoconut@{OpenCoconut}!OpenCoconut@{OpenCoconut}}{37}
-\indexentry{OpenCoconut@{OpenCoconut}!OpenCoconut@{OpenCoconut}}{37}
-\indexentry{OpenCoconut@{OpenCoconut}!OpenCoconut@{OpenCoconut}}{37}
-\indexentry{OpenCoconut@{OpenCoconut}!OpenCoconut@{OpenCoconut}}{37}
-\indexentry{OpenCoconut@{OpenCoconut}!````~OpenCoconut@{$\sim$OpenCoconut}}{37}
-\indexentry{````~OpenCoconut@{$\sim$OpenCoconut}!OpenCoconut@{OpenCoconut}}{37}
-\indexentry{Person@{Person}}{38}
-\indexentry{Person@{Person}!Person@{Person}}{38}
-\indexentry{Person@{Person}!Person@{Person}}{38}
-\indexentry{Person@{Person}!Person@{Person}}{38}
-\indexentry{Person@{Person}!Person@{Person}}{38}
-\indexentry{Person@{Person}!getString@{getString}}{38}
-\indexentry{getString@{getString}!Person@{Person}}{38}
-\indexentry{Person@{Person}!getSurname@{getSurname}}{38}
-\indexentry{getSurname@{getSurname}!Person@{Person}}{38}
-\indexentry{Player@{Player}}{39}
-\indexentry{Player@{Player}!Player@{Player}}{39}
-\indexentry{Player@{Player}!Player@{Player}}{39}
-\indexentry{Player@{Player}!Player@{Player}}{39}
-\indexentry{Player@{Player}!Player@{Player}}{39}
-\indexentry{Player@{Player}!Player@{Player}}{39}
-\indexentry{Player@{Player}!Player@{Player}}{39}
-\indexentry{Player@{Player}!````~Player@{$\sim$Player}}{40}
-\indexentry{````~Player@{$\sim$Player}!Player@{Player}}{40}
-\indexentry{Player@{Player}!addToInventory@{addToInventory}}{40}
-\indexentry{addToInventory@{addToInventory}!Player@{Player}}{40}
-\indexentry{Player@{Player}!deallocateItem@{deallocateItem}}{40}
-\indexentry{deallocateItem@{deallocateItem}!Player@{Player}}{40}
-\indexentry{Player@{Player}!getCrafted@{getCrafted}}{40}
-\indexentry{getCrafted@{getCrafted}!Player@{Player}}{40}
-\indexentry{Player@{Player}!getHunger@{getHunger}}{40}
-\indexentry{getHunger@{getHunger}!Player@{Player}}{40}
-\indexentry{Player@{Player}!getInventory@{getInventory}}{40}
-\indexentry{getInventory@{getInventory}!Player@{Player}}{40}
-\indexentry{Player@{Player}!getItemAt@{getItemAt}}{40}
-\indexentry{getItemAt@{getItemAt}!Player@{Player}}{40}
-\indexentry{Player@{Player}!getItems@{getItems}}{41}
-\indexentry{getItems@{getItems}!Player@{Player}}{41}
-\indexentry{Player@{Player}!getName@{getName}}{41}
-\indexentry{getName@{getName}!Player@{Player}}{41}
-\indexentry{Player@{Player}!getPosition@{getPosition}}{41}
-\indexentry{getPosition@{getPosition}!Player@{Player}}{41}
-\indexentry{Player@{Player}!moveToCoordinates@{moveToCoordinates}}{41}
-\indexentry{moveToCoordinates@{moveToCoordinates}!Player@{Player}}{41}
-\indexentry{Player@{Player}!moveToCoordinates@{moveToCoordinates}}{41}
-\indexentry{moveToCoordinates@{moveToCoordinates}!Player@{Player}}{41}
-\indexentry{Player@{Player}!operator=@{operator=}}{41}
-\indexentry{operator=@{operator=}!Player@{Player}}{41}
-\indexentry{Player@{Player}!removeAfterCrafting@{removeAfterCrafting}}{41}
-\indexentry{removeAfterCrafting@{removeAfterCrafting}!Player@{Player}}{41}
-\indexentry{Player@{Player}!removeAllFromPlayer@{removeAllFromPlayer}}{42}
-\indexentry{removeAllFromPlayer@{removeAllFromPlayer}!Player@{Player}}{42}
-\indexentry{Player@{Player}!removeFromInventory@{removeFromInventory}}{42}
-\indexentry{removeFromInventory@{removeFromInventory}!Player@{Player}}{42}
-\indexentry{Player@{Player}!setHunger@{setHunger}}{42}
-\indexentry{setHunger@{setHunger}!Player@{Player}}{42}
-\indexentry{Player@{Player}!setName@{setName}}{42}
-\indexentry{setName@{setName}!Player@{Player}}{42}
-\indexentry{Player@{Player}!showInventory@{showInventory}}{42}
-\indexentry{showInventory@{showInventory}!Player@{Player}}{42}
-\indexentry{Rock@{Rock}}{43}
-\indexentry{Rock@{Rock}!Rock@{Rock}}{43}
-\indexentry{Rock@{Rock}!Rock@{Rock}}{43}
-\indexentry{Rock@{Rock}!Rock@{Rock}}{43}
-\indexentry{Rock@{Rock}!Rock@{Rock}}{43}
-\indexentry{Rock@{Rock}!Rock@{Rock}}{43}
-\indexentry{Rock@{Rock}!Rock@{Rock}}{43}
-\indexentry{Rock@{Rock}!````~Rock@{$\sim$Rock}}{43}
-\indexentry{````~Rock@{$\sim$Rock}!Rock@{Rock}}{43}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{44}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!Vector2D@{Vector2D}}{44}
-\indexentry{Vector2D@{Vector2D}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{44}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!Vector2D@{Vector2D}}{44}
-\indexentry{Vector2D@{Vector2D}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{44}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!Vector2D@{Vector2D}}{45}
-\indexentry{Vector2D@{Vector2D}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{45}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!cross@{cross}}{45}
-\indexentry{cross@{cross}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{45}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!dist@{dist}}{45}
-\indexentry{dist@{dist}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{45}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!dot@{dot}}{45}
-\indexentry{dot@{dot}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{45}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!length@{length}}{45}
-\indexentry{length@{length}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{45}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!normalize@{normalize}}{46}
-\indexentry{normalize@{normalize}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{46}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator$\ast$@{operator$\ast$}}{46}
-\indexentry{operator$\ast$@{operator$\ast$}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{46}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator$\ast$=@{operator$\ast$=}}{46}
-\indexentry{operator$\ast$=@{operator$\ast$=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{46}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator+@{operator+}}{46}
-\indexentry{operator+@{operator+}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{46}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator+@{operator+}}{46}
-\indexentry{operator+@{operator+}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{46}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator+=@{operator+=}}{46}
-\indexentry{operator+=@{operator+=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{46}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator+=@{operator+=}}{47}
-\indexentry{operator+=@{operator+=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{47}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator-\/@{operator-\/}}{47}
-\indexentry{operator-\/@{operator-\/}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{47}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator-\/@{operator-\/}}{47}
-\indexentry{operator-\/@{operator-\/}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{47}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator-\/=@{operator-\/=}}{47}
-\indexentry{operator-\/=@{operator-\/=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{47}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator-\/=@{operator-\/=}}{47}
-\indexentry{operator-\/=@{operator-\/=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{47}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator/@{operator/}}{47}
-\indexentry{operator/@{operator/}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{47}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator/=@{operator/=}}{48}
-\indexentry{operator/=@{operator/=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{48}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator=@{operator=}}{48}
-\indexentry{operator=@{operator=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{48}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!ortho@{ortho}}{48}
-\indexentry{ortho@{ortho}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{48}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!rotate@{rotate}}{48}
-\indexentry{rotate@{rotate}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{48}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!set@{set}}{48}
-\indexentry{set@{set}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{48}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!truncate@{truncate}}{48}
-\indexentry{truncate@{truncate}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{48}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!x@{x}}{49}
-\indexentry{x@{x}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{49}
-\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!y@{y}}{49}
-\indexentry{y@{y}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}}{49}
-\indexentry{WoodStick@{WoodStick}}{49}
-\indexentry{WoodStick@{WoodStick}!WoodStick@{WoodStick}}{49}
-\indexentry{WoodStick@{WoodStick}!WoodStick@{WoodStick}}{49}
-\indexentry{WoodStick@{WoodStick}!WoodStick@{WoodStick}}{50}
-\indexentry{WoodStick@{WoodStick}!WoodStick@{WoodStick}}{50}
-\indexentry{WoodStick@{WoodStick}!WoodStick@{WoodStick}}{50}
-\indexentry{WoodStick@{WoodStick}!WoodStick@{WoodStick}}{50}
-\indexentry{WoodStick@{WoodStick}!````~WoodStick@{$\sim$WoodStick}}{50}
-\indexentry{````~WoodStick@{$\sim$WoodStick}!WoodStick@{WoodStick}}{50}
-\indexentry{CSVRow/CSVRow.cpp@{CSVRow/CSVRow.cpp}}{51}
-\indexentry{CSVRow/CSVRow.h@{CSVRow/CSVRow.h}}{51}
-\indexentry{DynamicArray/DynamicArray.cpp@{DynamicArray/DynamicArray.cpp}}{51}
-\indexentry{DynamicArray/DynamicArray.h@{DynamicArray/DynamicArray.h}}{51}
-\indexentry{DynamicArray/main.cpp@{DynamicArray/main.cpp}}{52}
-\indexentry{main.cpp@{main.cpp}!main@{main}}{52}
-\indexentry{main@{main}!main.cpp@{main.cpp}}{52}
-\indexentry{main.cpp@{main.cpp}}{52}
-\indexentry{main.cpp@{main.cpp}!main@{main}}{53}
-\indexentry{main@{main}!main.cpp@{main.cpp}}{53}
-\indexentry{main.cpp@{main.cpp}!operator$<$$<$@{operator$<$$<$}}{53}
-\indexentry{operator$<$$<$@{operator$<$$<$}!main.cpp@{main.cpp}}{53}
-\indexentry{Environment/Environment.cpp@{Environment/Environment.cpp}}{53}
-\indexentry{Environment.cpp@{Environment.cpp}!EnumOfIndex@{EnumOfIndex}}{53}
-\indexentry{EnumOfIndex@{EnumOfIndex}!Environment.cpp@{Environment.cpp}}{53}
-\indexentry{Environment.cpp@{Environment.cpp}!generateRandomNumber@{generateRandomNumber}}{54}
-\indexentry{generateRandomNumber@{generateRandomNumber}!Environment.cpp@{Environment.cpp}}{54}
-\indexentry{Environment.cpp@{Environment.cpp}!genRandomItemType@{genRandomItemType}}{54}
-\indexentry{genRandomItemType@{genRandomItemType}!Environment.cpp@{Environment.cpp}}{54}
-\indexentry{Environment.cpp@{Environment.cpp}!getIndexInWord@{getIndexInWord}}{54}
-\indexentry{getIndexInWord@{getIndexInWord}!Environment.cpp@{Environment.cpp}}{54}
-\indexentry{Environment.cpp@{Environment.cpp}!getStringAt@{getStringAt}}{54}
-\indexentry{getStringAt@{getStringAt}!Environment.cpp@{Environment.cpp}}{54}
-\indexentry{Environment/Environment.h@{Environment/Environment.h}}{54}
-\indexentry{GameScene/GameScene.cpp@{GameScene/GameScene.cpp}}{55}
-\indexentry{GameScene.cpp@{GameScene.cpp}!setupFlags@{setupFlags}}{55}
-\indexentry{setupFlags@{setupFlags}!GameScene.cpp@{GameScene.cpp}}{55}
-\indexentry{GameScene.cpp@{GameScene.cpp}!uparxounDipla@{uparxounDipla}}{55}
-\indexentry{uparxounDipla@{uparxounDipla}!GameScene.cpp@{GameScene.cpp}}{55}
-\indexentry{GameScene/GameScene.h@{GameScene/GameScene.h}}{55}
-\indexentry{GameScene.h@{GameScene.h}!GameState@{GameState}}{56}
-\indexentry{GameState@{GameState}!GameScene.h@{GameScene.h}}{56}
-\indexentry{initializing@{initializing}!GameScene.h@{GameScene.h}}{56}
-\indexentry{GameScene.h@{GameScene.h}!initializing@{initializing}}{56}
-\indexentry{waiting@{waiting}!GameScene.h@{GameScene.h}}{56}
-\indexentry{GameScene.h@{GameScene.h}!waiting@{waiting}}{56}
-\indexentry{running@{running}!GameScene.h@{GameScene.h}}{56}
-\indexentry{GameScene.h@{GameScene.h}!running@{running}}{56}
-\indexentry{saving@{saving}!GameScene.h@{GameScene.h}}{56}
-\indexentry{GameScene.h@{GameScene.h}!saving@{saving}}{56}
-\indexentry{loading@{loading}!GameScene.h@{GameScene.h}}{56}
-\indexentry{GameScene.h@{GameScene.h}!loading@{loading}}{56}
-\indexentry{exiting@{exiting}!GameScene.h@{GameScene.h}}{56}
-\indexentry{GameScene.h@{GameScene.h}!exiting@{exiting}}{56}
-\indexentry{Inventory/Inventory.cpp@{Inventory/Inventory.cpp}}{56}
-\indexentry{Inventory/Inventory.h@{Inventory/Inventory.h}}{56}
-\indexentry{IO/csv\_parser.cpp@{IO/csv\_parser.cpp}}{57}
-\indexentry{csv\_parser.cpp@{csv\_parser.cpp}!main@{main}}{57}
-\indexentry{main@{main}!csv\_parser.cpp@{csv\_parser.cpp}}{57}
-\indexentry{csv\_parser.cpp@{csv\_parser.cpp}!operator$>$$>$@{operator$>$$>$}}{57}
-\indexentry{operator$>$$>$@{operator$>$$>$}!csv\_parser.cpp@{csv\_parser.cpp}}{57}
-\indexentry{IO/IoClass.cpp@{IO/IoClass.cpp}}{57}
-\indexentry{IoClass.cpp@{IoClass.cpp}!operator$<$$<$@{operator$<$$<$}}{58}
-\indexentry{operator$<$$<$@{operator$<$$<$}!IoClass.cpp@{IoClass.cpp}}{58}
-\indexentry{IoClass.cpp@{IoClass.cpp}!operator$>$$>$@{operator$>$$>$}}{58}
-\indexentry{operator$>$$>$@{operator$>$$>$}!IoClass.cpp@{IoClass.cpp}}{58}
-\indexentry{IoClass.cpp@{IoClass.cpp}!replace@{replace}}{58}
-\indexentry{replace@{replace}!IoClass.cpp@{IoClass.cpp}}{58}
-\indexentry{IO/IoClass.h@{IO/IoClass.h}}{58}
-\indexentry{Items/Axe/Axe.cpp@{Items/Axe/Axe.cpp}}{59}
-\indexentry{Items/Axe/Axe.h@{Items/Axe/Axe.h}}{59}
-\indexentry{Items/Coconut/Coconut.cpp@{Items/Coconut/Coconut.cpp}}{59}
-\indexentry{Items/Coconut/Coconut.h@{Items/Coconut/Coconut.h}}{59}
-\indexentry{Items/Hut/Hut.cpp@{Items/Hut/Hut.cpp}}{59}
-\indexentry{Items/Hut/Hut.h@{Items/Hut/Hut.h}}{59}
-\indexentry{Items/Item/Item.cpp@{Items/Item/Item.cpp}}{60}
-\indexentry{Items/Item/Item.h@{Items/Item/Item.h}}{60}
-\indexentry{Item.h@{Item.h}!itemType@{itemType}}{60}
-\indexentry{itemType@{itemType}!Item.h@{Item.h}}{60}
-\indexentry{coconut@{coconut}!Item.h@{Item.h}}{60}
-\indexentry{Item.h@{Item.h}!coconut@{coconut}}{60}
-\indexentry{leafs@{leafs}!Item.h@{Item.h}}{60}
-\indexentry{Item.h@{Item.h}!leafs@{leafs}}{60}
-\indexentry{lighter@{lighter}!Item.h@{Item.h}}{60}
-\indexentry{Item.h@{Item.h}!lighter@{lighter}}{60}
-\indexentry{rock@{rock}!Item.h@{Item.h}}{60}
-\indexentry{Item.h@{Item.h}!rock@{rock}}{60}
-\indexentry{woodstick@{woodstick}!Item.h@{Item.h}}{60}
-\indexentry{Item.h@{Item.h}!woodstick@{woodstick}}{60}
-\indexentry{axe@{axe}!Item.h@{Item.h}}{60}
-\indexentry{Item.h@{Item.h}!axe@{axe}}{60}
-\indexentry{hut@{hut}!Item.h@{Item.h}}{60}
-\indexentry{Item.h@{Item.h}!hut@{hut}}{60}
-\indexentry{lightedtorch@{lightedtorch}!Item.h@{Item.h}}{60}
-\indexentry{Item.h@{Item.h}!lightedtorch@{lightedtorch}}{60}
-\indexentry{opencoconut@{opencoconut}!Item.h@{Item.h}}{60}
-\indexentry{Item.h@{Item.h}!opencoconut@{opencoconut}}{60}
-\indexentry{Items/Leafs/Leafs.cpp@{Items/Leafs/Leafs.cpp}}{61}
-\indexentry{Items/Leafs/Leafs.h@{Items/Leafs/Leafs.h}}{61}
-\indexentry{Items/LightedTorch/LightedTorch.cpp@{Items/LightedTorch/LightedTorch.cpp}}{61}
-\indexentry{Items/LightedTorch/LightedTorch.h@{Items/LightedTorch/LightedTorch.h}}{61}
-\indexentry{Items/Lighter/Lighter.cpp@{Items/Lighter/Lighter.cpp}}{61}
-\indexentry{Items/Lighter/Lighter.h@{Items/Lighter/Lighter.h}}{61}
-\indexentry{Items/OpenCoconut/OpenCoconut.cpp@{Items/OpenCoconut/OpenCoconut.cpp}}{62}
-\indexentry{Items/OpenCoconut/OpenCoconut.h@{Items/OpenCoconut/OpenCoconut.h}}{62}
-\indexentry{Items/Rock/Rock.cpp@{Items/Rock/Rock.cpp}}{62}
-\indexentry{Items/Rock/Rock.h@{Items/Rock/Rock.h}}{62}
-\indexentry{Items/WoodStick/WoodStick.cpp@{Items/WoodStick/WoodStick.cpp}}{62}
-\indexentry{Items/WoodStick/WoodStick.h@{Items/WoodStick/WoodStick.h}}{63}
-\indexentry{Player/Player.cpp@{Player/Player.cpp}}{63}
-\indexentry{Player.cpp@{Player.cpp}!operator$<$$<$@{operator$<$$<$}}{63}
-\indexentry{operator$<$$<$@{operator$<$$<$}!Player.cpp@{Player.cpp}}{63}
-\indexentry{Player/Player.h@{Player/Player.h}}{63}
-\indexentry{Vector2D/Vector2D.cpp@{Vector2D/Vector2D.cpp}}{64}
-\indexentry{Vector2D/Vector2D.h@{Vector2D/Vector2D.h}}{64}
-\indexentry{Vector2D.h@{Vector2D.h}!Vector2Dd@{Vector2Dd}}{64}
-\indexentry{Vector2Dd@{Vector2Dd}!Vector2D.h@{Vector2D.h}}{64}
-\indexentry{Vector2D.h@{Vector2D.h}!Vector2Di@{Vector2Di}}{64}
-\indexentry{Vector2Di@{Vector2Di}!Vector2D.h@{Vector2D.h}}{64}
+\indexentry{Axe@{Axe}|hyperpage}{5}
+\indexentry{Coconut@{Coconut}|hyperpage}{5}
+\indexentry{CSVRow@{CSVRow}|hyperpage}{6}
+\indexentry{CSVRow@{CSVRow}!operator\mbox{[}\mbox{]}@{operator[]}|hyperpage}{6}
+\indexentry{operator\mbox{[}\mbox{]}@{operator[]}!CSVRow@{CSVRow}|hyperpage}{6}
+\indexentry{CSVRow@{CSVRow}!readNextRow@{readNextRow}|hyperpage}{6}
+\indexentry{readNextRow@{readNextRow}!CSVRow@{CSVRow}|hyperpage}{6}
+\indexentry{CSVRow@{CSVRow}!size@{size}|hyperpage}{7}
+\indexentry{size@{size}!CSVRow@{CSVRow}|hyperpage}{7}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{7}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!iterator@{iterator}|hyperpage}{8}
+\indexentry{iterator@{iterator}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{8}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!reference@{reference}|hyperpage}{9}
+\indexentry{reference@{reference}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{9}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!size\_type@{size\_type}|hyperpage}{9}
+\indexentry{size\_type@{size\_type}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{9}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}|hyperpage}{9}
+\indexentry{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{9}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}|hyperpage}{9}
+\indexentry{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{9}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}|hyperpage}{10}
+\indexentry{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{10}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!DynamicArray@{DynamicArray}|hyperpage}{10}
+\indexentry{DynamicArray@{DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{10}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!````~DynamicArray@{$\sim$DynamicArray}|hyperpage}{10}
+\indexentry{````~DynamicArray@{$\sim$DynamicArray}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{10}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!begin@{begin}|hyperpage}{10}
+\indexentry{begin@{begin}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{10}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!capacity@{capacity}|hyperpage}{11}
+\indexentry{capacity@{capacity}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{11}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!clear@{clear}|hyperpage}{11}
+\indexentry{clear@{clear}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{11}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!emplace\_back@{emplace\_back}|hyperpage}{11}
+\indexentry{emplace\_back@{emplace\_back}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{11}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!end@{end}|hyperpage}{12}
+\indexentry{end@{end}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{12}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!erase@{erase}|hyperpage}{12}
+\indexentry{erase@{erase}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{12}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!move\_storage@{move\_storage}|hyperpage}{12}
+\indexentry{move\_storage@{move\_storage}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{12}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!operator=@{operator=}|hyperpage}{14}
+\indexentry{operator=@{operator=}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{14}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}|hyperpage}{14}
+\indexentry{operator\mbox{[}\mbox{]}@{operator[]}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{14}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!pop\_back@{pop\_back}|hyperpage}{14}
+\indexentry{pop\_back@{pop\_back}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{14}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!push\_back@{push\_back}|hyperpage}{15}
+\indexentry{push\_back@{push\_back}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{15}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!reallocate@{reallocate}|hyperpage}{15}
+\indexentry{reallocate@{reallocate}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{15}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!size@{size}|hyperpage}{15}
+\indexentry{size@{size}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{15}
+\indexentry{DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}!swap@{swap}|hyperpage}{15}
+\indexentry{swap@{swap}!DynamicArray$<$ T $>$@{DynamicArray$<$ T $>$}|hyperpage}{15}
+\indexentry{Environment@{Environment}|hyperpage}{16}
+\indexentry{Environment@{Environment}!Environment@{Environment}|hyperpage}{17}
+\indexentry{Environment@{Environment}!Environment@{Environment}|hyperpage}{17}
+\indexentry{Environment@{Environment}!Environment@{Environment}|hyperpage}{17}
+\indexentry{Environment@{Environment}!Environment@{Environment}|hyperpage}{17}
+\indexentry{Environment@{Environment}!Environment@{Environment}|hyperpage}{18}
+\indexentry{Environment@{Environment}!Environment@{Environment}|hyperpage}{18}
+\indexentry{Environment@{Environment}!````~Environment@{$\sim$Environment}|hyperpage}{18}
+\indexentry{````~Environment@{$\sim$Environment}!Environment@{Environment}|hyperpage}{18}
+\indexentry{Environment@{Environment}!addItemToGround@{addItemToGround}|hyperpage}{18}
+\indexentry{addItemToGround@{addItemToGround}!Environment@{Environment}|hyperpage}{18}
+\indexentry{Environment@{Environment}!addItemToGround@{addItemToGround}|hyperpage}{18}
+\indexentry{addItemToGround@{addItemToGround}!Environment@{Environment}|hyperpage}{18}
+\indexentry{Environment@{Environment}!addItemToInv@{addItemToInv}|hyperpage}{19}
+\indexentry{addItemToInv@{addItemToInv}!Environment@{Environment}|hyperpage}{19}
+\indexentry{Environment@{Environment}!generateGrid@{generateGrid}|hyperpage}{19}
+\indexentry{generateGrid@{generateGrid}!Environment@{Environment}|hyperpage}{19}
+\indexentry{Environment@{Environment}!getItemsNearPlayer@{getItemsNearPlayer}|hyperpage}{19}
+\indexentry{getItemsNearPlayer@{getItemsNearPlayer}!Environment@{Environment}|hyperpage}{19}
+\indexentry{Environment@{Environment}!getPlayerCraft@{getPlayerCraft}|hyperpage}{20}
+\indexentry{getPlayerCraft@{getPlayerCraft}!Environment@{Environment}|hyperpage}{20}
+\indexentry{Environment@{Environment}!getPlayerItem@{getPlayerItem}|hyperpage}{20}
+\indexentry{getPlayerItem@{getPlayerItem}!Environment@{Environment}|hyperpage}{20}
+\indexentry{Environment@{Environment}!handleLoadedData@{handleLoadedData}|hyperpage}{20}
+\indexentry{handleLoadedData@{handleLoadedData}!Environment@{Environment}|hyperpage}{20}
+\indexentry{Environment@{Environment}!movePlayer@{movePlayer}|hyperpage}{21}
+\indexentry{movePlayer@{movePlayer}!Environment@{Environment}|hyperpage}{21}
+\indexentry{Environment@{Environment}!removeFromPlayerInv@{removeFromPlayerInv}|hyperpage}{21}
+\indexentry{removeFromPlayerInv@{removeFromPlayerInv}!Environment@{Environment}|hyperpage}{21}
+\indexentry{Environment@{Environment}!removeItemFromGround@{removeItemFromGround}|hyperpage}{21}
+\indexentry{removeItemFromGround@{removeItemFromGround}!Environment@{Environment}|hyperpage}{21}
+\indexentry{Environment@{Environment}!lastID@{lastID}|hyperpage}{21}
+\indexentry{lastID@{lastID}!Environment@{Environment}|hyperpage}{21}
+\indexentry{GameScene@{GameScene}|hyperpage}{22}
+\indexentry{Hut@{Hut}|hyperpage}{22}
+\indexentry{Inventory@{Inventory}|hyperpage}{23}
+\indexentry{Inventory@{Inventory}!addItem@{addItem}|hyperpage}{23}
+\indexentry{addItem@{addItem}!Inventory@{Inventory}|hyperpage}{23}
+\indexentry{Inventory@{Inventory}!getInventoryItems@{getInventoryItems}|hyperpage}{24}
+\indexentry{getInventoryItems@{getInventoryItems}!Inventory@{Inventory}|hyperpage}{24}
+\indexentry{Inventory@{Inventory}!getItemAt@{getItemAt}|hyperpage}{24}
+\indexentry{getItemAt@{getItemAt}!Inventory@{Inventory}|hyperpage}{24}
+\indexentry{Inventory@{Inventory}!itemTypeCount@{itemTypeCount}|hyperpage}{24}
+\indexentry{itemTypeCount@{itemTypeCount}!Inventory@{Inventory}|hyperpage}{24}
+\indexentry{Inventory@{Inventory}!removeAfterCrafting@{removeAfterCrafting}|hyperpage}{24}
+\indexentry{removeAfterCrafting@{removeAfterCrafting}!Inventory@{Inventory}|hyperpage}{24}
+\indexentry{Inventory@{Inventory}!removeAll@{removeAll}|hyperpage}{25}
+\indexentry{removeAll@{removeAll}!Inventory@{Inventory}|hyperpage}{25}
+\indexentry{Inventory@{Inventory}!removeItemAt@{removeItemAt}|hyperpage}{25}
+\indexentry{removeItemAt@{removeItemAt}!Inventory@{Inventory}|hyperpage}{25}
+\indexentry{IoClass@{IoClass}|hyperpage}{25}
+\indexentry{IoClass@{IoClass}!````~IoClass@{$\sim$IoClass}|hyperpage}{26}
+\indexentry{````~IoClass@{$\sim$IoClass}!IoClass@{IoClass}|hyperpage}{26}
+\indexentry{IoClass@{IoClass}!getInput@{getInput}|hyperpage}{26}
+\indexentry{getInput@{getInput}!IoClass@{IoClass}|hyperpage}{26}
+\indexentry{IoClass@{IoClass}!getMaxX@{getMaxX}|hyperpage}{27}
+\indexentry{getMaxX@{getMaxX}!IoClass@{IoClass}|hyperpage}{27}
+\indexentry{IoClass@{IoClass}!getMaxY@{getMaxY}|hyperpage}{27}
+\indexentry{getMaxY@{getMaxY}!IoClass@{IoClass}|hyperpage}{27}
+\indexentry{IoClass@{IoClass}!loadFromFile@{loadFromFile}|hyperpage}{27}
+\indexentry{loadFromFile@{loadFromFile}!IoClass@{IoClass}|hyperpage}{27}
+\indexentry{IoClass@{IoClass}!printEnvironment@{printEnvironment}|hyperpage}{28}
+\indexentry{printEnvironment@{printEnvironment}!IoClass@{IoClass}|hyperpage}{28}
+\indexentry{IoClass@{IoClass}!printPlayerStats@{printPlayerStats}|hyperpage}{28}
+\indexentry{printPlayerStats@{printPlayerStats}!IoClass@{IoClass}|hyperpage}{28}
+\indexentry{IoClass@{IoClass}!printToCoordsAnimated@{printToCoordsAnimated}|hyperpage}{28}
+\indexentry{printToCoordsAnimated@{printToCoordsAnimated}!IoClass@{IoClass}|hyperpage}{28}
+\indexentry{IoClass@{IoClass}!readString@{readString}|hyperpage}{29}
+\indexentry{readString@{readString}!IoClass@{IoClass}|hyperpage}{29}
+\indexentry{IoClass@{IoClass}!saveToFile@{saveToFile}|hyperpage}{29}
+\indexentry{saveToFile@{saveToFile}!IoClass@{IoClass}|hyperpage}{29}
+\indexentry{IoClass@{IoClass}!showMenu@{showMenu}|hyperpage}{29}
+\indexentry{showMenu@{showMenu}!IoClass@{IoClass}|hyperpage}{29}
+\indexentry{Item@{Item}|hyperpage}{30}
+\indexentry{Item@{Item}!operator+@{operator+}|hyperpage}{31}
+\indexentry{operator+@{operator+}!Item@{Item}|hyperpage}{31}
+\indexentry{Leafs@{Leafs}|hyperpage}{31}
+\indexentry{LightedTorch@{LightedTorch}|hyperpage}{32}
+\indexentry{Lighter@{Lighter}|hyperpage}{32}
+\indexentry{OpenCoconut@{OpenCoconut}|hyperpage}{33}
+\indexentry{Player@{Player}|hyperpage}{33}
+\indexentry{Player@{Player}!Player@{Player}|hyperpage}{34}
+\indexentry{Player@{Player}!Player@{Player}|hyperpage}{34}
+\indexentry{Player@{Player}!addToInventory@{addToInventory}|hyperpage}{35}
+\indexentry{addToInventory@{addToInventory}!Player@{Player}|hyperpage}{35}
+\indexentry{Player@{Player}!getCrafted@{getCrafted}|hyperpage}{35}
+\indexentry{getCrafted@{getCrafted}!Player@{Player}|hyperpage}{35}
+\indexentry{Player@{Player}!getHunger@{getHunger}|hyperpage}{35}
+\indexentry{getHunger@{getHunger}!Player@{Player}|hyperpage}{35}
+\indexentry{Player@{Player}!getInventory@{getInventory}|hyperpage}{35}
+\indexentry{getInventory@{getInventory}!Player@{Player}|hyperpage}{35}
+\indexentry{Player@{Player}!getItemAt@{getItemAt}|hyperpage}{36}
+\indexentry{getItemAt@{getItemAt}!Player@{Player}|hyperpage}{36}
+\indexentry{Player@{Player}!getItems@{getItems}|hyperpage}{36}
+\indexentry{getItems@{getItems}!Player@{Player}|hyperpage}{36}
+\indexentry{Player@{Player}!getName@{getName}|hyperpage}{36}
+\indexentry{getName@{getName}!Player@{Player}|hyperpage}{36}
+\indexentry{Player@{Player}!getPosition@{getPosition}|hyperpage}{36}
+\indexentry{getPosition@{getPosition}!Player@{Player}|hyperpage}{36}
+\indexentry{Player@{Player}!moveToCoordinates@{moveToCoordinates}|hyperpage}{37}
+\indexentry{moveToCoordinates@{moveToCoordinates}!Player@{Player}|hyperpage}{37}
+\indexentry{Player@{Player}!moveToCoordinates@{moveToCoordinates}|hyperpage}{37}
+\indexentry{moveToCoordinates@{moveToCoordinates}!Player@{Player}|hyperpage}{37}
+\indexentry{Player@{Player}!removeAfterCrafting@{removeAfterCrafting}|hyperpage}{37}
+\indexentry{removeAfterCrafting@{removeAfterCrafting}!Player@{Player}|hyperpage}{37}
+\indexentry{Player@{Player}!removeAllFromPlayer@{removeAllFromPlayer}|hyperpage}{38}
+\indexentry{removeAllFromPlayer@{removeAllFromPlayer}!Player@{Player}|hyperpage}{38}
+\indexentry{Player@{Player}!removeFromInventory@{removeFromInventory}|hyperpage}{38}
+\indexentry{removeFromInventory@{removeFromInventory}!Player@{Player}|hyperpage}{38}
+\indexentry{Player@{Player}!showInventory@{showInventory}|hyperpage}{38}
+\indexentry{showInventory@{showInventory}!Player@{Player}|hyperpage}{38}
+\indexentry{Rock@{Rock}|hyperpage}{39}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{39}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!Vector2D@{Vector2D}|hyperpage}{40}
+\indexentry{Vector2D@{Vector2D}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{40}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!Vector2D@{Vector2D}|hyperpage}{41}
+\indexentry{Vector2D@{Vector2D}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{41}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!Vector2D@{Vector2D}|hyperpage}{41}
+\indexentry{Vector2D@{Vector2D}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{41}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!length@{length}|hyperpage}{41}
+\indexentry{length@{length}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{41}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!normalize@{normalize}|hyperpage}{42}
+\indexentry{normalize@{normalize}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{42}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator$\ast$@{operator$\ast$}|hyperpage}{42}
+\indexentry{operator$\ast$@{operator$\ast$}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{42}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator$\ast$=@{operator$\ast$=}|hyperpage}{42}
+\indexentry{operator$\ast$=@{operator$\ast$=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{42}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator+@{operator+}|hyperpage}{43}
+\indexentry{operator+@{operator+}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{43}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator+@{operator+}|hyperpage}{43}
+\indexentry{operator+@{operator+}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{43}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator+=@{operator+=}|hyperpage}{43}
+\indexentry{operator+=@{operator+=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{43}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator+=@{operator+=}|hyperpage}{44}
+\indexentry{operator+=@{operator+=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{44}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator-\/@{operator-\/}|hyperpage}{44}
+\indexentry{operator-\/@{operator-\/}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{44}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator-\/@{operator-\/}|hyperpage}{45}
+\indexentry{operator-\/@{operator-\/}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{45}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator-\/=@{operator-\/=}|hyperpage}{45}
+\indexentry{operator-\/=@{operator-\/=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{45}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator-\/=@{operator-\/=}|hyperpage}{45}
+\indexentry{operator-\/=@{operator-\/=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{45}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator/@{operator/}|hyperpage}{46}
+\indexentry{operator/@{operator/}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{46}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator/=@{operator/=}|hyperpage}{46}
+\indexentry{operator/=@{operator/=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{46}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!operator=@{operator=}|hyperpage}{46}
+\indexentry{operator=@{operator=}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{46}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!rotate@{rotate}|hyperpage}{47}
+\indexentry{rotate@{rotate}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{47}
+\indexentry{Vector2D$<$ T $>$@{Vector2D$<$ T $>$}!set@{set}|hyperpage}{47}
+\indexentry{set@{set}!Vector2D$<$ T $>$@{Vector2D$<$ T $>$}|hyperpage}{47}
+\indexentry{WoodStick@{WoodStick}|hyperpage}{48}

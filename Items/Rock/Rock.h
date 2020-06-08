@@ -2,6 +2,10 @@
 #define Rock_H
 #include "../Item/Item.h"
 
+/**
+ * @brief Κλάση αντικειμένου Rock <br>
+ * Χρησιμοποιείται για τα συμβολίσει πέτρα.
+ */
 class Rock : public Item{
     private:
 

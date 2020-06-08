@@ -2,6 +2,10 @@
 #define Axe_H
 #include "../Item/Item.h"
 
+/**
+ * @brief Κλάση αντικειμένου Axe<br>
+ * Χρησιμοποιείται για τα συμβολίσει Τσεκούρι
+ */
 class Axe : public Item{
     private:
 

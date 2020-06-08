@@ -90,6 +90,11 @@ $(document).ready(function(){initNavTree('class_item.html',''); initResizable();
 <div class="title">Τεκμηρίωση Κλάσης Item</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Κλάση που χρησιμοποιείται για το κάθε αντικείμενο του παιχνιδιού.  
+ <a href="class_item.html#details">Περισσότερα...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_item_8h_source.html">Item.h</a>&gt;</code></p>
 <div class="dynheader">
 Διάγραμμα κληρονομικότητας για την Item:</div>
 <div class="dyncontent">
@@ -126,10 +131,56 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (itemType
 <tr class="memitem:a4c920999074b712fb08a9f315488bad9"><td class="memItemLeft" align="right" valign="top"><a id="a4c920999074b712fb08a9f315488bad9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setisOnFloor</b> (bool value)</td></tr>
 <tr class="separator:a4c920999074b712fb08a9f315488bad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b998e0dcda688bd6c1cbdd86c5003eb"><td class="memItemLeft" align="right" valign="top"><a id="a8b998e0dcda688bd6c1cbdd86c5003eb"></a>
-<a class="el" href="class_item.html">Item</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="class_item.html">Item</a> &amp;item)</td></tr>
+<tr class="memitem:a8b998e0dcda688bd6c1cbdd86c5003eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_item.html">Item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item.html#a8b998e0dcda688bd6c1cbdd86c5003eb">operator+</a> (<a class="el" href="class_item.html">Item</a> &amp;item)</td></tr>
+<tr class="memdesc:a8b998e0dcda688bd6c1cbdd86c5003eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Χρησιμοποιείται για τον συνδιασμό/crafting δύο αντικειμένων σε ενα τρίτο αντικέιμενο(παράγωγο των άλλων 2) <br  />
+ <span style="color:red">Σημείωση: Εάν αποτύχει τότε επιστρέφεται ένα αντικείμενο <a class="el" href="class_axe.html" title="Κλάση αντικειμένου Axe  Χρησιμοποιείται για τα συμβολίσει Τσεκούρι">Axe</a> με id = null </span><br  />
+ Ένας πίνακας που τα συνοψίζει είναι ο εξής: <br  />
+  <a href="class_item.html#a8b998e0dcda688bd6c1cbdd86c5003eb">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a8b998e0dcda688bd6c1cbdd86c5003eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Λεπτομερής Περιγραφή</h2>
+<div class="textblock"><p>Κλάση που χρησιμοποιείται για το κάθε αντικείμενο του παιχνιδιού. </p>
+</div><h2 class="groupheader">Τεκμηρίωση Συναρτήσεων Μελών</h2>
+<a id="a8b998e0dcda688bd6c1cbdd86c5003eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b998e0dcda688bd6c1cbdd86c5003eb">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_item.html">Item</a> Item::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_item.html">Item</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Χρησιμοποιείται για τον συνδιασμό/crafting δύο αντικειμένων σε ενα τρίτο αντικέιμενο(παράγωγο των άλλων 2) <br  />
+ <span style="color:red">Σημείωση: Εάν αποτύχει τότε επιστρέφεται ένα αντικείμενο <a class="el" href="class_axe.html" title="Κλάση αντικειμένου Axe  Χρησιμοποιείται για τα συμβολίσει Τσεκούρι">Axe</a> με id = null </span><br  />
+ Ένας πίνακας που τα συνοψίζει είναι ο εξής: <br  />
+ </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><a class="el" href="class_item.html" title="Κλάση που χρησιμοποιείται για το κάθε αντικείμενο του παιχνιδιού.">Item</a> A </th><th class="markdownTableHeadNone"><a class="el" href="class_item.html" title="Κλάση που χρησιμοποιείται για το κάθε αντικείμενο του παιχνιδιού.">Item</a> B </th><th class="markdownTableHeadNone">A + B  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="class_wood_stick.html" title="Κλάση αντικειμένου WoodStick   Χρησιμοποιείται για τα συμβολίσει ξύλο.">WoodStick</a> </td><td class="markdownTableBodyNone"><a class="el" href="class_leafs.html" title="Κλάση αντικειμένου Leafs   Χρησιμοποιείται για τα συμβολίσει Φύλλο">Leafs</a> </td><td class="markdownTableBodyNone"><a class="el" href="class_lighted_torch.html" title="Κλάση αντικειμένου LightedTorch   Χρησιμοποιείται για τα συμβολίσει αναμμένο πυρσό.">LightedTorch</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="class_rock.html" title="Κλάση αντικειμένου Rock   Χρησιμοποιείται για τα συμβολίσει πέτρα.">Rock</a> </td><td class="markdownTableBodyNone"><a class="el" href="class_coconut.html" title="Κλάση αντικειμένου Coconut   Χρησιμοποιείται για τα συμβολίσει Καρύδα">Coconut</a> </td><td class="markdownTableBodyNone"><a class="el" href="class_open_coconut.html" title="Κλάση αντικειμένου OpenCoconut   Χρησιμοποιείται για τα συμβολίσει ανοικτή καρύδα.">OpenCoconut</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="class_wood_stick.html" title="Κλάση αντικειμένου WoodStick   Χρησιμοποιείται για τα συμβολίσει ξύλο.">WoodStick</a> </td><td class="markdownTableBodyNone"><a class="el" href="class_rock.html" title="Κλάση αντικειμένου Rock   Χρησιμοποιείται για τα συμβολίσει πέτρα.">Rock</a> </td><td class="markdownTableBodyNone"><a class="el" href="class_axe.html" title="Κλάση αντικειμένου Axe  Χρησιμοποιείται για τα συμβολίσει Τσεκούρι">Axe</a>  </td></tr>
+</table>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Το αντικείμενο στο δεξί μέλος </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Επιστρέφει</dt><dd><a class="el" href="class_item.html" title="Κλάση που χρησιμοποιείται για το κάθε αντικείμενο του παιχνιδιού.">Item</a> Το παράγωγο αντικείμενο που δημιουργήθηκε </dd></dl>
+
+</div>
+</div>
 <hr/>Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:<ul>
 <li>Items/Item/<a class="el" href="_item_8h_source.html">Item.h</a></li>
 <li>Items/Item/Item.cpp</li>

@@ -8,7 +8,7 @@
 #include <vector>
 #include <string>
 /**
- * \class
+ * 
  * @brief Κλάση CSVRow χρησιμοποιείται για την προσπέλαση και ανάγνωση δεδομένων απο csv αρχεία
  * 
  */
