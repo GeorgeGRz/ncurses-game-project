@@ -7,7 +7,14 @@
 #include "../DynamicArray/DynamicArray.h"
 #include "../Items/Axe/Axe.h"
 
-
+/**
+ * @brief Υπερφόρτωση τελεστη << ωστε να τυπόνονται πληροφορίες αντικειμένου Item οταν χρησιμοποιείται ως δεξί μέλος οποιουδήποτε oustput stream <br>
+ * Για Παράδειγμα : cout << item1  <br>
+ * Όπου item1 αντικείμενο κλάσης Item
+ * @param os 
+ * @param item 
+ * @return ostream& 
+ */
 ostream &operator<<(ostream &os, Item item)
 {
     os << item.getId() + ";" + item.getName() + ";" + to_string(item.getType()) + ";" + to_string(item.getIfOnFloor()) + ";" + to_string(item.getPosition().x) + ";" + to_string(item.getPosition().y);
@@ -23,25 +30,26 @@ DynamicArray<Item> Player::getItems()
 }
 DynamicArray<Item> Player::getCrafted()
 {
-    DynamicArray<Item> ret;
+    DynamicArray<Item> ret;//Δυναμικός πίνακας που περιέχει τα αντικείμενα που μπορεί να φτιάξει ο χρήστης
     int i = 0;
     int j = 0;
-    DynamicArray<Item> items = (getItems());
+    DynamicArray<Item> items = getItems();
     for (auto i : items)
     {
         for (auto j : items)
         {
+            //Για κάθε αντικέιμενο στα αντικείμενα του χρήστη
             if(i.getId() == j.getId()) continue;
-            Item ptr = i + j;
+            Item ptr = i + j; //Δημιουργία του αντικειμένου
             if(ptr.getId()!="null")
-                ret.push_back(ptr);
+                ret.push_back(ptr);//Εάν το αντικείμενο δημιουργήθηκε επιτυχώς,τότε προστίθεται στον δυναμικό πίνακα αντικειμένων
         }
     }
     return ret;
 }
 void Player::removeAllFromPlayer()
 {
-    playerItems.removeAll();
+    playerItems.removeAll();//Καλείται η removeAll η οποία διαγράφει ΌΛΑ τα αντικείμενα που βρίσκονται στον πίνακα
 }
 Player::Player(Vector2D<int> position, Inventory inv, string name):playerItems(inv),playerPosition(position)
 {
@@ -78,18 +86,15 @@ void Player::showInventory(ostream &os)
 {
     for (auto x : playerItems.getInventoryItems())
     {
-        cout << x;
+        cout << x;//Έχει υπερφορτωθεί παραπάνω
     }
 }
 void Player::removeFromInventory(int index)
 {
-    this->playerItems.removeItemAt(index);
+    this->playerItems.removeItemAt(index);//Καλείται η removeItemAt η οποία αφαιρεί αντικείμενο σε συγκεκριμένο index
 }
 
-void Player::deallocateItem(Item &itemptr)
-{
-    //this->playerItems->deallocateItem(itemptr);
-}
+
 
 Item &Player::getItemAt(int index)
 {
@@ -103,5 +108,5 @@ DynamicArray<Item> Player::removeAfterCrafting(itemType itemCraftedType)
 
 Player::~Player(){
    
-    //delete playerPosition;
+    ;
 }

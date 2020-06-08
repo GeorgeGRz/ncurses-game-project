@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['length_114',['length',['../class_vector2_d.html#a3fb5fff33a76034f74fac8f4d517b6a5',1,'Vector2D']]],
-  ['loadfromfile_115',['loadFromFile',['../class_io_class.html#ac148370091cc66e4a35ae36e337f3fda',1,'IoClass']]]
+  ['itemtypecount_124',['itemTypeCount',['../class_inventory.html#a6b9cacc0a87942b104a89723437898a1',1,'Inventory']]]
 ];

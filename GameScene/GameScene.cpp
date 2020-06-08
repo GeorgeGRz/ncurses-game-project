@@ -16,10 +16,10 @@ GameScene::GameScene()
     string playerName = startupScreen();
     Player player(Vector2D<int>(2, 2), Inventory(), playerName);
     int id;
-    vector<Item> initDat = this->ioManager->loadFromFile("data/init.csv",id);
-    this->env = new Environment(player, ioManager->getMaxY(), ioManager->getMaxX(),id);
+    vector<Item> initDat = this->ioManager->loadFromFile("data/init.csv", id);
+    this->env = new Environment(player, ioManager->getMaxY(), ioManager->getMaxX(), id);
     this->setState(loading);
-    
+
     this->env->handleLoadedData(initDat, true);
     env->generateGrid(9);
     Play();
@@ -39,7 +39,7 @@ void GameScene::handleMainMenu(int menuSelection)
     }
     else if (menuSelection == 1)
     {
-        vector<Item> lDat = this->ioManager->loadFromFile("data/appData.csv",id);
+        vector<Item> lDat = this->ioManager->loadFromFile("data/appData.csv", id);
         this->env->handleLoadedData(lDat, false);
     }
     else if (menuSelection == 2)
@@ -289,7 +289,8 @@ void GameScene::Play()
     auto startTime = std::chrono::high_resolution_clock::now();
     while (1)
     {
-        if(env->getPlayer().getHunger() == 0) break;
+        if (env->getPlayer().getHunger() == 0)
+            break;
         auto currentTime = std::chrono::high_resolution_clock::now();
         if (endByMenu == true)
             break;

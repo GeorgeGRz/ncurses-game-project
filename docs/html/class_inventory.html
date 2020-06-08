@@ -90,29 +90,32 @@ $(document).ready(function(){initNavTree('class_inventory.html',''); initResizab
 <div class="title">Τεκμηρίωση Κλάσης Inventory</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Κλάση που περιέχει τα αντικείμενα του χρήστη.  
+ <a href="class_inventory.html#details">Περισσότερα...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_inventory_8h_source.html">Inventory.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Δημόσιες Μέθοδοι</h2></td></tr>
-<tr class="memitem:ace8f7abdeefbe948a4a277780a8397c7"><td class="memItemLeft" align="right" valign="top"><a id="ace8f7abdeefbe948a4a277780a8397c7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Inventory</b> (<a class="el" href="class_item.html">Item</a> *items, int itemCount)</td></tr>
-<tr class="separator:ace8f7abdeefbe948a4a277780a8397c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f2db9a87a8b9c1a3b5971a39e687140"><td class="memItemLeft" align="right" valign="top"><a id="a1f2db9a87a8b9c1a3b5971a39e687140"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Inventory</b> (const <a class="el" href="class_inventory.html">Inventory</a> &amp;copy)</td></tr>
 <tr class="separator:a1f2db9a87a8b9c1a3b5971a39e687140"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fc4b4128f095ed5bbd741dfd1e0206b"><td class="memItemLeft" align="right" valign="top"><a id="a1fc4b4128f095ed5bbd741dfd1e0206b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addItem</b> (<a class="el" href="class_item.html">Item</a> &amp;item)</td></tr>
+<tr class="memitem:a1fc4b4128f095ed5bbd741dfd1e0206b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a1fc4b4128f095ed5bbd741dfd1e0206b">addItem</a> (<a class="el" href="class_item.html">Item</a> &amp;item)</td></tr>
+<tr class="memdesc:a1fc4b4128f095ed5bbd741dfd1e0206b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Προσθέτει ενα αντικείμενο στο τέλος του δυναμικού πίνακα που περιέχει τα αντικείμενα.  <a href="class_inventory.html#a1fc4b4128f095ed5bbd741dfd1e0206b">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a1fc4b4128f095ed5bbd741dfd1e0206b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d4e150fd403e9f618b06445ca4425a0"><td class="memItemLeft" align="right" valign="top"><a id="a0d4e150fd403e9f618b06445ca4425a0"></a>
-<a class="el" href="class_dynamic_array.html">DynamicArray</a>&lt; <a class="el" href="class_item.html">Item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getInventoryItems</b> ()</td></tr>
+<tr class="memitem:a0d4e150fd403e9f618b06445ca4425a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_array.html">DynamicArray</a>&lt; <a class="el" href="class_item.html">Item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a0d4e150fd403e9f618b06445ca4425a0">getInventoryItems</a> ()</td></tr>
+<tr class="memdesc:a0d4e150fd403e9f618b06445ca4425a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter για τον δυναμικό πίνακα αντικειμένων  <a href="class_inventory.html#a0d4e150fd403e9f618b06445ca4425a0">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a0d4e150fd403e9f618b06445ca4425a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a933350aafcb452e7e93279ef7bdf122c"><td class="memItemLeft" align="right" valign="top"><a id="a933350aafcb452e7e93279ef7bdf122c"></a>
-<a class="el" href="class_item.html">Item</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getItemAt</b> (int index)</td></tr>
+<tr class="memitem:a933350aafcb452e7e93279ef7bdf122c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_item.html">Item</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a933350aafcb452e7e93279ef7bdf122c">getItemAt</a> (int index)</td></tr>
+<tr class="memdesc:a933350aafcb452e7e93279ef7bdf122c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter για ενα συγκεκριμένο αντικείμενο  <a href="class_inventory.html#a933350aafcb452e7e93279ef7bdf122c">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a933350aafcb452e7e93279ef7bdf122c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adccac17ed2cd598a00504e308360054b"><td class="memItemLeft" align="right" valign="top"><a id="adccac17ed2cd598a00504e308360054b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeItemAt</b> (int index)</td></tr>
+<tr class="memitem:adccac17ed2cd598a00504e308360054b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#adccac17ed2cd598a00504e308360054b">removeItemAt</a> (int index)</td></tr>
+<tr class="memdesc:adccac17ed2cd598a00504e308360054b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Διαγράφει αντικείμενο στη συγκεκριμένη θέση που προσδιορίζεται απο την παράμετρο index.  <a href="class_inventory.html#adccac17ed2cd598a00504e308360054b">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:adccac17ed2cd598a00504e308360054b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b9cacc0a87942b104a89723437898a1"><td class="memItemLeft" align="right" valign="top"><a id="a6b9cacc0a87942b104a89723437898a1"></a>
-<a class="el" href="class_dynamic_array.html">DynamicArray</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>itemTypeCount</b> ()</td></tr>
+<tr class="memitem:a6b9cacc0a87942b104a89723437898a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_array.html">DynamicArray</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#a6b9cacc0a87942b104a89723437898a1">itemTypeCount</a> ()</td></tr>
+<tr class="memdesc:a6b9cacc0a87942b104a89723437898a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Επιστρέφει δυναμικο πινακα που περιέχει το πλήθος των αντικειμένων του κάθε τύπου <br  />
+ Για παράδειγμα εάν έχουμε 5 αντικείμενα τύπου woodstick τότε στην αντίστοιχη θέση του τύπου woodstick θα περιέχει 5.  <a href="class_inventory.html#a6b9cacc0a87942b104a89723437898a1">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a6b9cacc0a87942b104a89723437898a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ecc4dba3dd2e4cc3bee1e497ea32152"><td class="memItemLeft" align="right" valign="top"><a id="a2ecc4dba3dd2e4cc3bee1e497ea32152"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> ()</td></tr>
@@ -120,13 +123,184 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> ()</td>
 <tr class="memitem:ad941afcfb9a9398317cdda1b466a6c79"><td class="memItemLeft" align="right" valign="top"><a id="ad941afcfb9a9398317cdda1b466a6c79"></a>
 <a class="el" href="class_inventory.html">Inventory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_inventory.html">Inventory</a> &amp;inv)</td></tr>
 <tr class="separator:ad941afcfb9a9398317cdda1b466a6c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0be7c6cace7326de0d996288108e2a9"><td class="memItemLeft" align="right" valign="top"><a id="ab0be7c6cace7326de0d996288108e2a9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeAll</b> ()</td></tr>
+<tr class="memitem:ab0be7c6cace7326de0d996288108e2a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#ab0be7c6cace7326de0d996288108e2a9">removeAll</a> ()</td></tr>
+<tr class="memdesc:ab0be7c6cace7326de0d996288108e2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Διαγράφει όλα τα αντικείμενα που βρίσκονται στον δυναμικό πίνακα  <a href="class_inventory.html#ab0be7c6cace7326de0d996288108e2a9">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:ab0be7c6cace7326de0d996288108e2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6ce5529708fd37337b6c79609bdf5ab"><td class="memItemLeft" align="right" valign="top"><a id="aa6ce5529708fd37337b6c79609bdf5ab"></a>
-<a class="el" href="class_dynamic_array.html">DynamicArray</a>&lt; <a class="el" href="class_item.html">Item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>removeAfterCrafting</b> (itemType itemCraftedType)</td></tr>
+<tr class="memitem:aa6ce5529708fd37337b6c79609bdf5ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_array.html">DynamicArray</a>&lt; <a class="el" href="class_item.html">Item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inventory.html#aa6ce5529708fd37337b6c79609bdf5ab">removeAfterCrafting</a> (itemType itemCraftedType)</td></tr>
+<tr class="memdesc:aa6ce5529708fd37337b6c79609bdf5ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Επιστρέφει δυναμικό πίνακα που περιέχει τα πρωτογενή αντικείμενα που διαγράφτηκαν για να κάνει craft ο χρήστης.<br  />
+ Εαν ο χρηστης για παραδειγμα δημιουργήσει ενα <a class="el" href="class_axe.html">Axe</a> απο <a class="el" href="class_rock.html">Rock</a> και woodstick τότε θα προσθέσει τα 2 αντικείμενα αυτα στον δυναμικό πίνακα και μετά θα τα διαγράψει.Τέλος θα επιστεψει τον πίνακα.  <a href="class_inventory.html#aa6ce5529708fd37337b6c79609bdf5ab">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:aa6ce5529708fd37337b6c79609bdf5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Λεπτομερής Περιγραφή</h2>
+<div class="textblock"><p>Κλάση που περιέχει τα αντικείμενα του χρήστη. </p>
+</div><h2 class="groupheader">Τεκμηρίωση Συναρτήσεων Μελών</h2>
+<a id="a1fc4b4128f095ed5bbd741dfd1e0206b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc4b4128f095ed5bbd741dfd1e0206b">&#9670;&nbsp;</a></span>addItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inventory::addItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_item.html">Item</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Προσθέτει ενα αντικείμενο στο τέλος του δυναμικού πίνακα που περιέχει τα αντικείμενα. </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0d4e150fd403e9f618b06445ca4425a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4e150fd403e9f618b06445ca4425a0">&#9670;&nbsp;</a></span>getInventoryItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dynamic_array.html">DynamicArray</a>&lt; <a class="el" href="class_item.html">Item</a> &gt; Inventory::getInventoryItems </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter για τον δυναμικό πίνακα αντικειμένων </p>
+<dl class="section return"><dt>Επιστρέφει</dt><dd><a class="el" href="class_dynamic_array.html">DynamicArray&lt;Item&gt;</a> </dd></dl>
+
+</div>
+</div>
+<a id="a933350aafcb452e7e93279ef7bdf122c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933350aafcb452e7e93279ef7bdf122c">&#9670;&nbsp;</a></span>getItemAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_item.html">Item</a> &amp; Inventory::getItemAt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Getter για ενα συγκεκριμένο αντικείμενο </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>το index του αντικειμένου </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Επιστρέφει</dt><dd><a class="el" href="class_item.html">Item</a>&amp; αναφορά στο αντικείμενο που βρίσκεται στη συκγεκριμένη θέση </dd></dl>
+
+</div>
+</div>
+<a id="a6b9cacc0a87942b104a89723437898a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9cacc0a87942b104a89723437898a1">&#9670;&nbsp;</a></span>itemTypeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dynamic_array.html">DynamicArray</a>&lt; int &gt; Inventory::itemTypeCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Επιστρέφει δυναμικο πινακα που περιέχει το πλήθος των αντικειμένων του κάθε τύπου <br  />
+ Για παράδειγμα εάν έχουμε 5 αντικείμενα τύπου woodstick τότε στην αντίστοιχη θέση του τύπου woodstick θα περιέχει 5. </p>
+<dl class="section return"><dt>Επιστρέφει</dt><dd>DynamicArray&lt;int&gt; </dd></dl>
+
+</div>
+</div>
+<a id="aa6ce5529708fd37337b6c79609bdf5ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ce5529708fd37337b6c79609bdf5ab">&#9670;&nbsp;</a></span>removeAfterCrafting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dynamic_array.html">DynamicArray</a>&lt; <a class="el" href="class_item.html">Item</a> &gt; Inventory::removeAfterCrafting </td>
+          <td>(</td>
+          <td class="paramtype">itemType&#160;</td>
+          <td class="paramname"><em>itemCraftedType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Επιστρέφει δυναμικό πίνακα που περιέχει τα πρωτογενή αντικείμενα που διαγράφτηκαν για να κάνει craft ο χρήστης.<br  />
+ Εαν ο χρηστης για παραδειγμα δημιουργήσει ενα <a class="el" href="class_axe.html">Axe</a> απο <a class="el" href="class_rock.html">Rock</a> και woodstick τότε θα προσθέσει τα 2 αντικείμενα αυτα στον δυναμικό πίνακα και μετά θα τα διαγράψει.Τέλος θα επιστεψει τον πίνακα. </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemCraftedType</td><td>Τύπος του παράγωγου αντικειμένου που ο χρήστης έκανε craft </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Επιστρέφει</dt><dd><a class="el" href="class_dynamic_array.html">DynamicArray&lt;Item&gt;</a> Δυναμικος Πίνακας που περιέχει τα πρωτογενή αντικείμενα που διαγράφτηκαν. </dd></dl>
+
+</div>
+</div>
+<a id="ab0be7c6cace7326de0d996288108e2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0be7c6cace7326de0d996288108e2a9">&#9670;&nbsp;</a></span>removeAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inventory::removeAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Διαγράφει όλα τα αντικείμενα που βρίσκονται στον δυναμικό πίνακα </p>
+
+</div>
+</div>
+<a id="adccac17ed2cd598a00504e308360054b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adccac17ed2cd598a00504e308360054b">&#9670;&nbsp;</a></span>removeItemAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inventory::removeItemAt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Διαγράφει αντικείμενο στη συγκεκριμένη θέση που προσδιορίζεται απο την παράμετρο index. </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:<ul>
 <li>Inventory/<a class="el" href="_inventory_8h_source.html">Inventory.h</a></li>
 <li>Inventory/Inventory.cpp</li>

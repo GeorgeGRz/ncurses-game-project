@@ -2,34 +2,41 @@
 .ad l
 .nh
 .SH NAME
-Inventory
+Inventory \- Κλάση που περιέχει τα αντικείμενα του χρήστη\&.  
+
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fC#include <Inventory\&.h>\fP
 .SS "Δημόσιες Μέθοδοι"
 
 .in +1c
-.ti -1c
-.RI "\fBInventory\fP (\fBItem\fP *items, int itemCount)"
-.br
 .ti -1c
 .RI "\fBInventory\fP (const \fBInventory\fP &copy)"
 .br
 .ti -1c
 .RI "void \fBaddItem\fP (\fBItem\fP &item)"
 .br
+.RI "Προσθέτει ενα αντικείμενο στο τέλος του δυναμικού πίνακα που περιέχει τα αντικείμενα\&. "
 .ti -1c
 .RI "\fBDynamicArray\fP< \fBItem\fP > \fBgetInventoryItems\fP ()"
 .br
+.RI "Getter για τον δυναμικό πίνακα αντικειμένων "
 .ti -1c
 .RI "\fBItem\fP & \fBgetItemAt\fP (int index)"
 .br
+.RI "Getter για ενα συγκεκριμένο αντικείμενο "
 .ti -1c
 .RI "void \fBremoveItemAt\fP (int index)"
 .br
+.RI "Διαγράφει αντικείμενο στη συγκεκριμένη θέση που προσδιορίζεται απο την παράμετρο index\&. "
 .ti -1c
 .RI "\fBDynamicArray\fP< int > \fBitemTypeCount\fP ()"
 .br
+.RI "Επιστρέφει δυναμικο πινακα που περιέχει το πλήθος των αντικειμένων του κάθε τύπου 
+.br
+ Για παράδειγμα εάν έχουμε 5 αντικείμενα τύπου woodstick τότε στην αντίστοιχη θέση του τύπου woodstick θα περιέχει 5\&. "
 .ti -1c
 .RI "size_t \fBgetSize\fP ()"
 .br
@@ -39,10 +46,105 @@ Inventory
 .ti -1c
 .RI "void \fBremoveAll\fP ()"
 .br
+.RI "Διαγράφει όλα τα αντικείμενα που βρίσκονται στον δυναμικό πίνακα "
 .ti -1c
 .RI "\fBDynamicArray\fP< \fBItem\fP > \fBremoveAfterCrafting\fP (itemType itemCraftedType)"
 .br
+.RI "Επιστρέφει δυναμικό πίνακα που περιέχει τα πρωτογενή αντικείμενα που διαγράφτηκαν για να κάνει craft ο χρήστης\&.
+.br
+ Εαν ο χρηστης για παραδειγμα δημιουργήσει ενα \fBAxe\fP απο \fBRock\fP και woodstick τότε θα προσθέσει τα 2 αντικείμενα αυτα στον δυναμικό πίνακα και μετά θα τα διαγράψει\&.Τέλος θα επιστεψει τον πίνακα\&. "
 .in -1c
+.SH "Λεπτομερής Περιγραφή"
+.PP 
+Κλάση που περιέχει τα αντικείμενα του χρήστη\&. 
+
+
+.SH "Τεκμηρίωση Συναρτήσεων Μελών"
+.PP 
+.SS "void Inventory::addItem (\fBItem\fP & item)"
+
+.PP
+Προσθέτει ενα αντικείμενο στο τέλος του δυναμικού πίνακα που περιέχει τα αντικείμενα\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIitem\fP 
+.RE
+.PP
+
+.SS "\fBDynamicArray\fP< \fBItem\fP > Inventory::getInventoryItems ()"
+
+.PP
+Getter για τον δυναμικό πίνακα αντικειμένων 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBDynamicArray<Item>\fP 
+.RE
+.PP
+
+.SS "\fBItem\fP & Inventory::getItemAt (int index)"
+
+.PP
+Getter για ενα συγκεκριμένο αντικείμενο 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIindex\fP το index του αντικειμένου 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBItem\fP& αναφορά στο αντικείμενο που βρίσκεται στη συκγεκριμένη θέση 
+.RE
+.PP
+
+.SS "\fBDynamicArray\fP< int > Inventory::itemTypeCount ()"
+
+.PP
+Επιστρέφει δυναμικο πινακα που περιέχει το πλήθος των αντικειμένων του κάθε τύπου 
+.br
+ Για παράδειγμα εάν έχουμε 5 αντικείμενα τύπου woodstick τότε στην αντίστοιχη θέση του τύπου woodstick θα περιέχει 5\&. 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+DynamicArray<int> 
+.RE
+.PP
+
+.SS "\fBDynamicArray\fP< \fBItem\fP > Inventory::removeAfterCrafting (itemType itemCraftedType)"
+
+.PP
+Επιστρέφει δυναμικό πίνακα που περιέχει τα πρωτογενή αντικείμενα που διαγράφτηκαν για να κάνει craft ο χρήστης\&.
+.br
+ Εαν ο χρηστης για παραδειγμα δημιουργήσει ενα \fBAxe\fP απο \fBRock\fP και woodstick τότε θα προσθέσει τα 2 αντικείμενα αυτα στον δυναμικό πίνακα και μετά θα τα διαγράψει\&.Τέλος θα επιστεψει τον πίνακα\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIitemCraftedType\fP Τύπος του παράγωγου αντικειμένου που ο χρήστης έκανε craft 
+.RE
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+\fBDynamicArray<Item>\fP Δυναμικος Πίνακας που περιέχει τα πρωτογενή αντικείμενα που διαγράφτηκαν\&. 
+.RE
+.PP
+
+.SS "void Inventory::removeAll ()"
+
+.PP
+Διαγράφει όλα τα αντικείμενα που βρίσκονται στον δυναμικό πίνακα 
+.SS "void Inventory::removeItemAt (int index)"
+
+.PP
+Διαγράφει αντικείμενο στη συγκεκριμένη θέση που προσδιορίζεται απο την παράμετρο index\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIindex\fP 
+.RE
+.PP
+
 
 .SH "Συγραφέας"
 .PP 

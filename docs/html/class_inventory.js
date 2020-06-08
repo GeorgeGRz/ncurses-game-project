@@ -1,7 +1,6 @@
 var class_inventory =
 [
     [ "Inventory", "class_inventory.html#a10485613fc8bfb32ee564d9b5110f8fb", null ],
-    [ "Inventory", "class_inventory.html#ace8f7abdeefbe948a4a277780a8397c7", null ],
     [ "Inventory", "class_inventory.html#a1f2db9a87a8b9c1a3b5971a39e687140", null ],
     [ "~Inventory", "class_inventory.html#a6c6dfcb6d977c74a7abf46809e892e3d", null ],
     [ "addItem", "class_inventory.html#a1fc4b4128f095ed5bbd741dfd1e0206b", null ],
