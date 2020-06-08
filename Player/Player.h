@@ -32,8 +32,12 @@ public:
     Player();
     ~Player();
 
-    
-    
+    /**
+     * @brief Κάνει summarize τα αντικείμενα και επιστρέφει δυναμικό πίνακα με strings που έχει τα ονόματα και τις ποσότητες του κάθε αντικειμένου
+     * 
+     * @return DynamicArray<string> 
+     */
+    DynamicArray<string> summarizeItems();
     void setHunger(int h){hunger = h;}
     /**
      * @brief Προσθέτει αντικείμενο στον σάκο του χρήστη

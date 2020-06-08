@@ -71,7 +71,18 @@ void GameScene::handleInventoryMenu(int menuSelection)
         }
         else
             itm = env->getPlayerItem(menuSelection - 1);
-        this->env->removeFromPlayerInv(itm);
+        int pX = env->getPlayer().getPosition().x;
+        int pY = env->getPlayer().getPosition().y;
+        int maxX, maxY;
+        getmaxyx(stdscr,maxY,maxX);
+        if( pX < maxY - 1 && pX > 0 && pY < maxX -1 && pY > 0){
+            if(env->getGrid()[pX+1][pY+1] == ' ' ){
+                itm.setPosition(Vector2D<int>(pX+1,pY+1));
+                this->env->removeFromPlayerInv(itm);
+            }
+            
+        }
+        
     }
 }
 void GameScene::handleCraftingMenu(int menuSelection)
@@ -113,11 +124,7 @@ void GameScene::handleCraftingMenu(int menuSelection)
         this->isOver = true;
     }
 }
-DynamicArray<bool> setupFlags()
-{
-    DynamicArray<bool> test({false, false, false, false, false, false, false, false});
-    return test;
-}
+
 void GameScene::parseSelection(int c)
 {
     switch (c)
@@ -154,59 +161,8 @@ void GameScene::parseSelection(int c)
         this->setState(waiting);
         vector<string> items;
         items.push_back("Back to game");
-        DynamicArray<int> itemCount = env->getPlayer().getInventory().itemTypeCount();
-        DynamicArray<bool> flags = setupFlags();
-        for (auto x : env->getPlayer().getItems())
-        {
-            string print;
-            if (x.getType() == lighter && flags[0] == false)
-            {
-                print = x.getName() + " x" + to_string(itemCount[0]);
-                flags[0] = true;
-                items.push_back(print);
-            }
-            else if (x.getType() == woodstick && flags[1] == false)
-            {
-                print = x.getName() + " x" + to_string(itemCount[1]);
-                flags[1] = true;
-                items.push_back(print);
-            }
-            else if (x.getType() == leafs && flags[2] == false)
-            {
-                print = x.getName() + " x" + to_string(itemCount[2]);
-                flags[2] = true;
-                items.push_back(print);
-            }
-            else if (x.getType() == rock && flags[3] == false)
-            {
-                print = x.getName() + " x" + to_string(itemCount[3]);
-                flags[3] = true;
-                items.push_back(print);
-            }
-            else if (x.getType() == coconut && flags[4] == false)
-            {
-                print = x.getName() + " x" + to_string(itemCount[4]);
-                flags[4] = true;
-                items.push_back(print);
-            }
-            else if (x.getType() == axe && flags[5] == false)
-            {
-                print = x.getName() + " x" + to_string(itemCount[5]);
-                flags[5] = true;
-                items.push_back(print);
-            }
-            else if (x.getType() == opencoconut && flags[6] == false)
-            {
-                print = x.getName() + " x" + to_string(itemCount[6]);
-                flags[6] = true;
-                items.push_back(print);
-            }
-            else if (x.getType() == lightedtorch && flags[7] == false)
-            {
-                print = x.getName() + " x" + to_string(itemCount[7]);
-                flags[7] = true;
-                items.push_back(print);
-            }
+        for(auto x : env->getPlayer().summarizeItems()){
+            items.push_back(x);
         }
         handleInventoryMenu(this->ioManager->showMenu(items));
         break;

@@ -46,7 +46,7 @@ public:
     /*SETTERS*/
     inline void setType(itemType type) { this->typeOfItem = type; }
     inline void setisOnFloor(bool value) { this->isOnFloor = value; }
-    
+    inline void setPosition(Vector2D<int> newPos){this->pos = newPos;}
     
     virtual ~Item();
 
