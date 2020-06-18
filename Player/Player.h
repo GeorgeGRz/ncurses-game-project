@@ -2,8 +2,8 @@
 #define PLAYER_H
 #include <iostream>
 using namespace std;
-#include "../Vector2D/Vector2D.h"
 #include "../Inventory/Inventory.h"
+#include "../Vector2D/Vector2D.h"
 #include <vector>
 class Inventory;
 
@@ -12,13 +12,13 @@ class Item;
  * @brief Κλάση για τον παίκτη του παιχνιδιού
  * 
  */
-class Player
-{
+class Player {
 private:
     string playerName;
     Vector2D<int> playerPosition;
     Inventory playerItems;
     int hunger = 100;
+
 public:
     /**
      * @brief Constructor της κλάσης Player
@@ -28,7 +28,7 @@ public:
      * @param name Το όνομα του παίκτη
      */
     Player(Vector2D<int> position, Inventory inv, string name = "P");
-    Player(const Player &copy);
+    Player(const Player& copy);
     Player();
     ~Player();
 
@@ -38,27 +38,27 @@ public:
      * @return DynamicArray<string> 
      */
     DynamicArray<string> summarizeItems();
-    void setHunger(int h){hunger = h;}
+    void setHunger(int h) { hunger = h; }
     /**
      * @brief Προσθέτει αντικείμενο στον σάκο του χρήστη
      * 
      * @param item 
      */
-    void addToInventory(Item &item);
-    
+    void addToInventory(Item& item);
+
     /**
      * @brief Εμφανίζει σε o/p stream τα αντικείμενα του χρήστη
      * 
      * @param stream 
      */
-    void showInventory(ostream &stream);
+    void showInventory(ostream& stream);
 
     /**
      * @brief Επιστρέφει το επίπεδο τροφής του παίκτη
      * 
      * @return int 
      */
-    int getHunger(){return hunger;}
+    int getHunger() { return hunger; }
     /**
      * @brief Getter για το ονομα του χρήστη
      * 
@@ -70,21 +70,21 @@ public:
      * 
      * @return const Vector2D<int>& 
      */
-    const Vector2D<int> &getPosition() { return playerPosition; }
+    const Vector2D<int>& getPosition() { return playerPosition; }
     /**
      * @brief Getter για τον σάκο με τα αντικείμενα του χρήστη
      * 
      * @return Inventory& 
      */
-    Inventory &getInventory() { return playerItems; }
-    
+    Inventory& getInventory() { return playerItems; }
+
     /**
      * @brief Επιστρέφει αντικείμενο σε συγκεκριμένη θέση
      * 
      * @param index Η θέση του αντικειμένου
      * @return Item& 
      */
-    Item &getItemAt(int index);
+    Item& getItemAt(int index);
 
     void setName(string newName) { this->playerName = newName; }
 
@@ -115,9 +115,8 @@ public:
      * @param index 
      */
     void removeFromInventory(int index);
-    
-    
-    Player operator=(const Player &copy);
+
+    Player operator=(const Player& copy);
 
     /**
      * @brief Επιστρέφει δυναμικό πίνακα που περιέχει τα αντικείμενα που μπορεί ο χρήστης να κατασκευάσει
@@ -131,7 +130,7 @@ public:
      * 
      */
     void removeAllFromPlayer();
-    
+
     /**
      * @brief Αφαιρεί τα αντικείμενα που χρησιμοποίησε ο χρήστης για να δημιουργήσει ένα νέο αντικείμενο και επιστρέφει δυναμικό πίνακα που τα περιέχει.
      * 
