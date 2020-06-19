@@ -4,10 +4,6 @@
     <title>Adventure Game</title>
     </info>
 <chapter>
-    <title>Αρχική Σελίδα</title>
-    <xi:include href="mainpage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-</chapter>
-<chapter>
     <title>Τεκμηρίωση Κλάσεων</title>
     <xi:include href="class_axe.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="class_coconut.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

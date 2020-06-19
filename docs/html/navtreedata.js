@@ -23,17 +23,6 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Adventure Game", "index.html", [
-    [ "Αρχική Σελίδα", "index.html", [
-      [ "Εισαγωγή", "index.html#intro_sec", [
-        [ "Λίγα λόγια για το project.", "index.html#step0", null ]
-      ] ],
-      [ "Οδηγείες εγκατάστασης", "index.html#install_sec", [
-        [ "Τι χρειάζεστε", "index.html#step1", null ],
-        [ "Clone Repository", "index.html#step2", null ],
-        [ "Μετακίνιση στον κατάλογο που εγινε clone", "index.html#step3", null ],
-        [ "Τρέξτε το παιχνίδι.", "index.html#step4", null ]
-      ] ]
-    ] ],
     [ "Κλάσεις", "annotated.html", [
       [ "Λίστα Κλάσεων", "annotated.html", "annotated_dup" ],
       [ "Συμπαγές Ευρετήριο", "classes.html", null ],
@@ -53,8 +42,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_axe_8h_source.html",
-"index.html#step2"
+"_axe_8h_source.html"
 ];
 
 var SYNCONMSG = 'Κάντε κλικ για να απενεργοποιήσετε το συγχρονισμό του παραθύρου';

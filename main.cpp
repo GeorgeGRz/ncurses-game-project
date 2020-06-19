@@ -22,13 +22,13 @@ using namespace std;
  *  <li><a href="https://packages.ubuntu.com/search?keywords=g%2B%2B">C++11</a></li>
  * </ul>
  *  \subsection step2 Clone Repository
- *  Μετακινιθείτε στον κατάλογο οπου επιθυμείτε να κάνετε clone και πληκτρολογείστε στο τερματικο "git clone https://github.com/GeorgeGRz/ncurses-game-project.git"
+ *  Μετακινιθείτε στον κατάλογο οπου επιθυμείτε να κάνετε clone και πληκτρολογείστε στο τερματικο @code git clone https://github.com/GeorgeGRz/ncurses-game-project.git @endcode
  *  
  * \subsection step3 Μετακίνιση στον κατάλογο που εγινε clone
- *  Στη συνέχεια πληκτρολογείστε "cd ncurses-game-project/" και μετά "make all"
+ *  Στη συνέχεια πληκτρολογείστε @code cd ncurses-game-project/ && make all @endcode
  *  
  *  \subsection step4 Τρέξτε το παιχνίδι.
- *  Για να τρέξετε το παιχνίδι απλά πληκτρολογείστε "./adventureGame" στο τερματικό
+ *  Για να τρέξετε το παιχνίδι απλά πληκτρολογείστε @code ./adventureGame
  *  
  */
 ostream & operator<<(ostream& s, Player p){
