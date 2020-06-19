@@ -22,9 +22,10 @@ using namespace std;
  *  <li><a href="https://packages.ubuntu.com/search?keywords=g%2B%2B">C++11</a></li>
  * </ul>
  *  \subsection step2 Clone Repository
- * 
- *  \subsection step3 Μετακίνιση στον κατάλογο που εγινε clone
- *  Αφου μετακινιθείται στον κατάλογο όπου έγινε clone,παρακαλώ πληκτρολογείστε <b>"make all"</b> στο τερματικό.
+ *  Μετακινιθείτε στον κατάλογο οπου επιθυμείτε να κάνετε clone και πληκτρολογείστε στο τερματικο "git clone https://github.com/GeorgeGRz/ncurses-game-project.git"
+ *  
+ * \subsection step3 Μετακίνιση στον κατάλογο που εγινε clone
+ *  Στη συνέχεια πληκτρολογείστε "cd ncurses-game-project/" και μετά "make all"
  *  
  *  \subsection step4 Τρέξτε το παιχνίδι.
  *  Για να τρέξετε το παιχνίδι απλά πληκτρολογείστε "./adventureGame" στο τερματικό
