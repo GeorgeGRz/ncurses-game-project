@@ -1,4 +1,4 @@
-.TH "Inventory" 3 "Δευ 08 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "Inventory" 3 "Παρ 19 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -12,6 +12,14 @@ Inventory \- Κλάση που περιέχει τα αντικείμενα το
 .SS "Δημόσιες Μέθοδοι"
 
 .in +1c
+.ti -1c
+.RI "\fBDynamicArray\fP< string > \fBsummarizeItems\fP ()"
+.br
+.RI "Κάνει summarize τα αντικείμενα και επιστρέφει δυναμικό πίνακα με strings που έχει τα ονόματα και τις ποσότητες του κάθε αντικειμένου "
+.ti -1c
+.RI "\fBDynamicArray\fP< int > \fBgetIndexOfLastItem\fP ()"
+.br
+.RI "Επιστρέφει τα index των τελευταίων αντικειμένων του κάθε τύπου "
 .ti -1c
 .RI "\fBInventory\fP (const \fBInventory\fP &copy)"
 .br
@@ -69,6 +77,17 @@ Inventory \- Κλάση που περιέχει τα αντικείμενα το
 \fBΠαράμετροι\fP
 .RS 4
 \fIitem\fP 
+.RE
+.PP
+
+.SS "\fBDynamicArray\fP< int > Inventory::getIndexOfLastItem ()"
+
+.PP
+Επιστρέφει τα index των τελευταίων αντικειμένων του κάθε τύπου 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+DynamicArray<int> 
 .RE
 .PP
 
@@ -142,6 +161,17 @@ DynamicArray<int>
 \fBΠαράμετροι\fP
 .RS 4
 \fIindex\fP 
+.RE
+.PP
+
+.SS "\fBDynamicArray\fP< string > Inventory::summarizeItems ()"
+
+.PP
+Κάνει summarize τα αντικείμενα και επιστρέφει δυναμικό πίνακα με strings που έχει τα ονόματα και τις ποσότητες του κάθε αντικειμένου 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+DynamicArray<string> 
 .RE
 .PP
 

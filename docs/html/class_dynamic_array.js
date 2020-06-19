@@ -1,7 +1,7 @@
 var class_dynamic_array =
 [
-    [ "iterator", "class_dynamic_array.html#a5a41c61244c36b56d373d36cda199ae9", null ],
-    [ "reference", "class_dynamic_array.html#ade89863afa96812ffb29170c86c7f600", null ],
+    [ "iterator", "class_dynamic_array.html#aad3903c5dbcd9985b2cdf017a5e40b33", null ],
+    [ "reference", "class_dynamic_array.html#ab2ed8c30d6e7b6e5fdb08ed4097763fb", null ],
     [ "size_type", "class_dynamic_array.html#a33ca22351219293343ca4a77c8c5b6b3", null ],
     [ "DynamicArray", "class_dynamic_array.html#ad9db9185bc2238a69cd35fb4d7d86349", null ],
     [ "DynamicArray", "class_dynamic_array.html#afe29de47101ad29d9709af52abbcf115", null ],

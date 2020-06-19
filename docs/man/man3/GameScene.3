@@ -1,11 +1,14 @@
-.TH "GameScene" 3 "Δευ 08 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "GameScene" 3 "Παρ 19 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-GameScene
+GameScene \- Κλάση διαχείρησης κύριας σκηνής του παιχνιδιού  
+
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fC#include <GameScene\&.h>\fP
 .SS "Δημόσιες Μέθοδοι"
 
 .in +1c
@@ -19,33 +22,131 @@ GameScene
 .RI "GameState \fBgetState\fP ()"
 .br
 .ti -1c
-.RI "void \fBcheckHunger\fP (chrono::minutes::rep &, chrono::_V2::system_clock::time_point &)"
+.RI "void \fBcheckHunger\fP (chrono::minutes::rep &timePassed, chrono::_V2::system_clock::time_point &start)"
 .br
+.RI "Ελέγχει το επίπεδο τροφής του παίκτη και κάθε λεπτό το μειώνει κατα 10\&. "
 .ti -1c
 .RI "void \fBsetState\fP (GameState state)"
 .br
 .ti -1c
 .RI "string \fBstartupScreen\fP ()"
 .br
+.RI "Εμφανίζει την αρχική οθόνη και αφού διαβάσει απο το πληκτρολόγιο το όνομα του χρήστη το επιστρέφει\&. "
 .ti -1c
 .RI "void \fBPlay\fP ()"
 .br
+.RI "Κύρια μέθοδος του παιχνιδιού "
 .ti -1c
 .RI "void \fBparseSelection\fP (int c)"
 .br
+.RI "Κύρια μέθοδος που διαχειρίζεται τα πλήκτρα\&. "
 .ti -1c
 .RI "void \fBhandleMainMenu\fP (int menuSelection)"
 .br
+.RI "Μέθοδος που διαχειρίζεται το κύριο μενού με βάση την επιλογή που έκανε ο χρήστης\&. "
 .ti -1c
 .RI "void \fBhandleInventoryMenu\fP (int menuSelection)"
 .br
+.RI "Μέθοδος που διαχειρίζεται το μενού επιλογής αντικειμένου που θα αφήσει ο χρήστης στο περιβάλλον, αφου πρώτα ελέγξει εάν υπάρχει ελεύθερος χώρος\&. "
 .ti -1c
 .RI "void \fBhandleCraftingMenu\fP (int menuSelection)"
 .br
+.RI "Μέθοδος που διαχειρίζεται το crafting\&. "
 .ti -1c
 .RI "void \fBhandleEndingMenu\fP (int menuSelection)"
 .br
+.RI "Μέθοδος που διαχειρίζεται το μενού τερματισμού "
 .in -1c
+.SH "Λεπτομερής Περιγραφή"
+.PP 
+Κλάση διαχείρησης κύριας σκηνής του παιχνιδιού 
+
+
+.SH "Τεκμηρίωση Συναρτήσεων Μελών"
+.PP 
+.SS "void GameScene::checkHunger (chrono::minutes::rep & timePassed, chrono::_V2::system_clock::time_point & start)"
+
+.PP
+Ελέγχει το επίπεδο τροφής του παίκτη και κάθε λεπτό το μειώνει κατα 10\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fItimePassed\fP Αναφορά σε αντικείμενο chrono::duration που χρησιμοποιείται για να κρατάει τον χρόνο που πέρασε απο τον προηγούμενο έλεγχο 
+.br
+\fIstart\fP Αναφορά σε αντικείμενο std::chrono::time_point<std::chrono::system_clock> χρησιμοποιείται ώστε να κρατάει την τωρινή ώρα, δηλαδή την ώρα του ελέγχου\&. 
+.RE
+.PP
+
+.SS "void GameScene::handleCraftingMenu (int menuSelection)"
+
+.PP
+Μέθοδος που διαχειρίζεται το crafting\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fImenuSelection\fP Index του αντικειμένου που θα κάνει craft(1 για το 1ο, 2 για το 2ο, κ\&.ο\&.κ) 
+.RE
+.PP
+
+.SS "void GameScene::handleEndingMenu (int menuSelection)"
+
+.PP
+Μέθοδος που διαχειρίζεται το μενού τερματισμού 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fImenuSelection\fP Index της επιλογής του χρήστη\&. 
+.RE
+.PP
+
+.SS "void GameScene::handleInventoryMenu (int menuSelection)"
+
+.PP
+Μέθοδος που διαχειρίζεται το μενού επιλογής αντικειμένου που θα αφήσει ο χρήστης στο περιβάλλον, αφου πρώτα ελέγξει εάν υπάρχει ελεύθερος χώρος\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fImenuSelection\fP Index του αντικειμένου που θα αφήσει στο πάτωμα(1 για το 1ο, 2 για το 2ο, κ\&.ο\&.κ) 
+.RE
+.PP
+
+.SS "void GameScene::handleMainMenu (int menuSelection)"
+
+.PP
+Μέθοδος που διαχειρίζεται το κύριο μενού με βάση την επιλογή που έκανε ο χρήστης\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fImenuSelection\fP Επιλογή του μενού που έκανε ο χρήστης\&. 
+.RE
+.PP
+
+.SS "void GameScene::parseSelection (int c)"
+
+.PP
+Κύρια μέθοδος που διαχειρίζεται τα πλήκτρα\&. 
+.PP
+\fBΠαράμετροι\fP
+.RS 4
+\fIc\fP Κωδικός πλήκτρου(ποίο πλήκτρο πατήθηκε) 
+.RE
+.PP
+
+.SS "void GameScene::Play ()"
+
+.PP
+Κύρια μέθοδος του παιχνιδιού 
+.SS "string GameScene::startupScreen ()"
+
+.PP
+Εμφανίζει την αρχική οθόνη και αφού διαβάσει απο το πληκτρολόγιο το όνομα του χρήστη το επιστρέφει\&. 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+string Όνομα χρήστη 
+.RE
+.PP
+
 
 .SH "Συγραφέας"
 .PP 

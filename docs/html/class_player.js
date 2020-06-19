@@ -20,5 +20,6 @@ var class_player =
     [ "removeFromInventory", "class_player.html#a679159353f050d299474d92cc3b68284", null ],
     [ "setHunger", "class_player.html#a79f73957d11e666ee48d9f4cc02bc5ad", null ],
     [ "setName", "class_player.html#a05df581ac0f73a10b6163ca8c03eff7b", null ],
-    [ "showInventory", "class_player.html#a02ce1c4efec524ed951a68ffd9dbcdb2", null ]
+    [ "showInventory", "class_player.html#a02ce1c4efec524ed951a68ffd9dbcdb2", null ],
+    [ "summarizeItems", "class_player.html#a900a181038e1057e613d864bd02191d5", null ]
 ];

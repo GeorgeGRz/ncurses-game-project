@@ -90,55 +90,53 @@ $(document).ready(function(){initNavTree('_c_s_v_row_8h_source.html',''); initRe
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CSVROW_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CSVROW_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_s_v_row.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_s_v_row.html">CSVRow</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_c_s_v_row.html#afbb254efcab69c49c3439e5a618808ba">   24</a></span>&#160;        std::string <span class="keyword">const</span>&amp; <a class="code" href="class_c_s_v_row.html#afbb254efcab69c49c3439e5a618808ba">operator[]</a>(std::size_t index)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">return</span> m_data[index];</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_s_v_row.html#ad9f7deadc010d09dd0e61602e5db3daa">   33</a></span>&#160;        std::size_t <a class="code" href="class_c_s_v_row.html#ad9f7deadc010d09dd0e61602e5db3daa">size</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">return</span> m_data.size();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_s_v_row.html#a14b9ac6d9ffb01a7b05ea903cfd04eeb">   42</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_c_s_v_row.html#a14b9ac6d9ffb01a7b05ea903cfd04eeb">readNextRow</a>(std::istream&amp; str)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            std::string         line; <span class="comment">//χρησιμοποιείται για καθε γραμμη</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            std::getline(str, line);<span class="comment">//Διαβαζει την γραμμή απο το istream str και αντιγραφει το περιεχόμενο στη line</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            std::stringstream   lineStream(line);<span class="comment">//Χρησιμοποιείται stringstream για να προσπελαστεί η γραμμή</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            std::string         cell;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            m_data.clear();<span class="comment">//Καθαρίζεται το περιεχόμενο του διανύσματος</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">while</span>(std::getline(lineStream, cell, <span class="charliteral">&#39;;&#39;</span>))</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="comment">//Η getline βγάζει τους χαρακτήρες απο το lineStream και τους αποθηκεύει στο cell μέχρι να συναντήσει τον χαρακτηρα &quot;;&quot;</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                m_data.push_back(cell);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="comment">//Εάν υπάρχει ; και δεν έχει δεδομένα μετά</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span> (!lineStream &amp;&amp; cell.empty())</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="comment">//Εαν υπάρχει ; μετά, τότε πρόσθεσε ένα κενό στοιχείο</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                m_data.push_back(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        std::vector&lt;std::string&gt;    m_data;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_s_v_row.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_s_v_row.html">CSVRow</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_s_v_row.html#afbb254efcab69c49c3439e5a618808ba">   23</a></span>&#160;    std::string <span class="keyword">const</span>&amp; <a class="code" href="class_c_s_v_row.html#afbb254efcab69c49c3439e5a618808ba">operator[]</a>(std::size_t index)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> m_data[index];</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_s_v_row.html#ad9f7deadc010d09dd0e61602e5db3daa">   32</a></span>&#160;    std::size_t <a class="code" href="class_c_s_v_row.html#ad9f7deadc010d09dd0e61602e5db3daa">size</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> m_data.size();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_c_s_v_row.html#a14b9ac6d9ffb01a7b05ea903cfd04eeb">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_s_v_row.html#a14b9ac6d9ffb01a7b05ea903cfd04eeb">readNextRow</a>(std::istream&amp; str)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::string line; <span class="comment">//χρησιμοποιείται για καθε γραμμη</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::getline(str, line); <span class="comment">//Διαβαζει την γραμμή απο το istream str και αντιγραφει το περιεχόμενο στη line</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        std::stringstream lineStream(line); <span class="comment">//Χρησιμοποιείται stringstream για να προσπελαστεί η γραμμή</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::string cell;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        m_data.clear(); <span class="comment">//Καθαρίζεται το περιεχόμενο του διανύσματος</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">while</span> (std::getline(lineStream, cell, <span class="charliteral">&#39;;&#39;</span>)) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">//Η getline βγάζει τους χαρακτήρες απο το lineStream και τους αποθηκεύει στο cell μέχρι να συναντήσει τον χαρακτηρα &quot;;&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            m_data.push_back(cell);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">//Εάν υπάρχει ; και δεν έχει δεδομένα μετά</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (!lineStream &amp;&amp; cell.empty()) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="comment">//Εαν υπάρχει ; μετά, τότε πρόσθεσε ένα κενό στοιχείο</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            m_data.push_back(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::vector&lt;std::string&gt; m_data;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_c_s_v_row_html_ad9f7deadc010d09dd0e61602e5db3daa"><div class="ttname"><a href="class_c_s_v_row.html#ad9f7deadc010d09dd0e61602e5db3daa">CSVRow::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdoc">Επιστρέφει το μέγεθος του vector που περιέχει τις γραμμές</div><div class="ttdef"><b>Definition:</b> CSVRow.h:33</div></div>
-<div class="ttc" id="aclass_c_s_v_row_html_a14b9ac6d9ffb01a7b05ea903cfd04eeb"><div class="ttname"><a href="class_c_s_v_row.html#a14b9ac6d9ffb01a7b05ea903cfd04eeb">CSVRow::readNextRow</a></div><div class="ttdeci">void readNextRow(std::istream &amp;str)</div><div class="ttdoc">Διαβάζει την επόμενη γραμμή απο istream str.</div><div class="ttdef"><b>Definition:</b> CSVRow.h:42</div></div>
+<div class="ttc" id="aclass_c_s_v_row_html_ad9f7deadc010d09dd0e61602e5db3daa"><div class="ttname"><a href="class_c_s_v_row.html#ad9f7deadc010d09dd0e61602e5db3daa">CSVRow::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdoc">Επιστρέφει το μέγεθος του vector που περιέχει τις γραμμές</div><div class="ttdef"><b>Definition:</b> CSVRow.h:32</div></div>
+<div class="ttc" id="aclass_c_s_v_row_html_a14b9ac6d9ffb01a7b05ea903cfd04eeb"><div class="ttname"><a href="class_c_s_v_row.html#a14b9ac6d9ffb01a7b05ea903cfd04eeb">CSVRow::readNextRow</a></div><div class="ttdeci">void readNextRow(std::istream &amp;str)</div><div class="ttdoc">Διαβάζει την επόμενη γραμμή απο istream str.</div><div class="ttdef"><b>Definition:</b> CSVRow.h:41</div></div>
 <div class="ttc" id="aclass_c_s_v_row_html"><div class="ttname"><a href="class_c_s_v_row.html">CSVRow</a></div><div class="ttdoc">Κλάση CSVRow χρησιμοποιείται για την προσπέλαση και ανάγνωση δεδομένων απο csv αρχεία</div><div class="ttdef"><b>Definition:</b> CSVRow.h:15</div></div>
-<div class="ttc" id="aclass_c_s_v_row_html_afbb254efcab69c49c3439e5a618808ba"><div class="ttname"><a href="class_c_s_v_row.html#afbb254efcab69c49c3439e5a618808ba">CSVRow::operator[]</a></div><div class="ttdeci">std::string const  &amp; operator[](std::size_t index) const</div><div class="ttdoc">Επιστρέφει string που βρίσκεται στο συγκεκριμένο index.</div><div class="ttdef"><b>Definition:</b> CSVRow.h:24</div></div>
+<div class="ttc" id="aclass_c_s_v_row_html_afbb254efcab69c49c3439e5a618808ba"><div class="ttname"><a href="class_c_s_v_row.html#afbb254efcab69c49c3439e5a618808ba">CSVRow::operator[]</a></div><div class="ttdeci">std::string const  &amp; operator[](std::size_t index) const</div><div class="ttdoc">Επιστρέφει string που βρίσκεται στο συγκεκριμένο index.</div><div class="ttdef"><b>Definition:</b> CSVRow.h:23</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

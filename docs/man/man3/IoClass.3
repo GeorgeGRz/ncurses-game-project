@@ -1,4 +1,4 @@
-.TH "IoClass" 3 "Δευ 08 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "IoClass" 3 "Παρ 19 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -29,7 +29,7 @@ IoClass \- Κλάση διαχείρησης εισοδου-εξόδου καθ�
 .br
 .RI "Διαβάζει string απο το πληκτρολόγιο "
 .ti -1c
-.RI "void \fBprintToCoordsAnimated\fP (int x, int y, string stringToPrint, std::initializer_list< string > a_args, int speed)"
+.RI "void \fBprintToCoordsAnimated\fP (int x, int y, string stringToPrint, std::initializer_list< string > a_args, double speed)"
 .br
 .RI "Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα "
 .ti -1c
@@ -147,7 +147,7 @@ vector<Item> Container οπου περιέχει τα αντικείμενα π�
 .RE
 .PP
 
-.SS "void IoClass::printToCoordsAnimated (int x, int y, string stringToPrint, std::initializer_list< string > a_args, int speed)"
+.SS "void IoClass::printToCoordsAnimated (int x, int y, string stringToPrint, std::initializer_list< string > a_args, double speed)"
 
 .PP
 Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα 
@@ -162,7 +162,7 @@ vector<Item> Container οπου περιέχει τα αντικείμενα π�
 .br
 \fIa_args\fP Χρησιμοποιείται για να εμφανίζονται δυναμικά περιεχόμενα μεταβλητών(πχ οπως η printf εχει το s και το d) Οι μονες που υποστηρίζονται είναι οι s και d\&. 
 .br
-\fIspeed\fP Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων\&. 
+\fIspeed\fP Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων\&.Οσο πιο μικρο το speed τοσο πιο γρήγορα θα εμφανίζονται οι χαρακτήρες 
 .RE
 .PP
 

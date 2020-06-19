@@ -1,4 +1,4 @@
-.TH "Player" 3 "Δευ 08 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
+.TH "Player" 3 "Παρ 19 Ιουν 2020" "Version Alpha" "My Project" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -19,6 +19,10 @@ Player \- Κλάση για τον παίκτη του παιχνιδιού
 .ti -1c
 .RI "\fBPlayer\fP (const \fBPlayer\fP &copy)"
 .br
+.ti -1c
+.RI "\fBDynamicArray\fP< string > \fBsummarizeItems\fP ()"
+.br
+.RI "Κάνει summarize τα αντικείμενα και επιστρέφει δυναμικό πίνακα με strings που έχει τα ονόματα και τις ποσότητες του κάθε αντικειμένου "
 .ti -1c
 .RI "void \fBsetHunger\fP (int h)"
 .br
@@ -265,6 +269,17 @@ const \fBVector2D<int>\fP&
 \fBΠαράμετροι\fP
 .RS 4
 \fIstream\fP 
+.RE
+.PP
+
+.SS "\fBDynamicArray\fP< string > Player::summarizeItems ()"
+
+.PP
+Κάνει summarize τα αντικείμενα και επιστρέφει δυναμικό πίνακα με strings που έχει τα ονόματα και τις ποσότητες του κάθε αντικειμένου 
+.PP
+\fBΕπιστρέφει\fP
+.RS 4
+DynamicArray<string> 
 .RE
 .PP
 

@@ -4,7 +4,7 @@ var class_game_scene =
     [ "GameScene", "class_game_scene.html#a7c3edf2769347315d5cf7cbb657c4fe6", null ],
     [ "GameScene", "class_game_scene.html#a306f4f2154b4682d84321e891e4cda62", null ],
     [ "~GameScene", "class_game_scene.html#add5bc48c372aaa7f526c02558a8adf00", null ],
-    [ "checkHunger", "class_game_scene.html#ad667eaf6624e1dfbf8220160ccf93d57", null ],
+    [ "checkHunger", "class_game_scene.html#a238ea30184e690ab08c111f2e43acb81", null ],
     [ "getState", "class_game_scene.html#a3f56c3c30f2c587798f1db9ec42954d1", null ],
     [ "handleCraftingMenu", "class_game_scene.html#a5a705416850fcad2ddb4fb62dd9a9f56", null ],
     [ "handleEndingMenu", "class_game_scene.html#a71c8bd58f08a392a6dbefab4ea0609af", null ],

@@ -12,6 +12,10 @@
 \doxysubsection*{Δημόσιες Μέθοδοι}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ string $>$ \mbox{\hyperlink{class_inventory_a8d92b751ecb001c9181f1955f9bea1b5}{summarize\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Κάνει summarize τα αντικείμενα και επιστρέφει δυναμικό πίνακα με strings που έχει τα ονόματα και τις ποσότητες του κάθε αντικειμένου \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ int $>$ \mbox{\hyperlink{class_inventory_a2af89b14c0568b0309fb422e01403653}{get\+Index\+Of\+Last\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Επιστρέφει τα index των τελευταίων αντικειμένων του κάθε τύπου \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_inventory_a1f2db9a87a8b9c1a3b5971a39e687140}\label{class_inventory_a1f2db9a87a8b9c1a3b5971a39e687140}} 
 {\bfseries Inventory} (const \mbox{\hyperlink{class_inventory}{Inventory}} \&copy)
 \item 
@@ -60,6 +64,19 @@ void \mbox{\hyperlink{class_inventory_ab0be7c6cace7326de0d996288108e2a9}{remove\
 {\em item} & \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_inventory_a2af89b14c0568b0309fb422e01403653}\label{class_inventory_a2af89b14c0568b0309fb422e01403653}} 
+\index{Inventory@{Inventory}!getIndexOfLastItem@{getIndexOfLastItem}}
+\index{getIndexOfLastItem@{getIndexOfLastItem}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{getIndexOfLastItem()}{getIndexOfLastItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ int $>$ Inventory\+::get\+Index\+Of\+Last\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Επιστρέφει τα index των τελευταίων αντικειμένων του κάθε τύπου 
+
+\begin{DoxyReturn}{Επιστρέφει}
+Dynamic\+Array$<$int$>$ 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_inventory_a0d4e150fd403e9f618b06445ca4425a0}\label{class_inventory_a0d4e150fd403e9f618b06445ca4425a0}} 
 \index{Inventory@{Inventory}!getInventoryItems@{getInventoryItems}}
 \index{getInventoryItems@{getInventoryItems}!Inventory@{Inventory}}
@@ -149,6 +166,19 @@ Dynamic\+Array$<$int$>$
 {\em index} & \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_inventory_a8d92b751ecb001c9181f1955f9bea1b5}\label{class_inventory_a8d92b751ecb001c9181f1955f9bea1b5}} 
+\index{Inventory@{Inventory}!summarizeItems@{summarizeItems}}
+\index{summarizeItems@{summarizeItems}!Inventory@{Inventory}}
+\doxysubsubsection{\texorpdfstring{summarizeItems()}{summarizeItems()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dynamic_array}{Dynamic\+Array}}$<$ string $>$ Inventory\+::summarize\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Κάνει summarize τα αντικείμενα και επιστρέφει δυναμικό πίνακα με strings που έχει τα ονόματα και τις ποσότητες του κάθε αντικειμένου 
+
+\begin{DoxyReturn}{Επιστρέφει}
+Dynamic\+Array$<$string$>$ 
+\end{DoxyReturn}
 
 
 Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία\+:\begin{DoxyCompactItemize}

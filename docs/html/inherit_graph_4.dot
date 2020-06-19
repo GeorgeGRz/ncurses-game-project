@@ -4,5 +4,5 @@ digraph "Γραφική Αναπαράσταση Της Ιεραρχίας Τω�
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="GameScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_scene.html",tooltip=" "];
+  Node0 [label="GameScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_scene.html",tooltip="Κλάση διαχείρησης κύριας σκηνής του παιχνιδιού"];
 }

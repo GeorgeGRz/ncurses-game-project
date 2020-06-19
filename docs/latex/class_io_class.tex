@@ -20,7 +20,7 @@ void \mbox{\hyperlink{class_io_class_a2b09050af641448406ceb2eb762825e7}{save\+To
  {\bfseries{$<$item\+Id$>$;$<$item\+Name$>$;$<$item\+Type\+Id$>$;$<$item\+On\+Floor$>$;$<$item\+Xpos$>$;$<$item\+Ypos$>$}} \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_io_class_a2ab3d9376d924bf839839c43ffec8960}{read\+String}} ()
 \begin{DoxyCompactList}\small\item\em Διαβάζει string απο το πληκτρολόγιο \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_io_class_a069576134fab6e543348937e75d46351}{print\+To\+Coords\+Animated}} (int x, int y, string string\+To\+Print, std\+::initializer\+\_\+list$<$ string $>$ a\+\_\+args, int speed)
+void \mbox{\hyperlink{class_io_class_aad96d88b1d71c80b1c1163a893e18b48}{print\+To\+Coords\+Animated}} (int x, int y, string string\+To\+Print, std\+::initializer\+\_\+list$<$ string $>$ a\+\_\+args, double speed)
 \begin{DoxyCompactList}\small\item\em Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_io_class_a84c2d259964eb42dbba00a60ddcb67ad}{show\+Menu}} (std\+::vector$<$ string $>$ selections)
 \begin{DoxyCompactList}\small\item\em Δέχεται vector με string και εμφανίζει τα περιεχόμενα με μορφή μενού \end{DoxyCompactList}\item 
@@ -146,11 +146,11 @@ vector$<$\+Item$>$ Container οπου περιέχει τα αντικείμεν
 {\em player} & Αναφορά σε αντικείμενο \mbox{\hyperlink{class_player}{Player}} \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_io_class_a069576134fab6e543348937e75d46351}\label{class_io_class_a069576134fab6e543348937e75d46351}} 
+\mbox{\Hypertarget{class_io_class_aad96d88b1d71c80b1c1163a893e18b48}\label{class_io_class_aad96d88b1d71c80b1c1163a893e18b48}} 
 \index{IoClass@{IoClass}!printToCoordsAnimated@{printToCoordsAnimated}}
 \index{printToCoordsAnimated@{printToCoordsAnimated}!IoClass@{IoClass}}
 \doxysubsubsection{\texorpdfstring{printToCoordsAnimated()}{printToCoordsAnimated()}}
-{\footnotesize\ttfamily void Io\+Class\+::print\+To\+Coords\+Animated (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{string}]{string\+To\+Print,  }\item[{std\+::initializer\+\_\+list$<$ string $>$}]{a\+\_\+args,  }\item[{int}]{speed }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Io\+Class\+::print\+To\+Coords\+Animated (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{string}]{string\+To\+Print,  }\item[{std\+::initializer\+\_\+list$<$ string $>$}]{a\+\_\+args,  }\item[{double}]{speed }\end{DoxyParamCaption})}
 
 
 
@@ -166,7 +166,7 @@ vector$<$\+Item$>$ Container οπου περιέχει τα αντικείμεν
 \hline
 {\em a\+\_\+args} & Χρησιμοποιείται για να εμφανίζονται δυναμικά περιεχόμενα μεταβλητών(πχ οπως η printf εχει το s και το d) Οι μονες που υποστηρίζονται είναι οι s και d. \\
 \hline
-{\em speed} & Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων. \\
+{\em speed} & Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων.\+Οσο πιο μικρο το speed τοσο πιο γρήγορα θα εμφανίζονται οι χαρακτήρες \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_io_class_a2ab3d9376d924bf839839c43ffec8960}\label{class_io_class_a2ab3d9376d924bf839839c43ffec8960}} 

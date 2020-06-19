@@ -8,7 +8,7 @@ var class_io_class =
     [ "loadFromFile", "class_io_class.html#ac148370091cc66e4a35ae36e337f3fda", null ],
     [ "printEnvironment", "class_io_class.html#ab2cec9e3f5a339f0a52657899dcd40b7", null ],
     [ "printPlayerStats", "class_io_class.html#a24a6d28531a99d823cce209ff6076455", null ],
-    [ "printToCoordsAnimated", "class_io_class.html#a069576134fab6e543348937e75d46351", null ],
+    [ "printToCoordsAnimated", "class_io_class.html#aad96d88b1d71c80b1c1163a893e18b48", null ],
     [ "readString", "class_io_class.html#a2ab3d9376d924bf839839c43ffec8960", null ],
     [ "saveToFile", "class_io_class.html#a2b09050af641448406ceb2eb762825e7", null ],
     [ "showMenu", "class_io_class.html#a84c2d259964eb42dbba00a60ddcb67ad", null ]

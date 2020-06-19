@@ -90,6 +90,11 @@ $(document).ready(function(){initNavTree('class_game_scene.html',''); initResiza
 <div class="title">Τεκμηρίωση Κλάσης GameScene</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Κλάση διαχείρησης κύριας σκηνής του παιχνιδιού  
+ <a href="class_game_scene.html#details">Περισσότερα...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_game_scene_8h_source.html">GameScene.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Δημόσιες Μέθοδοι</h2></td></tr>
@@ -102,34 +107,243 @@ $(document).ready(function(){initNavTree('class_game_scene.html',''); initResiza
 <tr class="memitem:a3f56c3c30f2c587798f1db9ec42954d1"><td class="memItemLeft" align="right" valign="top"><a id="a3f56c3c30f2c587798f1db9ec42954d1"></a>
 GameState&#160;</td><td class="memItemRight" valign="bottom"><b>getState</b> ()</td></tr>
 <tr class="separator:a3f56c3c30f2c587798f1db9ec42954d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad667eaf6624e1dfbf8220160ccf93d57"><td class="memItemLeft" align="right" valign="top"><a id="ad667eaf6624e1dfbf8220160ccf93d57"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>checkHunger</b> (chrono::minutes::rep &amp;, chrono::_V2::system_clock::time_point &amp;)</td></tr>
-<tr class="separator:ad667eaf6624e1dfbf8220160ccf93d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238ea30184e690ab08c111f2e43acb81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene.html#a238ea30184e690ab08c111f2e43acb81">checkHunger</a> (chrono::minutes::rep &amp;timePassed, chrono::_V2::system_clock::time_point &amp;start)</td></tr>
+<tr class="memdesc:a238ea30184e690ab08c111f2e43acb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ελέγχει το επίπεδο τροφής του παίκτη και κάθε λεπτό το μειώνει κατα 10.  <a href="class_game_scene.html#a238ea30184e690ab08c111f2e43acb81">Περισσότερα...</a><br /></td></tr>
+<tr class="separator:a238ea30184e690ab08c111f2e43acb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accf6edf8e12715c37c238f5620620be0"><td class="memItemLeft" align="right" valign="top"><a id="accf6edf8e12715c37c238f5620620be0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setState</b> (GameState state)</td></tr>
 <tr class="separator:accf6edf8e12715c37c238f5620620be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a722f27065769feed457ba02c9e5650db"><td class="memItemLeft" align="right" valign="top"><a id="a722f27065769feed457ba02c9e5650db"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>startupScreen</b> ()</td></tr>
+<tr class="memitem:a722f27065769feed457ba02c9e5650db"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene.html#a722f27065769feed457ba02c9e5650db">startupScreen</a> ()</td></tr>
+<tr class="memdesc:a722f27065769feed457ba02c9e5650db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Εμφανίζει την αρχική οθόνη και αφού διαβάσει απο το πληκτρολόγιο το όνομα του χρήστη το επιστρέφει.  <a href="class_game_scene.html#a722f27065769feed457ba02c9e5650db">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a722f27065769feed457ba02c9e5650db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa686e382acd281b9880377323fb283ac"><td class="memItemLeft" align="right" valign="top"><a id="aa686e382acd281b9880377323fb283ac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Play</b> ()</td></tr>
+<tr class="memitem:aa686e382acd281b9880377323fb283ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene.html#aa686e382acd281b9880377323fb283ac">Play</a> ()</td></tr>
+<tr class="memdesc:aa686e382acd281b9880377323fb283ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Κύρια μέθοδος του παιχνιδιού  <a href="class_game_scene.html#aa686e382acd281b9880377323fb283ac">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:aa686e382acd281b9880377323fb283ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa78f7f563f8faa2e7e77de0f89cce05a"><td class="memItemLeft" align="right" valign="top"><a id="aa78f7f563f8faa2e7e77de0f89cce05a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>parseSelection</b> (int c)</td></tr>
+<tr class="memitem:aa78f7f563f8faa2e7e77de0f89cce05a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene.html#aa78f7f563f8faa2e7e77de0f89cce05a">parseSelection</a> (int c)</td></tr>
+<tr class="memdesc:aa78f7f563f8faa2e7e77de0f89cce05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Κύρια μέθοδος που διαχειρίζεται τα πλήκτρα.  <a href="class_game_scene.html#aa78f7f563f8faa2e7e77de0f89cce05a">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:aa78f7f563f8faa2e7e77de0f89cce05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7304e7385032c9ed63b3727bea9a11f2"><td class="memItemLeft" align="right" valign="top"><a id="a7304e7385032c9ed63b3727bea9a11f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handleMainMenu</b> (int menuSelection)</td></tr>
+<tr class="memitem:a7304e7385032c9ed63b3727bea9a11f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene.html#a7304e7385032c9ed63b3727bea9a11f2">handleMainMenu</a> (int menuSelection)</td></tr>
+<tr class="memdesc:a7304e7385032c9ed63b3727bea9a11f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Μέθοδος που διαχειρίζεται το κύριο μενού με βάση την επιλογή που έκανε ο χρήστης.  <a href="class_game_scene.html#a7304e7385032c9ed63b3727bea9a11f2">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a7304e7385032c9ed63b3727bea9a11f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d79ef87eefddd4437a24409feedf400"><td class="memItemLeft" align="right" valign="top"><a id="a5d79ef87eefddd4437a24409feedf400"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handleInventoryMenu</b> (int menuSelection)</td></tr>
+<tr class="memitem:a5d79ef87eefddd4437a24409feedf400"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene.html#a5d79ef87eefddd4437a24409feedf400">handleInventoryMenu</a> (int menuSelection)</td></tr>
+<tr class="memdesc:a5d79ef87eefddd4437a24409feedf400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Μέθοδος που διαχειρίζεται το μενού επιλογής αντικειμένου που θα αφήσει ο χρήστης στο περιβάλλον, αφου πρώτα ελέγξει εάν υπάρχει ελεύθερος χώρος.  <a href="class_game_scene.html#a5d79ef87eefddd4437a24409feedf400">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a5d79ef87eefddd4437a24409feedf400"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a705416850fcad2ddb4fb62dd9a9f56"><td class="memItemLeft" align="right" valign="top"><a id="a5a705416850fcad2ddb4fb62dd9a9f56"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handleCraftingMenu</b> (int menuSelection)</td></tr>
+<tr class="memitem:a5a705416850fcad2ddb4fb62dd9a9f56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene.html#a5a705416850fcad2ddb4fb62dd9a9f56">handleCraftingMenu</a> (int menuSelection)</td></tr>
+<tr class="memdesc:a5a705416850fcad2ddb4fb62dd9a9f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Μέθοδος που διαχειρίζεται το crafting.  <a href="class_game_scene.html#a5a705416850fcad2ddb4fb62dd9a9f56">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a5a705416850fcad2ddb4fb62dd9a9f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71c8bd58f08a392a6dbefab4ea0609af"><td class="memItemLeft" align="right" valign="top"><a id="a71c8bd58f08a392a6dbefab4ea0609af"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handleEndingMenu</b> (int menuSelection)</td></tr>
+<tr class="memitem:a71c8bd58f08a392a6dbefab4ea0609af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_scene.html#a71c8bd58f08a392a6dbefab4ea0609af">handleEndingMenu</a> (int menuSelection)</td></tr>
+<tr class="memdesc:a71c8bd58f08a392a6dbefab4ea0609af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Μέθοδος που διαχειρίζεται το μενού τερματισμού  <a href="class_game_scene.html#a71c8bd58f08a392a6dbefab4ea0609af">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a71c8bd58f08a392a6dbefab4ea0609af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Λεπτομερής Περιγραφή</h2>
+<div class="textblock"><p>Κλάση διαχείρησης κύριας σκηνής του παιχνιδιού </p>
+</div><h2 class="groupheader">Τεκμηρίωση Συναρτήσεων Μελών</h2>
+<a id="a238ea30184e690ab08c111f2e43acb81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a238ea30184e690ab08c111f2e43acb81">&#9670;&nbsp;</a></span>checkHunger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameScene::checkHunger </td>
+          <td>(</td>
+          <td class="paramtype">chrono::minutes::rep &amp;&#160;</td>
+          <td class="paramname"><em>timePassed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">chrono::_V2::system_clock::time_point &amp;&#160;</td>
+          <td class="paramname"><em>start</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ελέγχει το επίπεδο τροφής του παίκτη και κάθε λεπτό το μειώνει κατα 10. </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timePassed</td><td>Αναφορά σε αντικείμενο chrono::duration που χρησιμοποιείται για να κρατάει τον χρόνο που πέρασε απο τον προηγούμενο έλεγχο </td></tr>
+    <tr><td class="paramname">start</td><td>Αναφορά σε αντικείμενο std::chrono::time_point&lt;std::chrono::system_clock&gt; χρησιμοποιείται ώστε να κρατάει την τωρινή ώρα, δηλαδή την ώρα του ελέγχου. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a705416850fcad2ddb4fb62dd9a9f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a705416850fcad2ddb4fb62dd9a9f56">&#9670;&nbsp;</a></span>handleCraftingMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameScene::handleCraftingMenu </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>menuSelection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Μέθοδος που διαχειρίζεται το crafting. </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menuSelection</td><td>Index του αντικειμένου που θα κάνει craft(1 για το 1ο, 2 για το 2ο, κ.ο.κ) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a71c8bd58f08a392a6dbefab4ea0609af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c8bd58f08a392a6dbefab4ea0609af">&#9670;&nbsp;</a></span>handleEndingMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameScene::handleEndingMenu </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>menuSelection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Μέθοδος που διαχειρίζεται το μενού τερματισμού </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menuSelection</td><td>Index της επιλογής του χρήστη. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5d79ef87eefddd4437a24409feedf400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d79ef87eefddd4437a24409feedf400">&#9670;&nbsp;</a></span>handleInventoryMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameScene::handleInventoryMenu </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>menuSelection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Μέθοδος που διαχειρίζεται το μενού επιλογής αντικειμένου που θα αφήσει ο χρήστης στο περιβάλλον, αφου πρώτα ελέγξει εάν υπάρχει ελεύθερος χώρος. </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menuSelection</td><td>Index του αντικειμένου που θα αφήσει στο πάτωμα(1 για το 1ο, 2 για το 2ο, κ.ο.κ) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7304e7385032c9ed63b3727bea9a11f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7304e7385032c9ed63b3727bea9a11f2">&#9670;&nbsp;</a></span>handleMainMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameScene::handleMainMenu </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>menuSelection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Μέθοδος που διαχειρίζεται το κύριο μενού με βάση την επιλογή που έκανε ο χρήστης. </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menuSelection</td><td>Επιλογή του μενού που έκανε ο χρήστης. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa78f7f563f8faa2e7e77de0f89cce05a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78f7f563f8faa2e7e77de0f89cce05a">&#9670;&nbsp;</a></span>parseSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameScene::parseSelection </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Κύρια μέθοδος που διαχειρίζεται τα πλήκτρα. </p>
+<dl class="params"><dt>Παράμετροι</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Κωδικός πλήκτρου(ποίο πλήκτρο πατήθηκε) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa686e382acd281b9880377323fb283ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa686e382acd281b9880377323fb283ac">&#9670;&nbsp;</a></span>Play()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameScene::Play </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Κύρια μέθοδος του παιχνιδιού </p>
+
+</div>
+</div>
+<a id="a722f27065769feed457ba02c9e5650db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722f27065769feed457ba02c9e5650db">&#9670;&nbsp;</a></span>startupScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GameScene::startupScreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Εμφανίζει την αρχική οθόνη και αφού διαβάσει απο το πληκτρολόγιο το όνομα του χρήστη το επιστρέφει. </p>
+<dl class="section return"><dt>Επιστρέφει</dt><dd>string Όνομα χρήστη </dd></dl>
+
+</div>
+</div>
 <hr/>Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:<ul>
 <li>GameScene/<a class="el" href="_game_scene_8h_source.html">GameScene.h</a></li>
 <li>GameScene/GameScene.cpp</li>

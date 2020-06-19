@@ -11,5 +11,6 @@ var class_item =
     [ "getType", "class_item.html#aa3d4226ca25ed54355846d1dcabd1428", null ],
     [ "operator+", "class_item.html#a8b998e0dcda688bd6c1cbdd86c5003eb", null ],
     [ "setisOnFloor", "class_item.html#a4c920999074b712fb08a9f315488bad9", null ],
+    [ "setPosition", "class_item.html#a6daecf01abd6b21c37e61f7c8877af08", null ],
     [ "setType", "class_item.html#af84871ca941ecb2f894e3fdc7bf1710b", null ]
 ];

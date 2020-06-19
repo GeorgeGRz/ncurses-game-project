@@ -109,9 +109,9 @@ $(document).ready(function(){initNavTree('class_io_class.html',''); initResizabl
 <tr class="memitem:a2ab3d9376d924bf839839c43ffec8960"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#a2ab3d9376d924bf839839c43ffec8960">readString</a> ()</td></tr>
 <tr class="memdesc:a2ab3d9376d924bf839839c43ffec8960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Διαβάζει string απο το πληκτρολόγιο  <a href="class_io_class.html#a2ab3d9376d924bf839839c43ffec8960">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a2ab3d9376d924bf839839c43ffec8960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a069576134fab6e543348937e75d46351"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#a069576134fab6e543348937e75d46351">printToCoordsAnimated</a> (int x, int y, string stringToPrint, std::initializer_list&lt; string &gt; a_args, int speed)</td></tr>
-<tr class="memdesc:a069576134fab6e543348937e75d46351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα  <a href="class_io_class.html#a069576134fab6e543348937e75d46351">Περισσότερα...</a><br /></td></tr>
-<tr class="separator:a069576134fab6e543348937e75d46351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad96d88b1d71c80b1c1163a893e18b48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#aad96d88b1d71c80b1c1163a893e18b48">printToCoordsAnimated</a> (int x, int y, string stringToPrint, std::initializer_list&lt; string &gt; a_args, double speed)</td></tr>
+<tr class="memdesc:aad96d88b1d71c80b1c1163a893e18b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα  <a href="class_io_class.html#aad96d88b1d71c80b1c1163a893e18b48">Περισσότερα...</a><br /></td></tr>
+<tr class="separator:aad96d88b1d71c80b1c1163a893e18b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c2d259964eb42dbba00a60ddcb67ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_io_class.html#a84c2d259964eb42dbba00a60ddcb67ad">showMenu</a> (std::vector&lt; string &gt; selections)</td></tr>
 <tr class="memdesc:a84c2d259964eb42dbba00a60ddcb67ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Δέχεται vector με string και εμφανίζει τα περιεχόμενα με μορφή μενού  <a href="class_io_class.html#a84c2d259964eb42dbba00a60ddcb67ad">Περισσότερα...</a><br /></td></tr>
 <tr class="separator:a84c2d259964eb42dbba00a60ddcb67ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,8 +308,8 @@ $(document).ready(function(){initNavTree('class_io_class.html',''); initResizabl
 
 </div>
 </div>
-<a id="a069576134fab6e543348937e75d46351"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a069576134fab6e543348937e75d46351">&#9670;&nbsp;</a></span>printToCoordsAnimated()</h2>
+<a id="aad96d88b1d71c80b1c1163a893e18b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad96d88b1d71c80b1c1163a893e18b48">&#9670;&nbsp;</a></span>printToCoordsAnimated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('class_io_class.html',''); initResizabl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>speed</em>&#160;</td>
         </tr>
         <tr>
@@ -359,7 +359,7 @@ $(document).ready(function(){initNavTree('class_io_class.html',''); initResizabl
     <tr><td class="paramname">y</td><td>Η συντενταγμένη Y </td></tr>
     <tr><td class="paramname">stringToPrint</td><td>Το αλφαριθμητικό που θα εμφανιστεί </td></tr>
     <tr><td class="paramname">a_args</td><td>Χρησιμοποιείται για να εμφανίζονται δυναμικά περιεχόμενα μεταβλητών(πχ οπως η printf εχει το s και το d) Οι μονες που υποστηρίζονται είναι οι s και d. </td></tr>
-    <tr><td class="paramname">speed</td><td>Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων. </td></tr>
+    <tr><td class="paramname">speed</td><td>Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων.Οσο πιο μικρο το speed τοσο πιο γρήγορα θα εμφανίζονται οι χαρακτήρες </td></tr>
   </table>
   </dd>
 </dl>

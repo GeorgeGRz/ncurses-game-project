@@ -1,5 +1,14 @@
 \hypertarget{class_game_scene}{}\doxysection{Τεκμηρίωση Κλάσης Game\+Scene}
 \label{class_game_scene}\index{GameScene@{GameScene}}
+
+
+Κλάση διαχείρησης κύριας σκηνής του παιχνιδιού  
+
+
+
+
+{\ttfamily \#include $<$Game\+Scene.\+h$>$}
+
 \doxysubsection*{Δημόσιες Μέθοδοι}
 \begin{DoxyCompactItemize}
 \item 
@@ -12,33 +21,148 @@
 \mbox{\Hypertarget{class_game_scene_a3f56c3c30f2c587798f1db9ec42954d1}\label{class_game_scene_a3f56c3c30f2c587798f1db9ec42954d1}} 
 Game\+State {\bfseries get\+State} ()
 \item 
-\mbox{\Hypertarget{class_game_scene_ad667eaf6624e1dfbf8220160ccf93d57}\label{class_game_scene_ad667eaf6624e1dfbf8220160ccf93d57}} 
-void {\bfseries check\+Hunger} (chrono\+::minutes\+::rep \&, chrono\+::\+\_\+\+V2\+::system\+\_\+clock\+::time\+\_\+point \&)
-\item 
+void \mbox{\hyperlink{class_game_scene_a238ea30184e690ab08c111f2e43acb81}{check\+Hunger}} (chrono\+::minutes\+::rep \&time\+Passed, chrono\+::\+\_\+\+V2\+::system\+\_\+clock\+::time\+\_\+point \&start)
+\begin{DoxyCompactList}\small\item\em Ελέγχει το επίπεδο τροφής του παίκτη και κάθε λεπτό το μειώνει κατα 10. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_game_scene_accf6edf8e12715c37c238f5620620be0}\label{class_game_scene_accf6edf8e12715c37c238f5620620be0}} 
 void {\bfseries set\+State} (Game\+State state)
 \item 
-\mbox{\Hypertarget{class_game_scene_a722f27065769feed457ba02c9e5650db}\label{class_game_scene_a722f27065769feed457ba02c9e5650db}} 
-string {\bfseries startup\+Screen} ()
-\item 
-\mbox{\Hypertarget{class_game_scene_aa686e382acd281b9880377323fb283ac}\label{class_game_scene_aa686e382acd281b9880377323fb283ac}} 
-void {\bfseries Play} ()
-\item 
-\mbox{\Hypertarget{class_game_scene_aa78f7f563f8faa2e7e77de0f89cce05a}\label{class_game_scene_aa78f7f563f8faa2e7e77de0f89cce05a}} 
-void {\bfseries parse\+Selection} (int c)
-\item 
-\mbox{\Hypertarget{class_game_scene_a7304e7385032c9ed63b3727bea9a11f2}\label{class_game_scene_a7304e7385032c9ed63b3727bea9a11f2}} 
-void {\bfseries handle\+Main\+Menu} (int menu\+Selection)
-\item 
-\mbox{\Hypertarget{class_game_scene_a5d79ef87eefddd4437a24409feedf400}\label{class_game_scene_a5d79ef87eefddd4437a24409feedf400}} 
-void {\bfseries handle\+Inventory\+Menu} (int menu\+Selection)
-\item 
+string \mbox{\hyperlink{class_game_scene_a722f27065769feed457ba02c9e5650db}{startup\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Εμφανίζει την αρχική οθόνη και αφού διαβάσει απο το πληκτρολόγιο το όνομα του χρήστη το επιστρέφει. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_aa686e382acd281b9880377323fb283ac}{Play}} ()
+\begin{DoxyCompactList}\small\item\em Κύρια μέθοδος του παιχνιδιού \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_aa78f7f563f8faa2e7e77de0f89cce05a}{parse\+Selection}} (int c)
+\begin{DoxyCompactList}\small\item\em Κύρια μέθοδος που διαχειρίζεται τα πλήκτρα. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_a7304e7385032c9ed63b3727bea9a11f2}{handle\+Main\+Menu}} (int menu\+Selection)
+\begin{DoxyCompactList}\small\item\em Μέθοδος που διαχειρίζεται το κύριο μενού με βάση την επιλογή που έκανε ο χρήστης. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_a5d79ef87eefddd4437a24409feedf400}{handle\+Inventory\+Menu}} (int menu\+Selection)
+\begin{DoxyCompactList}\small\item\em Μέθοδος που διαχειρίζεται το μενού επιλογής αντικειμένου που θα αφήσει ο χρήστης στο περιβάλλον, αφου πρώτα ελέγξει εάν υπάρχει ελεύθερος χώρος. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_a5a705416850fcad2ddb4fb62dd9a9f56}{handle\+Crafting\+Menu}} (int menu\+Selection)
+\begin{DoxyCompactList}\small\item\em Μέθοδος που διαχειρίζεται το crafting. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_scene_a71c8bd58f08a392a6dbefab4ea0609af}{handle\+Ending\+Menu}} (int menu\+Selection)
+\begin{DoxyCompactList}\small\item\em Μέθοδος που διαχειρίζεται το μενού τερματισμού \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Λεπτομερής Περιγραφή}
+Κλάση διαχείρησης κύριας σκηνής του παιχνιδιού 
+
+
+
+\doxysubsection{Τεκμηρίωση Συναρτήσεων Μελών}
+\mbox{\Hypertarget{class_game_scene_a238ea30184e690ab08c111f2e43acb81}\label{class_game_scene_a238ea30184e690ab08c111f2e43acb81}} 
+\index{GameScene@{GameScene}!checkHunger@{checkHunger}}
+\index{checkHunger@{checkHunger}!GameScene@{GameScene}}
+\doxysubsubsection{\texorpdfstring{checkHunger()}{checkHunger()}}
+{\footnotesize\ttfamily void Game\+Scene\+::check\+Hunger (\begin{DoxyParamCaption}\item[{chrono\+::minutes\+::rep \&}]{time\+Passed,  }\item[{chrono\+::\+\_\+\+V2\+::system\+\_\+clock\+::time\+\_\+point \&}]{start }\end{DoxyParamCaption})}
+
+
+
+Ελέγχει το επίπεδο τροφής του παίκτη και κάθε λεπτό το μειώνει κατα 10. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em time\+Passed} & Αναφορά σε αντικείμενο chrono\+::duration που χρησιμοποιείται για να κρατάει τον χρόνο που πέρασε απο τον προηγούμενο έλεγχο \\
+\hline
+{\em start} & Αναφορά σε αντικείμενο std\+::chrono\+::time\+\_\+point$<$std\+::chrono\+::system\+\_\+clock$>$ χρησιμοποιείται ώστε να κρατάει την τωρινή ώρα, δηλαδή την ώρα του ελέγχου. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_game_scene_a5a705416850fcad2ddb4fb62dd9a9f56}\label{class_game_scene_a5a705416850fcad2ddb4fb62dd9a9f56}} 
-void {\bfseries handle\+Crafting\+Menu} (int menu\+Selection)
-\item 
+\index{GameScene@{GameScene}!handleCraftingMenu@{handleCraftingMenu}}
+\index{handleCraftingMenu@{handleCraftingMenu}!GameScene@{GameScene}}
+\doxysubsubsection{\texorpdfstring{handleCraftingMenu()}{handleCraftingMenu()}}
+{\footnotesize\ttfamily void Game\+Scene\+::handle\+Crafting\+Menu (\begin{DoxyParamCaption}\item[{int}]{menu\+Selection }\end{DoxyParamCaption})}
+
+
+
+Μέθοδος που διαχειρίζεται το crafting. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em menu\+Selection} & Index του αντικειμένου που θα κάνει craft(1 για το 1ο, 2 για το 2ο, κ.\+ο.\+κ) \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_game_scene_a71c8bd58f08a392a6dbefab4ea0609af}\label{class_game_scene_a71c8bd58f08a392a6dbefab4ea0609af}} 
-void {\bfseries handle\+Ending\+Menu} (int menu\+Selection)
-\end{DoxyCompactItemize}
+\index{GameScene@{GameScene}!handleEndingMenu@{handleEndingMenu}}
+\index{handleEndingMenu@{handleEndingMenu}!GameScene@{GameScene}}
+\doxysubsubsection{\texorpdfstring{handleEndingMenu()}{handleEndingMenu()}}
+{\footnotesize\ttfamily void Game\+Scene\+::handle\+Ending\+Menu (\begin{DoxyParamCaption}\item[{int}]{menu\+Selection }\end{DoxyParamCaption})}
+
+
+
+Μέθοδος που διαχειρίζεται το μενού τερματισμού 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em menu\+Selection} & Index της επιλογής του χρήστη. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_scene_a5d79ef87eefddd4437a24409feedf400}\label{class_game_scene_a5d79ef87eefddd4437a24409feedf400}} 
+\index{GameScene@{GameScene}!handleInventoryMenu@{handleInventoryMenu}}
+\index{handleInventoryMenu@{handleInventoryMenu}!GameScene@{GameScene}}
+\doxysubsubsection{\texorpdfstring{handleInventoryMenu()}{handleInventoryMenu()}}
+{\footnotesize\ttfamily void Game\+Scene\+::handle\+Inventory\+Menu (\begin{DoxyParamCaption}\item[{int}]{menu\+Selection }\end{DoxyParamCaption})}
+
+
+
+Μέθοδος που διαχειρίζεται το μενού επιλογής αντικειμένου που θα αφήσει ο χρήστης στο περιβάλλον, αφου πρώτα ελέγξει εάν υπάρχει ελεύθερος χώρος. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em menu\+Selection} & Index του αντικειμένου που θα αφήσει στο πάτωμα(1 για το 1ο, 2 για το 2ο, κ.\+ο.\+κ) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_scene_a7304e7385032c9ed63b3727bea9a11f2}\label{class_game_scene_a7304e7385032c9ed63b3727bea9a11f2}} 
+\index{GameScene@{GameScene}!handleMainMenu@{handleMainMenu}}
+\index{handleMainMenu@{handleMainMenu}!GameScene@{GameScene}}
+\doxysubsubsection{\texorpdfstring{handleMainMenu()}{handleMainMenu()}}
+{\footnotesize\ttfamily void Game\+Scene\+::handle\+Main\+Menu (\begin{DoxyParamCaption}\item[{int}]{menu\+Selection }\end{DoxyParamCaption})}
+
+
+
+Μέθοδος που διαχειρίζεται το κύριο μενού με βάση την επιλογή που έκανε ο χρήστης. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em menu\+Selection} & Επιλογή του μενού που έκανε ο χρήστης. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_scene_aa78f7f563f8faa2e7e77de0f89cce05a}\label{class_game_scene_aa78f7f563f8faa2e7e77de0f89cce05a}} 
+\index{GameScene@{GameScene}!parseSelection@{parseSelection}}
+\index{parseSelection@{parseSelection}!GameScene@{GameScene}}
+\doxysubsubsection{\texorpdfstring{parseSelection()}{parseSelection()}}
+{\footnotesize\ttfamily void Game\+Scene\+::parse\+Selection (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Κύρια μέθοδος που διαχειρίζεται τα πλήκτρα. 
+
+
+\begin{DoxyParams}{Παράμετροι}
+{\em c} & Κωδικός πλήκτρου(ποίο πλήκτρο πατήθηκε) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_scene_aa686e382acd281b9880377323fb283ac}\label{class_game_scene_aa686e382acd281b9880377323fb283ac}} 
+\index{GameScene@{GameScene}!Play@{Play}}
+\index{Play@{Play}!GameScene@{GameScene}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily void Game\+Scene\+::\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Κύρια μέθοδος του παιχνιδιού 
+
+\mbox{\Hypertarget{class_game_scene_a722f27065769feed457ba02c9e5650db}\label{class_game_scene_a722f27065769feed457ba02c9e5650db}} 
+\index{GameScene@{GameScene}!startupScreen@{startupScreen}}
+\index{startupScreen@{startupScreen}!GameScene@{GameScene}}
+\doxysubsubsection{\texorpdfstring{startupScreen()}{startupScreen()}}
+{\footnotesize\ttfamily string Game\+Scene\+::startup\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Εμφανίζει την αρχική οθόνη και αφού διαβάσει απο το πληκτρολόγιο το όνομα του χρήστη το επιστρέφει. 
+
+\begin{DoxyReturn}{Επιστρέφει}
+string Όνομα χρήστη 
+\end{DoxyReturn}
 
 
 Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία\+:\begin{DoxyCompactItemize}
