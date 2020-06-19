@@ -28,7 +28,7 @@ using namespace std;
  *  Στη συνέχεια πληκτρολογείστε @code cd ncurses-game-project/ && make all @endcode
  *  
  *  \subsection step4 Τρέξτε το παιχνίδι.
- *  Για να τρέξετε το παιχνίδι απλά πληκτρολογείστε @code ./adventureGame
+ *  Για να τρέξετε το παιχνίδι απλά πληκτρολογείστε ενώ βρίοκεστε στον ίδιο κατάλογο @code ./adventureGame @endcode
  *  
  */
 ostream & operator<<(ostream& s, Player p){

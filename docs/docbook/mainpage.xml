@@ -38,12 +38,14 @@
 <section xml:id="_index_1step3">
 <title>Μετακίνιση στον κατάλογο που εγινε clone</title>
 
-<para>Στη συνέχεια πληκτρολογείστε &quot;cd ncurses-game-project/&quot; και μετά &quot;make all&quot;</para>
+<para>Στη συνέχεια πληκτρολογείστε<literallayout><computeroutput>cd&#32;ncurses-game-project/&#32;&amp;&amp;&#32;make&#32;all&#32;
+</computeroutput></literallayout></para>
 </section>
 <section xml:id="_index_1step4">
 <title>Τρέξτε το παιχνίδι.</title>
 
-<para>Για να τρέξετε το παιχνίδι απλά πληκτρολογείστε &quot;./adventureGame&quot; στο τερματικό </para>
+<para>Για να τρέξετε το παιχνίδι απλά πληκτρολογείστε<literallayout><computeroutput>./adventureGame&#32;
+</computeroutput></literallayout> </para>
 </section>
 </section>
 </chapter>
