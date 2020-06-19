@@ -168,7 +168,7 @@ int IoClass::getInput()
 {
     return getch();
 }
-void IoClass::printToCoordsAnimated(int X, int Y, string str, std::initializer_list<string> a_args, int speed)
+void IoClass::printToCoordsAnimated(int X, int Y, string str, std::initializer_list<string> a_args, double speed)
 {
     int i;
 

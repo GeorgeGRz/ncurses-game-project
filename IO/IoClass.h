@@ -52,9 +52,9 @@ public:
          * @param y Η συντενταγμένη Y
          * @param stringToPrint Το αλφαριθμητικό που θα εμφανιστεί
          * @param a_args Χρησιμοποιείται για να εμφανίζονται δυναμικά περιεχόμενα μεταβλητών(πχ οπως η printf εχει το %s και το %d) Οι μονες που υποστηρίζονται είναι οι %s και %d.
-         * @param speed Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων.
+         * @param speed Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων.Οσο πιο μικρο το speed τοσο πιο γρήγορα θα εμφανίζονται οι χαρακτήρες
          */
-    void printToCoordsAnimated(int x, int y, string stringToPrint, std::initializer_list<string> a_args, int speed);
+    void printToCoordsAnimated(int x, int y, string stringToPrint, std::initializer_list<string> a_args, double speed);
 
     /**
          * @brief Δέχεται vector με string και εμφανίζει τα περιεχόμενα με μορφή μενού
