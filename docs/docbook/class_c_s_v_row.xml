@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_c_s_v_row">
+<title>Τεκμηρίωση Κλάσης CSVRow</title>
+<indexterm><primary>CSVRow</primary></indexterm>
+<para>
+
+<para>Κλάση <link linkend="_class_c_s_v_row">CSVRow</link> χρησιμοποιείται για την προσπέλαση και ανάγνωση δεδομένων απο csv αρχεία </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;CSVRow.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para>std::string const  &amp; <link linkend="_class_c_s_v_row_1afbb254efcab69c49c3439e5a618808ba">operator[]</link> (std::size_t index) const</para>
+
+<para>Επιστρέφει string που βρίσκεται στο συγκεκριμένο index. </para>
+</listitem>
+            <listitem><para>std::size_t <link linkend="_class_c_s_v_row_1ad9f7deadc010d09dd0e61602e5db3daa">size</link> () const</para>
+
+<para>Επιστρέφει το μέγεθος του vector που περιέχει τις γραμμές </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_c_s_v_row_1a14b9ac6d9ffb01a7b05ea903cfd04eeb">readNextRow</link> (std::istream &amp;str)</para>
+
+<para>Διαβάζει την επόμενη γραμμή απο istream str. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+
+<para>Κλάση <link linkend="_class_c_s_v_row">CSVRow</link> χρησιμοποιείται για την προσπέλαση και ανάγνωση δεδομένων απο csv αρχεία </para>
+
+
+</section>
+<section>
+<title>Τεκμηρίωση Συναρτήσεων Μελών</title>
+<anchor xml:id="_class_c_s_v_row_1afbb254efcab69c49c3439e5a618808ba"/>    <section>
+    <title>operator[]()</title>
+<indexterm><primary>operator[]</primary><secondary>CSVRow</secondary></indexterm>
+<indexterm><primary>CSVRow</primary><secondary>operator[]</secondary></indexterm>
+<para><computeroutput>std::string const&amp; CSVRow::operator[] (std::size_t index) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Επιστρέφει string που βρίσκεται στο συγκεκριμένο index. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>index</entry>
+                                <entry>
+<para>Η θέση του string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para>std::string const&amp; </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_c_s_v_row_1a14b9ac6d9ffb01a7b05ea903cfd04eeb"/>    <section>
+    <title>readNextRow()</title>
+<indexterm><primary>readNextRow</primary><secondary>CSVRow</secondary></indexterm>
+<indexterm><primary>CSVRow</primary><secondary>readNextRow</secondary></indexterm>
+<para><computeroutput>void CSVRow::readNextRow (std::istream &amp; str)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Διαβάζει την επόμενη γραμμή απο istream str. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>str</entry>
+                                <entry>
+<para>Το input stream απο το οποίο θα διαβάσει </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_c_s_v_row_1ad9f7deadc010d09dd0e61602e5db3daa"/>    <section>
+    <title>size()</title>
+<indexterm><primary>size</primary><secondary>CSVRow</secondary></indexterm>
+<indexterm><primary>CSVRow</primary><secondary>size</secondary></indexterm>
+<para><computeroutput>std::size_t CSVRow::size ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Επιστρέφει το μέγεθος του vector που περιέχει τις γραμμές </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para>std::size_t </para>
+</formalpara>
+</para>
+</section>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από το ακόλουθο αρχείο:</para>
+CSVRow/CSVRow.h</section>
+</section>

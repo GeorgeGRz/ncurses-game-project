@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_leafs">
+<title>Τεκμηρίωση Κλάσης Leafs</title>
+<indexterm><primary>Leafs</primary></indexterm>
+<para>
+
+<para>Κλάση αντικειμένου <link linkend="_class_leafs">Leafs</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει Φύλλο </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Leafs.h&gt;</computeroutput>
+</para>
+Διάγραμμα κληρονομικότητας για την Leafs:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_leafs__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Διάγραμμα Συνεργασίας για την κλάση Leafs:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_leafs__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_leafs_1aba2a02d2a85a693e660f2683569e9758"/><emphasis role="strong">Leafs</emphasis> (string name, string id, <link linkend="_class_vector2_d">Vector2D</link>&lt; int &gt;pos, bool isOnFloor=true)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_leafs_1a5f5dad0d05fa415ddbdf7442d8cd9b01"/><emphasis role="strong">Leafs</emphasis> (const <link linkend="_class_leafs">Leafs</link> &amp;copy)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+
+<para>Κλάση αντικειμένου <link linkend="_class_leafs">Leafs</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει Φύλλο </para>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:</para>
+Items/Leafs/Leafs.hItems/Leafs/Leafs.cpp</section>
+</section>

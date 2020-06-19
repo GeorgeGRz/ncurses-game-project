@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_hut">
+<title>Τεκμηρίωση Κλάσης Hut</title>
+<indexterm><primary>Hut</primary></indexterm>
+<para>
+
+<para>Κλάση αντικειμένου <link linkend="_class_hut">Hut</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει καλύβα(θα προστεθεί στο μέλλον) </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Hut.h&gt;</computeroutput>
+</para>
+Διάγραμμα κληρονομικότητας για την Hut:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_hut__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Διάγραμμα Συνεργασίας για την κλάση Hut:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_hut__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_hut_1ad7edfc2686ff988c866a9fda01d57f19"/><emphasis role="strong">Hut</emphasis> (string name, string id, <link linkend="_class_vector2_d">Vector2D</link>&lt; int &gt; pos, bool isOnFloor=true)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_hut_1afcd39b3430903bec5ebb00dd22594de9"/><emphasis role="strong">Hut</emphasis> (const <link linkend="_class_hut">Hut</link> &amp;copy)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+
+<para>Κλάση αντικειμένου <link linkend="_class_hut">Hut</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει καλύβα(θα προστεθεί στο μέλλον) </para>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:</para>
+Items/Hut/Hut.hItems/Hut/Hut.cpp</section>
+</section>

@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_io_class">
+<title>Τεκμηρίωση Κλάσης IoClass</title>
+<indexterm><primary>IoClass</primary></indexterm>
+<para>
+
+<para>Κλάση διαχείρησης εισοδου-εξόδου καθώς και διαχείρησης οθόνης. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;IoClass.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para>vector&lt; <link linkend="_class_item">Item</link> &gt; <link linkend="_class_io_class_1ac148370091cc66e4a35ae36e337f3fda">loadFromFile</link> (string fileName, int &amp;id)</para>
+
+<para>Διαβάζει το αρχείο και στη συνέχεια φορτώνει τα αντικείμενα σε vector. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_io_class_1a2b09050af641448406ceb2eb762825e7">saveToFile</link> (string fileName, <link linkend="_class_environment">Environment</link> &amp;env)</para>
+
+<para>Αντίστοιχα αποθηκεύει τα αντικείμενα που υπάρχουν στο env 
+<literallayout>&#160;&#xa;</literallayout>
+ Γενικά η γραμμογράφηση του αρχείου είναι ώς εξής: 
+<literallayout>&#160;&#xa;</literallayout>
+ <emphasis role="bold">&lt;itemId&gt;;&lt;itemName&gt;;&lt;itemTypeId&gt;;&lt;itemOnFloor&gt;;&lt;itemXpos&gt;;&lt;itemYpos&gt;</emphasis> </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_io_class_1a2ab3d9376d924bf839839c43ffec8960">readString</link> ()</para>
+
+<para>Διαβάζει string απο το πληκτρολόγιο </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_io_class_1aad96d88b1d71c80b1c1163a893e18b48">printToCoordsAnimated</link> (int x, int y, string stringToPrint, std::initializer_list&lt; string &gt; a_args, double speed)</para>
+
+<para>Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_io_class_1a84c2d259964eb42dbba00a60ddcb67ad">showMenu</link> (std::vector&lt; string &gt; selections)</para>
+
+<para>Δέχεται vector με string και εμφανίζει τα περιεχόμενα με μορφή μενού </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_io_class_1ab2cec9e3f5a339f0a52657899dcd40b7">printEnvironment</link> (<link linkend="_class_environment">Environment</link> &amp;env)</para>
+
+<para>Εμφανίζει το περιβάλλον(αντικείμενα, παίκτη κλπ) </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_io_class_1a24a6d28531a99d823cce209ff6076455">printPlayerStats</link> (<link linkend="_class_player">Player</link> &amp;player)</para>
+
+<para>Εμφάνιση στατιστικών του παίκτη(Επίπεδο πείνας) </para>
+</listitem>
+            <listitem><para><link linkend="_class_io_class_1ad6f7f479bad8d762ec87378d14f58bde">~IoClass</link> ()</para>
+
+<para>Destroy the Io Class object. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_io_class_1a72b63cce8040e3f38cf88d78de54669f">getMaxX</link> ()</para>
+
+<para>Getter για το μέγιστο Χ της οθονης </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_io_class_1a9f8dc0ea79dfff69865b8e622a2725d0">getMaxY</link> ()</para>
+
+<para>Getter για το μέγιστο Υ της οθονης </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_io_class_1a8cada06c1633e0731bd455b1ecda5a61">getInput</link> ()</para>
+
+<para>Διαβάζει ένανα χαρακτήρα απο το πληκτρολόγιο και τον επιστεφει </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+
+<para>Κλάση διαχείρησης εισοδου-εξόδου καθώς και διαχείρησης οθόνης. </para>
+
+
+</section>
+<section>
+<title>Τεκμηρίωση Constructor &amp; Destructor</title>
+<anchor xml:id="_class_io_class_1ad6f7f479bad8d762ec87378d14f58bde"/>    <section>
+    <title>~IoClass()</title>
+<indexterm><primary>~IoClass</primary><secondary>IoClass</secondary></indexterm>
+<indexterm><primary>IoClass</primary><secondary>~IoClass</secondary></indexterm>
+<para><computeroutput>IoClass::~IoClass ( )</computeroutput></para><para>
+
+<para>Destroy the Io Class object. </para>
+</para>
+
+<para>Destroy the Io Class:: Io Class object.</para>
+</section>
+</section>
+<section>
+<title>Τεκμηρίωση Συναρτήσεων Μελών</title>
+<anchor xml:id="_class_io_class_1a8cada06c1633e0731bd455b1ecda5a61"/>    <section>
+    <title>getInput()</title>
+<indexterm><primary>getInput</primary><secondary>IoClass</secondary></indexterm>
+<indexterm><primary>IoClass</primary><secondary>getInput</secondary></indexterm>
+<para><computeroutput>int IoClass::getInput ( )</computeroutput></para><para>
+
+<para>Διαβάζει ένανα χαρακτήρα απο το πληκτρολόγιο και τον επιστεφει </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para>int Χαρακτήρας που διαβάστηκε </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_io_class_1a72b63cce8040e3f38cf88d78de54669f"/>    <section>
+    <title>getMaxX()</title>
+<indexterm><primary>getMaxX</primary><secondary>IoClass</secondary></indexterm>
+<indexterm><primary>IoClass</primary><secondary>getMaxX</secondary></indexterm>
+<para><computeroutput>int IoClass::getMaxX ( )</computeroutput></para><para>
+
+<para>Getter για το μέγιστο Χ της οθονης </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para>int μέγιστο Χ της οθονης </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_io_class_1a9f8dc0ea79dfff69865b8e622a2725d0"/>    <section>
+    <title>getMaxY()</title>
+<indexterm><primary>getMaxY</primary><secondary>IoClass</secondary></indexterm>
+<indexterm><primary>IoClass</primary><secondary>getMaxY</secondary></indexterm>
+<para><computeroutput>int IoClass::getMaxY ( )</computeroutput></para><para>
+
+<para>Getter για το μέγιστο Υ της οθονης </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para>int μέγιστο Υ της οθονης </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_io_class_1ac148370091cc66e4a35ae36e337f3fda"/>    <section>
+    <title>loadFromFile()</title>
+<indexterm><primary>loadFromFile</primary><secondary>IoClass</secondary></indexterm>
+<indexterm><primary>IoClass</primary><secondary>loadFromFile</secondary></indexterm>
+<para><computeroutput>vector&lt; <link linkend="_class_item">Item</link> &gt; IoClass::loadFromFile (string fileName, int &amp; id)</computeroutput></para><para>
+
+<para>Διαβάζει το αρχείο και στη συνέχεια φορτώνει τα αντικείμενα σε vector. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>fileName</entry>
+                                <entry>
+<para>Το ονομα του αρχείου οπου θα προσπελάσει </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>id</entry>
+                                <entry>
+<para>Αναφορά σε ακέραιο αριθμό,χρησιμοποιείται για να υπολογίσει το τελευταίο id </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para>vector&lt;Item&gt; Container οπου περιέχει τα αντικείμενα που διαβάστηκαν </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_io_class_1ab2cec9e3f5a339f0a52657899dcd40b7"/>    <section>
+    <title>printEnvironment()</title>
+<indexterm><primary>printEnvironment</primary><secondary>IoClass</secondary></indexterm>
+<indexterm><primary>IoClass</primary><secondary>printEnvironment</secondary></indexterm>
+<para><computeroutput>void IoClass::printEnvironment (<link linkend="_class_environment">Environment</link> &amp; env)</computeroutput></para><para>
+
+<para>Εμφανίζει το περιβάλλον(αντικείμενα, παίκτη κλπ) </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>env</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_io_class_1a24a6d28531a99d823cce209ff6076455"/>    <section>
+    <title>printPlayerStats()</title>
+<indexterm><primary>printPlayerStats</primary><secondary>IoClass</secondary></indexterm>
+<indexterm><primary>IoClass</primary><secondary>printPlayerStats</secondary></indexterm>
+<para><computeroutput>void IoClass::printPlayerStats (<link linkend="_class_player">Player</link> &amp; player)</computeroutput></para><para>
+
+<para>Εμφάνιση στατιστικών του παίκτη(Επίπεδο πείνας) </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>player</entry>
+                                <entry>
+<para>Αναφορά σε αντικείμενο <link linkend="_class_player">Player</link> </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_io_class_1aad96d88b1d71c80b1c1163a893e18b48"/>    <section>
+    <title>printToCoordsAnimated()</title>
+<indexterm><primary>printToCoordsAnimated</primary><secondary>IoClass</secondary></indexterm>
+<indexterm><primary>IoClass</primary><secondary>printToCoordsAnimated</secondary></indexterm>
+<para><computeroutput>void IoClass::printToCoordsAnimated (int x, int y, string stringToPrint, std::initializer_list&lt; string &gt; a_args, double speed)</computeroutput></para><para>
+
+<para>Εμφανίζει σε συγκεκριμένες συντεταγμένες της οθόνης ένα αλφαριθμητικό καθώς και με προκαθορισμένη ταχύτητα </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para>Η συντεταγμένη Χ </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>Η συντενταγμένη Y </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>stringToPrint</entry>
+                                <entry>
+<para>Το αλφαριθμητικό που θα εμφανιστεί </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>a_args</entry>
+                                <entry>
+<para>Χρησιμοποιείται για να εμφανίζονται δυναμικά περιεχόμενα μεταβλητών(πχ οπως η printf εχει το s και το d) Οι μονες που υποστηρίζονται είναι οι s και d. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>speed</entry>
+                                <entry>
+<para>Χρησιμοποιείται για την ταχύτητα εμφάνισης των χαρακτήρων.Οσο πιο μικρο το speed τοσο πιο γρήγορα θα εμφανίζονται οι χαρακτήρες </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_io_class_1a2ab3d9376d924bf839839c43ffec8960"/>    <section>
+    <title>readString()</title>
+<indexterm><primary>readString</primary><secondary>IoClass</secondary></indexterm>
+<indexterm><primary>IoClass</primary><secondary>readString</secondary></indexterm>
+<para><computeroutput>string IoClass::readString ( )</computeroutput></para><para>
+
+<para>Διαβάζει string απο το πληκτρολόγιο </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para>string Το string που διαβάστηκε </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_io_class_1a2b09050af641448406ceb2eb762825e7"/>    <section>
+    <title>saveToFile()</title>
+<indexterm><primary>saveToFile</primary><secondary>IoClass</secondary></indexterm>
+<indexterm><primary>IoClass</primary><secondary>saveToFile</secondary></indexterm>
+<para><computeroutput>void IoClass::saveToFile (string fileName, <link linkend="_class_environment">Environment</link> &amp; env)</computeroutput></para><para>
+
+<para>Αντίστοιχα αποθηκεύει τα αντικείμενα που υπάρχουν στο env 
+<literallayout>&#160;&#xa;</literallayout>
+ Γενικά η γραμμογράφηση του αρχείου είναι ώς εξής: 
+<literallayout>&#160;&#xa;</literallayout>
+ <emphasis role="bold">&lt;itemId&gt;;&lt;itemName&gt;;&lt;itemTypeId&gt;;&lt;itemOnFloor&gt;;&lt;itemXpos&gt;;&lt;itemYpos&gt;</emphasis> </para>
+</para>
+
+<para><informaltable frame="all">
+    <tgroup cols="6" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+      <colspec colname='c5'/>
+      <colspec colname='c6'/>
+<thead>
+      <row >
+<entry>
+<para>itemId </para>
+</entry><entry>
+<para>itemName </para>
+</entry><entry>
+<para>itemTypeId </para>
+</entry><entry>
+<para>itemOnFloor </para>
+</entry><entry>
+<para>item x position </para>
+</entry><entry>
+<para>item y position  </para>
+</entry></row>
+</thead><tbody>
+      <row >
+<entry>
+<para>Το ID του αντικειμένου </para>
+</entry><entry>
+<para>Το όνομα του αντικειμένου </para>
+</entry><entry>
+<para>Το ID του τύπου του αντικειμένου </para>
+</entry><entry>
+<para>Flag για το εαν βρισκεται στο πατωμα </para>
+</entry><entry>
+<para>Θέση Χ </para>
+</entry><entry>
+<para>Θέση Υ  </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</informaltable>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>fileName</entry>
+                                <entry>
+<para>Το ονομα του αρχείου οπου θα προσπελάσει </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>env</entry>
+                                <entry>
+<para>Αναφορά σε μεταβλητή τύπου <link linkend="_class_environment">Environment</link> </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_io_class_1a84c2d259964eb42dbba00a60ddcb67ad"/>    <section>
+    <title>showMenu()</title>
+<indexterm><primary>showMenu</primary><secondary>IoClass</secondary></indexterm>
+<indexterm><primary>IoClass</primary><secondary>showMenu</secondary></indexterm>
+<para><computeroutput>int IoClass::showMenu (std::vector&lt; string &gt; selections)</computeroutput></para><para>
+
+<para>Δέχεται vector με string και εμφανίζει τα περιεχόμενα με μορφή μενού </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>selections</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para>int Το index της επιλογής που έγινε, 0 για την 1η επιλογή, 1 για την 2η επιλογή, 2 για την 3η κλπ.. </para>
+</formalpara>
+</para>
+</section>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:</para>
+IO/IoClass.hIO/IoClass.cpp</section>
+</section>

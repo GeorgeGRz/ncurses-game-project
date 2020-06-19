@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_rock">
+<title>Τεκμηρίωση Κλάσης Rock</title>
+<indexterm><primary>Rock</primary></indexterm>
+<para>
+
+<para>Κλάση αντικειμένου <link linkend="_class_rock">Rock</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει πέτρα. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Rock.h&gt;</computeroutput>
+</para>
+Διάγραμμα κληρονομικότητας για την Rock:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_rock__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Διάγραμμα Συνεργασίας για την κλάση Rock:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_rock__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_rock_1a9be22f860491ebffc2436af1b5c8af14"/><emphasis role="strong">Rock</emphasis> (string name, string id, <link linkend="_class_vector2_d">Vector2D</link>&lt; int &gt;pos, bool isOnFloor=true)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_rock_1a006a2154b2674abd6ec80643f18f8e93"/><emphasis role="strong">Rock</emphasis> (const <link linkend="_class_rock">Rock</link> &amp;copy)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+
+<para>Κλάση αντικειμένου <link linkend="_class_rock">Rock</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει πέτρα. </para>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:</para>
+Items/Rock/Rock.hItems/Rock/Rock.cpp</section>
+</section>

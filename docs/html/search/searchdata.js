@@ -1,10 +1,11 @@
 var indexSectionsWithContent =
 {
-  0: "abcdeghilmnoprsvw~",
+  0: "abcdeghilmnoprsvw~Î",
   1: "acdeghiloprvw",
   2: "abcdeghilmnoprsv~",
   3: "l",
-  4: "irs"
+  4: "irs",
+  5: "Î"
 };
 
 var indexSectionNames =
@@ -13,7 +14,8 @@ var indexSectionNames =
   1: "classes",
   2: "functions",
   3: "variables",
-  4: "typedefs"
+  4: "typedefs",
+  5: "pages"
 };
 
 var indexSectionLabels =
@@ -22,6 +24,7 @@ var indexSectionLabels =
   1: "Κλάσεις",
   2: "Συναρτήσεις",
   3: "Μεταβλητές",
-  4: "Ορισμοί Τύπων"
+  4: "Ορισμοί Τύπων",
+  5: "Σελίδες"
 };
 

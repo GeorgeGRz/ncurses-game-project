@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_wood_stick">
+<title>Τεκμηρίωση Κλάσης WoodStick</title>
+<indexterm><primary>WoodStick</primary></indexterm>
+<para>
+
+<para>Κλάση αντικειμένου <link linkend="_class_wood_stick">WoodStick</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει ξύλο. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;WoodStick.h&gt;</computeroutput>
+</para>
+Διάγραμμα κληρονομικότητας για την WoodStick:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_wood_stick__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Διάγραμμα Συνεργασίας για την κλάση WoodStick:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_wood_stick__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_wood_stick_1a08185adf1f8d7457ead7af5adfc47616"/><emphasis role="strong">WoodStick</emphasis> (string name, string id, <link linkend="_class_vector2_d">Vector2D</link>&lt; int &gt;pos, bool isOnFloor=true)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_wood_stick_1ad42cc190d8bf9945ff31ce713e427bf4"/><emphasis role="strong">WoodStick</emphasis> (const <link linkend="_class_wood_stick">WoodStick</link> &amp;copy)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+
+<para>Κλάση αντικειμένου <link linkend="_class_wood_stick">WoodStick</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει ξύλο. </para>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:</para>
+Items/WoodStick/WoodStick.hItems/WoodStick/WoodStick.cpp</section>
+</section>

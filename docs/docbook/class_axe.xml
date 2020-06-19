@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_axe">
+<title>Τεκμηρίωση Κλάσης Axe</title>
+<indexterm><primary>Axe</primary></indexterm>
+<para>
+
+<para>Κλάση αντικειμένου <link linkend="_class_axe">Axe</link>
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει Τσεκούρι </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Axe.h&gt;</computeroutput>
+</para>
+Διάγραμμα κληρονομικότητας για την Axe:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_axe__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Διάγραμμα Συνεργασίας για την κλάση Axe:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_axe__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_axe_1a6fd485f3b82f0e42497c5ed2f8f27f7b"/><emphasis role="strong">Axe</emphasis> (string name, string id, <link linkend="_class_vector2_d">Vector2D</link>&lt; int &gt;pos, bool isOnFloor=true)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_axe_1abad08f5e90d6422576bd735a06519dc9"/><emphasis role="strong">Axe</emphasis> (const <link linkend="_class_axe">Axe</link> &amp;copy)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+
+<para>Κλάση αντικειμένου <link linkend="_class_axe">Axe</link>
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει Τσεκούρι </para>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:</para>
+Items/Axe/Axe.hItems/Axe/Axe.cpp</section>
+</section>

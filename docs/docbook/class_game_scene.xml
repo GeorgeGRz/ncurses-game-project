@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_game_scene">
+<title>Τεκμηρίωση Κλάσης GameScene</title>
+<indexterm><primary>GameScene</primary></indexterm>
+<para>
+
+<para>Κλάση διαχείρησης κύριας σκηνής του παιχνιδιού </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;GameScene.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_game_scene_1a7c3edf2769347315d5cf7cbb657c4fe6"/><emphasis role="strong">GameScene</emphasis> (<link linkend="_class_io_class">IoClass</link> *ioManager, <link linkend="_class_environment">Environment</link> *env)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_game_scene_1a306f4f2154b4682d84321e891e4cda62"/><emphasis role="strong">GameScene</emphasis> (const <link linkend="_class_game_scene">GameScene</link> &amp;copy)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_game_scene_1a3f56c3c30f2c587798f1db9ec42954d1"/>GameState <emphasis role="strong">getState</emphasis> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_scene_1a238ea30184e690ab08c111f2e43acb81">checkHunger</link> (chrono::minutes::rep &amp;timePassed, chrono::_V2::system_clock::time_point &amp;start)</para>
+
+<para>Ελέγχει το επίπεδο τροφής του παίκτη και κάθε λεπτό το μειώνει κατα 10. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_game_scene_1accf6edf8e12715c37c238f5620620be0"/>void <emphasis role="strong">setState</emphasis> (GameState state)</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_game_scene_1a722f27065769feed457ba02c9e5650db">startupScreen</link> ()</para>
+
+<para>Εμφανίζει την αρχική οθόνη και αφού διαβάσει απο το πληκτρολόγιο το όνομα του χρήστη το επιστρέφει. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_scene_1aa686e382acd281b9880377323fb283ac">Play</link> ()</para>
+
+<para>Κύρια μέθοδος του παιχνιδιού </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_scene_1aa78f7f563f8faa2e7e77de0f89cce05a">parseSelection</link> (int c)</para>
+
+<para>Κύρια μέθοδος που διαχειρίζεται τα πλήκτρα. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_scene_1a7304e7385032c9ed63b3727bea9a11f2">handleMainMenu</link> (int menuSelection)</para>
+
+<para>Μέθοδος που διαχειρίζεται το κύριο μενού με βάση την επιλογή που έκανε ο χρήστης. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_scene_1a5d79ef87eefddd4437a24409feedf400">handleInventoryMenu</link> (int menuSelection)</para>
+
+<para>Μέθοδος που διαχειρίζεται το μενού επιλογής αντικειμένου που θα αφήσει ο χρήστης στο περιβάλλον, αφου πρώτα ελέγξει εάν υπάρχει ελεύθερος χώρος. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_scene_1a5a705416850fcad2ddb4fb62dd9a9f56">handleCraftingMenu</link> (int menuSelection)</para>
+
+<para>Μέθοδος που διαχειρίζεται το crafting. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_scene_1a71c8bd58f08a392a6dbefab4ea0609af">handleEndingMenu</link> (int menuSelection)</para>
+
+<para>Μέθοδος που διαχειρίζεται το μενού τερματισμού </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+
+<para>Κλάση διαχείρησης κύριας σκηνής του παιχνιδιού </para>
+
+
+</section>
+<section>
+<title>Τεκμηρίωση Συναρτήσεων Μελών</title>
+<anchor xml:id="_class_game_scene_1a238ea30184e690ab08c111f2e43acb81"/>    <section>
+    <title>checkHunger()</title>
+<indexterm><primary>checkHunger</primary><secondary>GameScene</secondary></indexterm>
+<indexterm><primary>GameScene</primary><secondary>checkHunger</secondary></indexterm>
+<para><computeroutput>void GameScene::checkHunger (chrono::minutes::rep &amp; timePassed, chrono::_V2::system_clock::time_point &amp; start)</computeroutput></para><para>
+
+<para>Ελέγχει το επίπεδο τροφής του παίκτη και κάθε λεπτό το μειώνει κατα 10. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>timePassed</entry>
+                                <entry>
+<para>Αναφορά σε αντικείμενο chrono::duration που χρησιμοποιείται για να κρατάει τον χρόνο που πέρασε απο τον προηγούμενο έλεγχο </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>start</entry>
+                                <entry>
+<para>Αναφορά σε αντικείμενο std::chrono::time_point&lt;std::chrono::system_clock&gt; χρησιμοποιείται ώστε να κρατάει την τωρινή ώρα, δηλαδή την ώρα του ελέγχου. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_game_scene_1a5a705416850fcad2ddb4fb62dd9a9f56"/>    <section>
+    <title>handleCraftingMenu()</title>
+<indexterm><primary>handleCraftingMenu</primary><secondary>GameScene</secondary></indexterm>
+<indexterm><primary>GameScene</primary><secondary>handleCraftingMenu</secondary></indexterm>
+<para><computeroutput>void GameScene::handleCraftingMenu (int menuSelection)</computeroutput></para><para>
+
+<para>Μέθοδος που διαχειρίζεται το crafting. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>menuSelection</entry>
+                                <entry>
+<para>Index του αντικειμένου που θα κάνει craft(1 για το 1ο, 2 για το 2ο, κ.ο.κ) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_game_scene_1a71c8bd58f08a392a6dbefab4ea0609af"/>    <section>
+    <title>handleEndingMenu()</title>
+<indexterm><primary>handleEndingMenu</primary><secondary>GameScene</secondary></indexterm>
+<indexterm><primary>GameScene</primary><secondary>handleEndingMenu</secondary></indexterm>
+<para><computeroutput>void GameScene::handleEndingMenu (int menuSelection)</computeroutput></para><para>
+
+<para>Μέθοδος που διαχειρίζεται το μενού τερματισμού </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>menuSelection</entry>
+                                <entry>
+<para>Index της επιλογής του χρήστη. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_game_scene_1a5d79ef87eefddd4437a24409feedf400"/>    <section>
+    <title>handleInventoryMenu()</title>
+<indexterm><primary>handleInventoryMenu</primary><secondary>GameScene</secondary></indexterm>
+<indexterm><primary>GameScene</primary><secondary>handleInventoryMenu</secondary></indexterm>
+<para><computeroutput>void GameScene::handleInventoryMenu (int menuSelection)</computeroutput></para><para>
+
+<para>Μέθοδος που διαχειρίζεται το μενού επιλογής αντικειμένου που θα αφήσει ο χρήστης στο περιβάλλον, αφου πρώτα ελέγξει εάν υπάρχει ελεύθερος χώρος. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>menuSelection</entry>
+                                <entry>
+<para>Index του αντικειμένου που θα αφήσει στο πάτωμα(1 για το 1ο, 2 για το 2ο, κ.ο.κ) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_game_scene_1a7304e7385032c9ed63b3727bea9a11f2"/>    <section>
+    <title>handleMainMenu()</title>
+<indexterm><primary>handleMainMenu</primary><secondary>GameScene</secondary></indexterm>
+<indexterm><primary>GameScene</primary><secondary>handleMainMenu</secondary></indexterm>
+<para><computeroutput>void GameScene::handleMainMenu (int menuSelection)</computeroutput></para><para>
+
+<para>Μέθοδος που διαχειρίζεται το κύριο μενού με βάση την επιλογή που έκανε ο χρήστης. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>menuSelection</entry>
+                                <entry>
+<para>Επιλογή του μενού που έκανε ο χρήστης. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_game_scene_1aa78f7f563f8faa2e7e77de0f89cce05a"/>    <section>
+    <title>parseSelection()</title>
+<indexterm><primary>parseSelection</primary><secondary>GameScene</secondary></indexterm>
+<indexterm><primary>GameScene</primary><secondary>parseSelection</secondary></indexterm>
+<para><computeroutput>void GameScene::parseSelection (int c)</computeroutput></para><para>
+
+<para>Κύρια μέθοδος που διαχειρίζεται τα πλήκτρα. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>c</entry>
+                                <entry>
+<para>Κωδικός πλήκτρου(ποίο πλήκτρο πατήθηκε) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_game_scene_1aa686e382acd281b9880377323fb283ac"/>    <section>
+    <title>Play()</title>
+<indexterm><primary>Play</primary><secondary>GameScene</secondary></indexterm>
+<indexterm><primary>GameScene</primary><secondary>Play</secondary></indexterm>
+<para><computeroutput>void GameScene::Play ( )</computeroutput></para><para>
+
+<para>Κύρια μέθοδος του παιχνιδιού </para>
+</para>
+    </section><anchor xml:id="_class_game_scene_1a722f27065769feed457ba02c9e5650db"/>    <section>
+    <title>startupScreen()</title>
+<indexterm><primary>startupScreen</primary><secondary>GameScene</secondary></indexterm>
+<indexterm><primary>GameScene</primary><secondary>startupScreen</secondary></indexterm>
+<para><computeroutput>string GameScene::startupScreen ( )</computeroutput></para><para>
+
+<para>Εμφανίζει την αρχική οθόνη και αφού διαβάσει απο το πληκτρολόγιο το όνομα του χρήστη το επιστρέφει. </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para>string Όνομα χρήστη </para>
+</formalpara>
+</para>
+</section>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:</para>
+GameScene/GameScene.hGameScene/GameScene.cpp</section>
+</section>

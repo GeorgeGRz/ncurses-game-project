@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_lighted_torch">
+<title>Τεκμηρίωση Κλάσης LightedTorch</title>
+<indexterm><primary>LightedTorch</primary></indexterm>
+<para>
+
+<para>Κλάση αντικειμένου <link linkend="_class_lighted_torch">LightedTorch</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει αναμμένο πυρσό. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;LightedTorch.h&gt;</computeroutput>
+</para>
+Διάγραμμα κληρονομικότητας για την LightedTorch:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_lighted_torch__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Διάγραμμα Συνεργασίας για την κλάση LightedTorch:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_lighted_torch__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_lighted_torch_1ab3594a81a000f36c633da155ddd0fb76"/><emphasis role="strong">LightedTorch</emphasis> (string name, string id, <link linkend="_class_vector2_d">Vector2D</link>&lt; int &gt;pos, bool isOnFloor=true)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_lighted_torch_1a9d40e92f42c6ab5fa5ae7893f21f0957"/><emphasis role="strong">LightedTorch</emphasis> (const <link linkend="_class_lighted_torch">LightedTorch</link> &amp;copy)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+
+<para>Κλάση αντικειμένου <link linkend="_class_lighted_torch">LightedTorch</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει αναμμένο πυρσό. </para>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:</para>
+Items/LightedTorch/LightedTorch.hItems/LightedTorch/LightedTorch.cpp</section>
+</section>

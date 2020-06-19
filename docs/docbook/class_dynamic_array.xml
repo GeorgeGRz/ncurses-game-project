@@ -1,0 +1,617 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_dynamic_array">
+<title>Τεκμηρίωση Προτύπου Κλάσης DynamicArray&lt; T &gt;</title>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary></indexterm>
+<para>
+
+<para>Κλάση δυναμικόυ πίνακα που χρησιμοποιεί templates.Για την υλοποίηση συμβουλεύθηκα το βιβλίο του Stroustroup &quot;Προγραμματισμός με τη C++&quot;.Αυτό διότι δεν εχει διδαχθεί στην ύλη η υλοποίηση ενός * vector. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;DynamicArray.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Δημόσιοι Τυποι    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="_class_dynamic_array_1a33ca22351219293343ca4a77c8c5b6b3">size_type</link> = size_t</para>
+</listitem>
+            <listitem><para>using <link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">iterator</link> = T *</para>
+</listitem>
+            <listitem><para>using <link linkend="_class_dynamic_array_1ab2ed8c30d6e7b6e5fdb08ed4097763fb">reference</link> = T &amp;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_dynamic_array_1a20d15ae1c2eacc521ddf9fe8383518da">swap</link> (<link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt; &amp;rhs)</para>
+
+<para>Χρησιμοποείται για να κάνει swap τα δεδομένα του αντικειμένου που το καλεί με τα δεδομένα της παραμέτρου. </para>
+</listitem>
+            <listitem><para><link linkend="_class_dynamic_array_1ad9db9185bc2238a69cd35fb4d7d86349">DynamicArray</link> () noexcept</para>
+
+<para>Δημιουργία ενός νέου αντικειμένου DynamicArray.Εάν κληθεί αυτός ο constructor τότε δεσμεύω χώρο χρησιμοποιόντας το m_capacity. Δηλαδή δεσμεύει χώρο ακόμα και εάν ο δυναμικός πίνακας είναι κενός. </para>
+</listitem>
+            <listitem><para><link linkend="_class_dynamic_array_1afe29de47101ad29d9709af52abbcf115">DynamicArray</link> (std::initializer_list&lt; T &gt; init)</para>
+
+<para>Δημιουργία ενός νέου αντικειμένου DynamicArray.Παίρνει ώς όρισμα ένα initializer_list και αυτό για να γίνεται initialize dynamicVector&lt;int&gt; a({1,3,2});. </para>
+</listitem>
+            <listitem><para><link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt; &amp; <link linkend="_class_dynamic_array_1a1ff8d144b58c18b3bdbed10147d4d516">operator=</link> (const <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt; &amp;origin)</para>
+
+<para>Υπερφόρτωση του τελεστή =. </para>
+</listitem>
+            <listitem><para><link linkend="_class_dynamic_array_1aebb70bbf2c1da409dc0f4915b509ce64">DynamicArray</link> (const <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt; &amp;origin)</para>
+
+<para>Δημιουργία ενός νέου αντικειμένου <link linkend="_class_dynamic_array">DynamicArray</link> χρησιμοποιόντας copy constructor. </para>
+</listitem>
+            <listitem><para><link linkend="_class_dynamic_array_1afb3795fd350e74dffd54deedc5456146">DynamicArray</link> (<link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt; &amp;&amp;origin)</para>
+
+<para>Δημιουργία ενός νέου αντικειμένου <link linkend="_class_dynamic_array">DynamicArray</link> χρησιμοποιόντας copy constructor. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dynamic_array_1aaeae200f3f029d90d2c00d94951d25cc">clear</link> () noexcept</para>
+
+<para>Χρησιμοποιείται για να αδειάσει ο δυναμικός πίνακας.Δεν είναι ο destructor. </para>
+</listitem>
+            <listitem><para>template&lt;typename... Args&gt; </para><para><link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array_1ab2ed8c30d6e7b6e5fdb08ed4097763fb">reference</link> <link linkend="_class_dynamic_array_1a8f74805ce6914c50651eda566feaf33b">emplace_back</link> (Args &amp;&amp;... args)</para>
+
+<para>Χρησιμοποιείται απο την push_back κυρίως για να προσθέτει αντικείμενα στο τέλος του πίνακα. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dynamic_array_1ac27ad259e9e39b494daa9487cfc02b5e">push_back</link> (const T &amp;val)</para>
+
+<para>Προσθέτει ένα αντικείμενο στο τέλος του πίνακα </para>
+</listitem>
+            <listitem><para><link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">iterator</link> <link linkend="_class_dynamic_array_1aca42cb2f05ad3c088dfb20f5a6a11b41">erase</link> (<link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">iterator</link> iter)</para>
+
+<para>Διαγράφω ένα συγκεκριμένο αντικείμενο χρησιμοποιόντας iterator(T*) </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dynamic_array_1ab030948aa222cd4c97737fc384ab660f">reallocate</link> ()</para>
+
+<para>Χρησιμοποιείται απο την ίδια την κλάση για να δεσμεύσει περισσότερο χώρο. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_dynamic_array_1ac47a92b5054d4770ab60d5d7fff0e0a4">move_storage</link> (T *dest, T *from, <link linkend="_class_dynamic_array_1a33ca22351219293343ca4a77c8c5b6b3">size_type</link> n)</para>
+
+<para>Χρησιμοποιείται για να &quot;μεταφέρει&quot; δεδομένα χρησιμοποιόντας την move. </para>
+</listitem>
+            <listitem><para><link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">iterator</link> <link linkend="_class_dynamic_array_1a761016488e84552be18b6dca9b10bdc0">begin</link> () noexcept</para>
+
+<para>Επιστρέφει iterator του πρώτου αντικειμένου </para>
+</listitem>
+            <listitem><para><link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">iterator</link> <link linkend="_class_dynamic_array_1ab9c7e22b95deeefb2a0da8aff9f92138">end</link> () const noexcept</para>
+
+<para>Επιστρέφει iterator του τελευταίου αντικειμένου </para>
+</listitem>
+            <listitem><para>size_t <link linkend="_class_dynamic_array_1a17459ad0855d07a85b92b3e3ba5f2bae">size</link> ()</para>
+
+<para>Getter μεγέθους(πραγματικού) </para>
+</listitem>
+            <listitem><para>size_t <link linkend="_class_dynamic_array_1aafc6e762480105b6d472ad0baeac0f13">capacity</link> ()</para>
+
+<para>Getter μεγέθους(extra) </para>
+</listitem>
+            <listitem><para>T &amp; <link linkend="_class_dynamic_array_1af735752ed0d211f2903da2cdd2ee5e02">operator[]</link> (size_t N)</para>
+
+<para>Υπερφόρτωση του τελεστή []. </para>
+</listitem>
+            <listitem><para>T <link linkend="_class_dynamic_array_1a9c665637c4bcc46a16ed692bad345918">pop_back</link> ()</para>
+
+<para>Αντίστοιχη της pop_back του STL Vector. </para>
+</listitem>
+            <listitem><para><link linkend="_class_dynamic_array_1ab004399d442ebd2a9698cbc8da0b48f2">~DynamicArray</link> ()</para>
+
+<para>destructor </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Φίλοι    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_dynamic_array_1a2ce4470c93300b9c0a3a21fc44bc55d6"/>void <emphasis role="strong">swap</emphasis> (<link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt; &amp;lhs, <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt; &amp;rhs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+<simplesect><title>template&lt;typename T&gt;
+class DynamicArray&lt; T &gt;</title></simplesect>
+
+
+<para>Κλάση δυναμικόυ πίνακα που χρησιμοποιεί templates.Για την υλοποίηση συμβουλεύθηκα το βιβλίο του Stroustroup &quot;Προγραμματισμός με τη C++&quot;.Αυτό διότι δεν εχει διδαχθεί στην ύλη η υλοποίηση ενός * vector. </para>
+
+
+
+<para>Μια πολύ βασική υλοποίηση δυναμικού πίνακα που έχει αρκετές ομοιότητες με το διάνυσμα της STL(vector). </para>
+</section>
+<section>
+<title>Τεκμηρίωση Μελών Ορισμών Τύπων</title>
+<anchor xml:id="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33"/>    <section>
+    <title>iterator</title>
+<indexterm><primary>iterator</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>iterator</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>using <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">iterator</link> =  T*</computeroutput></para>
+<para>Χρησιμοποιείται σαν ψευδώνυμο για το T* </para>
+    </section><anchor xml:id="_class_dynamic_array_1ab2ed8c30d6e7b6e5fdb08ed4097763fb"/>    <section>
+    <title>reference</title>
+<indexterm><primary>reference</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>reference</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>using <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array_1ab2ed8c30d6e7b6e5fdb08ed4097763fb">reference</link> =  T&amp;</computeroutput></para>
+<para>Χρησιμοποιείται σαν ψευδώνυμο για το reference </para>
+    </section><anchor xml:id="_class_dynamic_array_1a33ca22351219293343ca4a77c8c5b6b3"/>    <section>
+    <title>size_type</title>
+<indexterm><primary>size_type</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>size_type</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>using <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array_1a33ca22351219293343ca4a77c8c5b6b3">size_type</link> =  size_t</computeroutput></para>
+<para>Χρησιμοποιείται σαν ψευδώνυμο για το size_t </para>
+</section>
+</section>
+<section>
+<title>Τεκμηρίωση Constructor &amp; Destructor</title>
+<anchor xml:id="_class_dynamic_array_1ad9db9185bc2238a69cd35fb4d7d86349"/>    <section>
+    <title>DynamicArray()<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>DynamicArray</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>DynamicArray</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array">DynamicArray</link> ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Δημιουργία ενός νέου αντικειμένου DynamicArray.Εάν κληθεί αυτός ο constructor τότε δεσμεύω χώρο χρησιμοποιόντας το m_capacity. Δηλαδή δεσμεύει χώρο ακόμα και εάν ο δυναμικός πίνακας είναι κενός. </para>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1afe29de47101ad29d9709af52abbcf115"/>    <section>
+    <title>DynamicArray()<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>DynamicArray</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>DynamicArray</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array">DynamicArray</link> (std::initializer_list&lt; T &gt; init)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Δημιουργία ενός νέου αντικειμένου DynamicArray.Παίρνει ώς όρισμα ένα initializer_list και αυτό για να γίνεται initialize dynamicVector&lt;int&gt; a({1,3,2});. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>init</entry>
+                                <entry>
+<para>Η initializer_list με την οποία θα γίνει η αρχικοποίηση </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_dynamic_array_1aebb70bbf2c1da409dc0f4915b509ce64"/>    <section>
+    <title>DynamicArray()<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>DynamicArray</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>DynamicArray</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array">DynamicArray</link> (const <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt; &amp; origin)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Δημιουργία ενός νέου αντικειμένου <link linkend="_class_dynamic_array">DynamicArray</link> χρησιμοποιόντας copy constructor. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>origin</entry>
+                                <entry>
+<para>Reference στο αντικείμενο απο το οποίο θα αντιγραφούν τα δεδομένα </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_dynamic_array_1afb3795fd350e74dffd54deedc5456146"/>    <section>
+    <title>DynamicArray()<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>DynamicArray</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>DynamicArray</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array">DynamicArray</link> (<link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt; &amp;&amp; origin)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Δημιουργία ενός νέου αντικειμένου <link linkend="_class_dynamic_array">DynamicArray</link> χρησιμοποιόντας copy constructor. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>origin</entry>
+                                <entry>
+<para>Rvalue reference στο αντικείμενο απο το οποίο θα αντιγραφούν τα δεδομένα </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_dynamic_array_1ab004399d442ebd2a9698cbc8da0b48f2"/>    <section>
+    <title>~DynamicArray()</title>
+<indexterm><primary>~DynamicArray</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>~DynamicArray</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::~<link linkend="_class_dynamic_array">DynamicArray</link> ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>destructor </para>
+</para>
+</section>
+</section>
+<section>
+<title>Τεκμηρίωση Συναρτήσεων Μελών</title>
+<anchor xml:id="_class_dynamic_array_1a761016488e84552be18b6dca9b10bdc0"/>    <section>
+    <title>begin()</title>
+<indexterm><primary>begin</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>begin</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_dynamic_array">DynamicArray</link>&lt;T&gt;::<link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">iterator</link> <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::begin ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Επιστρέφει iterator του πρώτου αντικειμένου </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">DynamicArray&lt;T&gt;::iterator</link> iterator που δείχνει στο πρώτο αντικείμενο </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1aafc6e762480105b6d472ad0baeac0f13"/>    <section>
+    <title>capacity()</title>
+<indexterm><primary>capacity</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>capacity</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>size_t <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::capacity ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Getter μεγέθους(extra) </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para>size_t Το extra μέγεθος. </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1aaeae200f3f029d90d2c00d94951d25cc"/>    <section>
+    <title>clear()</title>
+<indexterm><primary>clear</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>clear</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::clear ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Χρησιμοποιείται για να αδειάσει ο δυναμικός πίνακας.Δεν είναι ο destructor. </para>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1a8f74805ce6914c50651eda566feaf33b"/>    <section>
+    <title>emplace_back()</title>
+<indexterm><primary>emplace_back</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>emplace_back</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><computeroutput>template&lt;typename... Args&gt; </computeroutput><para><computeroutput><link linkend="_class_dynamic_array">DynamicArray</link>&lt;T&gt;::<link linkend="_class_dynamic_array_1ab2ed8c30d6e7b6e5fdb08ed4097763fb">reference</link> <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::emplace_back (Args &amp;&amp;... args)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Χρησιμοποιείται απο την push_back κυρίως για να προσθέτει αντικείμενα στο τέλος του πίνακα. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι Προτύπου                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>Args</entry>
+                                <entry>
+<para>Ο τύπος των αντικειμένων που θα προστεθεί </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>args</entry>
+                                <entry>
+<para>Αναφορά στα αντικείμενα που θα προστεθούν </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_dynamic_array_1ab2ed8c30d6e7b6e5fdb08ed4097763fb">DynamicArray&lt;T&gt;::reference</link> Επιστρέφει αναφορά στον πίνακα </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1ab9c7e22b95deeefb2a0da8aff9f92138"/>    <section>
+    <title>end()</title>
+<indexterm><primary>end</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>end</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_dynamic_array">DynamicArray</link>&lt;T&gt;::<link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">iterator</link> <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::end ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Επιστρέφει iterator του τελευταίου αντικειμένου </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">DynamicArray&lt;T&gt;::iterator</link> iterator που δείχνει στο τελευταίο αντικείμενο </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1aca42cb2f05ad3c088dfb20f5a6a11b41"/>    <section>
+    <title>erase()</title>
+<indexterm><primary>erase</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>erase</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_dynamic_array">DynamicArray</link>&lt;T&gt;::<link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">iterator</link> <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::erase (<link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::<link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">iterator</link> iter)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Διαγράφω ένα συγκεκριμένο αντικείμενο χρησιμοποιόντας iterator(T*) </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>iter</entry>
+                                <entry>
+<para>Ο iterator που θα χρησιμοποιηθεί για να διαγραφεί το αντικείμενο απο τον πίνακα. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_dynamic_array_1aad3903c5dbcd9985b2cdf017a5e40b33">DynamicArray&lt;T&gt;::iterator</link> Επιστρέφει iterator όπως ακριβώς γίνεται και στον vector της STL </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1ac47a92b5054d4770ab60d5d7fff0e0a4"/>    <section>
+    <title>move_storage()</title>
+<indexterm><primary>move_storage</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>move_storage</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::move_storage (T * dest, T * from, <link linkend="_class_dynamic_array_1a33ca22351219293343ca4a77c8c5b6b3">size_type</link> n)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Χρησιμοποιείται για να &quot;μεταφέρει&quot; δεδομένα χρησιμοποιόντας την move. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>dest</entry>
+                                <entry>
+<para>Διεύθυνση προορισμόυ </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>from</entry>
+                                <entry>
+<para>Διεύθυνση πηγής </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>n</entry>
+                                <entry>
+<para>Πλήθος/Μέγεθος </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_dynamic_array_1a1ff8d144b58c18b3bdbed10147d4d516"/>    <section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>operator=</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_dynamic_array">DynamicArray</link>&lt;T&gt;&amp; <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::operator= (const <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt; &amp; origin)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση του τελεστή =. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>origin</entry>
+                                <entry>
+<para>Το αντικείμενο με το οποίο θα γίνει η υπερφόρτωση </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para>DynamicArray&lt;T&gt;&amp; </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1af735752ed0d211f2903da2cdd2ee5e02"/>    <section>
+    <title>operator[]()</title>
+<indexterm><primary>operator[]</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>operator[]</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>T&amp; <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::operator[] (size_t N)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση του τελεστή []. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>N</entry>
+                                <entry>
+<para>Ο αριθμός/index του αντικειμένου που θέλουμε να πάρουμε </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para>T&amp; Το αντικείμενο που βρίσκεται στο συγκεκριμένο index </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1a9c665637c4bcc46a16ed692bad345918"/>    <section>
+    <title>pop_back()</title>
+<indexterm><primary>pop_back</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>pop_back</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>T <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::pop_back ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Αντίστοιχη της pop_back του STL Vector. </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para>T Το αντικείμενο που έγινε pop </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1ac27ad259e9e39b494daa9487cfc02b5e"/>    <section>
+    <title>push_back()</title>
+<indexterm><primary>push_back</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>push_back</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::push_back (const T &amp; val)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Προσθέτει ένα αντικείμενο στο τέλος του πίνακα </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>val</entry>
+                                <entry>
+<para>Το αντικείμενο που θέλουμε να προστεθεί. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_dynamic_array_1ab030948aa222cd4c97737fc384ab660f"/>    <section>
+    <title>reallocate()</title>
+<indexterm><primary>reallocate</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>reallocate</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::reallocate ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Χρησιμοποιείται απο την ίδια την κλάση για να δεσμεύσει περισσότερο χώρο. </para>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1a17459ad0855d07a85b92b3e3ba5f2bae"/>    <section>
+    <title>size()</title>
+<indexterm><primary>size</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>size</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>size_t <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::size ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Getter μεγέθους(πραγματικού) </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para>size_t Το πραγματικό μέγεθος </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_dynamic_array_1a20d15ae1c2eacc521ddf9fe8383518da"/>    <section>
+    <title>swap()</title>
+<indexterm><primary>swap</primary><secondary>DynamicArray&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>DynamicArray&lt; T &gt;</primary><secondary>swap</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt;::swap (<link linkend="_class_dynamic_array">DynamicArray</link>&lt; T &gt; &amp; rhs)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Χρησιμοποείται για να κάνει swap τα δεδομένα του αντικειμένου που το καλεί με τα δεδομένα της παραμέτρου. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>rhs</entry>
+                                <entry>
+<para>Ο δυναμικός πίνακας με τον οποίον θα κάνει swap </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από το ακόλουθο αρχείο:</para>
+DynamicArray/DynamicArray.h</section>
+</section>

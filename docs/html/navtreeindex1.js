@@ -1,8 +1,7 @@
 var NAVTREEINDEX1 =
 {
-"functions_func.html":[0,3,1],
-"functions_type.html":[0,3,2],
-"hierarchy.html":[0,2],
-"index.html":[],
+"index.html#step2":[0,1,1],
+"index.html#step3":[0,1,2],
+"index.html#step4":[0,1,3],
 "pages.html":[]
 };

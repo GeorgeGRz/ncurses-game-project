@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_item">
+<title>Τεκμηρίωση Κλάσης Item</title>
+<indexterm><primary>Item</primary></indexterm>
+<para>
+
+<para>Κλάση που χρησιμοποιείται για το κάθε αντικείμενο του παιχνιδιού. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Item.h&gt;</computeroutput>
+</para>
+Διάγραμμα κληρονομικότητας για την Item:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_item__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_item_1ac0706bf36b31b60ef37d59d65c196e36"/><emphasis role="strong">Item</emphasis> (string name, string id, <link linkend="_class_vector2_d">Vector2D</link>&lt; int &gt; position, bool isOnFloor=true)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_item_1a477f972904e0b7f8f6077717d928cc5b"/><emphasis role="strong">Item</emphasis> (const <link linkend="_class_item">Item</link> &amp;copy)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_item_1a8d2b9d404f8e692f456af88a1eb1ce44"/>string <emphasis role="strong">getName</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_item_1a241f95e3bcdcd65097603eb792aae53e"/>string <emphasis role="strong">getId</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_item_1a0af1cac0cf8c761566c7e66ca11a1c8f"/>bool <emphasis role="strong">getIfOnFloor</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_item_1aa3d4226ca25ed54355846d1dcabd1428"/>itemType <emphasis role="strong">getType</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_item_1a211bfeaf91adf4df391f00a2d27187f5"/><link linkend="_class_vector2_d">Vector2D</link>&lt; int &gt; <emphasis role="strong">getPosition</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_item_1af84871ca941ecb2f894e3fdc7bf1710b"/>void <emphasis role="strong">setType</emphasis> (itemType type)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_item_1a4c920999074b712fb08a9f315488bad9"/>void <emphasis role="strong">setisOnFloor</emphasis> (bool value)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_item_1a6daecf01abd6b21c37e61f7c8877af08"/>void <emphasis role="strong">setPosition</emphasis> (<link linkend="_class_vector2_d">Vector2D</link>&lt; int &gt; newPos)</para>
+</listitem>
+            <listitem><para><link linkend="_class_item">Item</link> <link linkend="_class_item_1a8b998e0dcda688bd6c1cbdd86c5003eb">operator+</link> (<link linkend="_class_item">Item</link> &amp;item)</para>
+
+<para>Χρησιμοποιείται για τον συνδιασμό/crafting δύο αντικειμένων σε ενα τρίτο αντικέιμενο(παράγωγο των άλλων 2) 
+<literallayout>&#160;&#xa;</literallayout>
+ Σημείωση: Εάν αποτύχει τότε επιστρέφεται ένα αντικείμενο <link linkend="_class_axe">Axe</link> με id = null 
+<literallayout>&#160;&#xa;</literallayout>
+ Ένας πίνακας που τα συνοψίζει είναι ο εξής: 
+<literallayout>&#160;&#xa;</literallayout>
+ </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+
+<para>Κλάση που χρησιμοποιείται για το κάθε αντικείμενο του παιχνιδιού. </para>
+
+
+</section>
+<section>
+<title>Τεκμηρίωση Συναρτήσεων Μελών</title>
+<anchor xml:id="_class_item_1a8b998e0dcda688bd6c1cbdd86c5003eb"/>    <section>
+    <title>operator+()</title>
+<indexterm><primary>operator+</primary><secondary>Item</secondary></indexterm>
+<indexterm><primary>Item</primary><secondary>operator+</secondary></indexterm>
+<para><computeroutput><link linkend="_class_item">Item</link> Item::operator+ (<link linkend="_class_item">Item</link> &amp; item)</computeroutput></para><para>
+
+<para>Χρησιμοποιείται για τον συνδιασμό/crafting δύο αντικειμένων σε ενα τρίτο αντικέιμενο(παράγωγο των άλλων 2) 
+<literallayout>&#160;&#xa;</literallayout>
+ Σημείωση: Εάν αποτύχει τότε επιστρέφεται ένα αντικείμενο <link linkend="_class_axe">Axe</link> με id = null 
+<literallayout>&#160;&#xa;</literallayout>
+ Ένας πίνακας που τα συνοψίζει είναι ο εξής: 
+<literallayout>&#160;&#xa;</literallayout>
+ </para>
+</para>
+
+<para><informaltable frame="all">
+    <tgroup cols="3" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+<thead>
+      <row >
+<entry>
+<para><link linkend="_class_item">Item</link> A </para>
+</entry><entry>
+<para><link linkend="_class_item">Item</link> B </para>
+</entry><entry>
+<para>A + B  </para>
+</entry></row>
+</thead><tbody>
+      <row >
+<entry>
+<para><link linkend="_class_wood_stick">WoodStick</link> </para>
+</entry><entry>
+<para><link linkend="_class_leafs">Leafs</link> </para>
+</entry><entry>
+<para><link linkend="_class_lighted_torch">LightedTorch</link>  </para>
+</entry></row>
+      <row >
+<entry>
+<para><link linkend="_class_rock">Rock</link> </para>
+</entry><entry>
+<para><link linkend="_class_coconut">Coconut</link> </para>
+</entry><entry>
+<para><link linkend="_class_open_coconut">OpenCoconut</link>  </para>
+</entry></row>
+      <row >
+<entry>
+<para><link linkend="_class_wood_stick">WoodStick</link> </para>
+</entry><entry>
+<para><link linkend="_class_rock">Rock</link> </para>
+</entry><entry>
+<para><link linkend="_class_axe">Axe</link>  </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</informaltable>
+
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>item</entry>
+                                <entry>
+<para>Το αντικείμενο στο δεξί μέλος </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_item">Item</link> Το παράγωγο αντικείμενο που δημιουργήθηκε </para>
+</formalpara>
+</para>
+</section>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:</para>
+Items/Item/Item.hItems/Item/Item.cpp</section>
+</section>

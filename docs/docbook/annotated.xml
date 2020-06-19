@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated">
+<title>Λίστα Κλάσεων</title>
+Ακολουθούν οι κλάσεις, οι δομές, οι ενώσεις και οι διασυνδέσεις με σύντομες περιγραφές:<link linkend="_class_axe">Axe</link>
+<para>Κλάση αντικειμένου <link linkend="_class_axe">Axe</link>
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει Τσεκούρι </para>
+<link linkend="_class_coconut">Coconut</link>
+<para>Κλάση αντικειμένου <link linkend="_class_coconut">Coconut</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει Καρύδα </para>
+<link linkend="_class_c_s_v_row">CSVRow</link>
+<para>Κλάση <link linkend="_class_c_s_v_row">CSVRow</link> χρησιμοποιείται για την προσπέλαση και ανάγνωση δεδομένων απο csv αρχεία </para>
+<link linkend="_class_dynamic_array">DynamicArray&lt; T &gt;</link>
+<para>Κλάση δυναμικόυ πίνακα που χρησιμοποιεί templates.Για την υλοποίηση συμβουλεύθηκα το βιβλίο του Stroustroup &quot;Προγραμματισμός με τη C++&quot;.Αυτό διότι δεν εχει διδαχθεί στην ύλη η υλοποίηση ενός * vector </para>
+<link linkend="_class_environment">Environment</link>
+<para>Κλάση περιβάλλοντος παιχνιδιού </para>
+<link linkend="_class_game_scene">GameScene</link>
+<para>Κλάση διαχείρησης κύριας σκηνής του παιχνιδιού </para>
+<link linkend="_class_hut">Hut</link>
+<para>Κλάση αντικειμένου <link linkend="_class_hut">Hut</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει καλύβα(θα προστεθεί στο μέλλον) </para>
+<link linkend="_class_inventory">Inventory</link>
+<para>Κλάση που περιέχει τα αντικείμενα του χρήστη </para>
+<link linkend="_class_io_class">IoClass</link>
+<para>Κλάση διαχείρησης εισοδου-εξόδου καθώς και διαχείρησης οθόνης </para>
+<link linkend="_class_item">Item</link>
+<para>Κλάση που χρησιμοποιείται για το κάθε αντικείμενο του παιχνιδιού </para>
+<link linkend="_class_leafs">Leafs</link>
+<para>Κλάση αντικειμένου <link linkend="_class_leafs">Leafs</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει Φύλλο </para>
+<link linkend="_class_lighted_torch">LightedTorch</link>
+<para>Κλάση αντικειμένου <link linkend="_class_lighted_torch">LightedTorch</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει αναμμένο πυρσό </para>
+<link linkend="_class_lighter">Lighter</link>
+<para>Κλάση αντικειμένου <link linkend="_class_lighter">Lighter</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει αναπτήρα </para>
+<link linkend="_class_open_coconut">OpenCoconut</link>
+<para>Κλάση αντικειμένου <link linkend="_class_open_coconut">OpenCoconut</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει ανοικτή καρύδα </para>
+<link linkend="_class_player">Player</link>
+<para>Κλάση για τον παίκτη του παιχνιδιού </para>
+<link linkend="_class_rock">Rock</link>
+<para>Κλάση αντικειμένου <link linkend="_class_rock">Rock</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει πέτρα </para>
+<link linkend="_class_vector2_d">Vector2D&lt; T &gt;</link>
+<para>Κλάση για διάνυσμα δυσδιάστατου χώρου που είχα σχεδιάσει στο παρελθόν στα πλαίσια εξάσκησης για τα templates </para>
+<link linkend="_class_wood_stick">WoodStick</link>
+<para>Κλάση αντικειμένου <link linkend="_class_wood_stick">WoodStick</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει ξύλο </para>
+</section>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index">
+    <info>
+    <title>Adventure Game</title>
+    </info>
+<chapter>
+    <title>Αρχική Σελίδα</title>
+    <xi:include href="mainpage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Τεκμηρίωση Κλάσεων</title>
+    <xi:include href="class_axe.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_coconut.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_c_s_v_row.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_dynamic_array.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_environment.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_game_scene.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_hut.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_inventory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_io_class.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_item.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_leafs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_lighted_torch.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_lighter.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_open_coconut.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_player.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_rock.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_vector2_d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_wood_stick.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_open_coconut">
+<title>Τεκμηρίωση Κλάσης OpenCoconut</title>
+<indexterm><primary>OpenCoconut</primary></indexterm>
+<para>
+
+<para>Κλάση αντικειμένου <link linkend="_class_open_coconut">OpenCoconut</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει ανοικτή καρύδα. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;OpenCoconut.h&gt;</computeroutput>
+</para>
+Διάγραμμα κληρονομικότητας για την OpenCoconut:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_open_coconut__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Διάγραμμα Συνεργασίας για την κλάση OpenCoconut:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_open_coconut__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_open_coconut_1a4c39102eff8a9a5defd7f47343bfe8ae"/><emphasis role="strong">OpenCoconut</emphasis> (string name, string id, <link linkend="_class_vector2_d">Vector2D</link>&lt; int &gt;pos, bool isOnFloor=true)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_open_coconut_1aa12662a0871e69561410ee63913b1257"/><emphasis role="strong">OpenCoconut</emphasis> (const <link linkend="_class_open_coconut">OpenCoconut</link> &amp;copy)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+
+<para>Κλάση αντικειμένου <link linkend="_class_open_coconut">OpenCoconut</link> 
+<literallayout>&#160;&#xa;</literallayout>
+ Χρησιμοποιείται για τα συμβολίσει ανοικτή καρύδα. </para>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από τα ακόλουθα αρχεία:</para>
+Items/OpenCoconut/OpenCoconut.hItems/OpenCoconut/OpenCoconut.cpp</section>
+</section>

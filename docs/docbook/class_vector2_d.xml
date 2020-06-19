@@ -1,0 +1,754 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_vector2_d">
+<title>Τεκμηρίωση Προτύπου Κλάσης Vector2D&lt; T &gt;</title>
+<indexterm><primary>Vector2D&lt; T &gt;</primary></indexterm>
+<para>
+
+<para>Κλάση για διάνυσμα δυσδιάστατου χώρου που είχα σχεδιάσει στο παρελθόν στα πλαίσια εξάσκησης για τα templates. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Vector2D.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Δημόσιες Μέθοδοι    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_vector2_d_1a96580267fed7cd6686cbbf8e11048023">Vector2D</link> ()</para>
+
+<para>Default Constructor αρχικοποιεί το Χ και Y σε 0,0. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d_1ac3b2da737ea3e226031e137ccd5125bb">Vector2D</link> (T x, T y)</para>
+
+<para>Constructor που αρχικοποιεί τα Χ και Y με συγκεκριμένες τιμές </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d_1aac4f313a8313ce3116f4a71b22b1c3c1">Vector2D</link> (const <link linkend="_class_vector2_d">Vector2D</link> &amp;v)</para>
+
+<para>Copy Constructor. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> &amp; <link linkend="_class_vector2_d_1ad6d52385e1345ca53c4bb55e84f82ccb">operator=</link> (const <link linkend="_class_vector2_d">Vector2D</link> &amp;v)</para>
+
+<para>Υπερφόρτωση τελεστή =. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d_1af0ab559c5c6bfe4e25db73f7f97c0d78">operator+</link> (<link linkend="_class_vector2_d">Vector2D</link> &amp;v)</para>
+
+<para>Υπερφόρτωση τελεστή + ώστε να προσθέτει τα χ και τα y των δύο αντικειμένων και επιστρέφει ενα καινούργιο που περιέχει αυτές τις τιμές </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d_1a50fa409917f2dc06aeb3fa2e0d78fcf6">operator-</link> (<link linkend="_class_vector2_d">Vector2D</link> &amp;v)</para>
+
+<para>Υπερφόρτωση τελεστή - αντιστοιχη του + ωστε να αφαιρεί </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> &amp; <link linkend="_class_vector2_d_1a924f690156921e3ad727e6d2fadc516e">operator+=</link> (<link linkend="_class_vector2_d">Vector2D</link> &amp;v)</para>
+
+<para>Υπερφόρτωση τελεστή +=. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> &amp; <link linkend="_class_vector2_d_1a9be2b54b3e026537b2417abfe7c991d7">operator-=</link> (<link linkend="_class_vector2_d">Vector2D</link> &amp;v)</para>
+
+<para>Υπερφόρτωση τελεστή -=. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d_1ac31d9890d3dbfa70a9f74d079f45facf">operator+</link> (double s)</para>
+
+<para>Υπερφόρτωση τελεστη + με δεξί μέλος εναν αριθμό double. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d_1a5840899493485c97b1fca75ab2f35b02">operator-</link> (double s)</para>
+
+<para>Υπερφόρτωση τελεστη - με δεξί μέλος εναν αριθμό double. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d_1a1fa8b6e179d84731a2d60fda152d9967">operator*</link> (double s)</para>
+
+<para>Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d_1aa2227856b57d5e730e34ada1b62bd65e">operator/</link> (double s)</para>
+
+<para>Υπερφόρτωση τελεστη / με δεξί μέλος εναν αριθμό double. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> &amp; <link linkend="_class_vector2_d_1ace79b340cd6ee2bd9634ab478487e170">operator+=</link> (double s)</para>
+
+<para>Υπερφόρτωση τελεστη += με δεξί μέλος εναν αριθμό double. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> &amp; <link linkend="_class_vector2_d_1a3344a8636f7f0223f5eb7106fe16eac1">operator-=</link> (double s)</para>
+
+<para>Υπερφόρτωση τελεστη -= με δεξί μέλος εναν αριθμό double. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> &amp; <link linkend="_class_vector2_d_1aad27e41eea575026e431b24b20d2b3e9">operator*=</link> (double s)</para>
+
+<para>Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> &amp; <link linkend="_class_vector2_d_1a2cc51de74e06944af7b351afad42183a">operator/=</link> (double s)</para>
+
+<para>Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_vector2_d_1a5bd5023e6a83fd0fa370ec57e697133e">set</link> (T x, T y)</para>
+
+<para>Setter και των δυο παραμετρων </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_vector2_d_1a1758d54ba8f0d3486860704dfab167dd">rotate</link> (double deg)</para>
+
+<para>Χρησιμοποιείται για περιστροφή του διανύσματος κατα συγκεκριμένες μοίρες Ο υπολογισμός των Χ και Y γίνεται με βάση γνωστό θεώρημα. </para>
+</listitem>
+            <listitem><para><link linkend="_class_vector2_d">Vector2D</link> &amp; <link linkend="_class_vector2_d_1a669d380ef88e049314dff1e9fd5cfaa6">normalize</link> ()</para>
+
+<para>Μεθοδος κανονικοποίησης διανύσματος Για να κανονικοποιηθεί ενα διάνυσμα διαρείται το διάνυσμα με το μέτρο του.Έτσι προκύπτει ένα μοναδιαίο διάνυσμα.Δηλαδή δημιουργείται ενα διάνυσμα με μήκος ίσο με 1. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_vector2_d_1a3fb5fff33a76034f74fac8f4d517b6a5">length</link> () const</para>
+
+<para>Επιστρέφει το μέτρο του διανύσματος </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Δημόσια Χαρακτηριστικά    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_vector2_d_1a65e391ec61c185092a02cf6301d0fff7"/>T <emphasis role="strong">x</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_vector2_d_1a6a91fccbbd37162d28fa54aeeb88f9d2"/>T <emphasis role="strong">y</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Λεπτομερής Περιγραφή</title>
+<simplesect><title>template&lt;class T&gt;
+class Vector2D&lt; T &gt;</title></simplesect>
+
+
+<para>Κλάση για διάνυσμα δυσδιάστατου χώρου που είχα σχεδιάσει στο παρελθόν στα πλαίσια εξάσκησης για τα templates. </para>
+
+
+</section>
+<section>
+<title>Τεκμηρίωση Constructor &amp; Destructor</title>
+<anchor xml:id="_class_vector2_d_1a96580267fed7cd6686cbbf8e11048023"/>    <section>
+    <title>Vector2D()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>Vector2D</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>Vector2D</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::<link linkend="_class_vector2_d">Vector2D</link> ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Default Constructor αρχικοποιεί το Χ και Y σε 0,0. </para>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1ac3b2da737ea3e226031e137ccd5125bb"/>    <section>
+    <title>Vector2D()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>Vector2D</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>Vector2D</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::<link linkend="_class_vector2_d">Vector2D</link> (T x, T y)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Constructor που αρχικοποιεί τα Χ και Y με συγκεκριμένες τιμές </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_vector2_d_1aac4f313a8313ce3116f4a71b22b1c3c1"/>    <section>
+    <title>Vector2D()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>Vector2D</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>Vector2D</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::<link linkend="_class_vector2_d">Vector2D</link> (const <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt; &amp; v)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Copy Constructor. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>v</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Τεκμηρίωση Συναρτήσεων Μελών</title>
+<anchor xml:id="_class_vector2_d_1a3fb5fff33a76034f74fac8f4d517b6a5"/>    <section>
+    <title>length()</title>
+<indexterm><primary>length</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>length</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>float <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::length ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Επιστρέφει το μέτρο του διανύσματος </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para>float Το μέτρο του διανύσματος </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1a669d380ef88e049314dff1e9fd5cfaa6"/>    <section>
+    <title>normalize()</title>
+<indexterm><primary>normalize</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>normalize</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link>&amp; <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::normalize ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Μεθοδος κανονικοποίησης διανύσματος Για να κανονικοποιηθεί ενα διάνυσμα διαρείται το διάνυσμα με το μέτρο του.Έτσι προκύπτει ένα μοναδιαίο διάνυσμα.Δηλαδή δημιουργείται ενα διάνυσμα με μήκος ίσο με 1. </para>
+</para>
+
+<para><formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link>&amp; Το διάνυσμα κανονικοποιημένο </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1a1fa8b6e179d84731a2d60fda152d9967"/>    <section>
+    <title>operator*()</title>
+<indexterm><primary>operator*</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator*</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator* (double s)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>s</entry>
+                                <entry>
+<para>Ο αριθμος που θα πολλαπλασιαστεί με τα Χ και Y </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link> Αντικείμενο με τις νέες τιμές </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1aad27e41eea575026e431b24b20d2b3e9"/>    <section>
+    <title>operator*=()</title>
+<indexterm><primary>operator*=</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator*=</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link>&amp; <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator*= (double s)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>s</entry>
+                                <entry>
+<para>Ο αριθμος που θα πολλαπλασιαστεί με τα Χ και Y </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link> Αντικείμενο με τις νέες τιμές </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1ac31d9890d3dbfa70a9f74d079f45facf"/>    <section>
+    <title>operator+()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator+</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator+</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator+ (double s)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστη + με δεξί μέλος εναν αριθμό double. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>s</entry>
+                                <entry>
+<para>Ο αριθμος που θα προστεθεί στα Χ και Y </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link> Αντικείμενο με τις νέες τιμές </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1af0ab559c5c6bfe4e25db73f7f97c0d78"/>    <section>
+    <title>operator+()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator+</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator+</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator+ (<link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt; &amp; v)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστή + ώστε να προσθέτει τα χ και τα y των δύο αντικειμένων και επιστρέφει ενα καινούργιο που περιέχει αυτές τις τιμές </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>v</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link> </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1ace79b340cd6ee2bd9634ab478487e170"/>    <section>
+    <title>operator+=()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator+=</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator+=</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link>&amp; <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator+= (double s)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστη += με δεξί μέλος εναν αριθμό double. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>s</entry>
+                                <entry>
+<para>Ο αριθμος που θα προστεθεί στα Χ και Y </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link>&amp; </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1a924f690156921e3ad727e6d2fadc516e"/>    <section>
+    <title>operator+=()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator+=</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator+=</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link>&amp; <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator+= (<link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt; &amp; v)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστή +=. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>v</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link>&amp; </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1a5840899493485c97b1fca75ab2f35b02"/>    <section>
+    <title>operator-()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator-</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator-</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator- (double s)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστη - με δεξί μέλος εναν αριθμό double. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>s</entry>
+                                <entry>
+<para>Ο αριθμος που θα αφαιρεθεί απο τα Χ και Y </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link> Αντικείμενο με τις νέες τιμές </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1a50fa409917f2dc06aeb3fa2e0d78fcf6"/>    <section>
+    <title>operator-()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator-</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator-</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator- (<link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt; &amp; v)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστή - αντιστοιχη του + ωστε να αφαιρεί </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>v</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link> </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1a3344a8636f7f0223f5eb7106fe16eac1"/>    <section>
+    <title>operator-=()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator-=</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator-=</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link>&amp; <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator-= (double s)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστη -= με δεξί μέλος εναν αριθμό double. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>s</entry>
+                                <entry>
+<para>Ο αριθμος που θα αφαιρεθεί απο τα Χ και Y </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link>&amp; </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1a9be2b54b3e026537b2417abfe7c991d7"/>    <section>
+    <title>operator-=()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator-=</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator-=</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link>&amp; <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator-= (<link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt; &amp; v)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστή -=. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>v</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link>&amp; </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1aa2227856b57d5e730e34ada1b62bd65e"/>    <section>
+    <title>operator/()</title>
+<indexterm><primary>operator/</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator/</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link> <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator/ (double s)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστη / με δεξί μέλος εναν αριθμό double. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>s</entry>
+                                <entry>
+<para>Ο αριθμος που θα διαιρεθεί απο τα Χ και Y </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link> Αντικείμενο με τις νέες τιμές </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1a2cc51de74e06944af7b351afad42183a"/>    <section>
+    <title>operator/=()</title>
+<indexterm><primary>operator/=</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator/=</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link>&amp; <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator/= (double s)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστη * με δεξί μέλος εναν αριθμό double. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>s</entry>
+                                <entry>
+<para>Ο αριθμος που θα διαιρεθεί απο τα Χ και Y </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link> Αντικείμενο με τις νέες τιμές </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1ad6d52385e1345ca53c4bb55e84f82ccb"/>    <section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>operator=</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_vector2_d">Vector2D</link>&amp; <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::operator= (const <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt; &amp; v)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Υπερφόρτωση τελεστή =. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>v</entry>
+                                <entry>
+<para>Το διάνυσμα απο το οποίο θα αντιγραφούν τα δεδομένα </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Επιστρέφει</title>
+
+<para><link linkend="_class_vector2_d">Vector2D</link>&amp; </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_vector2_d_1a1758d54ba8f0d3486860704dfab167dd"/>    <section>
+    <title>rotate()</title>
+<indexterm><primary>rotate</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>rotate</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>void <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::rotate (double deg)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Χρησιμοποιείται για περιστροφή του διανύσματος κατα συγκεκριμένες μοίρες Ο υπολογισμός των Χ και Y γίνεται με βάση γνωστό θεώρημα. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>deg</entry>
+                                <entry>
+<para>Μοίρες </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_vector2_d_1a5bd5023e6a83fd0fa370ec57e697133e"/>    <section>
+    <title>set()</title>
+<indexterm><primary>set</primary><secondary>Vector2D&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Vector2D&lt; T &gt;</primary><secondary>set</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>void <link linkend="_class_vector2_d">Vector2D</link>&lt; T &gt;::set (T x, T y)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Setter και των δυο παραμετρων </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Παράμετροι                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+Η τεκμηρίωση για αυτή την κλάση δημιουργήθηκε από το ακόλουθο αρχείο:</para>
+Vector2D/Vector2D.h</section>
+</section>
