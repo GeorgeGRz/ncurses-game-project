@@ -244,10 +244,10 @@ var NAVTREEINDEX0 =
 "functions_type.html":[1,3,3],
 "functions_vars.html":[1,3,2],
 "hierarchy.html":[1,2],
-"index.html":[],
 "index.html":[0],
-"index.html#install_sec":[0,1],
+"index.html":[],
+"index.html#install_prereq_sec":[0,1],
+"index.html#install_sec":[0,2],
 "index.html#intro_sec":[0,0],
-"index.html#step0":[0,0,0],
-"index.html#step1":[0,1,0]
+"index.html#projInfo":[0,0,0]
 };
