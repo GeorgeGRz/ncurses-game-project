@@ -21,7 +21,12 @@ public:
      * @return DynamicArray<string> 
      */
     DynamicArray<string> summarizeItems();
-
+    /**
+     * @brief Επιστρέφει τα index των τελευταίων αντικειμένων του κάθε τύπου
+     * 
+     * @return DynamicArray<int> 
+     */
+    DynamicArray<int> getIndexOfLastItem();
     Inventory(const Inventory& copy);
 
     ~Inventory();

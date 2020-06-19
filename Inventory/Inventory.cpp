@@ -20,7 +20,33 @@ Inventory& Inventory::operator=(Inventory& inv)
     invItems = inv.invItems;
     return *this;
 }
-
+DynamicArray<int> Inventory::getIndexOfLastItem(){
+    DynamicArray<int> indexOfLast({0, 0, 0, 0, 0, 0, 0, 0});
+    int i = 0;
+    for(auto x : invItems){
+        if(x.getType()==lighter){
+            indexOfLast[0] = i;
+        }
+        else if(x.getType() == woodstick){
+            indexOfLast[1] = i;
+        }
+        else if(x.getType() == leafs){
+            indexOfLast[2] = i;
+        } else if (x.getType() == rock) {
+            indexOfLast[3]++;
+        } else if (x.getType() == coconut) {
+            indexOfLast[4]++;
+        } else if (x.getType() == axe) {
+            indexOfLast[5]++;
+        } else if (x.getType() == opencoconut) {
+            indexOfLast[6]++;
+        } else if (x.getType() == lightedtorch) {
+            indexOfLast[7]++;
+        }
+        i++;
+    }
+    return indexOfLast;
+}
 void Inventory::addItem(Item& item)
 {
     invItems.push_back(item);
@@ -92,7 +118,6 @@ DynamicArray<string> Inventory::summarizeItems()
     DynamicArray<string> items;
     DynamicArray<int> itemCount = itemTypeCount(); //Αποθηκεύεται το πλήθος αντικειμένων του κάθε τύπου
     DynamicArray<bool> flags({ false, false, false, false, false, false, false, false });
-    DynamicArray<int> indexOfLast({0, 0, 0, 0, 0, 0, 0, 0});
     //Για κάθε τύπο αντικειμένων, δημιουργείται μια θέση σε δυναμικό πίνακα bool οπου είναι ΨΕΥΔΉΣ
     //Αυτο θα χρησιμοποιηθεί ωστε να ξέρουμε εάν έχει ξαναυπολογιστεί πλήθος αντικειμένων για τον συγκεκριμένο τύπο.
     //Έτσι αποφεύγεται να χρησιμοποιηθεί casting.
@@ -102,43 +127,41 @@ DynamicArray<string> Inventory::summarizeItems()
             //Εαν ο τύπος είναι lighter και ΔΕΝ έχει ξαναυπολογιστεί και προστεθεί το print στον πίνακα items
             print = x.getName() + " x" + to_string(itemCount[0]);
             flags[0] = true;
-            indexOfLast[0]++;
             items.push_back(print);
         } else if (x.getType() == woodstick && flags[1] == false) {
             //Ομοια για αντικείμενο woodstick
             print = x.getName() + " x" + to_string(itemCount[1]);
             flags[1] = true;
-            indexOfLast[1]++;
+            
             items.push_back(print);
         } else if (x.getType() == leafs && flags[2] == false) {
             print = x.getName() + " x" + to_string(itemCount[2]);
             flags[2] = true;
-            indexOfLast[2]++;
+            
             items.push_back(print);
         } else if (x.getType() == rock && flags[3] == false) {
             print = x.getName() + " x" + to_string(itemCount[3]);
             flags[3] = true;
-            indexOfLast[3]++;
+            
             items.push_back(print);
         } else if (x.getType() == coconut && flags[4] == false) {
             print = x.getName() + " x" + to_string(itemCount[4]);
             flags[4] = true;
-            indexOfLast[4]++;
+            
             items.push_back(print);
         } else if (x.getType() == axe && flags[5] == false) {
             print = x.getName() + " x" + to_string(itemCount[5]);
             flags[5] = true;
-            indexOfLast[5]++;
+           
             items.push_back(print);
         } else if (x.getType() == opencoconut && flags[6] == false) {
             print = x.getName() + " x" + to_string(itemCount[6]);
             flags[6] = true;
-            indexOfLast[6]++;
+           
             items.push_back(print);
         } else if (x.getType() == lightedtorch && flags[7] == false) {
             print = x.getName() + " x" + to_string(itemCount[7]);
             flags[7] = true;
-            indexOfLast[7]++;
             items.push_back(print);
         }
     }
