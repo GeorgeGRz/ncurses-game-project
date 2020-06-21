@@ -45,7 +45,7 @@
 </computeroutput></literallayout> </para>
 </section>
 <section xml:id="_index_1step3">
-<title>Μετακίνιση στον κατάλογο που εγινε clone</title>
+<title>Μετακίνηση στον κατάλογο που εγινε clone</title>
 
 <para>Στη συνέχεια πληκτρολογηστε<literallayout><computeroutput>cd&#32;ncurses-game-project/&#32;&amp;&amp;&#32;make&#32;all&#32;
 </computeroutput></literallayout></para>

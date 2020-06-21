@@ -33,7 +33,7 @@ var NAVTREE =
       [ "Οδηγίες εγκατάστασης", "index.html#install_sec", [
         [ "(A) Repository", "index.html#step1", null ],
         [ "(B) Συμπιεσμένο αρχείο", "index.html#step2", null ],
-        [ "Μετακίνιση στον κατάλογο που εγινε clone", "index.html#step3", null ],
+        [ "Μετακίνηση στον κατάλογο που εγινε clone", "index.html#step3", null ],
         [ "Τρέξτε το παιχνίδι.", "index.html#step4", null ]
       ] ]
     ] ],
