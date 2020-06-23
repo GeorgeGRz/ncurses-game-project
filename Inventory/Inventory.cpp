@@ -33,15 +33,15 @@ DynamicArray<int> Inventory::getIndexOfLastItem(){
         else if(x.getType() == leafs){
             indexOfLast[2] = i;
         } else if (x.getType() == rock) {
-            indexOfLast[3]++;
+            indexOfLast[3]=i;
         } else if (x.getType() == coconut) {
-            indexOfLast[4]++;
+            indexOfLast[4]=i;
         } else if (x.getType() == axe) {
-            indexOfLast[5]++;
+            indexOfLast[5]=i;
         } else if (x.getType() == opencoconut) {
-            indexOfLast[6]++;
+            indexOfLast[6]=i;
         } else if (x.getType() == lightedtorch) {
-            indexOfLast[7]++;
+            indexOfLast[7]=i;
         }
         i++;
     }
